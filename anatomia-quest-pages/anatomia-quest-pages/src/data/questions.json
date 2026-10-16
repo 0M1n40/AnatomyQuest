@@ -1,0 +1,1453 @@
+[
+  {
+    "id": "resp",
+    "name": "Sistema Respiratório",
+    "icon": "🫁",
+    "questions": [
+      {
+        "id": "resp-0",
+        "text": "Nos seres humanos, a troca gasosa é considerada:",
+        "options": [
+          "Direta, sem intermediários",
+          "Indireta, pois usa o sangue dos capilares alveolares como intermediário",
+          "Realizada na traqueia",
+          "Realizada nos brônquios principais"
+        ],
+        "answer": 1,
+        "explanation": "A troca gasosa é indireta: precisa do sangue nos capilares alveolares como elemento intermediário."
+      },
+      {
+        "id": "resp-1",
+        "text": "Qual estrutura pertence à PORÇÃO RESPIRATÓRIA (onde ocorre a hematose)?",
+        "options": [
+          "Traqueia",
+          "Brônquio segmentar",
+          "Bronquíolo respiratório",
+          "Laringe"
+        ],
+        "answer": 2,
+        "explanation": "A porção respiratória é formada por bronquíolo respiratório, sacos alveolares e alvéolos."
+      },
+      {
+        "id": "resp-2",
+        "text": "O septo nasal é formado por:",
+        "options": [
+          "Lâmina perpendicular do etmoide, vômer e cartilagem do septo",
+          "Ossos nasais e maxila",
+          "Frontal e esfenoide",
+          "Palato duro e vômer apenas"
+        ],
+        "answer": 0,
+        "explanation": "Septo = lâmina perpendicular do etmoide + vômer + cartilagem do septo."
+      },
+      {
+        "id": "resp-3",
+        "text": "As coanas são:",
+        "options": [
+          "As aberturas anteriores do nariz",
+          "Aberturas posteriores que comunicam a cavidade nasal com a nasofaringe",
+          "Os seios paranasais",
+          "As conchas nasais"
+        ],
+        "answer": 1,
+        "explanation": "Coanas: aberturas póstero-inferiores entre cavidade nasal e nasofaringe."
+      },
+      {
+        "id": "resp-4",
+        "text": "O assoalho da cavidade nasal é formado por:",
+        "options": [
+          "Osso frontal",
+          "Lâmina cribriforme",
+          "Palato duro (processo palatino da maxila e osso palatino)",
+          "Vômer"
+        ],
+        "answer": 2,
+        "explanation": "O assoalho nasal é o palato duro, que também é o teto da cavidade oral."
+      },
+      {
+        "id": "resp-5",
+        "text": "O meato nasal MÉDIO fica entre:",
+        "options": [
+          "Assoalho e concha inferior",
+          "Concha inferior e concha média",
+          "Concha média e concha superior",
+          "Concha superior e teto"
+        ],
+        "answer": 1,
+        "explanation": "Meato médio: entre a concha nasal inferior e a média."
+      },
+      {
+        "id": "resp-6",
+        "text": "O recesso esfenoetmoidal fica:",
+        "options": [
+          "Entre o teto da cavidade nasal e a concha nasal superior",
+          "Abaixo da concha inferior",
+          "No vestíbulo do nariz",
+          "Na nasofaringe"
+        ],
+        "answer": 0,
+        "explanation": "Fica entre o teto e a concha superior, em contato com etmoide e esfenoide."
+      },
+      {
+        "id": "resp-7",
+        "text": "Os pelos do vestíbulo do nariz, que filtram o ar, chamam-se:",
+        "options": [
+          "Cílios",
+          "Vibrissas",
+          "Papilas",
+          "Fímbrias"
+        ],
+        "answer": 1,
+        "explanation": "Vibrissas retêm partículas no vestíbulo do nariz."
+      },
+      {
+        "id": "resp-8",
+        "text": "Uma fratura na lâmina cribriforme do etmoide pode causar:",
+        "options": [
+          "Disfonia",
+          "Epistaxe crônica",
+          "Anosmia (perda do olfato)",
+          "Otite"
+        ],
+        "answer": 2,
+        "explanation": "Ali passam as fibras do nervo olfatório (I par); a lesão causa anosmia."
+      },
+      {
+        "id": "resp-9",
+        "text": "Paciente com desvio de septo para a direita precisa de sonda nasogástrica. Qual narina preferir?",
+        "options": [
+          "Direita",
+          "Esquerda (lado desobstruído)",
+          "Qualquer uma",
+          "Nenhuma, usar sempre via oral"
+        ],
+        "answer": 1,
+        "explanation": "Prefere-se a narina do lado contrário ao desvio, para evitar dor e epistaxe."
+      },
+      {
+        "id": "resp-10",
+        "text": "Inflamação da mucosa dos seios paranasais com sensação de peso na face é:",
+        "options": [
+          "Sinusite",
+          "Rinite olfatória",
+          "Adenoidite",
+          "Anosmia"
+        ],
+        "answer": 0,
+        "explanation": "Sinusite: inflamação da mucosa dos seios, com secreção e dor facial."
+      },
+      {
+        "id": "resp-11",
+        "text": "O óstio faríngeo da tuba auditiva fica em qual porção da faringe?",
+        "options": [
+          "Orofaringe",
+          "Laringofaringe",
+          "Nasofaringe",
+          "Esôfago"
+        ],
+        "answer": 2,
+        "explanation": "Fica na parede lateral da nasofaringe e liga ao ouvido médio."
+      },
+      {
+        "id": "resp-12",
+        "text": "A tonsila faríngea hipertrofiada é chamada de:",
+        "options": [
+          "Amígdala",
+          "Adenoide",
+          "Úvula",
+          "Epiglote"
+        ],
+        "answer": 1,
+        "explanation": "Tonsila faríngea aumentada = adenoide; pode obstruir a respiração nasal."
+      },
+      {
+        "id": "resp-13",
+        "text": "Por que o bebê não deve mamar totalmente deitado?",
+        "options": [
+          "Para não engolir ar",
+          "Para evitar refluxo de leite para a tuba auditiva ou broncoaspiração",
+          "Porque prejudica a dentição",
+          "Porque reduz a produção de leite"
+        ],
+        "answer": 1,
+        "explanation": "A posição deitada favorece o refluxo de leite para a tuba auditiva e a broncoaspiração."
+      },
+      {
+        "id": "resp-14",
+        "text": "Qual é a maior cartilagem da laringe, que forma o 'pomo de Adão'?",
+        "options": [
+          "Cricóidea",
+          "Epiglote",
+          "Tireóidea",
+          "Aritenóidea"
+        ],
+        "answer": 2,
+        "explanation": "A cartilagem tireóidea forma a proeminência laríngea."
+      },
+      {
+        "id": "resp-15",
+        "text": "Qual cartilagem marca o limite inferior da laringe?",
+        "options": [
+          "Tireóidea",
+          "Cricóidea",
+          "Cuneiforme",
+          "Corniculada"
+        ],
+        "answer": 1,
+        "explanation": "A cricóidea tem formato de anel e marca o limite inferior."
+      },
+      {
+        "id": "resp-16",
+        "text": "A 'corda vocal verdadeira' é a:",
+        "options": [
+          "Prega vestibular",
+          "Prega vocal",
+          "Epiglote",
+          "Carina"
+        ],
+        "answer": 1,
+        "explanation": "Prega vocal = verdadeira; prega vestibular = 'falsa corda vocal'."
+      },
+      {
+        "id": "resp-17",
+        "text": "A glote é:",
+        "options": [
+          "O espaço entre as pregas vocais",
+          "A cartilagem em forma de folha",
+          "A bifurcação da traqueia",
+          "A entrada do esôfago"
+        ],
+        "answer": 0,
+        "explanation": "Glote é o espaço entre as pregas vocais."
+      },
+      {
+        "id": "resp-18",
+        "text": "A traqueostomia de emergência deve ser feita:",
+        "options": [
+          "Acima da cartilagem tireóidea",
+          "No ligamento cricotraqueal ou entre o 1º e o 2º anel",
+          "Na carina",
+          "Acima da cricóidea, na prega vocal"
+        ],
+        "answer": 1,
+        "explanation": "Aberturas acima da cricóidea podem lesar as pregas vocais."
+      },
+      {
+        "id": "resp-19",
+        "text": "Os anéis da traqueia têm formato de:",
+        "options": [
+          "O fechado",
+          "C, abertos posteriormente",
+          "Espiral",
+          "Placas irregulares"
+        ],
+        "answer": 1,
+        "explanation": "São em C; a parte posterior tem músculo liso em contato com o esôfago."
+      },
+      {
+        "id": "resp-20",
+        "text": "Corpos estranhos aspirados tendem a ir para o brônquio direito porque ele é:",
+        "options": [
+          "Mais horizontal e longo",
+          "Mais vertical, curto e de maior calibre",
+          "Mais fino",
+          "Mais posterior"
+        ],
+        "answer": 1,
+        "explanation": "O brônquio principal direito é mais verticalizado, curto e calibroso."
+      },
+      {
+        "id": "resp-21",
+        "text": "Quantos lobos e fissuras tem o pulmão ESQUERDO?",
+        "options": [
+          "3 lobos, 2 fissuras",
+          "2 lobos, 1 fissura (oblíqua)",
+          "2 lobos, 2 fissuras",
+          "3 lobos, 1 fissura"
+        ],
+        "answer": 1,
+        "explanation": "Esquerdo: 2 lobos, fissura oblíqua. Direito: 3 lobos, fissuras horizontal e oblíqua."
+      },
+      {
+        "id": "resp-22",
+        "text": "No hilo pulmonar, a posição mais POSTERIOR é ocupada por:",
+        "options": [
+          "Artéria pulmonar",
+          "Veias pulmonares",
+          "Brônquio principal",
+          "Nervo frênico"
+        ],
+        "answer": 2,
+        "explanation": "Brônquio: posterior. Artéria: superior. Veias: inferior."
+      },
+      {
+        "id": "resp-23",
+        "text": "Acúmulo de AR na cavidade pleural é chamado de:",
+        "options": [
+          "Hemotórax",
+          "Pneumotórax",
+          "Derrame pericárdico",
+          "Atelectasia"
+        ],
+        "answer": 1,
+        "explanation": "Pneumotórax = ar; hemotórax = sangue. Ambos exigem drenagem de tórax."
+      },
+      {
+        "id": "resp-24",
+        "text": "A pleura colada ao parênquima pulmonar é a:",
+        "options": [
+          "Pleura parietal",
+          "Pleura visceral",
+          "Pericárdio",
+          "Fáscia endotorácica"
+        ],
+        "answer": 1,
+        "explanation": "Visceral: no pulmão. Parietal: na parede torácica e no diafragma."
+      },
+      {
+        "id": "resp-25",
+        "text": "A crista na bifurcação da traqueia sensível ao reflexo da tosse é a:",
+        "options": [
+          "Epiglote",
+          "Carina",
+          "Glote",
+          "Coana"
+        ],
+        "answer": 1,
+        "explanation": "A carina tem inervação sensível ao reflexo da tosse."
+      },
+      {
+        "id": "resp-26",
+        "text": "Antes de liberar dieta por sonda nasogástrica, deve-se:",
+        "options": [
+          "Apenas auscultar",
+          "Confirmar a posição por raio-X",
+          "Injetar água para testar",
+          "Nada, basta fixar"
+        ],
+        "answer": 1,
+        "explanation": "A verificação por raio-X evita a infusão de alimento no pulmão."
+      }
+    ]
+  },
+  {
+    "id": "dig",
+    "name": "Sistema Digestório",
+    "icon": "🍽️",
+    "questions": [
+      {
+        "id": "dig-0",
+        "text": "Onde começa a digestão dos carboidratos?",
+        "options": [
+          "Estômago",
+          "Cavidade oral, pela amilase salivar (ptialina)",
+          "Duodeno",
+          "Jejuno"
+        ],
+        "answer": 1,
+        "explanation": "A ptialina da saliva inicia a quebra dos carboidratos."
+      },
+      {
+        "id": "dig-1",
+        "text": "A absorção de nutrientes ocorre predominantemente:",
+        "options": [
+          "No estômago",
+          "No jejuno e no íleo",
+          "No cólon",
+          "No esôfago"
+        ],
+        "answer": 1,
+        "explanation": "Jejuno e íleo; no intestino grosso, absorve-se água e sais."
+      },
+      {
+        "id": "dig-2",
+        "text": "Qual destes é uma GLÂNDULA ANEXA do sistema digestório?",
+        "options": [
+          "Esôfago",
+          "Pâncreas",
+          "Ceco",
+          "Duodeno"
+        ],
+        "answer": 1,
+        "explanation": "Glândulas anexas: salivares, fígado e pâncreas."
+      },
+      {
+        "id": "dig-3",
+        "text": "O ducto da glândula parótida desemboca:",
+        "options": [
+          "Abaixo da língua",
+          "No vestíbulo, na altura do 2º molar superior",
+          "Na orofaringe",
+          "No duodeno"
+        ],
+        "answer": 1,
+        "explanation": "A papila do ducto parotídeo fica no vestíbulo, junto ao 2º molar superior."
+      },
+      {
+        "id": "dig-4",
+        "text": "Quantos dentes tem a dentição decídua (infantil)?",
+        "options": [
+          "32",
+          "28",
+          "20",
+          "24"
+        ],
+        "answer": 2,
+        "explanation": "20 dentes, sem pré-molares. O adulto tem 32."
+      },
+      {
+        "id": "dig-5",
+        "text": "A raiz do dente é fixada ao osso por uma articulação fibrosa chamada:",
+        "options": [
+          "Sindesmose",
+          "Sutura",
+          "Gonfose",
+          "Sínfise"
+        ],
+        "answer": 2,
+        "explanation": "Gonfose: articulação fibrosa imóvel do dente."
+      },
+      {
+        "id": "dig-6",
+        "text": "A polpa do dente é inervada pelo:",
+        "options": [
+          "Nervo facial (VII)",
+          "Nervo trigêmeo (V)",
+          "Nervo vago (X)",
+          "Nervo hipoglosso (XII)"
+        ],
+        "answer": 1,
+        "explanation": "Ramos do trigêmeo (V par craniano) inervam a polpa."
+      },
+      {
+        "id": "dig-7",
+        "text": "Bactérias de uma cárie profunda que chegam ao sangue podem causar:",
+        "options": [
+          "Endocardite",
+          "Hepatite",
+          "Pancreatite",
+          "Apendicite"
+        ],
+        "answer": 0,
+        "explanation": "Podem migrar pela circulação e se alojar no coração (endocardite)."
+      },
+      {
+        "id": "dig-8",
+        "text": "As papilas que percebem o gosto AMARGO, em formato de V, são as:",
+        "options": [
+          "Filiformes",
+          "Fungiformes",
+          "Valadas (circunvaladas)",
+          "Foliadas"
+        ],
+        "answer": 2,
+        "explanation": "As papilas valadas ficam anteriores ao sulco terminal."
+      },
+      {
+        "id": "dig-9",
+        "text": "As papilas filiformes são sensíveis a:",
+        "options": [
+          "Sabor doce",
+          "Toque, textura, temperatura e dor",
+          "Amargo",
+          "Salgado"
+        ],
+        "answer": 1,
+        "explanation": "As filiformes não têm função gustativa principal: são táteis e térmicas."
+      },
+      {
+        "id": "dig-10",
+        "text": "A tonsila palatina ('amígdala') fica entre:",
+        "options": [
+          "Arco palatoglosso e arco palatofaríngeo",
+          "Úvula e palato duro",
+          "Língua e epiglote",
+          "Nasofaringe e coana"
+        ],
+        "answer": 0,
+        "explanation": "Ela ocupa a fossa tonsilar, entre os dois arcos."
+      },
+      {
+        "id": "dig-11",
+        "text": "A inflamação viral da parótida é a:",
+        "options": [
+          "Sinusite",
+          "Caxumba (parotidite)",
+          "Amidalite",
+          "Gengivite"
+        ],
+        "answer": 1,
+        "explanation": "Parotidite viral = caxumba."
+      },
+      {
+        "id": "dig-12",
+        "text": "Na fase involuntária faríngea da deglutição:",
+        "options": [
+          "A língua empurra o bolo",
+          "O palato mole se eleva, impedindo o refluxo nasal",
+          "O piloro se abre",
+          "A epiglote se eleva"
+        ],
+        "answer": 1,
+        "explanation": "O palato mole sobe para bloquear a nasofaringe."
+      },
+      {
+        "id": "dig-13",
+        "text": "O nervo que estimula o peristaltismo do esôfago e a secreção de HCl é o:",
+        "options": [
+          "Trigêmeo",
+          "Vago",
+          "Glossofaríngeo",
+          "Frênico"
+        ],
+        "answer": 1,
+        "explanation": "É a inervação parassimpática pelo nervo vago (X)."
+      },
+      {
+        "id": "dig-14",
+        "text": "A frouxidão do hiato esofágico, com projeção do estômago para o tórax, é a:",
+        "options": [
+          "Atresia de esôfago",
+          "Hérnia de hiato",
+          "Fístula traqueoesofágica",
+          "Úlcera"
+        ],
+        "answer": 1,
+        "explanation": "Hérnia de hiato favorece o refluxo gastroesofágico."
+      },
+      {
+        "id": "dig-15",
+        "text": "Por que o refluxo pode simular dor cardíaca?",
+        "options": [
+          "O esôfago tem relação íntima com o coração e a aorta",
+          "O estômago fica no tórax",
+          "O vago não inerva o coração",
+          "Pelo excesso de bile"
+        ],
+        "answer": 0,
+        "explanation": "A proximidade anatômica do esôfago com o coração explica a confusão."
+      },
+      {
+        "id": "dig-16",
+        "text": "A prega peritoneal que liga a curvatura menor do estômago ao fígado é o:",
+        "options": [
+          "Omento maior",
+          "Omento menor",
+          "Mesentério",
+          "Mesocolo"
+        ],
+        "answer": 1,
+        "explanation": "Omento menor: curvatura menor ↔ fígado."
+      },
+      {
+        "id": "dig-17",
+        "text": "Qual destes órgãos é RETROPERITONEAL?",
+        "options": [
+          "Jejuno",
+          "Íleo",
+          "Duodeno",
+          "Cólon transverso"
+        ],
+        "answer": 2,
+        "explanation": "Duodeno, cólon ascendente e descendente são retroperitoneais."
+      },
+      {
+        "id": "dig-18",
+        "text": "A região do estômago que contém o esfíncter que regula o esvaziamento para o duodeno é o:",
+        "options": [
+          "Cárdia",
+          "Fundo",
+          "Corpo",
+          "Piloro"
+        ],
+        "answer": 3,
+        "explanation": "O piloro (antro + canal) contém o esfíncter pilórico."
+      },
+      {
+        "id": "dig-19",
+        "text": "A pepsina e o HCl atuam principalmente na digestão de:",
+        "options": [
+          "Carboidratos",
+          "Proteínas",
+          "Lipídios",
+          "Fibras"
+        ],
+        "answer": 1,
+        "explanation": "No estômago ocorre a digestão química das proteínas."
+      },
+      {
+        "id": "dig-20",
+        "text": "Análogos de GLP-1 (ex.: Ozempic) prolongam a saciedade porque:",
+        "options": [
+          "Aumentam a gastrina",
+          "Retardam o esvaziamento gástrico e a motilidade",
+          "Aumentam o HCl",
+          "Bloqueiam a bile"
+        ],
+        "answer": 1,
+        "explanation": "Retardam o esvaziamento gástrico."
+      },
+      {
+        "id": "dig-21",
+        "text": "A papila duodenal MAIOR recebe:",
+        "options": [
+          "Somente o ducto pancreático acessório",
+          "A ampola hepatopancreática (colédoco + ducto pancreático principal)",
+          "O ducto cístico isolado",
+          "O ducto parotídeo"
+        ],
+        "answer": 1,
+        "explanation": "A menor recebe o ducto pancreático acessório."
+      },
+      {
+        "id": "dig-22",
+        "text": "Qual característica é do JEJUNO (e não do íleo)?",
+        "options": [
+          "Placas de Peyer marcantes",
+          "Vasos retos longos e poucas arcadas grandes",
+          "Parede fina e pálida",
+          "Muitas arcadas pequenas"
+        ],
+        "answer": 1,
+        "explanation": "Jejuno: mais vascularizado, vasos retos longos, parede espessa, muitas pregas."
+      },
+      {
+        "id": "dig-23",
+        "text": "Jejuno e íleo são irrigados pela:",
+        "options": [
+          "Artéria mesentérica inferior",
+          "Artéria mesentérica superior",
+          "Artéria gástrica esquerda",
+          "Artéria esplênica"
+        ],
+        "answer": 1,
+        "explanation": "Recebem ramos jejunais e ileais da mesentérica superior."
+      },
+      {
+        "id": "dig-24",
+        "text": "As faixas longitudinais de músculo liso do cólon são as:",
+        "options": [
+          "Haustros",
+          "Tênias",
+          "Apêndices omentais",
+          "Pregas circulares"
+        ],
+        "answer": 1,
+        "explanation": "São 3 tênias; a tração delas forma os haustros."
+      },
+      {
+        "id": "dig-25",
+        "text": "A flexura cólica ESQUERDA também é chamada de:",
+        "options": [
+          "Hepática",
+          "Esplênica",
+          "Sigmoide",
+          "Ileocecal"
+        ],
+        "answer": 1,
+        "explanation": "Esquerda = esplênica (baço); direita = hepática (fígado)."
+      },
+      {
+        "id": "dig-26",
+        "text": "A obstrução do apêndice por um fecalito causa:",
+        "options": [
+          "Diverticulite",
+          "Apendicite",
+          "Colecistite",
+          "Pancreatite"
+        ],
+        "answer": 1,
+        "explanation": "Se perfurar, pode causar peritonite."
+      },
+      {
+        "id": "dig-27",
+        "text": "O ducto colédoco é formado pela união de:",
+        "options": [
+          "Ducto hepático comum + ducto cístico",
+          "Ducto pancreático + cístico",
+          "Hepáticos D e E apenas",
+          "Ducto cístico + ducto acessório"
+        ],
+        "answer": 0,
+        "explanation": "Hepático comum + cístico = colédoco."
+      },
+      {
+        "id": "dig-28",
+        "text": "A tríade portal é composta por:",
+        "options": [
+          "Veia porta, artéria hepática própria e ducto colédoco",
+          "Aorta, cava e porta",
+          "Veia esplênica, mesentérica e porta",
+          "Artéria gástrica, hepática e esplênica"
+        ],
+        "answer": 0,
+        "explanation": "É a tríade do espaço porta."
+      },
+      {
+        "id": "dig-29",
+        "text": "O ligamento redondo do fígado é o remanescente da:",
+        "options": [
+          "Artéria umbilical",
+          "Veia umbilical",
+          "Ducto venoso",
+          "Úraco"
+        ],
+        "answer": 1,
+        "explanation": "É o remanescente fibroso da veia umbilical."
+      },
+      {
+        "id": "dig-30",
+        "text": "A porção ENDÓCRINA do pâncreas (ilhotas) secreta:",
+        "options": [
+          "Lipase e amilase",
+          "Insulina e glucagon",
+          "Bile",
+          "Bicarbonato"
+        ],
+        "answer": 1,
+        "explanation": "Os ácinos (exócrinos) secretam enzimas e bicarbonato."
+      },
+      {
+        "id": "dig-31",
+        "text": "A cauda do pâncreas está em contato com o:",
+        "options": [
+          "Fígado",
+          "Baço",
+          "Rim direito",
+          "Duodeno"
+        ],
+        "answer": 1,
+        "explanation": "A cabeça fica no 'C' do duodeno e a cauda toca o baço."
+      }
+    ]
+  },
+  {
+    "id": "uri",
+    "name": "Sistema Urinário",
+    "icon": "💧",
+    "questions": [
+      {
+        "id": "uri-0",
+        "text": "Qual hormônio produzido pelo rim estimula a produção de hemácias?",
+        "options": [
+          "Renina",
+          "Eritropoetina",
+          "Aldosterona",
+          "Insulina"
+        ],
+        "answer": 1,
+        "explanation": "A eritropoetina estimula a medula óssea vermelha."
+      },
+      {
+        "id": "uri-1",
+        "text": "A enzima renal que atua no controle da pressão arterial é a:",
+        "options": [
+          "Pepsina",
+          "Renina",
+          "Lipase",
+          "Amilase"
+        ],
+        "answer": 1,
+        "explanation": "Ela ativa o sistema renina-angiotensina-aldosterona."
+      },
+      {
+        "id": "uri-2",
+        "text": "Os rins situam-se aproximadamente entre as vértebras:",
+        "options": [
+          "C7 a T4",
+          "T12 a L3",
+          "L4 a S2",
+          "T6 a T9"
+        ],
+        "answer": 1,
+        "explanation": "São retroperitoneais, de T12 a L3."
+      },
+      {
+        "id": "uri-3",
+        "text": "A perda abrupta da gordura perirrenal pode causar:",
+        "options": [
+          "Rim em ferradura",
+          "Ptose renal",
+          "Rim policístico",
+          "Infarto renal"
+        ],
+        "answer": 1,
+        "explanation": "O coxim adiposo fixa o rim; sem ele, o rim 'cai'."
+      },
+      {
+        "id": "uri-4",
+        "text": "No hilo renal, a veia renal fica tipicamente:",
+        "options": [
+          "Posterior à artéria",
+          "Anterior à artéria renal",
+          "Abaixo da pelve",
+          "Dentro do córtex"
+        ],
+        "answer": 1,
+        "explanation": "A veia renal fica anterior à artéria renal."
+      },
+      {
+        "id": "uri-5",
+        "text": "O rim direito relaciona-se com:",
+        "options": [
+          "Baço e pâncreas",
+          "Fígado, porção descendente do duodeno e flexura cólica direita",
+          "Estômago",
+          "Cólon descendente"
+        ],
+        "answer": 1,
+        "explanation": "Baço, pâncreas e estômago relacionam-se com o rim esquerdo."
+      },
+      {
+        "id": "uri-6",
+        "text": "O ápice da pirâmide renal, onde se abrem os ductos coletores, é a:",
+        "options": [
+          "Coluna renal",
+          "Papila renal",
+          "Pelve renal",
+          "Cápsula"
+        ],
+        "answer": 1,
+        "explanation": "A papila renal é abraçada por um cálice menor."
+      },
+      {
+        "id": "uri-7",
+        "text": "Ordem correta do caminho da urina:",
+        "options": [
+          "Cálice maior → cálice menor → pelve → ureter",
+          "Papila → cálice menor → cálice maior → pelve → ureter",
+          "Pelve → papila → cálice → ureter",
+          "Ureter → pelve → cálice"
+        ],
+        "answer": 1,
+        "explanation": "Papila → cálice menor → cálice maior → pelve renal → ureter."
+      },
+      {
+        "id": "uri-8",
+        "text": "Quanto do débito cardíaco os rins recebem por minuto?",
+        "options": [
+          "5%",
+          "20%",
+          "50%",
+          "2%"
+        ],
+        "answer": 1,
+        "explanation": "Cerca de 20%; 90% desse volume vai ao córtex."
+      },
+      {
+        "id": "uri-9",
+        "text": "Por que o rim é suscetível a infartos?",
+        "options": [
+          "Tem muitas anastomoses",
+          "Suas artérias não têm anastomoses funcionais significativas (circulação terminal)",
+          "É muito pequeno",
+          "Recebe pouco sangue"
+        ],
+        "answer": 1,
+        "explanation": "Na circulação terminal, a obstrução de um ramo não tem compensação."
+      },
+      {
+        "id": "uri-10",
+        "text": "O 'sistema porta renal' é caracterizado por:",
+        "options": [
+          "Capilar entre duas vênulas",
+          "Glomérulo entre duas arteríolas (aferente e eferente)",
+          "Veia entre duas artérias",
+          "Ausência de capilares"
+        ],
+        "answer": 1,
+        "explanation": "O padrão foge do comum arteríola → capilar → vênula."
+      },
+      {
+        "id": "uri-11",
+        "text": "Na drenagem venosa renal, NÃO existem:",
+        "options": [
+          "Veias arqueadas",
+          "Veias interlobares",
+          "Veias segmentares",
+          "Veias interlobulares"
+        ],
+        "answer": 2,
+        "explanation": "A drenagem vai direto para a veia renal, sem veias segmentares."
+      },
+      {
+        "id": "uri-12",
+        "text": "Qual NÃO é um ponto de estreitamento do ureter?",
+        "options": [
+          "Junção ureteropélvica",
+          "Cruzamento com os vasos ilíacos",
+          "Junção ureterovesical",
+          "Hilo hepático"
+        ],
+        "answer": 3,
+        "explanation": "Os três estreitamentos são locais comuns de impactação de cálculos."
+      },
+      {
+        "id": "uri-13",
+        "text": "A capacidade normal da bexiga é de aproximadamente:",
+        "options": [
+          "100 a 200 mL",
+          "500 a 700 mL",
+          "1,5 a 2 L",
+          "50 mL"
+        ],
+        "answer": 1,
+        "explanation": "Ela armazena normalmente de 500 a 700 mL."
+      },
+      {
+        "id": "uri-14",
+        "text": "O trígono vesical é delimitado por:",
+        "options": [
+          "Dois óstios ureterais e o óstio interno da uretra",
+          "Ápice, corpo e colo",
+          "Dois rins e a bexiga",
+          "Uretra e próstata"
+        ],
+        "answer": 0,
+        "explanation": "É uma área lisa e triangular no fundo da bexiga."
+      },
+      {
+        "id": "uri-15",
+        "text": "No homem, o fundo da bexiga relaciona-se diretamente com o:",
+        "options": [
+          "Púbis",
+          "Reto",
+          "Baço",
+          "Fígado"
+        ],
+        "answer": 1,
+        "explanation": "Na mulher, o fundo relaciona-se com a vagina."
+      },
+      {
+        "id": "uri-16",
+        "text": "A HPB dificulta a micção porque:",
+        "options": [
+          "Obstrui o ureter",
+          "Comprime a uretra prostática",
+          "Aumenta a bexiga",
+          "Destrói o glomérulo"
+        ],
+        "answer": 1,
+        "explanation": "A próstata aumentada comprime a uretra que passa dentro dela."
+      },
+      {
+        "id": "uri-17",
+        "text": "Antes de retirar uma sonda vesical, é essencial:",
+        "options": [
+          "Injetar soro",
+          "Desinflar o balão do cateter",
+          "Clampear por 24h",
+          "Girar a sonda"
+        ],
+        "answer": 1,
+        "explanation": "Isso evita trauma, sangramento e laceração da uretra."
+      },
+      {
+        "id": "uri-18",
+        "text": "A fusão dos polos inferiores dos dois rins é o:",
+        "options": [
+          "Rim ectópico",
+          "Rim em ferradura",
+          "Rim policístico",
+          "Rim pélvico"
+        ],
+        "answer": 1,
+        "explanation": "Rim em ferradura = fusão dos polos inferiores."
+      }
+    ]
+  },
+  {
+    "id": "masc",
+    "name": "Genital Masculino",
+    "icon": "♂️",
+    "questions": [
+      {
+        "id": "masc-0",
+        "text": "Em que mês de gestação os testículos iniciam a descida para o escroto?",
+        "options": [
+          "3º",
+          "5º",
+          "7º",
+          "9º"
+        ],
+        "answer": 2,
+        "explanation": "No 7º mês, pelo canal inguinal."
+      },
+      {
+        "id": "masc-1",
+        "text": "O processo vaginal, perto do nascimento, transforma-se na:",
+        "options": [
+          "Túnica albugínea",
+          "Túnica vaginal",
+          "Fáscia cremastérica",
+          "Dartos"
+        ],
+        "answer": 1,
+        "explanation": "O processo vaginal origina a túnica vaginal."
+      },
+      {
+        "id": "masc-2",
+        "text": "A temperatura testicular fica, em relação à corporal:",
+        "options": [
+          "Igual",
+          "1,5 a 2 °C abaixo",
+          "5 °C acima",
+          "1 °C acima"
+        ],
+        "answer": 1,
+        "explanation": "Essa temperatura é indispensável à espermatogênese."
+      },
+      {
+        "id": "masc-3",
+        "text": "Na criptorquidia, o principal risco é:",
+        "options": [
+          "Hidrocele",
+          "Neoplasia maligna (câncer)",
+          "Varicocele",
+          "Infertilidade apenas temporária"
+        ],
+        "answer": 1,
+        "explanation": "A temperatura abdominal pode gerar mutações nas células germinativas."
+      },
+      {
+        "id": "masc-4",
+        "text": "A criptorquidia é unilateral em cerca de:",
+        "options": [
+          "50% dos casos",
+          "75% dos casos",
+          "95% dos casos",
+          "10% dos casos"
+        ],
+        "answer": 2,
+        "explanation": "É unilateral em cerca de 95% dos casos."
+      },
+      {
+        "id": "masc-5",
+        "text": "Hidrocele é diagnosticada por:",
+        "options": [
+          "Toque retal",
+          "Transiluminação",
+          "Raio-X",
+          "Biópsia"
+        ],
+        "answer": 1,
+        "explanation": "Incide-se luz na região, em ambiente escuro."
+      },
+      {
+        "id": "masc-6",
+        "text": "Acúmulo de SANGUE na túnica vaginal é chamado de:",
+        "options": [
+          "Hidrocele",
+          "Hematocele",
+          "Varicocele",
+          "Espermatocele"
+        ],
+        "answer": 1,
+        "explanation": "Hematocele ocorre geralmente após traumas."
+      },
+      {
+        "id": "masc-7",
+        "text": "Qual camada escrotal eleva o testículo por reflexo para regular a temperatura?",
+        "options": [
+          "Músculo dartos",
+          "Músculo cremáster",
+          "Fáscia espermática interna",
+          "Túnica vaginal"
+        ],
+        "answer": 1,
+        "explanation": "O cremáster é músculo esquelético; o dartos enruga a pele."
+      },
+      {
+        "id": "masc-8",
+        "text": "A fáscia espermática externa deriva da aponeurose do músculo:",
+        "options": [
+          "Transverso do abdome",
+          "Oblíquo externo do abdome",
+          "Reto abdominal",
+          "Cremáster"
+        ],
+        "answer": 1,
+        "explanation": "Deriva do oblíquo externo."
+      },
+      {
+        "id": "masc-9",
+        "text": "As células que produzem TESTOSTERONA são as:",
+        "options": [
+          "Células de Sertoli",
+          "Células de Leydig",
+          "Células germinativas",
+          "Células do epidídimo"
+        ],
+        "answer": 1,
+        "explanation": "As células de Sertoli dão suporte e nutrição aos gametas."
+      },
+      {
+        "id": "masc-10",
+        "text": "Qual é o caminho correto dos gametas no testículo?",
+        "options": [
+          "Túbulos retos → seminíferos → rede → epidídimo",
+          "Seminíferos → retos → rede testicular → dúctulos eferentes → epidídimo",
+          "Rede → seminíferos → eferentes",
+          "Epidídimo → rede → seminíferos"
+        ],
+        "answer": 1,
+        "explanation": "Seminíferos → retos → rete testis → eferentes → epidídimo."
+      },
+      {
+        "id": "masc-11",
+        "text": "O ducto ejaculatório é formado pela união de:",
+        "options": [
+          "Ducto deferente + ducto da vesícula seminal",
+          "Epidídimo + uretra",
+          "Próstata + bulbouretral",
+          "Ureter + deferente"
+        ],
+        "answer": 0,
+        "explanation": "Ele desemboca na uretra prostática."
+      },
+      {
+        "id": "masc-12",
+        "text": "A maior parte do volume do sêmen vem das:",
+        "options": [
+          "Glândulas bulbouretrais",
+          "Vesículas seminais (fluido rico em frutose)",
+          "Próstata",
+          "Testículos"
+        ],
+        "answer": 1,
+        "explanation": "As vesículas seminais produzem fluido nutritivo rico em frutose."
+      },
+      {
+        "id": "masc-13",
+        "text": "O líquido pré-ejaculatório é secretado pelas:",
+        "options": [
+          "Vesículas seminais",
+          "Glândulas bulbouretrais (de Cowper)",
+          "Células de Leydig",
+          "Próstata"
+        ],
+        "answer": 1,
+        "explanation": "Ele lubrifica e neutraliza a acidez residual da uretra."
+      },
+      {
+        "id": "masc-14",
+        "text": "O funículo espermático contém:",
+        "options": [
+          "Ureter e artéria renal",
+          "Ducto deferente, artéria testicular, plexo pampiniforme e nervos",
+          "Apenas músculo cremáster",
+          "Uretra e próstata"
+        ],
+        "answer": 1,
+        "explanation": "É o cordão que liga o abdômen ao testículo."
+      },
+      {
+        "id": "masc-15",
+        "text": "O termo anatômico correto é:",
+        "options": [
+          "Saco escrotal",
+          "Escroto",
+          "Bolsa testicular",
+          "Saco testicular"
+        ],
+        "answer": 1,
+        "explanation": "'Saco escrotal' é pleonástico."
+      }
+    ]
+  },
+  {
+    "id": "fem",
+    "name": "Genital Feminino",
+    "icon": "♀️",
+    "questions": [
+      {
+        "id": "fem-0",
+        "text": "O períneo é dividido em anterior (urogenital) e posterior (anal) por uma linha que une:",
+        "options": [
+          "As espinhas ilíacas",
+          "As tuberosidades isquiáticas",
+          "Sínfise e cóccix",
+          "Os trocânteres"
+        ],
+        "answer": 1,
+        "explanation": "Uma linha transversal entre as tuberosidades isquiáticas divide o períneo."
+      },
+      {
+        "id": "fem-1",
+        "text": "Os grandes lábios são homólogos ao:",
+        "options": [
+          "Pênis",
+          "Escroto",
+          "Corpo esponjoso",
+          "Prepúcio"
+        ],
+        "answer": 1,
+        "explanation": "O clitóris é homólogo ao pênis."
+      },
+      {
+        "id": "fem-2",
+        "text": "A obstrução ou infecção das glândulas de Bartholin causa:",
+        "options": [
+          "Vaginose",
+          "Bartolinite",
+          "Cistocele",
+          "Hematocolpo"
+        ],
+        "answer": 1,
+        "explanation": "Essas glândulas secretam muco lubrificante na entrada da vagina."
+      },
+      {
+        "id": "fem-3",
+        "text": "O hímen imperfurado pode causar:",
+        "options": [
+          "Hematocolpo (retenção do fluxo menstrual)",
+          "Prolapso",
+          "Bartolinite",
+          "Endometriose"
+        ],
+        "answer": 0,
+        "explanation": "Exige incisão cirúrgica cruciforme."
+      },
+      {
+        "id": "fem-4",
+        "text": "Os resquícios do hímen após o rompimento são as:",
+        "options": [
+          "Fímbrias",
+          "Carúnculas himenais",
+          "Papilas",
+          "Ninfas"
+        ],
+        "answer": 1,
+        "explanation": "Também chamadas de carúnculas de Mênage."
+      },
+      {
+        "id": "fem-5",
+        "text": "Para a episiotomia, realiza-se o bloqueio do nervo:",
+        "options": [
+          "Obturatório",
+          "Pudendo, guiado pela espinha isquiática",
+          "Femoral",
+          "Ciático"
+        ],
+        "answer": 1,
+        "explanation": "Bloqueio do pudendo, palpando a espinha isquiática."
+      },
+      {
+        "id": "fem-6",
+        "text": "Cistocele é a queda da:",
+        "options": [
+          "Bexiga",
+          "Reto",
+          "Útero",
+          "Alça intestinal"
+        ],
+        "answer": 0,
+        "explanation": "Retocele = reto; enterocele = intestino."
+      },
+      {
+        "id": "fem-7",
+        "text": "O fórnix vaginal mais profundo, em contato com a escavação retouterina, é o:",
+        "options": [
+          "Anterior",
+          "Lateral",
+          "Posterior",
+          "Inferior"
+        ],
+        "answer": 2,
+        "explanation": "O fórnix posterior é o mais profundo."
+      },
+      {
+        "id": "fem-8",
+        "text": "Por que as mulheres têm mais ITU?",
+        "options": [
+          "Uretra longa",
+          "A parede anterior da vagina tem íntimo contato com a uretra",
+          "pH vaginal básico",
+          "Ausência de bexiga"
+        ],
+        "answer": 1,
+        "explanation": "Essa proximidade facilita a migração de bactérias."
+      },
+      {
+        "id": "fem-9",
+        "text": "O pH vaginal ácido é mantido pela produção de:",
+        "options": [
+          "Bicarbonato",
+          "Ácido lático",
+          "Ácido clorídrico",
+          "Bile"
+        ],
+        "answer": 1,
+        "explanation": "O epitélio, rico em glicogênio, gera ácido lático."
+      },
+      {
+        "id": "fem-10",
+        "text": "A região estreita entre o corpo e o colo do útero é o:",
+        "options": [
+          "Fundo",
+          "Ístmo",
+          "Fórnix",
+          "Cérvix"
+        ],
+        "answer": 1,
+        "explanation": "O ístmo do útero faz a transição entre o corpo e o colo."
+      },
+      {
+        "id": "fem-11",
+        "text": "A camada do útero onde o blastocisto se implanta é o:",
+        "options": [
+          "Miométrio",
+          "Endométrio",
+          "Perimétrio",
+          "Paramétrio"
+        ],
+        "answer": 1,
+        "explanation": "O endométrio descama na menstruação."
+      },
+      {
+        "id": "fem-12",
+        "text": "Miomas uterinos são tumores benignos do:",
+        "options": [
+          "Endométrio",
+          "Miométrio",
+          "Ovário",
+          "Colo"
+        ],
+        "answer": 1,
+        "explanation": "Podem causar sangramento excessivo (metrorragia)."
+      },
+      {
+        "id": "fem-13",
+        "text": "A posição fisiológica normal do útero é a:",
+        "options": [
+          "Retroversão",
+          "Anteversoflexão",
+          "Retroflexão",
+          "Lateroversão"
+        ],
+        "answer": 1,
+        "explanation": "Com duas flexões anteriores: anteversão e anteflexão."
+      },
+      {
+        "id": "fem-14",
+        "text": "O principal fator etiológico do câncer de colo do útero é:",
+        "options": [
+          "Herpes",
+          "HPV oncogênico (especialmente 16 e 18)",
+          "Candida",
+          "Clamídia"
+        ],
+        "answer": 1,
+        "explanation": "É rastreado pelo Papanicolaou e pela colposcopia."
+      },
+      {
+        "id": "fem-15",
+        "text": "O fundo de saco de Douglas (escavação retouterina) fica entre:",
+        "options": [
+          "Bexiga e útero",
+          "Útero e reto",
+          "Ovário e tuba",
+          "Vagina e uretra"
+        ],
+        "answer": 1,
+        "explanation": "É o ponto mais profundo do peritônio, onde se acumulam líquidos."
+      },
+      {
+        "id": "fem-16",
+        "text": "A porção do ligamento largo em contato com as tubas uterinas é a:",
+        "options": [
+          "Mesométrio",
+          "Mesossalpinge",
+          "Mesovário",
+          "Paramétrio"
+        ],
+        "answer": 1,
+        "explanation": "Ela abriga o epoóforo e o paraóforo."
+      },
+      {
+        "id": "fem-17",
+        "text": "Na histerectomia, a artéria uterina deve ser ligada rente ao útero porque:",
+        "options": [
+          "Passa por cima do ureter",
+          "Passa por baixo do reto",
+          "É muito calibrosa",
+          "Origina-se da aorta"
+        ],
+        "answer": 0,
+        "explanation": "Isso evita ligar ou seccionar o ureter acidentalmente."
+      },
+      {
+        "id": "fem-18",
+        "text": "A artéria ovariana é ramo direto da:",
+        "options": [
+          "Ilíaca interna",
+          "Aorta abdominal",
+          "Ilíaca externa",
+          "Femoral"
+        ],
+        "answer": 1,
+        "explanation": "A uterina e as vaginais vêm da ilíaca interna."
+      },
+      {
+        "id": "fem-19",
+        "text": "A fecundação geralmente ocorre na:",
+        "options": [
+          "Porção intramural",
+          "Ístmo da tuba",
+          "Ampola da tuba",
+          "Cavidade uterina"
+        ],
+        "answer": 2,
+        "explanation": "A ampola é a porção mais dilatada da tuba."
+      },
+      {
+        "id": "fem-20",
+        "text": "As fímbrias, que captam o oócito, ficam no:",
+        "options": [
+          "Ístmo",
+          "Infundíbulo",
+          "Ovário",
+          "Fundo do útero"
+        ],
+        "answer": 1,
+        "explanation": "O infundíbulo é a extremidade em funil da tuba."
+      },
+      {
+        "id": "fem-21",
+        "text": "A gravidez ectópica ocorre mais frequentemente na:",
+        "options": [
+          "Tuba uterina",
+          "Ovário",
+          "Colo",
+          "Cavidade abdominal"
+        ],
+        "answer": 0,
+        "explanation": "A tuba não expande e pode romper, causando hemorragia grave."
+      },
+      {
+        "id": "fem-22",
+        "text": "O ligamento que conduz os vasos ovarianos até o ovário é o:",
+        "options": [
+          "Ligamento próprio do ovário",
+          "Ligamento suspensor do ovário",
+          "Ligamento redondo",
+          "Uterossacro"
+        ],
+        "answer": 1,
+        "explanation": "O ligamento próprio une o ovário ao útero."
+      },
+      {
+        "id": "fem-23",
+        "text": "A inervação somática da genitália externa e do períneo vem do nervo:",
+        "options": [
+          "Vago",
+          "Pudendo (S2-S4)",
+          "Femoral",
+          "Obturatório"
+        ],
+        "answer": 1,
+        "explanation": "A inervação autonômica vem do plexo uterovaginal."
+      }
+    ]
+  }
+]

@@ -1,0 +1,553 @@
+[
+  {
+    "id": "respiratorio",
+    "title": "Sistema respiratório – vista anterior",
+    "system": "resp",
+    "image": "atlas/respiratorio.svg",
+    "builtin": true,
+    "pins": [
+      {
+        "id": "respiratorio-0",
+        "label": "Cavidade nasal",
+        "x": 50.0,
+        "y": 12.4,
+        "explanation": "Primeira porção condutora; aquece, umedece e filtra o ar."
+      },
+      {
+        "id": "respiratorio-1",
+        "label": "Faringe",
+        "x": 50.0,
+        "y": 23.6,
+        "explanation": "Via comum para ar e alimento: naso, oro e laringofaringe."
+      },
+      {
+        "id": "respiratorio-2",
+        "label": "Laringe",
+        "x": 50.0,
+        "y": 30.6,
+        "explanation": "Órgão da fonação; a cartilagem tireóidea forma o 'pomo de Adão'."
+      },
+      {
+        "id": "respiratorio-3",
+        "label": "Traqueia",
+        "x": 50.0,
+        "y": 41.0,
+        "explanation": "Tubo com anéis cartilaginosos em C, abertos posteriormente."
+      },
+      {
+        "id": "respiratorio-4",
+        "label": "Carina",
+        "x": 50.0,
+        "y": 50.0,
+        "explanation": "Crista na bifurcação da traqueia, sensível ao reflexo da tosse."
+      },
+      {
+        "id": "respiratorio-5",
+        "label": "Brônquio principal direito",
+        "x": 40.5,
+        "y": 54.4,
+        "explanation": "Mais vertical, curto e calibroso: destino comum de corpos estranhos."
+      },
+      {
+        "id": "respiratorio-6",
+        "label": "Brônquio principal esquerdo",
+        "x": 61.5,
+        "y": 52.4,
+        "explanation": "Mais horizontal e longo que o direito."
+      },
+      {
+        "id": "respiratorio-7",
+        "label": "Lobo superior direito",
+        "x": 31.25,
+        "y": 52.4,
+        "explanation": "O pulmão direito tem 3 lobos."
+      },
+      {
+        "id": "respiratorio-8",
+        "label": "Lobo médio (pulmão direito)",
+        "x": 42.0,
+        "y": 70.0,
+        "explanation": "Só existe no pulmão direito, entre as fissuras horizontal e oblíqua."
+      },
+      {
+        "id": "respiratorio-9",
+        "label": "Lobo inferior direito",
+        "x": 25.0,
+        "y": 81.6,
+        "explanation": "Fica abaixo da fissura oblíqua."
+      },
+      {
+        "id": "respiratorio-10",
+        "label": "Fissura horizontal",
+        "x": 39.5,
+        "y": 63.6,
+        "explanation": "Exclusiva do pulmão direito; separa o lobo superior do médio."
+      },
+      {
+        "id": "respiratorio-11",
+        "label": "Lobo superior esquerdo",
+        "x": 67.0,
+        "y": 60.0,
+        "explanation": "O pulmão esquerdo tem 2 lobos."
+      },
+      {
+        "id": "respiratorio-12",
+        "label": "Incisura cardíaca",
+        "x": 58.0,
+        "y": 70.4,
+        "explanation": "Reentrância do pulmão esquerdo onde se acomoda o coração."
+      },
+      {
+        "id": "respiratorio-13",
+        "label": "Lobo inferior esquerdo",
+        "x": 75.0,
+        "y": 82.0,
+        "explanation": "Fica abaixo da fissura oblíqua do pulmão esquerdo."
+      },
+      {
+        "id": "respiratorio-14",
+        "label": "Diafragma",
+        "x": 50.0,
+        "y": 90.4,
+        "explanation": "Principal músculo da respiração; separa tórax do abdome."
+      }
+    ]
+  },
+  {
+    "id": "digestorio",
+    "title": "Sistema digestório – visão geral",
+    "system": "dig",
+    "image": "atlas/digestorio.svg",
+    "builtin": true,
+    "pins": [
+      {
+        "id": "digestorio-0",
+        "label": "Esôfago",
+        "x": 51.5,
+        "y": 19.0,
+        "explanation": "Tubo muscular que leva o bolo alimentar da faringe ao estômago."
+      },
+      {
+        "id": "digestorio-1",
+        "label": "Fígado",
+        "x": 31.25,
+        "y": 35.0,
+        "explanation": "Maior glândula do corpo; produz a bile."
+      },
+      {
+        "id": "digestorio-2",
+        "label": "Vesícula biliar",
+        "x": 40.0,
+        "y": 46.6,
+        "explanation": "Armazena e concentra a bile; o ducto cístico une-se ao hepático comum."
+      },
+      {
+        "id": "digestorio-3",
+        "label": "Estômago",
+        "x": 70.5,
+        "y": 41.0,
+        "explanation": "Digestão química de proteínas (pepsina + HCl)."
+      },
+      {
+        "id": "digestorio-4",
+        "label": "Duodeno",
+        "x": 45.0,
+        "y": 54.0,
+        "explanation": "Primeira porção do intestino delgado, em forma de C; retroperitoneal."
+      },
+      {
+        "id": "digestorio-5",
+        "label": "Pâncreas",
+        "x": 65.5,
+        "y": 52.8,
+        "explanation": "Glândula mista: enzimas digestivas e insulina/glucagon."
+      },
+      {
+        "id": "digestorio-6",
+        "label": "Cólon transverso",
+        "x": 53.0,
+        "y": 59.2,
+        "explanation": "Vai da flexura cólica direita (hepática) à esquerda (esplênica)."
+      },
+      {
+        "id": "digestorio-7",
+        "label": "Cólon ascendente",
+        "x": 29.75,
+        "y": 70.0,
+        "explanation": "Retroperitoneal; sobe do ceco até a flexura hepática."
+      },
+      {
+        "id": "digestorio-8",
+        "label": "Intestino delgado (jejuno/íleo)",
+        "x": 52.5,
+        "y": 72.4,
+        "explanation": "Onde ocorre a maior parte da absorção de nutrientes."
+      },
+      {
+        "id": "digestorio-9",
+        "label": "Cólon descendente",
+        "x": 76.5,
+        "y": 72.0,
+        "explanation": "Retroperitoneal; desce da flexura esplênica até o sigmoide."
+      },
+      {
+        "id": "digestorio-10",
+        "label": "Ceco",
+        "x": 32.0,
+        "y": 83.2,
+        "explanation": "Início do intestino grosso, onde se insere o apêndice."
+      },
+      {
+        "id": "digestorio-11",
+        "label": "Apêndice vermiforme",
+        "x": 27.0,
+        "y": 90.4,
+        "explanation": "Sua obstrução por fecalito causa apendicite."
+      },
+      {
+        "id": "digestorio-12",
+        "label": "Cólon sigmoide",
+        "x": 67.5,
+        "y": 89.0,
+        "explanation": "Porção em S que continua no reto."
+      },
+      {
+        "id": "digestorio-13",
+        "label": "Reto",
+        "x": 54.5,
+        "y": 94.8,
+        "explanation": "Porção final do intestino grosso antes do canal anal."
+      }
+    ]
+  },
+  {
+    "id": "urinario",
+    "title": "Sistema urinário – vista anterior",
+    "system": "uri",
+    "image": "atlas/urinario.svg",
+    "builtin": true,
+    "pins": [
+      {
+        "id": "urinario-0",
+        "label": "Rim direito",
+        "x": 25.0,
+        "y": 46.4,
+        "explanation": "Fica um pouco mais baixo por causa do fígado; relaciona-se com o duodeno."
+      },
+      {
+        "id": "urinario-1",
+        "label": "Rim esquerdo",
+        "x": 75.0,
+        "y": 40.0,
+        "explanation": "Relaciona-se com baço, pâncreas e estômago."
+      },
+      {
+        "id": "urinario-2",
+        "label": "Glândula suprarrenal",
+        "x": 74.0,
+        "y": 27.6,
+        "explanation": "Glândula endócrina no polo superior do rim."
+      },
+      {
+        "id": "urinario-3",
+        "label": "Artéria renal",
+        "x": 60.0,
+        "y": 40.2,
+        "explanation": "Ramo da aorta; o rim recebe ~20% do débito cardíaco."
+      },
+      {
+        "id": "urinario-4",
+        "label": "Veia renal",
+        "x": 40.0,
+        "y": 46.6,
+        "explanation": "Drena para a veia cava inferior; fica anterior à artéria no hilo."
+      },
+      {
+        "id": "urinario-5",
+        "label": "Parte abdominal da aorta",
+        "x": 53.75,
+        "y": 58.0,
+        "explanation": "Origina as artérias renais."
+      },
+      {
+        "id": "urinario-6",
+        "label": "Veia cava inferior",
+        "x": 45.75,
+        "y": 58.0,
+        "explanation": "Recebe as veias renais."
+      },
+      {
+        "id": "urinario-7",
+        "label": "Ureter",
+        "x": 38.0,
+        "y": 66.0,
+        "explanation": "Tem 3 estreitamentos onde cálculos costumam impactar."
+      },
+      {
+        "id": "urinario-8",
+        "label": "Bexiga urinária",
+        "x": 50.0,
+        "y": 81.0,
+        "explanation": "Capacidade normal de 500–700 mL."
+      },
+      {
+        "id": "urinario-9",
+        "label": "Uretra",
+        "x": 50.0,
+        "y": 95.0,
+        "explanation": "Conduz a urina da bexiga para o exterior."
+      }
+    ]
+  },
+  {
+    "id": "rim_corte",
+    "title": "Rim – corte coronal",
+    "system": "uri",
+    "image": "atlas/rim_corte.svg",
+    "builtin": true,
+    "pins": [
+      {
+        "id": "rim_corte-0",
+        "label": "Cápsula renal",
+        "x": 30.0,
+        "y": 16.4,
+        "explanation": "Envoltório fibroso que reveste o rim."
+      },
+      {
+        "id": "rim_corte-1",
+        "label": "Córtex renal",
+        "x": 22.0,
+        "y": 38.0,
+        "explanation": "Camada externa; recebe ~90% do fluxo sanguíneo renal."
+      },
+      {
+        "id": "rim_corte-2",
+        "label": "Pirâmide renal (medula)",
+        "x": 31.25,
+        "y": 50.0,
+        "explanation": "Estrutura cônica da medula, com os ductos coletores."
+      },
+      {
+        "id": "rim_corte-3",
+        "label": "Coluna renal",
+        "x": 32.0,
+        "y": 59.2,
+        "explanation": "Prolongamento do córtex entre as pirâmides."
+      },
+      {
+        "id": "rim_corte-4",
+        "label": "Papila renal",
+        "x": 41.25,
+        "y": 50.0,
+        "explanation": "Ápice da pirâmide, abraçado por um cálice menor."
+      },
+      {
+        "id": "rim_corte-5",
+        "label": "Cálice menor",
+        "x": 46.5,
+        "y": 38.0,
+        "explanation": "Recebe a urina da papila renal."
+      },
+      {
+        "id": "rim_corte-6",
+        "label": "Cálice maior",
+        "x": 51.25,
+        "y": 52.0,
+        "explanation": "Formado pela união de cálices menores."
+      },
+      {
+        "id": "rim_corte-7",
+        "label": "Pelve renal",
+        "x": 59.5,
+        "y": 50.0,
+        "explanation": "Funil que recebe os cálices maiores e continua no ureter."
+      },
+      {
+        "id": "rim_corte-8",
+        "label": "Ureter",
+        "x": 75.0,
+        "y": 86.0,
+        "explanation": "Leva a urina da pelve renal até a bexiga."
+      },
+      {
+        "id": "rim_corte-9",
+        "label": "Artéria renal",
+        "x": 82.5,
+        "y": 44.8,
+        "explanation": "Circulação terminal: sem anastomoses funcionais."
+      },
+      {
+        "id": "rim_corte-10",
+        "label": "Veia renal",
+        "x": 82.5,
+        "y": 52.4,
+        "explanation": "Drena para a veia cava inferior."
+      }
+    ]
+  },
+  {
+    "id": "utero",
+    "title": "Útero e anexos – vista frontal",
+    "system": "fem",
+    "image": "atlas/utero.svg",
+    "builtin": true,
+    "pins": [
+      {
+        "id": "utero-0",
+        "label": "Fundo do útero",
+        "x": 50.0,
+        "y": 24.4,
+        "explanation": "Parte superior do útero, acima da entrada das tubas."
+      },
+      {
+        "id": "utero-1",
+        "label": "Corpo do útero",
+        "x": 40.0,
+        "y": 40.0,
+        "explanation": "Maior parte do útero."
+      },
+      {
+        "id": "utero-2",
+        "label": "Endométrio / cavidade uterina",
+        "x": 50.0,
+        "y": 35.0,
+        "explanation": "Camada interna onde o blastocisto se implanta; descama na menstruação."
+      },
+      {
+        "id": "utero-3",
+        "label": "Miométrio",
+        "x": 60.0,
+        "y": 43.0,
+        "explanation": "Camada muscular; local dos miomas."
+      },
+      {
+        "id": "utero-4",
+        "label": "Colo do útero (cérvix)",
+        "x": 50.0,
+        "y": 57.6,
+        "explanation": "Porção inferior; rastreado pelo Papanicolaou."
+      },
+      {
+        "id": "utero-5",
+        "label": "Vagina",
+        "x": 50.0,
+        "y": 80.0,
+        "explanation": "Canal fibromuscular; pH ácido pelo ácido lático."
+      },
+      {
+        "id": "utero-6",
+        "label": "Ístmo da tuba uterina",
+        "x": 67.5,
+        "y": 30.6,
+        "explanation": "Porção estreita da tuba, próxima ao útero."
+      },
+      {
+        "id": "utero-7",
+        "label": "Ampola da tuba uterina",
+        "x": 78.0,
+        "y": 36.4,
+        "explanation": "Porção mais dilatada; local habitual da fecundação."
+      },
+      {
+        "id": "utero-8",
+        "label": "Fímbrias (infundíbulo)",
+        "x": 85.0,
+        "y": 46.4,
+        "explanation": "Captam o oócito liberado pelo ovário."
+      },
+      {
+        "id": "utero-9",
+        "label": "Ovário",
+        "x": 73.75,
+        "y": 50.4,
+        "explanation": "Gônada feminina; vascularizada pela artéria ovariana (ramo da aorta)."
+      },
+      {
+        "id": "utero-10",
+        "label": "Ligamento próprio do ovário",
+        "x": 37.0,
+        "y": 44.8,
+        "explanation": "Une o ovário ao útero."
+      }
+    ]
+  },
+  {
+    "id": "masculino",
+    "title": "Sistema genital masculino – esquema frontal",
+    "system": "masc",
+    "image": "atlas/masculino.svg",
+    "builtin": true,
+    "pins": [
+      {
+        "id": "masculino-0",
+        "label": "Bexiga urinária",
+        "x": 50.0,
+        "y": 19.0,
+        "explanation": "Fica anterior às vesículas seminais e acima da próstata."
+      },
+      {
+        "id": "masculino-1",
+        "label": "Vesícula seminal",
+        "x": 35.0,
+        "y": 30.0,
+        "explanation": "Produz a maior parte do sêmen (fluido rico em frutose)."
+      },
+      {
+        "id": "masculino-2",
+        "label": "Próstata",
+        "x": 55.5,
+        "y": 36.0,
+        "explanation": "Envolve a uretra prostática; a HPB dificulta a micção."
+      },
+      {
+        "id": "masculino-3",
+        "label": "Glândula bulbouretral",
+        "x": 45.0,
+        "y": 43.0,
+        "explanation": "Glândula de Cowper; secreta o líquido pré-ejaculatório."
+      },
+      {
+        "id": "masculino-4",
+        "label": "Ducto deferente",
+        "x": 23.0,
+        "y": 54.0,
+        "explanation": "Leva os espermatozoides do epidídimo ao ducto ejaculatório."
+      },
+      {
+        "id": "masculino-5",
+        "label": "Uretra",
+        "x": 50.0,
+        "y": 58.0,
+        "explanation": "Trajeto comum para urina e sêmen."
+      },
+      {
+        "id": "masculino-6",
+        "label": "Glande",
+        "x": 50.0,
+        "y": 73.0,
+        "explanation": "Extremidade distal do pênis."
+      },
+      {
+        "id": "masculino-7",
+        "label": "Testículo",
+        "x": 63.75,
+        "y": 85.0,
+        "explanation": "Produz espermatozoides e testosterona (células de Leydig)."
+      },
+      {
+        "id": "masculino-8",
+        "label": "Epidídimo",
+        "x": 31.5,
+        "y": 85.6,
+        "explanation": "Armazena e matura os espermatozoides."
+      },
+      {
+        "id": "masculino-9",
+        "label": "Escroto",
+        "x": 50.0,
+        "y": 96.0,
+        "explanation": "Mantém os testículos 1,5–2 °C abaixo da temperatura corporal."
+      }
+    ]
+  }
+]
