@@ -15,9 +15,7 @@ export default function AtlasHub({ player, subject, onStudy, onPlay, onEditor })
   const [figures, setFigures] = useState(null);
   const [sel, setSel] = useState('all');
   const [error, setError] = useState('');
-
   useEffect(() => { setSel('all'); api.atlas.figures().then(setFigures).catch((e) => setError(e.message)); }, [subject.id]);
-
   if (error) return <Card className="text-center font-semibold text-accent">{error}</Card>;
   if (!figures) return <Spinner label="Abrindo…" />;
 
@@ -25,9 +23,8 @@ export default function AtlasHub({ player, subject, onStudy, onPlay, onEditor })
   const anyOrgan = api.atlas.hasOrgans();
   const modes = MODES.filter((m) => !m.needsOrgan || anyOrgan);
   const go = (type) => (type === 'study' ? onStudy(sel) : onPlay(sel, type));
-
   const disabledReason = (m) => {
-    if (m.type === 'study' && sel === 'all') return 'Escolha uma figura específica para estudar.';
+    if (m.type === 'study' && sel === 'all') return 'Escolha uma imagem específica para estudar.';
     if (m.type === 'organ') return current && !current.hasOrgan ? 'Esta figura não tem órgão cadastrado.' : null;
     if (current && current.pinCount < (m.type === 'locate' ? 3 : 1)) return m.type === 'locate' ? 'Precisa de pelo menos 3 pontos.' : 'Sem pontos marcados.';
     return null;
@@ -39,15 +36,14 @@ export default function AtlasHub({ player, subject, onStudy, onPlay, onEditor })
         <MascotTalk mood="think" size={90} text={subject.practice.mascot} />
         <Button variant="secondary" onClick={onEditor}>✏️ Editor da professora</Button>
       </div>
-
       <section>
-        <h2 className="mb-3 text-lg font-black">1. Escolha {anyOrgan ? 'a lâmina' : 'a figura'}</h2>
+        <h2 className="mb-3 text-lg font-black">1. Escolha {anyOrgan ? 'a lâmina' : 'a imagem'}</h2>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
           <button onClick={() => setSel('all')}
             className={`flex flex-col items-center justify-center rounded-3xl border-2 bg-card p-4 text-center transition hover:-translate-y-1 ${sel === 'all' ? 'border-brand shadow-lg' : 'border-line'}`}>
             <span className="text-5xl">🧩</span>
             <b className="mt-2">Todas</b>
-            <small className="text-muted">{figures.length} {anyOrgan ? 'lâminas' : 'figuras'} · {figures.reduce((s, f) => s + f.pinCount, 0)} estruturas</small>
+            <small className="text-muted">{figures.length} imagens · {figures.reduce((s, f) => s + f.pinCount, 0)} estruturas</small>
             <Stars n={player.stars['atlas-all'] || 0} />
           </button>
           {figures.map((f) => (
@@ -67,7 +63,6 @@ export default function AtlasHub({ player, subject, onStudy, onPlay, onEditor })
           ))}
         </div>
       </section>
-
       <section>
         <h2 className="mb-3 text-lg font-black">2. Escolha o modo {current && <span className="text-muted">· {current.title}</span>}</h2>
         <div className={`grid gap-3 sm:grid-cols-2 ${modes.length > 4 ? 'lg:grid-cols-5' : 'lg:grid-cols-4'}`}>

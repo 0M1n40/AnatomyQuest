@@ -9,7 +9,7 @@ export const PHRASES = {
   think: ['Hmm… pensa com calma 🤔', 'Lembra da aula? Você sabe essa!', 'Confio em você! 💪', 'Respira fundo… (pelos dois pulmões 🫁)'],
   write: ['Escreve com suas palavras, como se explicasse para um colega ✍️', 'Pense: estrutura, função e o que diferencia! 🧠', 'Não precisa ser perfeito, precisa ter os pontos-chave! 🔑'],
   review: ['Compare com o modelo e seja honesto(a) na autoavaliação 😉'],
-  atlasThink: ['A professora está apontando… o que é isso? 👉', 'Olha bem a posição e os vizinhos!', 'Observe o epitélio e a parede! 🔎'],
+  atlasThink: ['A professora está apontando… o que é isso? 👉', 'Olha bem a posição e os vizinhos!', 'Observe a forma e a função! 🔎'],
   organ: ['Que lâmina é essa? Olha o epitélio primeiro! 🔬', 'Cartilagem? Músculo? Glândulas? Pistas, pistas… 🕵️'],
   correct: ['Isso aí! Na veia! 💉', 'Acertou em cheio! 🎯', 'Que orgulho, futuro(a) enfermeiro(a)! 🩺', 'Mandou bem! Sinapse total ⚡'],
   partial: ['Quase lá! Faltou pouquinho 🤏', 'Meio caminho andado! Revisa os pontos que faltaram.'],

@@ -70,27 +70,17 @@ export default function AtlasEditor({ subject, onBack }) {
   const [dirty, setDirty] = useState(false);
   const [msg, setMsg] = useState('');
   const [busy, setBusy] = useState(false);
-  const [form, setForm] = useState({ title: '', system: 'resp', file: null });
+  const [form, setForm] = useState({ title: '', system: 'outros', file: null });
 
   const loadList = () => api.atlas.figures().then(setFigures);
   useEffect(() => { if (pin) loadList(); }, [pin]);
 
   const flash = (t) => { setMsg(t); setTimeout(() => setMsg(''), 4000); };
   const guard = () => !dirty || confirm('Há alterações não salvas. Descartar?');
-
-  const open = async (id) => {
-    if (!guard()) return;
-    setFig(await api.atlas.figure(id));
-    setSel(null);
-    setDirty(false);
-  };
+  const open = async (id) => { if (!guard()) return; setFig(await api.atlas.figure(id)); setSel(null); setDirty(false); };
   const patch = (changes) => { setFig((f) => ({ ...f, ...changes })); setDirty(true); };
   const patchPin = (id, changes) => patch({ pins: fig.pins.map((p) => (p.id === id ? { ...p, ...changes } : p)) });
-  const addPin = ({ x, y }) => {
-    const id = `new-${Date.now()}`;
-    patch({ pins: [...fig.pins, { id, label: '', explanation: '', x, y }] });
-    setSel(id);
-  };
+  const addPin = ({ x, y }) => { const id = `new-${Date.now()}`; patch({ pins: [...fig.pins, { id, label: '', explanation: '', x, y }] }); setSel(id); };
   const removePin = (id) => { patch({ pins: fig.pins.filter((p) => p.id !== id) }); setSel(null); };
 
   const save = async () => {
@@ -104,7 +94,6 @@ export default function AtlasEditor({ subject, onBack }) {
       flash('✅ Salvo neste navegador. Exporte o atlas.json para publicar.');
     } catch (e) { flash('❌ ' + e.message); } finally { setBusy(false); }
   };
-
   const create = async (e) => {
     e.preventDefault();
     if (!guard()) return;
@@ -120,7 +109,6 @@ export default function AtlasEditor({ subject, onBack }) {
       flash('✅ Imagem adicionada! Agora clique nela para marcar as estruturas.');
     } catch (x) { flash('❌ ' + x.message); } finally { setBusy(false); }
   };
-
   const replaceImage = async (file) => {
     setBusy(true);
     try {
@@ -130,30 +118,20 @@ export default function AtlasEditor({ subject, onBack }) {
       flash('✅ Imagem substituída.');
     } catch (x) { flash('❌ ' + x.message); } finally { setBusy(false); }
   };
-
   const removeFigure = async () => {
     if (!confirm(`Excluir a figura "${fig.title}"?`)) return;
-    try {
-      await api.atlas.remove(pin, fig.id);
-      setFig(null); setDirty(false);
-      await loadList();
-      flash('🗑️ Figura excluída.');
-    } catch (x) { flash('❌ ' + x.message); }
+    try { await api.atlas.remove(pin, fig.id); setFig(null); setDirty(false); await loadList(); flash('🗑️ Figura excluída.'); } catch (x) { flash('❌ ' + x.message); }
   };
-
   const restore = async () => {
     if (!confirm('Descartar TODAS as alterações feitas neste navegador e voltar ao conteúdo publicado?')) return;
-    await api.atlas.restore();
-    setFig(null); setDirty(false);
-    await loadList();
-    flash('↩️ Restaurado.');
+    await api.atlas.restore(); setFig(null); setDirty(false); await loadList(); flash('↩️ Restaurado.');
   };
 
   if (!pin) return <Gate onOk={setPin} onBack={onBack} />;
   if (!figures) return <Spinner />;
-
   const current = fig?.pins.find((p) => p.id === sel);
   const changed = api.atlas.hasLocalChanges();
+  const systemOptions = [...new Set([...api.subject().questions.map((s) => s.id), 'outros'])];
 
   return (
     <div className="space-y-4">
@@ -162,7 +140,6 @@ export default function AtlasEditor({ subject, onBack }) {
         <h1 className="flex-1 text-xl font-black">✏️ Editor · {subject.name}</h1>
         {msg && <span className="animate-bounce-in rounded-xl bg-soft px-3 py-1 text-sm font-bold">{msg}</span>}
       </div>
-
       <Card className="flex flex-col gap-3 border-gold/50 bg-gold/10 p-4 md:flex-row md:items-center">
         <p className="flex-1 text-sm font-semibold">
           📌 As alterações ficam salvas <b>só neste navegador</b>. Para os alunos verem, clique em <b>Exportar atlas.json</b>,
@@ -173,15 +150,14 @@ export default function AtlasEditor({ subject, onBack }) {
           <Button size="sm" variant="secondary" disabled={!changed} onClick={restore}>↩️ Restaurar</Button>
         </div>
       </Card>
-
       <div className="grid gap-4 lg:grid-cols-[280px_minmax(0,1fr)]">
         <div className="space-y-4">
           <Card className="p-4">
-            <h2 className="mb-2 font-black">➕ Nova figura / lâmina</h2>
+            <h2 className="mb-2 font-black">➕ Nova imagem</h2>
             <form onSubmit={create} className="space-y-2">
-              <input required placeholder="Título (ex.: Peça – estômago)" value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} className={input} />
+              <input required placeholder="Título" value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} className={input} />
               <select value={form.system} onChange={(e) => setForm({ ...form, system: e.target.value })} className={input}>
-                {Object.entries(SYSTEM_LABEL).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
+                {systemOptions.map((k) => <option key={k} value={k}>{SYSTEM_LABEL[k] || k}</option>)}
               </select>
               <input required type="file" accept="image/*" onChange={(e) => setForm({ ...form, file: e.target.files[0] })} className="w-full text-sm" />
               <Button className="w-full" disabled={busy}>{busy ? 'Processando…' : 'Adicionar imagem'}</Button>
@@ -189,7 +165,7 @@ export default function AtlasEditor({ subject, onBack }) {
             <p className="mt-2 text-xs text-muted">O navegador guarda cerca de 10 a 15 fotos por vez.</p>
           </Card>
           <Card className="max-h-[55vh] overflow-auto p-3">
-            <h2 className="mb-2 px-1 font-black">Figuras</h2>
+            <h2 className="mb-2 px-1 font-black">Imagens</h2>
             {figures.map((f) => (
               <button key={f.id} onClick={() => open(f.id)} className={`mb-1 flex w-full items-center gap-2 rounded-xl p-1.5 text-left text-sm font-semibold transition ${fig?.id === f.id ? 'bg-brand/15' : 'hover:bg-soft'}`}>
                 <img src={f.image} alt="" className="h-10 w-10 rounded-lg bg-white object-cover" />
@@ -198,10 +174,9 @@ export default function AtlasEditor({ subject, onBack }) {
             ))}
           </Card>
         </div>
-
         {!fig ? (
           <Card className="flex items-center justify-center">
-            <MascotTalk mood="happy" size={100} text="Escolha uma figura ao lado ou adicione uma nova imagem. Depois é só clicar nela para marcar as estruturas! 📌" />
+            <MascotTalk mood="happy" size={100} text="Escolha uma imagem ao lado ou adicione uma nova. Depois é só clicar nela para marcar as estruturas! 📌" />
           </Card>
         ) : (
           <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_300px]">
@@ -214,17 +189,16 @@ export default function AtlasEditor({ subject, onBack }) {
               <Card className="space-y-2 p-4">
                 <label className="text-xs font-black text-muted">TÍTULO</label>
                 <input value={fig.title} onChange={(e) => patch({ title: e.target.value })} className={input} />
-                <label className="text-xs font-black text-muted">SISTEMA</label>
+                <label className="text-xs font-black text-muted">TEMA</label>
                 <select value={fig.system} onChange={(e) => patch({ system: e.target.value })} className={input}>
-                  {Object.entries(SYSTEM_LABEL).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
+                  {[...new Set([...systemOptions, fig.system])].map((k) => <option key={k} value={k}>{SYSTEM_LABEL[k] || k}</option>)}
                 </select>
                 <label className="text-xs font-black text-muted">ÓRGÃO (para "Que lâmina é essa?")</label>
                 <input value={fig.organ || ''} placeholder="Opcional. Ex.: Traqueia" onChange={(e) => patch({ organ: e.target.value })} className={input} />
                 <label className="text-xs font-black text-muted">JUSTIFICATIVA</label>
-                <textarea rows={3} value={fig.justification || ''} placeholder="Opcional. Ex.: Epitélio respiratório e anel de cartilagem em C." onChange={(e) => patch({ justification: e.target.value })} className={input} />
+                <textarea rows={3} value={fig.justification || ''} placeholder="Opcional." onChange={(e) => patch({ justification: e.target.value })} className={input} />
                 {!fig.builtin && (
-                  <label className="block cursor-pointer text-sm font-bold text-brand">
-                    🔄 Trocar imagem
+                  <label className="block cursor-pointer text-sm font-bold text-brand">🔄 Trocar imagem
                     <input type="file" accept="image/*" className="hidden" onChange={(e) => e.target.files[0] && replaceImage(e.target.files[0])} />
                   </label>
                 )}

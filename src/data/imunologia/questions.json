@@ -1,0 +1,2710 @@
+[
+  {
+    "id": "base",
+    "name": "Fundamentos e órgãos linfoides",
+    "icon": "🏛️",
+    "questions": [
+      {
+        "id": "imu-base-0",
+        "type": "mcq",
+        "text": "Os órgãos linfoides PRIMÁRIOS são:",
+        "options": [
+          "Linfonodos e baço",
+          "Medula óssea e timo",
+          "Tonsilas e placas de Peyer",
+          "Baço e timo"
+        ],
+        "answer": 1,
+        "explanation": "Primários = onde os linfócitos se desenvolvem e amadurecem: medula óssea (B) e timo (T)."
+      },
+      {
+        "id": "imu-base-1",
+        "type": "mcq",
+        "text": "O linfócito B amadurece na _____ e o linfócito T amadurece no _____.",
+        "options": [
+          "timo / baço",
+          "medula óssea / timo",
+          "linfonodo / timo",
+          "baço / medula óssea"
+        ],
+        "answer": 1,
+        "explanation": "Os precursores T saem da medula e terminam a maturação e seleção no timo."
+      },
+      {
+        "id": "imu-base-2",
+        "type": "mcq",
+        "text": "Qual órgão linfoide secundário filtra o SANGUE e responde a antígenos da circulação?",
+        "options": [
+          "Linfonodo",
+          "Baço",
+          "Timo",
+          "Placa de Peyer"
+        ],
+        "answer": 1,
+        "explanation": "O linfonodo filtra a linfa; o baço filtra o sangue."
+      },
+      {
+        "id": "imu-base-3",
+        "type": "mcq",
+        "text": "Marque a afirmativa CORRETA quanto às localizações estratégicas dos órgãos linfoides secundários:",
+        "options": [
+          "O trato respiratório é desprovido de tecidos linfoides associados às mucosas",
+          "Os linfonodos têm papel importante na defesa contra agressores capturados pela drenagem linfática dos tecidos",
+          "No sistema linfático, as principais atividades de defesa ocorrem pelos linfócitos livres circulantes",
+          "Os linfonodos são os principais órgãos de defesa quando micróbios são veiculados pelo sangue",
+          "O baço é o órgão mais relevante nas agressões ao trato digestivo"
+        ],
+        "answer": 1,
+        "explanation": "Linfonodos recebem o que é drenado pela linfa. O sangue é filtrado pelo baço; o trato digestivo tem MALT (placas de Peyer); o respiratório também tem MALT.",
+        "source": "prova"
+      },
+      {
+        "id": "imu-base-4",
+        "type": "mcq",
+        "text": "Os componentes fundamentais dos órgãos linfoides secundários, além do arcabouço (células alongadas, fibras, cápsulas), são:",
+        "options": [
+          "Fibroblastos, células linfoides e células fagocitárias",
+          "Linfócitos B, basófilos e macrófagos",
+          "Linfócitos T, células NK e células dendríticas",
+          "Células apresentadoras de antígenos (ex.: dendríticas), linfócitos T e linfócitos B",
+          "Fagócitos, células da linhagem vermelha e células que reconhecem antígenos"
+        ],
+        "answer": 3,
+        "explanation": "APCs + linfócitos T + linfócitos B: é o encontro dessas três células que inicia a resposta adaptativa.",
+        "source": "prova"
+      },
+      {
+        "id": "imu-base-5",
+        "type": "mcq",
+        "text": "As placas de Peyer ficam principalmente no:",
+        "options": [
+          "Estômago",
+          "Duodeno",
+          "Íleo",
+          "Cólon"
+        ],
+        "answer": 2,
+        "explanation": "Agregados linfoides que monitoram antígenos do intestino."
+      },
+      {
+        "id": "imu-base-6",
+        "type": "mcq",
+        "text": "As células M do intestino:",
+        "options": [
+          "Produzem muco",
+          "Secretam defensinas nas criptas",
+          "Transportam antígenos do lúmen para as placas de Peyer",
+          "São macrófagos residentes"
+        ],
+        "answer": 2,
+        "explanation": "Células de Paneth secretam defensinas e lisozima; caliciformes produzem muco."
+      },
+      {
+        "id": "imu-base-7",
+        "type": "mcq",
+        "text": "O processo de seleção NEGATIVA no timo:",
+        "options": [
+          "Preserva linfócitos que reconhecem fracamente o MHC próprio",
+          "Elimina por apoptose os linfócitos fortemente autorreativos",
+          "Gera os receptores por recombinação V(D)J",
+          "Ativa linfócitos maduros no linfonodo"
+        ],
+        "answer": 1,
+        "explanation": "Seleção positiva preserva os que reconhecem fracamente o MHC próprio; a negativa elimina os autorreativos (tolerância central)."
+      },
+      {
+        "id": "imu-base-8",
+        "type": "mcq",
+        "text": "A diversidade dos receptores BCR e TCR é gerada por:",
+        "options": [
+          "Mutação induzida pelo antígeno",
+          "Recombinação somática V(D)J pelas enzimas RAG-1 e RAG-2",
+          "Receptores da linhagem germinativa",
+          "Fusão de células"
+        ],
+        "answer": 1,
+        "explanation": "Processo sítio-específico e independente de antígeno."
+      },
+      {
+        "id": "imu-base-9",
+        "type": "mcq",
+        "text": "Qual característica é da imunidade ADAPTATIVA?",
+        "options": [
+          "Resposta em minutos",
+          "Receptores codificados na linhagem germinativa",
+          "Memória imunológica e alta especificidade",
+          "Ausência de linfócitos"
+        ],
+        "answer": 2,
+        "explanation": "Inata: rápida, receptores germinativos, sem memória clássica. Adaptativa: mais lenta na 1ª exposição, recombinação somática e memória."
+      },
+      {
+        "id": "imu-base-10",
+        "type": "mcq",
+        "text": "Quais células são fundamentais para a existência da imunidade adaptativa?",
+        "options": [
+          "Neutrófilos",
+          "Linfócitos",
+          "Mastócitos",
+          "Hemácias"
+        ],
+        "answer": 1,
+        "explanation": "Só os linfócitos têm receptores específicos (BCR/TCR) e geram memória."
+      },
+      {
+        "id": "imu-base-11",
+        "type": "mcq",
+        "text": "Na pele, a barreira química inclui:",
+        "options": [
+          "pH ácido (~5,0), defensinas e catelicidinas",
+          "Batimento ciliar",
+          "Células de Paneth",
+          "Células M"
+        ],
+        "answer": 0,
+        "explanation": "Barreira física: queratina e junções oclusivas; celular: queratinócitos, células de Langerhans, mastócitos e macrófagos."
+      },
+      {
+        "id": "imu-base-12",
+        "type": "mcq",
+        "text": "O escalador mucociliar do trato respiratório depende de:",
+        "options": [
+          "Epitélio estratificado pavimentoso",
+          "Epitélio pseudoestratificado ciliado produzindo muco",
+          "Células de Paneth",
+          "Placas de Peyer"
+        ],
+        "answer": 1,
+        "explanation": "O muco retém partículas e os cílios as movem para fora; tosse e espirro ajudam."
+      },
+      {
+        "id": "imu-base-13",
+        "type": "mcq",
+        "text": "A microbiota comensal protege o organismo principalmente por:",
+        "options": [
+          "Produzir anticorpos",
+          "Competir com patógenos por sítios de adesão e nutrientes",
+          "Formar o MAC",
+          "Ativar linfócitos T CD8+"
+        ],
+        "answer": 1,
+        "explanation": "É uma barreira biológica."
+      },
+      {
+        "id": "imu-base-14",
+        "type": "mcq",
+        "text": "Corpo estranho no interior do organismo corresponde, corretamente, a:",
+        "options": [
+          "Estruturas virais com propriedades antigênicas",
+          "Estruturas não reconhecidas pelo sistema imune, como metais, vidro etc.",
+          "Antígenos de microrganismos reconhecidos por receptores de linfócitos",
+          "PAMPs reconhecidos por PRRs",
+          "Moléculas de bactérias reconhecidas como estranhas"
+        ],
+        "answer": 1,
+        "explanation": "Corpo estranho não é reconhecido como antígeno nem como PAMP: o sistema imune não tem receptor para ele.",
+        "source": "prova"
+      },
+      {
+        "id": "imu-base-15",
+        "type": "mcq",
+        "text": "Qual é a diferença entre antígeno e imunógeno?",
+        "options": [
+          "São sinônimos",
+          "Todo antígeno é reconhecido; o imunógeno, além de reconhecido, é capaz de INDUZIR uma resposta imune",
+          "Imunógeno é sempre um carboidrato",
+          "Antígeno só ativa a imunidade inata"
+        ],
+        "answer": 1,
+        "explanation": "Peso molecular, complexidade, número de epítopos, dose, via e apresentação influenciam a imunogenicidade.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-base-16",
+        "type": "open",
+        "text": "Quais são os componentes da imunidade inata? Cite estruturas e processos associados às atividades de defesa.",
+        "model": "É a primeira linha de defesa, rápida, sem memória e sem necessidade de contato prévio. Componentes: barreiras físicas (pele, mucosas, junções oclusivas), químicas (pH ácido, ácido gástrico, defensinas, lisozima), biológicas (microbiota), células (neutrófilos, macrófagos, dendríticas, NK, mastócitos) e proteínas (complemento, citocinas). Processos: reconhecimento por PRRs, inflamação, quimiotaxia, adesão, fagocitose e destruição.",
+        "keyPoints": [
+          {
+            "label": "Barreiras físicas",
+            "keywords": [
+              "pele",
+              "fisica",
+              "mucosa",
+              "epitel"
+            ]
+          },
+          {
+            "label": "Barreiras químicas",
+            "keywords": [
+              "quimic",
+              "acido",
+              "ph",
+              "defensina",
+              "lisozima"
+            ]
+          },
+          {
+            "label": "Células inatas",
+            "keywords": [
+              "neutrofil",
+              "macrofag",
+              "dendritic",
+              "nk"
+            ]
+          },
+          {
+            "label": "Complemento / citocinas",
+            "keywords": [
+              "complemento",
+              "citocina"
+            ]
+          },
+          {
+            "label": "Fagocitose / inflamação",
+            "keywords": [
+              "fagocit",
+              "inflama",
+              "quimiotax"
+            ]
+          }
+        ],
+        "source": "ed"
+      },
+      {
+        "id": "imu-base-17",
+        "type": "open",
+        "text": "Quais são as diferenças fundamentais entre imunidade inata e adaptativa? Por que os linfócitos são essenciais para a adaptativa?",
+        "model": "Inata: imediata (minutos a horas), receptores da linhagem germinativa (PRRs), diversidade limitada, sem memória clássica. Adaptativa: mais lenta na primeira exposição, receptores gerados por recombinação somática (BCR e TCR), alta especificidade e diversidade, e memória. Os linfócitos são essenciais porque são as únicas células com receptores específicos para antígenos e capazes de gerar memória: B produzem anticorpos e T coordenam (CD4) ou destroem células infectadas (CD8).",
+        "keyPoints": [
+          {
+            "label": "Inata rápida / adaptativa lenta",
+            "keywords": [
+              "rapid",
+              "lent",
+              "imediat"
+            ]
+          },
+          {
+            "label": "Memória só na adaptativa",
+            "keywords": [
+              "memoria"
+            ]
+          },
+          {
+            "label": "Especificidade",
+            "keywords": [
+              "especific"
+            ]
+          },
+          {
+            "label": "Receptores BCR/TCR / recombinação",
+            "keywords": [
+              "bcr",
+              "tcr",
+              "recombina",
+              "receptor"
+            ]
+          },
+          {
+            "label": "Linfócitos B e T",
+            "keywords": [
+              "linfocito"
+            ]
+          }
+        ],
+        "source": "ed"
+      },
+      {
+        "id": "imu-base-18",
+        "type": "open",
+        "text": "Diferencie órgãos linfoides primários e secundários e cite as funções de cada um.",
+        "model": "Primários: medula óssea (hematopoiese e maturação dos linfócitos B) e timo (maturação e seleção dos linfócitos T). Secundários: linfonodos (filtram a linfa), baço (filtra o sangue), tonsilas/adenoides e placas de Peyer (MALT), onde os linfócitos maduros encontram os antígenos e são ativados.",
+        "keyPoints": [
+          {
+            "label": "Medula óssea",
+            "keywords": [
+              "medula"
+            ]
+          },
+          {
+            "label": "Timo",
+            "keywords": [
+              "timo"
+            ]
+          },
+          {
+            "label": "Linfonodo filtra a linfa",
+            "keywords": [
+              "linfonodo",
+              "linfa"
+            ]
+          },
+          {
+            "label": "Baço filtra o sangue",
+            "keywords": [
+              "baco",
+              "sangue"
+            ]
+          },
+          {
+            "label": "MALT / Peyer / tonsilas",
+            "keywords": [
+              "peyer",
+              "tonsila",
+              "mucosa",
+              "malt"
+            ]
+          }
+        ],
+        "source": "ed"
+      },
+      {
+        "id": "imu-base-19",
+        "type": "open",
+        "text": "Caracterize a seleção positiva e a seleção negativa. Onde ocorrem e qual a importância?",
+        "model": "Seleção positiva: preserva os linfócitos capazes de reconhecer fracamente as moléculas de MHC próprias. Seleção negativa: elimina por apoptose (deleção clonal) os linfócitos que reconhecem fortemente autoantígenos. Ocorrem nos órgãos linfoides primários (timo para T; medula óssea para B). Garantem linfócitos úteis e tolerantes ao próprio organismo, evitando doenças autoimunes (tolerância central).",
+        "keyPoints": [
+          {
+            "label": "Positiva preserva quem reconhece MHC próprio",
+            "keywords": [
+              "positiva",
+              "mhc"
+            ]
+          },
+          {
+            "label": "Negativa elimina autorreativos",
+            "keywords": [
+              "negativa",
+              "autorreativ",
+              "proprio",
+              "apoptose"
+            ]
+          },
+          {
+            "label": "Timo / medula",
+            "keywords": [
+              "timo",
+              "medula"
+            ]
+          },
+          {
+            "label": "Evita autoimunidade / tolerância",
+            "keywords": [
+              "autoimun",
+              "toleran"
+            ]
+          }
+        ],
+        "source": "ed"
+      },
+      {
+        "id": "imu-base-20",
+        "type": "open",
+        "text": "Diferencie antígeno e imunógeno e cite as características que um composto deve ter para atuar como imunógeno.",
+        "model": "Antígeno é qualquer molécula reconhecida especificamente por anticorpos ou receptores de linfócitos (BCR/TCR). Imunógeno é o antígeno capaz de INDUZIR uma resposta imune. Fatores intrínsecos: alto peso molecular, complexidade química, número e variedade de epítopos, ser estranho ao organismo. Fatores extrínsecos: dose, via de introdução, forma de apresentação (polimerização, solubilidade, adjuvantes) e estado do receptor (genética, idade).",
+        "keyPoints": [
+          {
+            "label": "Antígeno é reconhecido",
+            "keywords": [
+              "reconhec"
+            ]
+          },
+          {
+            "label": "Imunógeno induz resposta",
+            "keywords": [
+              "induz",
+              "estimul",
+              "desencade"
+            ]
+          },
+          {
+            "label": "Peso molecular / complexidade",
+            "keywords": [
+              "peso molecular",
+              "complex"
+            ]
+          },
+          {
+            "label": "Epítopos",
+            "keywords": [
+              "epitopo"
+            ]
+          },
+          {
+            "label": "Dose / via",
+            "keywords": [
+              "dose",
+              "via"
+            ]
+          }
+        ],
+        "source": "ed"
+      },
+      {
+        "id": "imu-base-21",
+        "type": "open",
+        "text": "Conceitue corpo estranho, PAMP e antígeno.",
+        "model": "Corpo estranho: material que o sistema imune não reconhece (não há receptores), como metais e vidro. PAMP: padrão molecular conservado associado a patógenos (ex.: LPS, flagelina, peptidoglicano, RNA dupla fita), reconhecido por PRRs da imunidade inata. Antígeno: molécula reconhecida especificamente por anticorpos ou receptores de linfócitos (imunidade adaptativa).",
+        "keyPoints": [
+          {
+            "label": "Corpo estranho não reconhecido",
+            "keywords": [
+              "nao reconhec",
+              "metal",
+              "vidro"
+            ]
+          },
+          {
+            "label": "PAMP: padrão do patógeno",
+            "keywords": [
+              "padrao",
+              "patogen"
+            ]
+          },
+          {
+            "label": "PRR",
+            "keywords": [
+              "prr",
+              "receptor"
+            ]
+          },
+          {
+            "label": "Antígeno: anticorpos/linfócitos",
+            "keywords": [
+              "anticorpo",
+              "linfocito",
+              "especific"
+            ]
+          }
+        ],
+        "source": "ed"
+      }
+    ]
+  },
+  {
+    "id": "inata",
+    "name": "Imunidade inata e inflamação",
+    "icon": "🔥",
+    "questions": [
+      {
+        "id": "imu-inata-0",
+        "type": "mcq",
+        "text": "Quanto à imunidade inata, assinale a assertiva INCORRETA:",
+        "options": [
+          "Fluxos (respiratório, urinário) e movimentos normais (peristalse, drenagem linfática) têm papel de defesa inata",
+          "Muitos componentes funcionam como barreiras químicas, físicas ou biológicas, sem reconhecer estruturas dos agressores",
+          "Os processos de defesa são, em geral, mais rápidos que as respostas adaptativas",
+          "As respostas inatas decorrentes de interações com PAMPs bloqueiam a ocorrência de inflamação",
+          "As defesas inatas se repetem igualmente ao longo do tempo, ou seja, não apresentam memória"
+        ],
+        "answer": 3,
+        "explanation": "Ao contrário: a ligação PAMP–PRR INDUZ inflamação (citocinas TNF, IL-1, IL-6).",
+        "source": "prova"
+      },
+      {
+        "id": "imu-inata-1",
+        "type": "mcq",
+        "text": "Na ingestão de água contaminada por vírus intestinais, qual elemento NÃO é defesa inespecífica (inata)?",
+        "options": [
+          "Fluxo intestinal eliminando o vírus pelas fezes",
+          "pH do suco gástrico",
+          "Enzimas digestivas no intestino",
+          "Anticorpos bloqueadores da adesão viral à mucosa",
+          "Muco dificultando a interação do vírus com a mucosa"
+        ],
+        "answer": 3,
+        "explanation": "Anticorpos (IgA secretora) são da imunidade ADAPTATIVA, específica.",
+        "source": "prova"
+      },
+      {
+        "id": "imu-inata-2",
+        "type": "mcq",
+        "text": "Sobre os processos inflamatórios, é INCORRETO afirmar que:",
+        "options": [
+          "Incluem liberação de moléculas quimiotáticas",
+          "Favorecem a chegada de células e moléculas de defesa ao local da agressão",
+          "Alteram o calibre e a permeabilidade dos vasos",
+          "Envolvem intensa alteração da adesão entre leucócitos e endotélio",
+          "Normalmente determinam impermeabilidade dos pequenos vasos, impedindo a passagem de líquido para os tecidos"
+        ],
+        "answer": 4,
+        "explanation": "A inflamação AUMENTA a permeabilidade vascular, causando exsudato e edema.",
+        "source": "prova"
+      },
+      {
+        "id": "imu-inata-3",
+        "type": "mcq",
+        "text": "PAMPs são reconhecidos por:",
+        "options": [
+          "BCR",
+          "TCR",
+          "PRRs, como os receptores do tipo Toll (TLRs)",
+          "Anticorpos IgE"
+        ],
+        "answer": 2,
+        "explanation": "PRRs também reconhecem DAMPs (sinais de dano)."
+      },
+      {
+        "id": "imu-inata-4",
+        "type": "mcq",
+        "text": "O LPS de bactérias Gram-negativas é reconhecido pelo:",
+        "options": [
+          "TLR4",
+          "CD28",
+          "MHC II",
+          "Receptor Fc"
+        ],
+        "answer": 0,
+        "explanation": "Induz TNF, IL-1, IL-6 e IL-12; em excesso, sepse."
+      },
+      {
+        "id": "imu-inata-5",
+        "type": "mcq",
+        "text": "A tríade de citocinas pró-inflamatórias liberada pelas células sentinelas é:",
+        "options": [
+          "IL-4, IL-5, IL-13",
+          "TNF, IL-1 e IL-6",
+          "IFN-γ, IL-2, IL-12",
+          "IL-10 e TGF-β"
+        ],
+        "answer": 1,
+        "explanation": "Também agem no hipotálamo (febre) e no fígado (proteínas de fase aguda)."
+      },
+      {
+        "id": "imu-inata-6",
+        "type": "mcq",
+        "text": "O leucócito mais abundante no sangue e o primeiro a chegar na inflamação aguda é o:",
+        "options": [
+          "Linfócito",
+          "Monócito",
+          "Neutrófilo",
+          "Eosinófilo"
+        ],
+        "answer": 2,
+        "explanation": "Atraído pela IL-8 (CXCL8); vida curta; pode fazer NETose."
+      },
+      {
+        "id": "imu-inata-7",
+        "type": "mcq",
+        "text": "As NETs (armadilhas extracelulares de neutrófilos) são formadas por:",
+        "options": [
+          "Anticorpos e complemento",
+          "Fitas de DNA nuclear descondensado com enzimas e proteínas antimicrobianas",
+          "Fibrina",
+          "Grânulos de histamina"
+        ],
+        "answer": 1,
+        "explanation": "A NETose é uma morte celular programada que imobiliza e mata patógenos."
+      },
+      {
+        "id": "imu-inata-8",
+        "type": "mcq",
+        "text": "Na diapedese, a ADESÃO FIRME do leucócito ao endotélio ocorre entre:",
+        "options": [
+          "Selectinas e carboidratos",
+          "Integrinas do leucócito e ICAM-1 do endotélio",
+          "CD28 e B7",
+          "TCR e MHC"
+        ],
+        "answer": 1,
+        "explanation": "O rolamento é mediado por selectinas (ligações fracas)."
+      },
+      {
+        "id": "imu-inata-9",
+        "type": "mcq",
+        "text": "Qual NÃO é uma via de ativação do sistema complemento?",
+        "options": [
+          "Clássica",
+          "Alternativa",
+          "Das lectinas",
+          "Da IgE"
+        ],
+        "answer": 3,
+        "explanation": "Clássica (imunocomplexos), alternativa (superfície do micróbio) e das lectinas (MBL)."
+      },
+      {
+        "id": "imu-inata-10",
+        "type": "mcq",
+        "text": "O fragmento do complemento que atua como OPSONINA é o:",
+        "options": [
+          "C3a",
+          "C3b",
+          "C5a",
+          "C5b-9"
+        ],
+        "answer": 1,
+        "explanation": "C3a e C5a são anafilatoxinas; C5b-9 forma o MAC."
+      },
+      {
+        "id": "imu-inata-11",
+        "type": "mcq",
+        "text": "O complexo de ataque à membrana (MAC) é mais eficaz contra:",
+        "options": [
+          "Bactérias de parede fina, como Neisseria",
+          "Fungos de parede espessa",
+          "Helmintos",
+          "Vírus intracelulares"
+        ],
+        "answer": 0,
+        "explanation": "Forma poros e causa lise osmótica."
+      },
+      {
+        "id": "imu-inata-12",
+        "type": "mcq",
+        "text": "Macrófagos M1 (classicamente ativados) são induzidos por:",
+        "options": [
+          "IL-4 e IL-13",
+          "LPS, IFN-γ e TNF",
+          "IL-10",
+          "IgE"
+        ],
+        "answer": 1,
+        "explanation": "M1: pró-inflamatório e microbicida (ROS, NO). M2: IL-4/IL-13/IL-10, reparo e fibrose."
+      },
+      {
+        "id": "imu-inata-13",
+        "type": "mcq",
+        "text": "A explosão respiratória no fagolisossomo produz:",
+        "options": [
+          "Anticorpos",
+          "Espécies reativas de oxigênio (O₂⁻, H₂O₂, ClO⁻)",
+          "Histamina",
+          "Perforinas"
+        ],
+        "answer": 1,
+        "explanation": "Junto com NO (iNOS) e enzimas lisossômicas."
+      },
+      {
+        "id": "imu-inata-14",
+        "type": "mcq",
+        "text": "Células NK destroem células-alvo por meio de:",
+        "options": [
+          "Anticorpos IgM",
+          "Perforinas e granzimas",
+          "Fagocitose",
+          "Complemento"
+        ],
+        "answer": 1,
+        "explanation": "São linfócitos inatos sem TCR; atacam células infectadas por vírus e tumorais."
+      },
+      {
+        "id": "imu-inata-15",
+        "type": "mcq",
+        "text": "A febre na inflamação ocorre pela ação de TNF, IL-1 e IL-6 no:",
+        "options": [
+          "Fígado",
+          "Hipotálamo",
+          "Baço",
+          "Rim"
+        ],
+        "answer": 1,
+        "explanation": "Induzem prostaglandinas no hipotálamo. No fígado, a IL-6 induz PCR e fibrinogênio."
+      },
+      {
+        "id": "imu-inata-16",
+        "type": "mcq",
+        "text": "O choque séptico resulta de:",
+        "options": [
+          "Deficiência de anticorpos",
+          "Produção maciça e sistêmica de TNF e outras citocinas induzida por PAMPs como o LPS",
+          "Excesso de IgE",
+          "Falta de complemento"
+        ],
+        "answer": 1,
+        "explanation": "Vasodilatação sistêmica, vazamento vascular, hipotensão e trombos disseminados."
+      },
+      {
+        "id": "imu-inata-17",
+        "type": "mcq",
+        "text": "As citocinas que atuam como mensageiras do tráfego de leucócitos são chamadas de:",
+        "options": [
+          "Interferons",
+          "Quimiocinas",
+          "Anafilatoxinas",
+          "Opsoninas"
+        ],
+        "answer": 1,
+        "explanation": "Ex.: IL-8 (CXCL8)."
+      },
+      {
+        "id": "imu-inata-18",
+        "type": "mcq",
+        "text": "Verdadeiro ou falso? A ligação de PAMPs com receptores adequados (PRRs, como os TLRs) pode sinalizar a produção de citocinas pró-inflamatórias como IL-1 e IL-6.",
+        "options": [
+          "Verdadeira",
+          "Falsa"
+        ],
+        "answer": 0,
+        "explanation": "Verdadeira: é o início da resposta inflamatória.",
+        "source": "prova"
+      },
+      {
+        "id": "imu-inata-19",
+        "type": "open",
+        "text": "Descreva como ocorre o reconhecimento de microrganismos na imunidade inata e quais estruturas participam.",
+        "model": "O reconhecimento é rápido e genérico: receptores de reconhecimento de padrões (PRRs), como TLRs, NLRs, receptores de manose e scavenger, presentes em macrófagos, células dendríticas, neutrófilos e outras células, reconhecem PAMPs (padrões moleculares associados a patógenos) e DAMPs (sinais de dano). Isso ativa as células, induz citocinas e inflamação, promove fagocitose e sinaliza à imunidade adaptativa.",
+        "keyPoints": [
+          {
+            "label": "PRRs",
+            "keywords": [
+              "prr",
+              "toll",
+              "tlr",
+              "receptor"
+            ]
+          },
+          {
+            "label": "PAMPs",
+            "keywords": [
+              "pamp",
+              "padr"
+            ]
+          },
+          {
+            "label": "Macrófagos / dendríticas",
+            "keywords": [
+              "macrofag",
+              "dendritic"
+            ]
+          },
+          {
+            "label": "Inflamação / citocinas",
+            "keywords": [
+              "inflama",
+              "citocina"
+            ]
+          },
+          {
+            "label": "Sinaliza a adaptativa",
+            "keywords": [
+              "adaptativ"
+            ]
+          }
+        ],
+        "source": "ed"
+      },
+      {
+        "id": "imu-inata-20",
+        "type": "open",
+        "text": "O que são PAMPs? Exemplifique e diga o que acontece após sua interação com PRRs.",
+        "model": "PAMPs são padrões moleculares conservados e associados a patógenos, ausentes nas nossas células, como LPS de Gram-negativas, peptidoglicano, flagelina, ácido lipoteicoico, manose e RNA viral de dupla fita. Ao se ligarem aos PRRs (ex.: TLRs), ativam as células inatas, que produzem citocinas pró-inflamatórias (TNF, IL-1, IL-6), quimiocinas, interferons, aumentam a fagocitose e a expressão de B7 e MHC, iniciando a inflamação e a resposta adaptativa.",
+        "keyPoints": [
+          {
+            "label": "Padrões moleculares de patógenos",
+            "keywords": [
+              "padr",
+              "patogen"
+            ]
+          },
+          {
+            "label": "Exemplo (LPS, flagelina…)",
+            "keywords": [
+              "lps",
+              "flagelina",
+              "peptidoglican",
+              "rna",
+              "manose",
+              "lipoteico"
+            ]
+          },
+          {
+            "label": "PRR / TLR",
+            "keywords": [
+              "prr",
+              "tlr",
+              "toll"
+            ]
+          },
+          {
+            "label": "Citocinas / inflamação",
+            "keywords": [
+              "citocina",
+              "inflama",
+              "tnf",
+              "il-1",
+              "il-6"
+            ]
+          }
+        ],
+        "source": "prova"
+      },
+      {
+        "id": "imu-inata-21",
+        "type": "open",
+        "text": "Quais as principais funções das citocinas e como atuam no sistema imune?",
+        "model": "São proteínas mensageiras que regulam a imunidade inata e adaptativa: ativam e recrutam células (quimiocinas controlam o tráfego de leucócitos), promovem inflamação (TNF, IL-1, IL-6) ou a inibem (IL-10, TGF-β), induzem febre e proteínas de fase aguda, orientam a diferenciação dos linfócitos T (IL-12, IL-4) e participam do desenvolvimento de órgãos linfoides e da migração de células dendríticas.",
+        "keyPoints": [
+          {
+            "label": "Mensageiras / regulam",
+            "keywords": [
+              "mensage",
+              "regul",
+              "comunica"
+            ]
+          },
+          {
+            "label": "Pró-inflamatórias",
+            "keywords": [
+              "pro-inflamat",
+              "pro inflamat",
+              "tnf",
+              "il-1"
+            ]
+          },
+          {
+            "label": "Anti-inflamatórias",
+            "keywords": [
+              "anti-inflamat",
+              "anti inflamat",
+              "il-10",
+              "inib"
+            ]
+          },
+          {
+            "label": "Quimiocinas / recrutamento",
+            "keywords": [
+              "quimiocina",
+              "recrut",
+              "migra"
+            ]
+          },
+          {
+            "label": "Diferenciação de linfócitos",
+            "keywords": [
+              "diferencia",
+              "linfocito"
+            ]
+          }
+        ],
+        "source": "ed"
+      },
+      {
+        "id": "imu-inata-22",
+        "type": "open",
+        "text": "Descreva a sequência da resposta inflamatória aguda e as etapas da diapedese.",
+        "model": "1) Células sentinelas reconhecem PAMPs/DAMPs pelos PRRs; 2) liberam TNF, IL-1, IL-6 e quimiocinas; 3) vasodilatação e aumento da permeabilidade (calor, rubor, edema); 4) recrutamento de leucócitos: rolamento (selectinas), adesão firme (integrinas–ICAM-1), diapedese entre as células endoteliais e quimiotaxia (IL-8, C5a); 5) fagocitose e eliminação do agente.",
+        "keyPoints": [
+          {
+            "label": "Reconhecimento PAMP/PRR",
+            "keywords": [
+              "pamp",
+              "prr",
+              "sentinela"
+            ]
+          },
+          {
+            "label": "Vasodilatação / permeabilidade",
+            "keywords": [
+              "vasodilat",
+              "permeab"
+            ]
+          },
+          {
+            "label": "Rolamento (selectinas)",
+            "keywords": [
+              "rolamento",
+              "selectina"
+            ]
+          },
+          {
+            "label": "Adesão (integrinas/ICAM)",
+            "keywords": [
+              "integrina",
+              "icam",
+              "ades"
+            ]
+          },
+          {
+            "label": "Diapedese / quimiotaxia",
+            "keywords": [
+              "diapedese",
+              "transmigr",
+              "quimiotax"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "imu-inata-23",
+        "type": "open",
+        "text": "Como ocorre o processo inflamatório provocado pela vacina contra SARS-CoV-2 e como essa inflamação favorece a defesa?",
+        "model": "Componentes da vacina são reconhecidos por PRRs de células inatas como sinal de perigo; elas liberam citocinas pró-inflamatórias, gerando inflamação local (dor, calor, rubor, edema). A inflamação ativa e faz migrar as células dendríticas (APCs), que apresentam o antígeno aos linfócitos T no linfonodo e coestimulam a resposta; linfócitos B produzem anticorpos e T CD8+ citotóxicos são ativados, formando células de memória para exposições futuras.",
+        "keyPoints": [
+          {
+            "label": "Reconhecimento por PRR / sinal de perigo",
+            "keywords": [
+              "prr",
+              "perigo",
+              "reconhec"
+            ]
+          },
+          {
+            "label": "Citocinas / inflamação local",
+            "keywords": [
+              "citocina",
+              "inflama",
+              "dor",
+              "edema"
+            ]
+          },
+          {
+            "label": "APC / célula dendrítica",
+            "keywords": [
+              "apc",
+              "dendritic",
+              "apresenta"
+            ]
+          },
+          {
+            "label": "Anticorpos / linfócitos B e T",
+            "keywords": [
+              "anticorpo",
+              "linfocito"
+            ]
+          },
+          {
+            "label": "Memória",
+            "keywords": [
+              "memoria"
+            ]
+          }
+        ],
+        "source": "ed"
+      },
+      {
+        "id": "imu-inata-24",
+        "type": "open",
+        "text": "Explique as três vias de ativação do complemento e as funções efetoras de C3a/C5a, C3b e MAC.",
+        "model": "Via clássica: ativada por imunocomplexos (anticorpo ligado ao antígeno, via C1q). Via alternativa: ativada diretamente na superfície do micróbio. Via das lectinas: MBL ligada a manose do patógeno. Todas convergem em C3. C3a e C5a (anafilatoxinas) promovem inflamação, degranulação de mastócitos e recrutamento de leucócitos; C3b opsoniza; C5b-9 (MAC) forma poros e causa lise osmótica.",
+        "keyPoints": [
+          {
+            "label": "Clássica: anticorpo",
+            "keywords": [
+              "classic",
+              "anticorpo",
+              "imunocomplex"
+            ]
+          },
+          {
+            "label": "Alternativa: superfície do micróbio",
+            "keywords": [
+              "alternativ"
+            ]
+          },
+          {
+            "label": "Lectinas: MBL/manose",
+            "keywords": [
+              "lectina",
+              "mbl",
+              "manose"
+            ]
+          },
+          {
+            "label": "C3a/C5a: inflamação",
+            "keywords": [
+              "c3a",
+              "c5a",
+              "anafilatox",
+              "inflama"
+            ]
+          },
+          {
+            "label": "C3b opsonização / MAC lise",
+            "keywords": [
+              "c3b",
+              "opsoniz",
+              "mac",
+              "lise"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mhc",
+    "name": "MHC e ativação de linfócitos",
+    "icon": "🧬",
+    "questions": [
+      {
+        "id": "imu-mhc-0",
+        "type": "mcq",
+        "text": "Marque a assertiva INCORRETA quanto às moléculas do complexo principal de histocompatibilidade (CPH/MHC):",
+        "options": [
+          "As de classe II se localizam, entre outras, em linfócitos B",
+          "As de classe II se localizam em fagócitos mononucleares como os macrófagos",
+          "As de classe I se localizam em virtualmente todas as células nucleadas",
+          "As de classe II se localizam, entre outras, em células dendríticas",
+          "As de classe II se localizam em virtualmente todas as células nucleadas"
+        ],
+        "answer": 4,
+        "explanation": "Quem está em todas as células nucleadas é o MHC de classe I. O MHC II fica nas APCs profissionais.",
+        "source": "prova"
+      },
+      {
+        "id": "imu-mhc-1",
+        "type": "mcq",
+        "text": "É correto afirmar sobre a afinidade dos linfócitos T pelo MHC:",
+        "options": [
+          "T CD4+ têm afinidade pela classe I",
+          "T CD4+ e T CD8+ têm afinidade pela classe II",
+          "T CD4+ e T CD8+ têm afinidade pela classe I",
+          "T CD8+ têm afinidade pela classe II",
+          "T CD4+ têm afinidade pela classe II"
+        ],
+        "answer": 4,
+        "explanation": "MHC II → CD4+; MHC I → CD8+ (regra do 8: 4×2 = 8 e 8×1 = 8).",
+        "source": "prova"
+      },
+      {
+        "id": "imu-mhc-2",
+        "type": "mcq",
+        "text": "Sobre a decisão entre ativação e tolerância de linfócitos em repouso, qual assertiva é INCORRETA?",
+        "options": [
+          "A ativação dos linfócitos depende de um único sinal: a ligação do antígeno ao receptor",
+          "A ativação e proliferação dependem de sinais adicionais, como a coestimulação B7–CD28 (segundo sinal)",
+          "Sem sinais coestimulatórios pode se estabelecer tolerância por apoptose",
+          "A anergia pode decorrer da interação com o antígeno sem coestimulação",
+          "Supressão por citocinas pode determinar tolerância imunológica"
+        ],
+        "answer": 0,
+        "explanation": "A ativação exige mais de um sinal: reconhecimento (1º), coestimulação (2º) e citocinas (3º).",
+        "source": "prova"
+      },
+      {
+        "id": "imu-mhc-3",
+        "type": "mcq",
+        "text": "No ser humano, o MHC é chamado de:",
+        "options": [
+          "HLA, codificado no cromossomo 6",
+          "TCR, cromossomo 14",
+          "CD3, cromossomo 11",
+          "Ig, cromossomo 2"
+        ],
+        "answer": 0,
+        "explanation": "HLA = antígeno leucocitário humano."
+      },
+      {
+        "id": "imu-mhc-4",
+        "type": "mcq",
+        "text": "Os genes do MHC são expressos de modo:",
+        "options": [
+          "Recessivo",
+          "Codominante (alelos de ambos os pais)",
+          "Dominante só do pai",
+          "Apenas após a puberdade"
+        ],
+        "answer": 1,
+        "explanation": "Isso maximiza o número de MHCs diferentes para apresentar peptídeos."
+      },
+      {
+        "id": "imu-mhc-5",
+        "type": "mcq",
+        "text": "Por que o alto POLIMORFISMO do HLA é vantajoso para a população?",
+        "options": [
+          "Facilita transplantes",
+          "Garante proteção contra uma enorme diversidade de microrganismos",
+          "Reduz alergias",
+          "Impede autoimunidade"
+        ],
+        "answer": 1,
+        "explanation": "Milhares de alelos (HLA-A, B, C, DR, DQ, DP) na população."
+      },
+      {
+        "id": "imu-mhc-6",
+        "type": "mcq",
+        "text": "O MHC de classe I apresenta peptídeos:",
+        "options": [
+          "Exógenos, aos CD4+",
+          "Endógenos (citosólicos, ex.: virais), aos CD8+",
+          "Exógenos, aos linfócitos B",
+          "Lipídicos, às NK"
+        ],
+        "answer": 1,
+        "explanation": "Via citosólica: proteassomo → TAP → RE → MHC I."
+      },
+      {
+        "id": "imu-mhc-7",
+        "type": "mcq",
+        "text": "Na via de processamento para o MHC I, os peptídeos entram no retículo endoplasmático pelo transportador:",
+        "options": [
+          "CLIP",
+          "TAP",
+          "HLA-DM",
+          "CD3"
+        ],
+        "answer": 1,
+        "explanation": "Antes, a proteína é ubiquitinada e degradada no proteassomo."
+      },
+      {
+        "id": "imu-mhc-8",
+        "type": "mcq",
+        "text": "Na via do MHC II, a cadeia invariante deixa um fragmento na fenda chamado _____, removido pela molécula _____.",
+        "options": [
+          "TAP / tapasina",
+          "CLIP / HLA-DM",
+          "CD3 / ZAP-70",
+          "B7 / CD28"
+        ],
+        "answer": 1,
+        "explanation": "Assim o peptídeo exógeno pode entrar na fenda do MHC II."
+      },
+      {
+        "id": "imu-mhc-9",
+        "type": "mcq",
+        "text": "A fenda do MHC de classe I é _____ e acomoda peptídeos de _____ aminoácidos.",
+        "options": [
+          "aberta / 13–25",
+          "fechada / 8–11",
+          "aberta / 8–11",
+          "fechada / 30–40"
+        ],
+        "answer": 1,
+        "explanation": "O MHC II tem fenda aberta e aceita peptídeos mais longos."
+      },
+      {
+        "id": "imu-mhc-10",
+        "type": "mcq",
+        "text": "A apresentação cruzada (cross-presentation) é:",
+        "options": [
+          "Apresentação de antígeno endógeno via MHC II",
+          "A capacidade de células dendríticas apresentarem antígenos extracelulares via MHC I para ativar CD8+ virgens",
+          "A apresentação de carboidratos às NK",
+          "O reconhecimento de PAMPs"
+        ],
+        "answer": 1,
+        "explanation": "Importante para vacinas e respostas antivirais/tumorais."
+      },
+      {
+        "id": "imu-mhc-11",
+        "type": "mcq",
+        "text": "O 2º sinal da ativação do linfócito T é dado pela ligação:",
+        "options": [
+          "TCR–MHC",
+          "B7 (CD80/CD86) – CD28",
+          "CD40L–CD40",
+          "IL-12 – receptor"
+        ],
+        "answer": 1,
+        "explanation": "Sem coestimulação: anergia."
+      },
+      {
+        "id": "imu-mhc-12",
+        "type": "mcq",
+        "text": "O 3º sinal da ativação T corresponde a:",
+        "options": [
+          "Coestimulação",
+          "Citocinas que direcionam a diferenciação (Th1, Th2, Th17, Treg)",
+          "Reconhecimento do antígeno",
+          "Apresentação cruzada"
+        ],
+        "answer": 1,
+        "explanation": "Ex.: IL-12 → Th1."
+      },
+      {
+        "id": "imu-mhc-13",
+        "type": "mcq",
+        "text": "O TCR, diferentemente do BCR:",
+        "options": [
+          "Reconhece antígenos livres em sua forma nativa",
+          "Só reconhece peptídeos apresentados no MHC (restrição ao MHC)",
+          "É uma imunoglobulina secretada",
+          "Reconhece carboidratos"
+        ],
+        "answer": 1,
+        "explanation": "O BCR reconhece antígenos intactos (proteínas, carboidratos, lipídios)."
+      },
+      {
+        "id": "imu-mhc-14",
+        "type": "mcq",
+        "text": "A célula apresentadora de antígeno mais eficiente para ativar linfócitos T virgens é a:",
+        "options": [
+          "Neutrófilo",
+          "Célula dendrítica",
+          "Hemácia",
+          "Mastócito"
+        ],
+        "answer": 1,
+        "explanation": "Ela migra dos tecidos ao linfonodo (CCR7) e expressa muita B7."
+      },
+      {
+        "id": "imu-mhc-15",
+        "type": "mcq",
+        "text": "Os interferons aumentam a expressão de MHC, o que:",
+        "options": [
+          "Reduz a apresentação de antígenos",
+          "Aumenta muito a chance de apresentar antígenos do patógeno",
+          "Bloqueia o TCR",
+          "Ativa o complemento"
+        ],
+        "answer": 1,
+        "explanation": "A expressão pode aumentar de 100 a 100.000 vezes."
+      },
+      {
+        "id": "imu-mhc-16",
+        "type": "open",
+        "text": "Compare MHC de classe I e de classe II: estrutura, células que expressam, origem dos peptídeos e linfócito que os reconhece.",
+        "model": "MHC I: cadeia α polimórfica + β2-microglobulina, fenda fechada (peptídeos de 8–11 aa), presente em todas as células nucleadas, apresenta antígenos endógenos/intracelulares (vírus, tumores) aos linfócitos T CD8+ (HLA-A, B, C). MHC II: cadeias α e β, fenda aberta (peptídeos longos), expresso nas APCs profissionais (dendríticas, macrófagos, linfócitos B), apresenta antígenos exógenos aos T CD4+ (HLA-DP, DQ, DR).",
+        "keyPoints": [
+          {
+            "label": "MHC I em todas as células nucleadas",
+            "keywords": [
+              "todas",
+              "nucleada"
+            ]
+          },
+          {
+            "label": "MHC I → CD8+ / endógeno",
+            "keywords": [
+              "cd8",
+              "endogen",
+              "intracelular"
+            ]
+          },
+          {
+            "label": "MHC II nas APCs",
+            "keywords": [
+              "apc",
+              "dendritic",
+              "macrofag",
+              "linfocito b"
+            ]
+          },
+          {
+            "label": "MHC II → CD4+ / exógeno",
+            "keywords": [
+              "cd4",
+              "exogen",
+              "extracelular"
+            ]
+          },
+          {
+            "label": "Estrutura (β2-microglobulina / fendas)",
+            "keywords": [
+              "microglobulina",
+              "fenda",
+              "alfa",
+              "beta"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "imu-mhc-17",
+        "type": "open",
+        "text": "Explique os três sinais necessários para a ativação de um linfócito T virgem.",
+        "model": "1º sinal: reconhecimento do peptídeo apresentado no MHC pelo TCR, com o correceptor CD4 ou CD8. 2º sinal: coestimulação pela ligação de B7 (CD80/CD86) da APC madura ao CD28 do linfócito; sem ele ocorre anergia/tolerância. 3º sinal: citocinas produzidas pela APC (ex.: IL-12) que direcionam a diferenciação em Th1, Th2, Th17 ou Treg.",
+        "keyPoints": [
+          {
+            "label": "1º: TCR + MHC-peptídeo",
+            "keywords": [
+              "tcr",
+              "mhc"
+            ]
+          },
+          {
+            "label": "2º: B7–CD28",
+            "keywords": [
+              "b7",
+              "cd28",
+              "coestim",
+              "cd80"
+            ]
+          },
+          {
+            "label": "Sem 2º sinal: anergia",
+            "keywords": [
+              "anergi",
+              "toleran"
+            ]
+          },
+          {
+            "label": "3º: citocinas",
+            "keywords": [
+              "citocina",
+              "il-12"
+            ]
+          },
+          {
+            "label": "Diferenciação (Th1/Th2/Th17)",
+            "keywords": [
+              "th1",
+              "th2",
+              "th17",
+              "diferencia"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "imu-mhc-18",
+        "type": "open",
+        "text": "Descreva a via citosólica (MHC I) e a via endossômica (MHC II) de processamento de antígenos.",
+        "model": "MHC I: proteínas do citosol (virais, tumorais) são ubiquitinadas e degradadas no proteassomo; os peptídeos entram no RE pelo TAP, são carregados no MHC I com ajuda de chaperonas (tapasina, calreticulina) e vão à superfície para os CD8+. MHC II: proteínas extracelulares capturadas por endocitose/fagocitose são degradadas em endossomos/lisossomos por catepsinas; o MHC II sai do RE com a cadeia invariante, que é degradada deixando o CLIP; o HLA-DM remove o CLIP e o peptídeo entra na fenda; o complexo é apresentado aos CD4+.",
+        "keyPoints": [
+          {
+            "label": "Proteassomo",
+            "keywords": [
+              "proteassom"
+            ]
+          },
+          {
+            "label": "TAP",
+            "keywords": [
+              "tap"
+            ]
+          },
+          {
+            "label": "Endossomo / lisossomo",
+            "keywords": [
+              "endossom",
+              "lisossom",
+              "catepsina"
+            ]
+          },
+          {
+            "label": "Cadeia invariante / CLIP",
+            "keywords": [
+              "invariante",
+              "clip"
+            ]
+          },
+          {
+            "label": "HLA-DM",
+            "keywords": [
+              "hla-dm",
+              "dm"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "imu-mhc-19",
+        "type": "open",
+        "text": "O que é tolerância imunológica e como ela pode se estabelecer, segundo a questão da prova?",
+        "model": "É o estado de não resposta a um antígeno. Pode ocorrer quando o linfócito reconhece o antígeno sem coestimulação (anergia), por apoptose (deleção) e por supressão por citocinas/células reguladoras. Centralmente, a seleção negativa no timo e na medula elimina linfócitos autorreativos.",
+        "keyPoints": [
+          {
+            "label": "Ausência de coestimulação",
+            "keywords": [
+              "coestim",
+              "segundo sinal",
+              "b7",
+              "cd28"
+            ]
+          },
+          {
+            "label": "Anergia",
+            "keywords": [
+              "anergi"
+            ]
+          },
+          {
+            "label": "Apoptose / deleção",
+            "keywords": [
+              "apoptose",
+              "delec"
+            ]
+          },
+          {
+            "label": "Supressão por citocinas",
+            "keywords": [
+              "supress",
+              "citocina",
+              "regulador"
+            ]
+          }
+        ],
+        "source": "prova"
+      }
+    ]
+  },
+  {
+    "id": "humoral",
+    "name": "Anticorpos e imunidade humoral",
+    "icon": "🛡️",
+    "questions": [
+      {
+        "id": "imu-humoral-0",
+        "type": "mcq",
+        "text": "Em relação às classes de anticorpos, qual a resposta ERRADA?",
+        "options": [
+          "IgM é a primeira produzida em resposta a um antígeno, mas não fornece imunidade a longo prazo",
+          "IgG está presente no soro em concentrações muito baixas e suas funções não estão bem definidas",
+          "IgE liga-se, pelas porções constantes, a receptores de mastócitos",
+          "IgE está envolvida em reações alérgicas e infecções parasitárias",
+          "IgA é predominante nas secreções: saliva, lágrima, leite e mucosas"
+        ],
+        "answer": 1,
+        "explanation": "A IgG é a imunoglobulina MAIS abundante no soro e tem funções bem definidas: opsonização, complemento, neutralização, ADCC e passagem pela placenta.",
+        "source": "prova"
+      },
+      {
+        "id": "imu-humoral-1",
+        "type": "mcq",
+        "text": "O produto da imunidade humoral é:",
+        "options": [
+          "Perforina",
+          "Anticorpos",
+          "Interferon",
+          "Histamina"
+        ],
+        "answer": 1,
+        "explanation": "Produzidos por linfócitos B diferenciados em plasmócitos.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-humoral-2",
+        "type": "mcq",
+        "text": "A célula responsável pela imunidade humoral é o:",
+        "options": [
+          "Linfócito T CD8+",
+          "Linfócito B (plasmócito)",
+          "Neutrófilo",
+          "Célula NK"
+        ],
+        "answer": 1,
+        "explanation": "O plasmócito é o linfócito B diferenciado que secreta anticorpos.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-humoral-3",
+        "type": "mcq",
+        "text": "O anticorpo envolvido nas reações alérgicas é a:",
+        "options": [
+          "IgG",
+          "IgA",
+          "IgE",
+          "IgM"
+        ],
+        "answer": 2,
+        "explanation": "Liga-se a mastócitos e basófilos.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-humoral-4",
+        "type": "mcq",
+        "text": "O anticorpo mais abundante no plasma e que atravessa a placenta é a:",
+        "options": [
+          "IgM",
+          "IgG",
+          "IgA",
+          "IgD"
+        ],
+        "answer": 1,
+        "explanation": "Confere imunidade passiva natural ao feto.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-humoral-5",
+        "type": "mcq",
+        "text": "O anticorpo que protege as MUCOSAS contra invasão viral ou bacteriana é a:",
+        "options": [
+          "IgE",
+          "IgA secretora",
+          "IgD",
+          "IgM"
+        ],
+        "answer": 1,
+        "explanation": "Também presente no leite materno.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-humoral-6",
+        "type": "mcq",
+        "text": "O anticorpo que surge logo após a exposição a um antígeno é a:",
+        "options": [
+          "IgG",
+          "IgM",
+          "IgE",
+          "IgA"
+        ],
+        "answer": 1,
+        "explanation": "Pentâmero; ótima ativadora do complemento.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-humoral-7",
+        "type": "mcq",
+        "text": "A NEUTRALIZAÇÃO por anticorpos consiste em:",
+        "options": [
+          "Formar poros na membrana",
+          "Bloquear a ligação de micróbios e toxinas aos receptores das células",
+          "Liberar histamina",
+          "Ativar linfócitos T"
+        ],
+        "answer": 1,
+        "explanation": "Principal ação da IgA nas mucosas e da IgG contra toxinas."
+      },
+      {
+        "id": "imu-humoral-8",
+        "type": "mcq",
+        "text": "A OPSONIZAÇÃO por IgG favorece a fagocitose porque:",
+        "options": [
+          "A IgG perfura a bactéria",
+          "Os fagócitos têm receptores para a porção Fc da IgG",
+          "A IgG ativa o TCR",
+          "A IgG produz ROS"
+        ],
+        "answer": 1,
+        "explanation": "Receptores Fc reconhecem o anticorpo que recobre o micróbio."
+      },
+      {
+        "id": "imu-humoral-9",
+        "type": "mcq",
+        "text": "A ADCC (citotoxicidade mediada por células dependente de anticorpo) é realizada principalmente por:",
+        "options": [
+          "Células NK, via receptor FcγRIIIA (CD16)",
+          "Linfócitos B",
+          "Hemácias",
+          "Plaquetas"
+        ],
+        "answer": 0,
+        "explanation": "A NK reconhece a IgG ligada à célula-alvo e a mata com perforinas/granzimas."
+      },
+      {
+        "id": "imu-humoral-10",
+        "type": "mcq",
+        "text": "A interação CD40L (célula T auxiliar folicular) com CD40 (célula B) promove:",
+        "options": [
+          "Anergia",
+          "Troca de classe de imunoglobulina e maturação de afinidade",
+          "Apoptose do linfócito B",
+          "Produção de IgM apenas"
+        ],
+        "answer": 1,
+        "explanation": "Também gera plasmócitos de vida longa e células B de memória."
+      },
+      {
+        "id": "imu-humoral-11",
+        "type": "mcq",
+        "text": "Antígenos polissacarídicos de bactérias encapsuladas geram resposta timo-INDEPENDENTE, caracterizada por:",
+        "options": [
+          "Forte memória e IgG de alta afinidade",
+          "Produção predominante de IgM, sem troca de classe e com pouca memória",
+          "Ativação de CD8+",
+          "Produção de IgE"
+        ],
+        "answer": 1,
+        "explanation": "Envolve células B da zona marginal do baço e B-1 (S. pneumoniae, N. meningitidis, H. influenzae)."
+      },
+      {
+        "id": "imu-humoral-12",
+        "type": "mcq",
+        "text": "A porção do anticorpo que se liga ao antígeno é o:",
+        "options": [
+          "Fc",
+          "Fab (região variável)",
+          "Dobradiça",
+          "Cadeia J"
+        ],
+        "answer": 1,
+        "explanation": "O Fc liga-se a receptores celulares e ao C1q."
+      },
+      {
+        "id": "imu-humoral-13",
+        "type": "mcq",
+        "text": "A parte do antígeno reconhecida pelo anticorpo é o:",
+        "options": [
+          "Paratopo",
+          "Epítopo",
+          "Fc",
+          "Hapteno"
+        ],
+        "answer": 1,
+        "explanation": "O paratopo é o sítio do anticorpo que se liga ao epítopo."
+      },
+      {
+        "id": "imu-humoral-14",
+        "type": "mcq",
+        "text": "Verdadeiro ou falso? Na imunidade adquirida humoral, anticorpos ligados a epítopos na superfície de células infectadas por vírus podem ativar o complemento pela via clássica, produzindo fragmentos mediadores de inflamação e lise celular por formação de poros na membrana.",
+        "options": [
+          "Verdadeira",
+          "Falsa"
+        ],
+        "answer": 0,
+        "explanation": "Verdadeira: imunocomplexo → C1q → via clássica → C3a/C5a (inflamação) e MAC (poro e lise).",
+        "source": "prova"
+      },
+      {
+        "id": "imu-humoral-15",
+        "type": "open",
+        "text": "Em que consiste a imunidade humoral? Qual célula a realiza e qual é o seu produto?",
+        "model": "É a resposta adaptativa mediada por anticorpos presentes nos líquidos corporais (humores). É realizada pelos linfócitos B, que, ativados (com auxílio de T CD4+ nos antígenos proteicos), se diferenciam em plasmócitos que secretam anticorpos. Atua principalmente contra micróbios extracelulares e toxinas.",
+        "keyPoints": [
+          {
+            "label": "Mediada por anticorpos",
+            "keywords": [
+              "anticorpo",
+              "imunoglobulina"
+            ]
+          },
+          {
+            "label": "Linfócito B",
+            "keywords": [
+              "linfocito b",
+              "celula b"
+            ]
+          },
+          {
+            "label": "Plasmócito",
+            "keywords": [
+              "plasmocit"
+            ]
+          },
+          {
+            "label": "Contra extracelulares / toxinas",
+            "keywords": [
+              "extracelular",
+              "toxina"
+            ]
+          }
+        ],
+        "source": "ed"
+      },
+      {
+        "id": "imu-humoral-16",
+        "type": "open",
+        "text": "Quais são as funções dos anticorpos?",
+        "model": "Neutralização de micróbios e toxinas (bloqueio da adesão/entrada), opsonização para fagocitose (receptores Fc), ativação do complemento pela via clássica, ADCC pelas células NK e, no caso da IgE, sensibilização de mastócitos e eosinófilos contra helmintos. Também conferem imunidade passiva (IgG pela placenta, IgA no leite).",
+        "keyPoints": [
+          {
+            "label": "Neutralização",
+            "keywords": [
+              "neutraliz"
+            ]
+          },
+          {
+            "label": "Opsonização",
+            "keywords": [
+              "opsoniz",
+              "fagocit"
+            ]
+          },
+          {
+            "label": "Ativação do complemento",
+            "keywords": [
+              "complemento"
+            ]
+          },
+          {
+            "label": "ADCC",
+            "keywords": [
+              "adcc",
+              "nk"
+            ]
+          },
+          {
+            "label": "Imunidade passiva / placenta",
+            "keywords": [
+              "placenta",
+              "passiva",
+              "leite"
+            ]
+          }
+        ],
+        "source": "ed"
+      },
+      {
+        "id": "imu-humoral-17",
+        "type": "open",
+        "text": "Cite as classes de anticorpos e a principal função efetora de cada uma.",
+        "model": "IgM: primeira produzida, pentâmero, ativa fortemente o complemento. IgG: mais abundante no soro, atravessa a placenta, opsoniza, ativa complemento, neutraliza e media ADCC. IgA: secretada nas mucosas e no leite, neutraliza na superfície das mucosas. IgE: liga-se a mastócitos/basófilos; alergias e defesa contra helmintos. IgD: receptor na superfície do linfócito B virgem.",
+        "keyPoints": [
+          {
+            "label": "IgM: primeira / complemento",
+            "keywords": [
+              "igm"
+            ]
+          },
+          {
+            "label": "IgG: placenta / opsonização",
+            "keywords": [
+              "igg"
+            ]
+          },
+          {
+            "label": "IgA: mucosas",
+            "keywords": [
+              "iga"
+            ]
+          },
+          {
+            "label": "IgE: alergia / helmintos",
+            "keywords": [
+              "ige"
+            ]
+          },
+          {
+            "label": "IgD: receptor do B",
+            "keywords": [
+              "igd"
+            ]
+          }
+        ],
+        "source": "ed"
+      },
+      {
+        "id": "imu-humoral-18",
+        "type": "open",
+        "text": "Explique o que é um epítopo de antígeno.",
+        "model": "Epítopo (determinante antigênico) é a pequena porção do antígeno reconhecida especificamente por um anticorpo ou por um receptor de linfócito (BCR/TCR). Um mesmo antígeno pode ter vários epítopos. Para o linfócito B, pode ser conformacional ou linear; para o T, é um peptídeo linear apresentado no MHC. O paratopo é a região do anticorpo que se liga ao epítopo.",
+        "keyPoints": [
+          {
+            "label": "Parte / região do antígeno",
+            "keywords": [
+              "parte",
+              "porcao",
+              "regiao",
+              "fragment"
+            ]
+          },
+          {
+            "label": "Reconhecida por anticorpo",
+            "keywords": [
+              "anticorpo"
+            ]
+          },
+          {
+            "label": "BCR / TCR",
+            "keywords": [
+              "bcr",
+              "tcr",
+              "receptor",
+              "linfocito"
+            ]
+          },
+          {
+            "label": "Determinante antigênico",
+            "keywords": [
+              "determinante"
+            ]
+          },
+          {
+            "label": "Paratopo (bônus)",
+            "keywords": [
+              "paratopo"
+            ]
+          }
+        ],
+        "source": "prova"
+      },
+      {
+        "id": "imu-humoral-19",
+        "type": "open",
+        "text": "Diferencie a resposta timo-dependente da timo-independente.",
+        "model": "Timo-dependente: contra antígenos proteicos; células dendríticas apresentam ao T CD4+, que ajuda o linfócito B (CD40L–CD40 e citocinas), levando a troca de classe (IgG, IgA), maturação de afinidade, plasmócitos de vida longa e memória. Timo-independente: contra polissacarídeos/lipídios (ex.: cápsulas de S. pneumoniae, N. meningitidis, H. influenzae); ativa diretamente células B da zona marginal do baço e B-1, sem ajuda T, produzindo principalmente IgM, sem troca de classe e com pouca memória.",
+        "keyPoints": [
+          {
+            "label": "Dependente: proteínas + T CD4+",
+            "keywords": [
+              "proteic",
+              "proteina",
+              "cd4",
+              "auxili"
+            ]
+          },
+          {
+            "label": "Troca de classe / memória",
+            "keywords": [
+              "troca de classe",
+              "memoria",
+              "afinidade"
+            ]
+          },
+          {
+            "label": "Independente: polissacarídeos / cápsulas",
+            "keywords": [
+              "polissacar",
+              "capsul",
+              "lipid"
+            ]
+          },
+          {
+            "label": "IgM sem troca de classe",
+            "keywords": [
+              "igm"
+            ]
+          },
+          {
+            "label": "Zona marginal do baço",
+            "keywords": [
+              "zona marginal",
+              "baco"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "microrg",
+    "name": "Imunidade a microrganismos",
+    "icon": "🦠",
+    "questions": [
+      {
+        "id": "imu-microrg-0",
+        "type": "mcq",
+        "text": "A principal defesa inata contra bactérias EXTRACELULARES envolve:",
+        "options": [
+          "Linfócitos T CD8+",
+          "Fagocitose, ativação do complemento e inflamação",
+          "Interferons tipo I",
+          "Granulomas"
+        ],
+        "answer": 1,
+        "explanation": "Na adaptativa, os anticorpos (humoral) e o perfil Th17 são centrais."
+      },
+      {
+        "id": "imu-microrg-1",
+        "type": "mcq",
+        "text": "O perfil de linfócito T auxiliar mais importante contra bactérias extracelulares e fungos extracelulares é o:",
+        "options": [
+          "Th1",
+          "Th2",
+          "Th17",
+          "Treg"
+        ],
+        "answer": 2,
+        "explanation": "IL-17 induz IL-8 e neutrofilia; IL-22 fortalece barreiras e induz peptídeos antimicrobianos."
+      },
+      {
+        "id": "imu-microrg-2",
+        "type": "mcq",
+        "text": "As endotoxinas são:",
+        "options": [
+          "Proteínas secretadas por Gram-positivas",
+          "O LPS da parede de bactérias Gram-negativas",
+          "Superantígenos",
+          "Toxinas tetânicas"
+        ],
+        "answer": 1,
+        "explanation": "Reconhecidas pelo TLR4; em excesso causam choque séptico."
+      },
+      {
+        "id": "imu-microrg-3",
+        "type": "mcq",
+        "text": "Superantígenos (ex.: S. aureus, S. pyogenes) pertencem ao grupo 1 das exotoxinas e podem causar:",
+        "options": [
+          "Síndrome do choque tóxico",
+          "Tétano",
+          "Cólera",
+          "Difteria"
+        ],
+        "answer": 0,
+        "explanation": "Atuam na superfície celular, ativando muitos linfócitos T de forma inespecífica."
+      },
+      {
+        "id": "imu-microrg-4",
+        "type": "mcq",
+        "text": "A defesa contra bactérias INTRACELULARES depende principalmente de:",
+        "options": [
+          "Anticorpos circulantes",
+          "Imunidade celular: Th1 (IFN-γ) ativando macrófagos e CD8+",
+          "IgE e eosinófilos",
+          "Complemento"
+        ],
+        "answer": 1,
+        "explanation": "As bactérias ficam num nicho inacessível aos anticorpos."
+      },
+      {
+        "id": "imu-microrg-5",
+        "type": "mcq",
+        "text": "Na tuberculose, a resposta imune tenta conter a infecção formando:",
+        "options": [
+          "NETs",
+          "Granulomas",
+          "Imunocomplexos",
+          "Abscessos de eosinófilos"
+        ],
+        "answer": 1,
+        "explanation": "Se houver imunocomprometimento, o granuloma pode necrosar e disseminar."
+      },
+      {
+        "id": "imu-microrg-6",
+        "type": "mcq",
+        "text": "A forma TUBERCULÓIDE da hanseníase caracteriza-se por:",
+        "options": [
+          "Forte resposta Th1, poucas bactérias e granulomas",
+          "Altos títulos de anticorpos e muitas bactérias",
+          "Ausência de resposta",
+          "Resposta Th2 intensa"
+        ],
+        "answer": 0,
+        "explanation": "A lepromatosa tem resposta celular fraca, muitos anticorpos e muitas bactérias."
+      },
+      {
+        "id": "imu-microrg-7",
+        "type": "mcq",
+        "text": "Os interferons do tipo I (IFN-α/β) atuam na defesa antiviral porque:",
+        "options": [
+          "Lisam o vírus diretamente",
+          "Induzem um estado antiviral nas células vizinhas e aumentam o MHC I",
+          "Produzem anticorpos",
+          "Formam o MAC"
+        ],
+        "answer": 1,
+        "explanation": "Ativam enzimas como PKR e 2',5'-oligo A sintetase."
+      },
+      {
+        "id": "imu-microrg-8",
+        "type": "mcq",
+        "text": "Células infectadas por vírus que REDUZEM a expressão de MHC I escapam do CD8+, mas são mortas pelas:",
+        "options": [
+          "Células NK",
+          "Hemácias",
+          "Linfócitos B",
+          "Eosinófilos"
+        ],
+        "answer": 0,
+        "explanation": "A NK reconhece a falta de MHC I ('ausência do próprio')."
+      },
+      {
+        "id": "imu-microrg-9",
+        "type": "mcq",
+        "text": "A principal arma para erradicar uma infecção viral já ESTABELECIDA dentro das células é:",
+        "options": [
+          "IgA",
+          "Linfócitos T CD8+ citotóxicos",
+          "Complemento",
+          "Mastócitos"
+        ],
+        "answer": 1,
+        "explanation": "Os anticorpos agem na fase extracelular do vírus."
+      },
+      {
+        "id": "imu-microrg-10",
+        "type": "mcq",
+        "text": "A defesa contra HELMINTOS é mediada principalmente por:",
+        "options": [
+          "Th1 e macrófagos M1",
+          "Th2: IL-4 (IgE), IL-5 (eosinófilos) e IL-13 (muco e peristaltismo)",
+          "Th17 e neutrófilos",
+          "CD8+"
+        ],
+        "answer": 1,
+        "explanation": "Alarminas (IL-25, IL-33, TSLP) ativam ILC2 no início."
+      },
+      {
+        "id": "imu-microrg-11",
+        "type": "mcq",
+        "text": "A IL-5 é responsável por:",
+        "options": [
+          "Troca de classe para IgE",
+          "Recrutamento e ativação de eosinófilos",
+          "Hipersecreção de muco",
+          "Ativação de M1"
+        ],
+        "answer": 1,
+        "explanation": "A IL-4 faz a troca para IgE; a IL-13 aumenta muco e peristaltismo."
+      },
+      {
+        "id": "imu-microrg-12",
+        "type": "mcq",
+        "text": "Na Leishmania major, linhagens resistentes produzem _____, enquanto as suscetíveis (BALB/c) produzem _____.",
+        "options": [
+          "Th2 / Th1",
+          "Th1 (IFN-γ) / Th2 (IL-4, IL-10, IL-13)",
+          "Th17 / Treg",
+          "IgE / IgG"
+        ],
+        "answer": 1,
+        "explanation": "A resposta Th2 inibe os macrófagos e agrava a doença."
+      },
+      {
+        "id": "imu-microrg-13",
+        "type": "mcq",
+        "text": "Neutropenias graves (ex.: leucemias, quimioterapia) estão fortemente associadas a:",
+        "options": [
+          "Infecções fúngicas disseminadas",
+          "Alergias",
+          "Doenças autoimunes",
+          "Infecções por helmintos"
+        ],
+        "answer": 0,
+        "explanation": "Neutrófilos e macrófagos são cruciais contra fungos."
+      },
+      {
+        "id": "imu-microrg-14",
+        "type": "mcq",
+        "text": "Mutações que afetam o perfil Th17 causam:",
+        "options": [
+          "Tuberculose",
+          "Candidíase mucocutânea crônica",
+          "Asma",
+          "Hanseníase"
+        ],
+        "answer": 1,
+        "explanation": "Th17 é essencial contra Candida na pele e mucosas."
+      },
+      {
+        "id": "imu-microrg-15",
+        "type": "mcq",
+        "text": "Qual mecanismo de evasão é usado pelo Mycobacterium tuberculosis?",
+        "options": [
+          "Variação antigênica",
+          "Inibição da formação do fagolisossomo",
+          "Escape para o citoplasma por hemolisina",
+          "Bloqueio do TAP"
+        ],
+        "answer": 1,
+        "explanation": "Listeria escapa para o citoplasma; HSV bloqueia o TAP; Trypanosoma faz variação antigênica."
+      },
+      {
+        "id": "imu-microrg-16",
+        "type": "mcq",
+        "text": "Verdadeiro ou falso? Os anticorpos específicos são as moléculas fundamentais para a defesa na tuberculose, bacilo que resiste à morte intrafagocitária quando englobado por macrófagos.",
+        "options": [
+          "Verdadeira",
+          "Falsa"
+        ],
+        "answer": 1,
+        "explanation": "Falsa: contra o bacilo intracelular, a defesa fundamental é a IMUNIDADE CELULAR (Th1 com IFN-γ ativando macrófagos; CD8+).",
+        "source": "prova"
+      },
+      {
+        "id": "imu-microrg-17",
+        "type": "mcq",
+        "text": "Verdadeiro ou falso? Linfócitos T CD8+ específicos ativados podem destruir células infectadas por vírus, células cancerosas ou células transplantadas com MHC incompatível, por indução de apoptose e/ou secreção de compostos tóxicos que penetram a célula-alvo.",
+        "options": [
+          "Verdadeira",
+          "Falsa"
+        ],
+        "answer": 0,
+        "explanation": "Verdadeira: perforinas e granzimas, ou via Fas/FasL.",
+        "source": "prova"
+      },
+      {
+        "id": "imu-microrg-18",
+        "type": "mcq",
+        "text": "Verdadeiro ou falso? Na imunidade adquirida celular, linfócitos T CD4+ ativados produzem citocinas (principalmente IFN-γ) que aumentam a atividade fagocítica e bactericida de macrófagos que englobam bactérias resistentes à morte intrafagocitária.",
+        "options": [
+          "Verdadeira",
+          "Falsa"
+        ],
+        "answer": 0,
+        "explanation": "Verdadeira: é a ativação clássica (M1) pelo Th1.",
+        "source": "prova"
+      },
+      {
+        "id": "imu-microrg-19",
+        "type": "open",
+        "text": "Explique as ações dos mediadores da defesa nas infecções: anticorpos (imunidade humoral) e linfócitos T CD4+ e CD8+ ativados (imunidade celular).",
+        "model": "Anticorpos: neutralizam micróbios e toxinas, opsonizam para a fagocitose, ativam o complemento pela via clássica e medeiam ADCC por NK; agem sobre patógenos extracelulares. T CD4+: coordenam a resposta secretando citocinas — Th1 (IFN-γ) ativam macrófagos contra intracelulares, Th2 (IL-4, IL-5, IL-13) contra helmintos, Th17 (IL-17) recrutam neutrófilos, e Tfh ajudam o linfócito B (troca de classe). T CD8+: reconhecem peptídeos no MHC I e matam células infectadas por vírus, tumorais ou transplantadas, por perforinas/granzimas ou Fas/FasL, induzindo apoptose.",
+        "keyPoints": [
+          {
+            "label": "Anticorpos: neutralização/opsonização",
+            "keywords": [
+              "neutraliz",
+              "opsoniz"
+            ]
+          },
+          {
+            "label": "Anticorpos: complemento",
+            "keywords": [
+              "complemento"
+            ]
+          },
+          {
+            "label": "CD4+: citocinas / ativa macrófago",
+            "keywords": [
+              "citocina",
+              "ifn",
+              "macrofag"
+            ]
+          },
+          {
+            "label": "CD4+: ajuda o linfócito B",
+            "keywords": [
+              "linfocito b",
+              "auxili",
+              "ajuda"
+            ]
+          },
+          {
+            "label": "CD8+: mata célula infectada (perforina/apoptose)",
+            "keywords": [
+              "perforina",
+              "granzima",
+              "apoptose",
+              "citotox",
+              "mata",
+              "destro"
+            ]
+          }
+        ],
+        "source": "prova"
+      },
+      {
+        "id": "imu-microrg-20",
+        "type": "open",
+        "text": "Quais são os mecanismos imunológicos usados para combater bactérias extracelulares, vírus, helmintos e bactérias intracelulares?",
+        "model": "Bactérias extracelulares: complemento, fagocitose por neutrófilos/macrófagos, inflamação; anticorpos (neutralização, opsonização, complemento) e Th17. Vírus: interferons tipo I e NK (inatos); anticorpos neutralizantes na fase extracelular e T CD8+ citotóxicos nas células infectadas. Helmintos: resposta Th2 — IgE, mastócitos, eosinófilos (IL-5), muco e peristaltismo (IL-13), macrófagos M2. Bactérias intracelulares: Th1 com IFN-γ ativando macrófagos (M1), CD8+ e formação de granulomas.",
+        "keyPoints": [
+          {
+            "label": "Extracelulares: anticorpos/complemento/fagocitose",
+            "keywords": [
+              "complemento",
+              "fagocit",
+              "anticorpo"
+            ]
+          },
+          {
+            "label": "Vírus: interferon / NK / CD8+",
+            "keywords": [
+              "interferon",
+              "nk",
+              "cd8"
+            ]
+          },
+          {
+            "label": "Helmintos: Th2 / IgE / eosinófilos",
+            "keywords": [
+              "th2",
+              "ige",
+              "eosinofil"
+            ]
+          },
+          {
+            "label": "Intracelulares: Th1 / IFN-γ / macrófago",
+            "keywords": [
+              "th1",
+              "ifn",
+              "macrofag"
+            ]
+          },
+          {
+            "label": "Granuloma (bônus)",
+            "keywords": [
+              "granuloma"
+            ]
+          }
+        ],
+        "source": "ed"
+      },
+      {
+        "id": "imu-microrg-21",
+        "type": "open",
+        "text": "Explique a diferença entre a forma tuberculoide e a lepromatosa da hanseníase.",
+        "model": "Na tuberculoide há forte imunidade celular (Th1, IFN-γ e IL-2): granulomas em torno dos nervos, poucas bactérias e menos destruição tecidual. Na lepromatosa a resposta celular é fraca, com altos títulos de anticorpos (que não protegem contra o bacilo intracelular), proliferação de micobactérias nos macrófagos e lesões destrutivas graves.",
+        "keyPoints": [
+          {
+            "label": "Tuberculoide: Th1 forte",
+            "keywords": [
+              "th1",
+              "celular forte",
+              "forte"
+            ]
+          },
+          {
+            "label": "Tuberculoide: poucas bactérias / granulomas",
+            "keywords": [
+              "poucas",
+              "granuloma"
+            ]
+          },
+          {
+            "label": "Lepromatosa: resposta celular fraca",
+            "keywords": [
+              "fraca"
+            ]
+          },
+          {
+            "label": "Lepromatosa: muitos anticorpos / bactérias",
+            "keywords": [
+              "anticorpo",
+              "muitas bacteria",
+              "prolifera"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "imu-microrg-22",
+        "type": "open",
+        "text": "Diferencie endotoxinas e exotoxinas bacterianas.",
+        "model": "Endotoxinas: componentes estruturais da parede de bactérias Gram-negativas (LPS), reconhecidas pelo TLR4; induzem TNF, IL-1, IL-6, IL-12 e, em excesso, sepse e choque séptico. Exotoxinas: proteínas secretadas (principalmente por Gram-positivas), altamente imunogênicas: grupo 1 (superantígenos, choque tóxico), grupo 2 (danificam membranas, hemolisinas) e grupo 3 (diftérica, colérica, tetânica, antraz). São neutralizadas por anticorpos.",
+        "keyPoints": [
+          {
+            "label": "Endotoxina = LPS / Gram-negativas",
+            "keywords": [
+              "lps",
+              "gram-negativ",
+              "gram negativ"
+            ]
+          },
+          {
+            "label": "TLR4 / sepse",
+            "keywords": [
+              "tlr4",
+              "sepse",
+              "choque"
+            ]
+          },
+          {
+            "label": "Exotoxina = proteína secretada",
+            "keywords": [
+              "secretad",
+              "proteina"
+            ]
+          },
+          {
+            "label": "Exemplos (tetânica, diftérica, superantígeno)",
+            "keywords": [
+              "tetan",
+              "difter",
+              "coler",
+              "superantigen"
+            ]
+          },
+          {
+            "label": "Neutralizadas por anticorpos",
+            "keywords": [
+              "neutraliz",
+              "anticorpo"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hiper",
+    "name": "Hipersensibilidade e vacinas",
+    "icon": "💉",
+    "questions": [
+      {
+        "id": "imu-hiper-0",
+        "type": "mcq",
+        "text": "A hipersensibilidade do TIPO I é mediada por:",
+        "options": [
+          "IgE e mastócitos",
+          "IgG contra antígenos de superfície",
+          "Imunocomplexos",
+          "Linfócitos T"
+        ],
+        "answer": 0,
+        "explanation": "Ex.: rinite alérgica, asma alérgica, anafilaxia, urticária.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-hiper-1",
+        "type": "mcq",
+        "text": "A eritroblastose fetal e a reação transfusional ABO são exemplos de hipersensibilidade:",
+        "options": [
+          "Tipo I",
+          "Tipo II",
+          "Tipo III",
+          "Tipo IV"
+        ],
+        "answer": 1,
+        "explanation": "Anticorpos contra antígenos de superfície das hemácias → complemento, fagocitose, ADCC.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-hiper-2",
+        "type": "mcq",
+        "text": "O lúpus, a glomerulonefrite pós-estreptocócica e a doença do soro são exemplos do tipo:",
+        "options": [
+          "I",
+          "II",
+          "III",
+          "IV"
+        ],
+        "answer": 2,
+        "explanation": "Depósito de imunocomplexos em vasos e glomérulos, com ativação de complemento e neutrófilos.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-hiper-3",
+        "type": "mcq",
+        "text": "O teste tuberculínico (PPD), a dermatite de contato e a rejeição de enxerto são exemplos do tipo:",
+        "options": [
+          "I",
+          "II",
+          "III",
+          "IV (tardia, mediada por células T)"
+        ],
+        "answer": 3,
+        "explanation": "Leva 24–72 h; não envolve anticorpos.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-hiper-4",
+        "type": "mcq",
+        "text": "A anafilaxia é tratada com adrenalina porque ela:",
+        "options": [
+          "Neutraliza a IgE",
+          "Reverte vasodilatação e broncoconstrição causadas pelos mediadores dos mastócitos",
+          "Ativa o complemento",
+          "Destrói os mastócitos"
+        ],
+        "answer": 1,
+        "explanation": "Histamina e leucotrienos causam hipotensão e broncoespasmo."
+      },
+      {
+        "id": "imu-hiper-5",
+        "type": "mcq",
+        "text": "Qual é um exemplo de imunidade PASSIVA NATURAL?",
+        "options": [
+          "Vacina contra sarampo",
+          "Passagem de IgG pela placenta e de IgA pelo leite",
+          "Soro antiofídico",
+          "Ter catapora"
+        ],
+        "answer": 1,
+        "explanation": "Ativa natural: ter a doença. Ativa artificial: vacina. Passiva artificial: soro/imunoglobulina.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-hiper-6",
+        "type": "mcq",
+        "text": "O soro antitetânico ou antiofídico confere imunidade:",
+        "options": [
+          "Ativa e duradoura",
+          "Passiva, imediata e temporária",
+          "Ativa natural",
+          "Celular"
+        ],
+        "answer": 1,
+        "explanation": "Não gera memória.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-hiper-7",
+        "type": "mcq",
+        "text": "O objetivo da imunoprofilaxia (vacinação) é:",
+        "options": [
+          "Tratar a infecção já instalada",
+          "Induzir memória imunológica protetora sem causar a doença",
+          "Suprimir o sistema imune",
+          "Gerar alergia"
+        ],
+        "answer": 1,
+        "explanation": "Idealmente engaja imunidade inata (adjuvantes), APCs, T CD4+, B (anticorpos) e T CD8+.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-hiper-8",
+        "type": "mcq",
+        "text": "Vacinas de vírus ATENUADO (ex.: febre amarela, tríplice viral) são contraindicadas em:",
+        "options": [
+          "Idosos saudáveis",
+          "Imunodeprimidos e gestantes",
+          "Profissionais de saúde",
+          "Crianças saudáveis"
+        ],
+        "answer": 1,
+        "explanation": "O micro-organismo vivo pode causar doença em quem não consegue controlá-lo.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-hiper-9",
+        "type": "mcq",
+        "text": "Qual geração de vacina induz melhor resposta CELULAR (CD8+) por imitar a infecção natural?",
+        "options": [
+          "Inativada",
+          "Toxoide",
+          "Atenuada (viva)",
+          "Polissacarídica pura"
+        ],
+        "answer": 2,
+        "explanation": "O agente se replica e seus antígenos entram na via do MHC I.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-hiper-10",
+        "type": "mcq",
+        "text": "Vacinas de subunidade, conjugadas e toxoides geralmente:",
+        "options": [
+          "Causam a doença em imunodeprimidos",
+          "São seguras, mas podem exigir adjuvantes e doses de reforço",
+          "Induzem só CD8+",
+          "Não induzem anticorpos"
+        ],
+        "answer": 1,
+        "explanation": "Ex.: hepatite B (recombinante), tétano/difteria (toxoide), pneumocócica conjugada.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-hiper-11",
+        "type": "mcq",
+        "text": "Vacinas CONJUGADAS (polissacarídeo ligado a proteína) são importantes porque:",
+        "options": [
+          "Transformam uma resposta timo-independente em timo-dependente, com memória, eficaz em crianças pequenas",
+          "Eliminam a necessidade de anticorpos",
+          "Só ativam NK",
+          "São vivas"
+        ],
+        "answer": 0,
+        "explanation": "Ex.: Hib, pneumocócica e meningocócica conjugadas.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-hiper-12",
+        "type": "mcq",
+        "text": "Reação local intensa (Arthus) após doses repetidas de toxoide tetânico é uma hipersensibilidade:",
+        "options": [
+          "Tipo I",
+          "Tipo II",
+          "Tipo III (imunocomplexos)",
+          "Tipo IV"
+        ],
+        "answer": 2,
+        "explanation": "Anticorpos preexistentes formam imunocomplexos no local da injeção.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-hiper-13",
+        "type": "mcq",
+        "text": "A anafilaxia após uma vacina (ex.: por gelatina ou ovo) é uma hipersensibilidade:",
+        "options": [
+          "Tipo I (IgE)",
+          "Tipo II",
+          "Tipo III",
+          "Tipo IV"
+        ],
+        "answer": 0,
+        "explanation": "Rara; exige observação após a vacinação.",
+        "source": "ed"
+      },
+      {
+        "id": "imu-hiper-14",
+        "type": "open",
+        "text": "Descreva os quatro tipos de hipersensibilidade: mecanismo, células e eventos imunes envolvidos e exemplos de doenças.",
+        "model": "Tipo I (imediata): IgE ligada a mastócitos/basófilos; o alérgeno causa degranulação (histamina, leucotrienos) — rinite, asma alérgica, anafilaxia. Tipo II (citotóxica): IgG/IgM contra antígenos da superfície celular ou da matriz → complemento, fagocitose, ADCC — reação transfusional, eritroblastose fetal, anemia hemolítica autoimune, miastenia grave, Graves. Tipo III (imunocomplexos): complexos antígeno-anticorpo depositados em vasos/glomérulos → complemento e neutrófilos — lúpus, glomerulonefrite pós-estreptocócica, doença do soro, Arthus. Tipo IV (tardia): linfócitos T (Th1 ativando macrófagos ou CD8+), sem anticorpos — PPD, dermatite de contato, rejeição de enxerto, diabetes tipo 1.",
+        "keyPoints": [
+          {
+            "label": "Tipo I: IgE / mastócito",
+            "keywords": [
+              "ige",
+              "mastocit"
+            ]
+          },
+          {
+            "label": "Tipo II: anticorpo contra célula / complemento / ADCC",
+            "keywords": [
+              "tipo ii",
+              "citotox",
+              "adcc",
+              "superficie"
+            ]
+          },
+          {
+            "label": "Tipo III: imunocomplexos",
+            "keywords": [
+              "imunocomplex",
+              "complexo"
+            ]
+          },
+          {
+            "label": "Tipo IV: linfócitos T / tardia",
+            "keywords": [
+              "tardia",
+              "linfocito t",
+              "celula t"
+            ]
+          },
+          {
+            "label": "Exemplos",
+            "keywords": [
+              "asma",
+              "anafilax",
+              "lupus",
+              "ppd",
+              "transfus",
+              "eritroblast",
+              "contato"
+            ]
+          }
+        ],
+        "source": "ed"
+      },
+      {
+        "id": "imu-hiper-15",
+        "type": "open",
+        "text": "O que é imunidade ativa e passiva? Dê exemplos de cada uma (natural e artificial).",
+        "model": "Imunidade ativa: o próprio organismo produz a resposta e gera memória; natural (ter a infecção, ex.: catapora) ou artificial (vacina). É mais lenta e duradoura. Imunidade passiva: recebem-se anticorpos prontos; natural (IgG pela placenta, IgA pelo leite) ou artificial (soros e imunoglobulinas, ex.: soro antitetânico, antiofídico, imunoglobulina anti-hepatite B). É imediata, mas temporária e sem memória.",
+        "keyPoints": [
+          {
+            "label": "Ativa: o organismo produz / memória",
+            "keywords": [
+              "produz",
+              "memoria",
+              "propri"
+            ]
+          },
+          {
+            "label": "Ativa natural: infecção; artificial: vacina",
+            "keywords": [
+              "vacina",
+              "infecc",
+              "doenca"
+            ]
+          },
+          {
+            "label": "Passiva: anticorpos prontos",
+            "keywords": [
+              "pronto",
+              "recebe",
+              "transfer"
+            ]
+          },
+          {
+            "label": "Passiva natural: placenta/leite",
+            "keywords": [
+              "placenta",
+              "leite",
+              "amament"
+            ]
+          },
+          {
+            "label": "Passiva artificial: soro / imunoglobulina",
+            "keywords": [
+              "soro",
+              "imunoglobulina"
+            ]
+          }
+        ],
+        "source": "ed"
+      },
+      {
+        "id": "imu-hiper-16",
+        "type": "open",
+        "text": "Descreva as gerações de vacinas, suas diferenças, benefícios e contraindicações.",
+        "model": "1ª geração – microrganismo inteiro: atenuado (vivo, ex.: febre amarela, tríplice viral, BCG) induz resposta forte, humoral e celular, com poucas doses, mas é contraindicado em imunodeprimidos e gestantes pelo risco de causar doença; inativado (morto, ex.: raiva, pólio inativada) é seguro, mas induz resposta mais fraca e exige reforços e adjuvantes. 2ª geração – subunidades: toxoides (tétano, difteria), polissacarídeos, conjugadas e recombinantes (hepatite B, HPV): seguras, mais específicas, induzem principalmente anticorpos e precisam de adjuvantes/reforços. 3ª geração – genéticas (DNA, RNA mensageiro, vetores virais, ex.: vacinas de COVID-19): as células produzem o antígeno, induzindo anticorpos e resposta CD8+, sem micro-organismo vivo.",
+        "keyPoints": [
+          {
+            "label": "Atenuada (viva): forte, contraindicada em imunodeprimidos/gestantes",
+            "keywords": [
+              "atenuad",
+              "vivo",
+              "imunodeprimid",
+              "imunossuprim",
+              "gestante"
+            ]
+          },
+          {
+            "label": "Inativada: segura, mais fraca, reforços",
+            "keywords": [
+              "inativad",
+              "morto",
+              "reforco"
+            ]
+          },
+          {
+            "label": "Subunidades / toxoide / conjugada / recombinante",
+            "keywords": [
+              "subunidade",
+              "toxoide",
+              "conjugad",
+              "recombinant"
+            ]
+          },
+          {
+            "label": "Genéticas: DNA / RNA / vetor",
+            "keywords": [
+              "rna",
+              "dna",
+              "vetor",
+              "genetic"
+            ]
+          },
+          {
+            "label": "Adjuvantes",
+            "keywords": [
+              "adjuvante"
+            ]
+          }
+        ],
+        "source": "ed"
+      },
+      {
+        "id": "imu-hiper-17",
+        "type": "open",
+        "text": "Quais mecanismos imunológicos devem ser engajados para uma boa resposta à vacina?",
+        "model": "A vacina deve ativar a imunidade inata (PRRs, inflamação local, adjuvantes) para amadurecer as células dendríticas, que apresentam o antígeno aos linfócitos T CD4+ (e CD8+ quando há apresentação via MHC I) com coestimulação; os T CD4+ auxiliares (Tfh) ajudam os linfócitos B a fazer troca de classe e maturação de afinidade, gerando plasmócitos de vida longa e, principalmente, células B e T de MEMÓRIA.",
+        "keyPoints": [
+          {
+            "label": "Imunidade inata / adjuvante / inflamação",
+            "keywords": [
+              "inata",
+              "adjuvante",
+              "prr",
+              "inflama"
+            ]
+          },
+          {
+            "label": "APC / célula dendrítica",
+            "keywords": [
+              "apc",
+              "dendritic",
+              "apresenta"
+            ]
+          },
+          {
+            "label": "T CD4+ auxiliar",
+            "keywords": [
+              "cd4",
+              "auxili"
+            ]
+          },
+          {
+            "label": "Linfócito B / anticorpos",
+            "keywords": [
+              "linfocito b",
+              "anticorpo",
+              "plasmocit"
+            ]
+          },
+          {
+            "label": "Memória",
+            "keywords": [
+              "memoria"
+            ]
+          }
+        ],
+        "source": "ed"
+      },
+      {
+        "id": "imu-hiper-18",
+        "type": "open",
+        "text": "Existe efeito adverso de vacina que seja uma reação de hipersensibilidade? Qual e com quais mecanismos?",
+        "model": "Sim. A anafilaxia (tipo I) a componentes como gelatina ou proteína do ovo é mediada por IgE e degranulação de mastócitos, rara e imediata. A reação de Arthus (tipo III), após doses repetidas de toxoides (tétano/difteria), deve-se a imunocomplexos formados no local com anticorpos preexistentes, ativação do complemento e neutrófilos, causando dor, edema e até necrose local. Reações locais tardias a componentes (tipo IV) também podem ocorrer.",
+        "keyPoints": [
+          {
+            "label": "Anafilaxia tipo I",
+            "keywords": [
+              "anafilax",
+              "tipo i ",
+              "ige"
+            ]
+          },
+          {
+            "label": "Mastócitos / histamina",
+            "keywords": [
+              "mastocit",
+              "histamin"
+            ]
+          },
+          {
+            "label": "Arthus tipo III",
+            "keywords": [
+              "arthus",
+              "tipo iii"
+            ]
+          },
+          {
+            "label": "Imunocomplexos / complemento",
+            "keywords": [
+              "imunocomplex",
+              "complemento"
+            ]
+          }
+        ],
+        "source": "ed"
+      }
+    ]
+  }
+]

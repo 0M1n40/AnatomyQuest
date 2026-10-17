@@ -9,7 +9,7 @@ export function checkKeyPoints(answer, keyPoints = []) {
     label: kp.label,
     found: kp.keywords.some((k) => {
       const n = normalize(k);
-      return n.length <= 3 ? new RegExp(`(^|[^a-z0-9])${n}([^a-z0-9]|$)`).test(text) : text.includes(n);
+      return n.length <= 3 ? new RegExp(`(^|[^a-z0-9])${n.replace(/[-+]/g, '\\$&')}([^a-z0-9]|$)`).test(text) : text.includes(n);
     }),
   }));
 }

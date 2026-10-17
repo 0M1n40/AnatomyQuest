@@ -38,16 +38,20 @@ function findQuestion(id) {
   return q;
 }
 
+// Verdadeiro/falso mantém a ordem; as demais alternativas são embaralhadas
+const isTrueFalse = (q) => q.options?.length === 2 && q.options[0] === 'Verdadeira';
 function toPublic(q) {
   const s = idx().systems.get(q.system);
   const base = { id: q.id, type: q.type, source: q.source, system: { id: s.id, name: s.name, icon: s.icon }, text: q.text };
   if (q.type === 'open') return { ...base, keyCount: q.keyPoints.length };
-  return { ...base, options: shuffle(q.options.map((text, i) => ({ id: i, text }))) };
+  const opts = q.options.map((text, i) => ({ id: i, text }));
+  return { ...base, options: isTrueFalse(q) ? opts : shuffle(opts) };
 }
 
 const escapeRegex = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 function hintFor(q) {
   if (q.type === 'open') return `Sua resposta deve falar de: ${q.keyPoints.map((k) => k.label.split(/[:(]/)[0].trim()).join(' · ')}.`;
+  if (isTrueFalse(q)) return 'Leia cada parte da frase: basta um detalhe errado para ela ser falsa.';
   const first = q.explanation.replace(/^⚠️[^.]*\.\s*/, '').split(/[.;:]/)[0];
   return first.replace(new RegExp(escapeRegex(q.options[q.answer]), 'gi'), '_____') + '…';
 }
@@ -120,7 +124,7 @@ function ranking(mode = 'xp', limit = 10) {
   return Object.values(best).sort((a, b) => b.value - a.value).slice(0, limit);
 }
 
-// ============ Atlas / Laminário (por matéria) ============
+// ============ Atlas / Laminário / Esquemas (por matéria) ============
 const hash = (s) => { let h = 5381; for (let i = 0; i < s.length; i++) h = ((h * 33) ^ s.charCodeAt(i)) >>> 0; return h.toString(36); };
 const figCache = {};
 
@@ -176,8 +180,7 @@ function organQuestion(f) {
   const all = figures().filter((x) => x.organ);
   const token = remember({ figureId: f.id, organ: true });
   return {
-    token,
-    type: 'organ',
+    token, type: 'organ',
     figure: { id: f.id, title: 'Lâmina misteriosa', image: f.image, source: f.source },
     organOptions: shuffle([f.organ, ...pickOthers(all.map((x) => x.organ), f.organ)]),
     justOptions: shuffle([f.justification, ...pickOthers(all.filter((x) => x.organ !== f.organ).map((x) => x.justification), f.justification)]),
@@ -229,14 +232,23 @@ function checkOrgan(token, organ, justification) {
 }
 
 // ============ Simulado de prova ============
-function buildExam({ mcq = 10, open = 4, image = 4 } = {}) {
+// source: 'all' (todo o conteúdo) | 'past' (prioriza questões da prova, quiz e estudos dirigidos)
+function pickQuestions(list, n, source) {
+  if (source !== 'past') return shuffle(list).slice(0, n);
+  const past = shuffle(list.filter((q) => q.source));
+  const rest = shuffle(list.filter((q) => !q.source));
+  return [...past, ...rest].slice(0, n);
+}
+function buildExam({ mcq = 10, open = 4, image = 4, source = 'all' } = {}) {
   const all = idx().all;
-  const objs = shuffle(all.filter((q) => q.type === 'mcq')).slice(0, mcq).map((q) => ({ kind: 'mcq', ...toPublic(q) }));
-  const opens = shuffle(all.filter((q) => q.type === 'open')).slice(0, open).map((q) => ({ kind: 'open', ...toPublic(q) }));
+  const objs = pickQuestions(all.filter((q) => q.type === 'mcq'), mcq, source).map((q) => ({ kind: 'mcq', ...toPublic(q) }));
+  const opens = pickQuestions(all.filter((q) => q.type === 'open'), open, source).map((q) => ({ kind: 'open', ...toPublic(q) }));
   let imgs = [];
   if (image > 0) {
     if (hasOrgans()) {
-      imgs = shuffle(figures().filter((f) => f.organ)).slice(0, image).map(organQuestion);
+      const withOrgan = figures().filter((f) => f.organ);
+      const ordered = source === 'past' ? [...shuffle(withOrgan.filter((f) => f.source)), ...shuffle(withOrgan.filter((f) => !f.source))] : shuffle(withOrgan);
+      imgs = ordered.slice(0, image).map(organQuestion);
     } else {
       const pins = shuffle(figures().flatMap((f) => f.pins.map((p) => ({ f, p }))));
       const used = new Set();
@@ -254,7 +266,13 @@ function buildExam({ mcq = 10, open = 4, image = 4 } = {}) {
 function examAvailability() {
   const all = idx().all;
   const imageCount = hasOrgans() ? figures().filter((f) => f.organ).length : figures().reduce((s, f) => s + f.pins.length, 0);
-  return { mcq: all.filter((q) => q.type === 'mcq').length, open: all.filter((q) => q.type === 'open').length, image: imageCount, organ: hasOrgans() };
+  return {
+    mcq: all.filter((q) => q.type === 'mcq').length,
+    open: all.filter((q) => q.type === 'open').length,
+    image: imageCount,
+    organ: hasOrgans(),
+    past: all.filter((q) => q.source).length,
+  };
 }
 
 // ============ Mapa mental ============
@@ -262,12 +280,11 @@ function autoMindmap() {
   const s = subject();
   return {
     label: s.name,
-    children: [
-      ...s.questions.map((sys) => ({
-        label: sys.name, system: sys.id,
-        children: figures().filter((f) => f.system === sys.id).map((f) => ({ label: f.title, children: f.pins.map((p) => ({ label: p.label, note: p.explanation })) })),
-      })),
-    ],
+    children: s.questions.map((sys) => ({
+      label: sys.name, system: sys.id,
+      figures: figures().filter((f) => f.system === sys.id).map((f) => f.id),
+      children: figures().filter((f) => f.system === sys.id).map((f) => ({ label: f.title, children: f.pins.map((p) => ({ label: p.label, note: p.explanation })) })),
+    })),
   };
 }
 
@@ -330,7 +347,14 @@ export const api = {
   systems: wrap(() => subject().questions.map((s) => ({ id: s.id, name: s.name, icon: s.icon, total: s.questions.length, open: s.questions.filter((q) => q.type === 'open').length }))),
   counts: () => {
     const all = idx().all;
-    return { open: all.filter((q) => q.type === 'open').length, past: all.filter((q) => q.source).length, prova: all.filter((q) => q.source?.includes('prova')).length, quiz: all.filter((q) => q.source?.includes('quiz')).length };
+    const has = (q, k) => q.source?.includes(k);
+    return {
+      open: all.filter((q) => q.type === 'open').length,
+      past: all.filter((q) => q.source).length,
+      prova: all.filter((q) => has(q, 'prova')).length,
+      quiz: all.filter((q) => has(q, 'quiz')).length,
+      ed: all.filter((q) => q.source === 'ed').length,
+    };
   },
   player: wrap((name) => playerView(name)),
   resetPlayer: wrap((name) => { rawPlayer(name).progress[subjectId] = { best: {}, stars: {}, wrong: [] }; saveDb(); return null; }),
@@ -362,6 +386,7 @@ export const api = {
   gradeOpen: wrap((player, questionId, result) => { markAnswer(player, findQuestion(questionId).id, result === 'correct'); return null; }),
   fifty: wrap((id) => {
     const q = findQuestion(id);
+    if (q.options.length <= 2) return { remove: [] };
     return { remove: shuffle(q.options.map((_, i) => i).filter((i) => i !== q.answer)).slice(0, q.options.length > 4 ? 3 : 2) };
   }),
   hint: wrap((id) => ({ hint: hintFor(findQuestion(id)) })),

@@ -1,0 +1,526 @@
+{
+ "label": "Imunologia",
+ "children": [
+  {
+   "label": "Fundamentos e órgãos linfoides",
+   "system": "base",
+   "figures": [
+    "imu-orgaos",
+    "imu-celulas"
+   ],
+   "children": [
+    {
+     "label": "Inata × adaptativa",
+     "children": [
+      {
+       "label": "Inata: rápida, PRRs germinativos, sem memória clássica"
+      },
+      {
+       "label": "Adaptativa: lenta na 1ª vez, BCR/TCR por recombinação V(D)J, memória"
+      },
+      {
+       "label": "Linfócitos = base da adaptativa"
+      }
+     ]
+    },
+    {
+     "label": "Órgãos primários",
+     "figures": [
+      "imu-orgaos"
+     ],
+     "children": [
+      {
+       "label": "Medula óssea: hematopoiese e maturação B"
+      },
+      {
+       "label": "Timo: maturação e seleção T"
+      },
+      {
+       "label": "Seleção positiva: reconhece MHC próprio"
+      },
+      {
+       "label": "Seleção negativa: elimina autorreativos"
+      }
+     ]
+    },
+    {
+     "label": "Órgãos secundários",
+     "figures": [
+      "imu-linfonodo"
+     ],
+     "children": [
+      {
+       "label": "Linfonodo: filtra a linfa (córtex B, paracórtex T)"
+      },
+      {
+       "label": "Baço: filtra o sangue"
+      },
+      {
+       "label": "MALT: tonsilas, placas de Peyer (células M)"
+      },
+      {
+       "label": "Componentes: APCs + linfócitos T + linfócitos B"
+      }
+     ]
+    },
+    {
+     "label": "Barreiras",
+     "children": [
+      {
+       "label": "Pele: queratina, pH ácido, defensinas, Langerhans"
+      },
+      {
+       "label": "TGI: muco, Paneth, células M, microbiota"
+      },
+      {
+       "label": "Respiratório: escalador mucociliar, tosse, macrófago alveolar"
+      }
+     ]
+    },
+    {
+     "label": "Conceitos",
+     "children": [
+      {
+       "label": "Antígeno: reconhecido especificamente"
+      },
+      {
+       "label": "Imunógeno: induz resposta (peso, complexidade, epítopos, dose, via)"
+      },
+      {
+       "label": "Epítopo: parte reconhecida do antígeno"
+      },
+      {
+       "label": "PAMP: padrão do patógeno, reconhecido por PRR"
+      },
+      {
+       "label": "Corpo estranho: não reconhecido (metal, vidro)"
+      }
+     ]
+    },
+    {
+     "label": "Células",
+     "figures": [
+      "imu-celulas"
+     ],
+     "children": [
+      {
+       "label": "Neutrófilo, eosinófilo, mastócito/basófilo"
+      },
+      {
+       "label": "Macrófago (M1 × M2), célula dendrítica"
+      },
+      {
+       "label": "Linfócitos B, T, NK; plasmócito"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Imunidade inata e inflamação",
+   "system": "inata",
+   "figures": [
+    "imu-diapedese"
+   ],
+   "children": [
+    {
+     "label": "Reconhecimento",
+     "children": [
+      {
+       "label": "PRRs (TLR, NLR, manose, scavenger)"
+      },
+      {
+       "label": "PAMPs (LPS→TLR4) e DAMPs"
+      },
+      {
+       "label": "→ citocinas TNF, IL-1, IL-6"
+      }
+     ]
+    },
+    {
+     "label": "Inflamação aguda",
+     "figures": [
+      "imu-diapedese"
+     ],
+     "children": [
+      {
+       "label": "Vasodilatação + permeabilidade (NÃO impermeabilidade!)"
+      },
+      {
+       "label": "Rolamento: selectinas"
+      },
+      {
+       "label": "Adesão firme: integrinas–ICAM-1"
+      },
+      {
+       "label": "Diapedese e quimiotaxia (IL-8, C5a)"
+      }
+     ]
+    },
+    {
+     "label": "Fagocitose",
+     "figures": [
+      "imu-fagocitose"
+     ],
+     "children": [
+      {
+       "label": "Opsoninas: IgG e C3b"
+      },
+      {
+       "label": "Fagossomo → fagolisossomo"
+      },
+      {
+       "label": "Explosão respiratória: ROS, NO, enzimas"
+      },
+      {
+       "label": "NETs dos neutrófilos"
+      },
+      {
+       "label": "Apresentação via MHC II"
+      }
+     ]
+    },
+    {
+     "label": "Complemento",
+     "figures": [
+      "imu-complemento"
+     ],
+     "children": [
+      {
+       "label": "Vias: clássica (anticorpo), alternativa, lectinas (MBL)"
+      },
+      {
+       "label": "C3a/C5a: anafilatoxinas (inflamação)"
+      },
+      {
+       "label": "C3b: opsonização"
+      },
+      {
+       "label": "MAC C5b-9: lise (Neisseria)"
+      }
+     ]
+    },
+    {
+     "label": "Células citotóxicas inatas",
+     "children": [
+      {
+       "label": "NK: perforinas e granzimas"
+      },
+      {
+       "label": "Matam células sem MHC I"
+      }
+     ]
+    },
+    {
+     "label": "Efeitos sistêmicos",
+     "children": [
+      {
+       "label": "Febre (hipotálamo)"
+      },
+      {
+       "label": "Fase aguda: PCR, fibrinogênio (IL-6)"
+      },
+      {
+       "label": "Sepse/choque séptico: excesso de TNF"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "MHC e ativação de linfócitos",
+   "system": "mhc",
+   "figures": [
+    "imu-mhc",
+    "imu-ativacao"
+   ],
+   "children": [
+    {
+     "label": "MHC / HLA",
+     "figures": [
+      "imu-mhc"
+     ],
+     "children": [
+      {
+       "label": "Cromossomo 6; codominante e polimórfico"
+      },
+      {
+       "label": "MHC I: todas as nucleadas → CD8+ (endógeno, 8–11 aa)"
+      },
+      {
+       "label": "MHC II: APCs → CD4+ (exógeno, fenda aberta)"
+      },
+      {
+       "label": "Interferons aumentam o MHC"
+      }
+     ]
+    },
+    {
+     "label": "Processamento",
+     "children": [
+      {
+       "label": "Via citosólica: proteassomo → TAP → RE → MHC I"
+      },
+      {
+       "label": "Via endossômica: catepsinas, cadeia invariante, CLIP, HLA-DM"
+      },
+      {
+       "label": "Apresentação cruzada: dendríticas → MHC I → CD8+"
+      }
+     ]
+    },
+    {
+     "label": "Ativação T – 3 sinais",
+     "figures": [
+      "imu-ativacao"
+     ],
+     "children": [
+      {
+       "label": "1º: TCR + MHC-peptídeo (CD4/CD8)"
+      },
+      {
+       "label": "2º: B7 (CD80/86) – CD28"
+      },
+      {
+       "label": "Sem 2º sinal → anergia/tolerância"
+      },
+      {
+       "label": "3º: citocinas → Th1, Th2, Th17, Treg"
+      }
+     ]
+    },
+    {
+     "label": "Receptores",
+     "children": [
+      {
+       "label": "BCR: anticorpo de membrana, antígeno nativo"
+      },
+      {
+       "label": "TCR + CD3: só peptídeo no MHC (restrição)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Anticorpos e imunidade humoral",
+   "system": "humoral",
+   "figures": [
+    "imu-anticorpo",
+    "imu-classes"
+   ],
+   "children": [
+    {
+     "label": "Estrutura",
+     "figures": [
+      "imu-anticorpo"
+     ],
+     "children": [
+      {
+       "label": "2 cadeias pesadas + 2 leves"
+      },
+      {
+       "label": "Fab: liga o epítopo (paratopo)"
+      },
+      {
+       "label": "Fc: receptores Fc e C1q"
+      }
+     ]
+    },
+    {
+     "label": "Classes",
+     "figures": [
+      "imu-classes"
+     ],
+     "children": [
+      {
+       "label": "IgM: primeira, pentâmero"
+      },
+      {
+       "label": "IgG: mais abundante, placenta"
+      },
+      {
+       "label": "IgA: mucosas e leite"
+      },
+      {
+       "label": "IgE: alergia e helmintos"
+      },
+      {
+       "label": "IgD: receptor do B"
+      }
+     ]
+    },
+    {
+     "label": "Funções",
+     "children": [
+      {
+       "label": "Neutralização"
+      },
+      {
+       "label": "Opsonização"
+      },
+      {
+       "label": "Ativação do complemento (clássica)"
+      },
+      {
+       "label": "ADCC (NK)"
+      }
+     ]
+    },
+    {
+     "label": "Respostas",
+     "children": [
+      {
+       "label": "Timo-dependente: T CD4+ (CD40L–CD40), troca de classe, memória"
+      },
+      {
+       "label": "Timo-independente: polissacarídeos, IgM, zona marginal"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Imunidade a microrganismos",
+   "system": "microrg",
+   "children": [
+    {
+     "label": "Bactérias extracelulares",
+     "children": [
+      {
+       "label": "Complemento, fagocitose, inflamação"
+      },
+      {
+       "label": "Anticorpos + Th17 (IL-17, IL-22)"
+      },
+      {
+       "label": "Endotoxina (LPS) × exotoxinas"
+      }
+     ]
+    },
+    {
+     "label": "Bactérias intracelulares",
+     "children": [
+      {
+       "label": "Th1: IFN-γ ativa macrófago (M1)"
+      },
+      {
+       "label": "CD8+"
+      },
+      {
+       "label": "Granuloma (tuberculose)"
+      },
+      {
+       "label": "Hanseníase: tuberculoide (Th1) × lepromatosa"
+      }
+     ]
+    },
+    {
+     "label": "Vírus",
+     "children": [
+      {
+       "label": "IFN tipo I: estado antiviral"
+      },
+      {
+       "label": "NK: células sem MHC I"
+      },
+      {
+       "label": "Anticorpos: fase extracelular"
+      },
+      {
+       "label": "CD8+: células infectadas"
+      }
+     ]
+    },
+    {
+     "label": "Fungos",
+     "children": [
+      {
+       "label": "Neutrófilos (neutropenia → fungos)"
+      },
+      {
+       "label": "Th17: Candida"
+      },
+      {
+       "label": "Th1: fungos intracelulares"
+      }
+     ]
+    },
+    {
+     "label": "Parasitas",
+     "children": [
+      {
+       "label": "Protozoários: Th1 (Leishmania)"
+      },
+      {
+       "label": "Helmintos: Th2 – IL-4 (IgE), IL-5 (eosinófilos), IL-13 (muco)"
+      },
+      {
+       "label": "Evasão: variação antigênica"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Hipersensibilidade e vacinas",
+   "system": "hiper",
+   "figures": [
+    "imu-hipersensibilidade"
+   ],
+   "children": [
+    {
+     "label": "Hipersensibilidade",
+     "figures": [
+      "imu-hipersensibilidade"
+     ],
+     "children": [
+      {
+       "label": "I: IgE + mastócito (asma, anafilaxia)"
+      },
+      {
+       "label": "II: anticorpo contra célula (transfusão, eritroblastose)"
+      },
+      {
+       "label": "III: imunocomplexos (lúpus, Arthus)"
+      },
+      {
+       "label": "IV: células T, tardia (PPD, dermatite de contato)"
+      }
+     ]
+    },
+    {
+     "label": "Imunidade ativa × passiva",
+     "children": [
+      {
+       "label": "Ativa natural: doença; artificial: vacina"
+      },
+      {
+       "label": "Passiva natural: placenta, leite; artificial: soro"
+      }
+     ]
+    },
+    {
+     "label": "Vacinas",
+     "children": [
+      {
+       "label": "Atenuadas: fortes; contraindicadas em imunodeprimidos/gestantes"
+      },
+      {
+       "label": "Inativadas: seguras, reforços"
+      },
+      {
+       "label": "Subunidade, toxoide, conjugada, recombinante"
+      },
+      {
+       "label": "Genéticas: RNAm, DNA, vetor"
+      },
+      {
+       "label": "Eventos adversos: anafilaxia (I), Arthus (III)"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

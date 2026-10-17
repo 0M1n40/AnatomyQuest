@@ -31,6 +31,9 @@
      "children": [
       {
        "label": "Corpúsculo renal",
+       "figures": [
+        "lam-rim"
+       ],
        "children": [
         {
          "label": "Glomérulo: capilares fenestrados sem diafragma"
@@ -50,9 +53,6 @@
         {
          "label": "Células mesangiais"
         }
-       ],
-       "figures": [
-        "lam-rim"
        ]
       },
       {
@@ -149,18 +149,17 @@
     },
     {
      "label": "Vias urinárias",
+     "figures": [
+      "lam-ureter",
+      "lam-bexiga",
+      "lam-prova_q2"
+     ],
      "children": [
       {
-       "label": "Ureter: transição + muscular delgada",
-       "figures": [
-        "lam-ureter"
-       ]
+       "label": "Ureter: transição + muscular delgada"
       },
       {
-       "label": "Bexiga: transição + muscular espessa (3 camadas)",
-       "figures": [
-        "lam-bexiga"
-       ]
+       "label": "Bexiga: transição + muscular espessa (3 camadas)"
       },
       {
        "label": "Uretra feminina: transição → pseudoestrat. → estrat. pavimentoso"
@@ -168,11 +167,6 @@
       {
        "label": "Uretra masculina: prostática, membranácea, esponjosa"
       }
-     ],
-     "figures": [
-      "lam-ureter",
-      "lam-bexiga",
-      "lam-prova_q2"
      ]
     }
    ]
@@ -195,11 +189,7 @@
        "label": "Laringe"
       },
       {
-       "label": "Traqueia",
-       "figures": [
-        "lam-traqueia",
-        "lam-prova_q3"
-       ]
+       "label": "Traqueia"
       },
       {
        "label": "Brônquios"
@@ -257,6 +247,10 @@
     },
     {
      "label": "Traqueia",
+     "figures": [
+      "lam-traqueia",
+      "lam-prova_q3"
+     ],
      "children": [
       {
        "label": "Mucosa: epitélio respiratório"
@@ -267,38 +261,32 @@
       {
        "label": "Adventícia: anéis de cartilagem hialina em C"
       }
-     ],
-     "figures": [
-      "lam-traqueia",
-      "lam-prova_q3"
      ]
     },
     {
      "label": "Árvore brônquica",
+     "figures": [
+      "lam-bronquio_aumento",
+      "lam-bronquiolo"
+     ],
      "children": [
       {
-       "label": "Brônquio: peças de cartilagem + músculo liso + glândulas",
-       "figures": [
-        "lam-bronquio_aumento"
-       ]
+       "label": "Brônquio: peças de cartilagem + músculo liso + glândulas"
       },
       {
-       "label": "Bronquíolo: sem cartilagem nem glândulas, epitélio simples",
-       "figures": [
-        "lam-bronquiolo"
-       ]
+       "label": "Bronquíolo: sem cartilagem nem glândulas, epitélio simples"
       },
       {
        "label": "Células de Clara: protegem o bronquíolo"
       }
-     ],
-     "figures": [
-      "lam-bronquio_aumento",
-      "lam-bronquiolo"
      ]
     },
     {
      "label": "Porção respiratória",
+     "figures": [
+      "lam-pulmao",
+      "lam-prova_q4"
+     ],
      "children": [
       {
        "label": "Bronquíolo respiratório → ductos → sacos → alvéolos"
@@ -315,10 +303,6 @@
       {
        "label": "Barreira hematoaérea: pneumócito I + lâmina basal + endotélio contínuo"
       }
-     ],
-     "figures": [
-      "lam-pulmao",
-      "lam-prova_q4"
      ]
     }
    ]
@@ -329,6 +313,9 @@
    "children": [
     {
      "label": "Testículo",
+     "figures": [
+      "lam-testiculo"
+     ],
      "children": [
       {
        "label": "Túnica albugínea (conjuntivo denso)"
@@ -345,9 +332,6 @@
       {
        "label": "Células de Leydig: testosterona (LH)"
       }
-     ],
-     "figures": [
-      "lam-testiculo"
      ]
     },
     {
@@ -421,15 +405,16 @@
     },
     {
      "label": "Vias espermáticas",
+     "figures": [
+      "lam-epididimo",
+      "lam-ducto_deferente"
+     ],
      "children": [
       {
        "label": "Túbulos retos → rede testicular → dúctulos eferentes"
       },
       {
-       "label": "Epidídimo: estereocílios + músculo delgado",
-       "figures": [
-        "lam-epididimo"
-       ]
+       "label": "Epidídimo: estereocílios + músculo delgado"
       },
       {
        "label": "Ducto deferente: estereocílios + músculo espesso"
@@ -437,31 +422,24 @@
       {
        "label": "Ducto ejaculatório → uretra"
       }
-     ],
-     "figures": [
-      "lam-epididimo",
-      "lam-ducto_deferente"
      ]
     },
     {
      "label": "Glândulas acessórias",
+     "figures": [
+      "lam-prostata",
+      "lam-prostata_concrecoes"
+     ],
      "children": [
       {
        "label": "Vesícula seminal: criptas, frutose, alcalino"
       },
       {
-       "label": "Próstata: túbulo-alveolar, concreções, ácido cítrico",
-       "figures": [
-        "lam-prostata_concrecoes"
-       ]
+       "label": "Próstata: túbulo-alveolar, concreções, ácido cítrico"
       },
       {
        "label": "Bulbouretral: muco lubrificante"
       }
-     ],
-     "figures": [
-      "lam-prostata",
-      "lam-prostata_concrecoes"
      ]
     },
     {
@@ -497,6 +475,11 @@
     },
     {
      "label": "Folículos",
+     "figures": [
+      "lam-ovario_primordial",
+      "lam-ovario_multilamelar",
+      "lam-ovario_graaf"
+     ],
      "children": [
       {
        "label": "Primordial: células achatadas"
@@ -513,11 +496,6 @@
       {
        "label": "Atrésico: degenera, macrófagos"
       }
-     ],
-     "figures": [
-      "lam-ovario_primordial",
-      "lam-ovario_multilamelar",
-      "lam-ovario_graaf"
      ]
     },
     {
@@ -556,6 +534,9 @@
     },
     {
      "label": "Tuba uterina",
+     "figures": [
+      "lam-tuba"
+     ],
      "children": [
       {
        "label": "Intramural, istmo, ampola, infundíbulo, fímbrias"
@@ -569,13 +550,14 @@
       {
        "label": "Fecundação na ampola"
       }
-     ],
-     "figures": [
-      "lam-tuba"
      ]
     },
     {
      "label": "Útero",
+     "figures": [
+      "lam-utero_proliferativa",
+      "lam-utero_secretora"
+     ],
      "children": [
       {
        "label": "Endométrio: basal + funcional"
@@ -592,10 +574,6 @@
       {
        "label": "Fase menstrual: descamação"
       }
-     ],
-     "figures": [
-      "lam-utero_proliferativa",
-      "lam-utero_secretora"
      ]
     },
     {

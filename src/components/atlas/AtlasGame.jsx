@@ -21,9 +21,7 @@ export default function AtlasGame({ figure, type, onFinish, onExit }) {
   const engine = useGameEngine({ onTimeout: () => timeoutRef.current?.() });
   const { answered, register, start, lives, combo } = engine;
 
-  useEffect(() => {
-    api.atlas.quiz(figure, type, 15).then((d) => setQuestions(d.questions)).catch((e) => setError(e.message));
-  }, [figure, type]);
+  useEffect(() => { api.atlas.quiz(figure, type, 15).then((d) => setQuestions(d.questions)).catch((e) => setError(e.message)); }, [figure, type]);
 
   const q = questions?.[idx];
   useEffect(() => { if (q) start(TIME[q.type] || TIME.name); }, [q, start]);
@@ -54,7 +52,6 @@ export default function AtlasGame({ figure, type, onFinish, onExit }) {
   }, [q, answered, register]);
 
   timeoutRef.current = () => (q?.type === 'organ' ? answerOrgan(organPick, justPick) : answer(null));
-
   const isLast = questions && (idx + 1 >= questions.length || lives <= 0);
 
   const next = useCallback(() => {
@@ -107,7 +104,6 @@ export default function AtlasGame({ figure, type, onFinish, onExit }) {
   } else if (q.type === 'organ' && answered) {
     viewerProps = { pins: result.pins.map((p, i) => ({ ...p, number: i + 1, state: 'study', showLabel: true })) };
   }
-
   const optState = (o) => {
     if (!answered) return 'idle';
     if (o.id === result.answerPinId || o.label === result.label) return 'correct';
@@ -135,7 +131,6 @@ export default function AtlasGame({ figure, type, onFinish, onExit }) {
               <Tag>{q.type === 'organ' ? '🔬 Lâmina' : `🖼️ ${q.figure.title}`}</Tag>
               <SourceTag source={q.figure.source} />
             </div>
-
             {q.type === 'name' && (
               <>
                 <h2 className="mb-4 mt-3 text-xl font-black">👉 Qual estrutura está sendo apontada?</h2>
@@ -143,21 +138,18 @@ export default function AtlasGame({ figure, type, onFinish, onExit }) {
                   {q.options.map((o, i) => (
                     <button key={o.id} disabled={answered} onClick={() => answer(o.id)}
                       className={`flex w-full items-center gap-3 rounded-2xl border-2 px-4 py-3 text-left font-semibold transition ${optionClass(optState(o))}`}>
-                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-card font-black text-brand shadow-sm">{LETTERS[i]}</span>
-                      {o.label}
+                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-card font-black text-brand shadow-sm">{LETTERS[i]}</span>{o.label}
                     </button>
                   ))}
                 </div>
               </>
             )}
-
             {q.type === 'locate' && (
               <>
                 <p className="mt-3 text-sm font-bold text-muted">📍 Clique no ponto da imagem que corresponde a:</p>
                 <h2 className="mt-1 text-2xl font-black text-brand">{q.prompt}</h2>
               </>
             )}
-
             {q.type === 'organ' && (
               <div className="mt-3 space-y-4">
                 <div>
@@ -183,10 +175,7 @@ export default function AtlasGame({ figure, type, onFinish, onExit }) {
                 {!answered && <Button className="w-full" disabled={!organPick || !justPick} onClick={() => answerOrgan(organPick, justPick)}>Confirmar ✔</Button>}
               </div>
             )}
-
-            {answered && q.type !== 'organ' && (
-              <Feedback result={result} timeout={chosen === null}><b>{result.label}</b>{result.explanation ? ` — ${result.explanation}` : ''}</Feedback>
-            )}
+            {answered && q.type !== 'organ' && <Feedback result={result} timeout={chosen === null}><b>{result.label}</b>{result.explanation ? ` — ${result.explanation}` : ''}</Feedback>}
             {answered && q.type === 'organ' && (
               <Feedback result={lastResult}>
                 <b>{result.organ}</b> {result.organOk ? '✔' : '✘'} · justificativa {result.justOk ? '✔' : '✘'}

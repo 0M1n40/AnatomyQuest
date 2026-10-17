@@ -11,8 +11,12 @@ export const safeStorage = {
 };
 
 export const SYSTEM_LABEL = {
-  resp: 'Respiratório', dig: 'Digestório', uri: 'Urinário', masc: 'Genital masculino', fem: 'Genital feminino', endo: 'Endócrino', outros: 'Outros',
+  resp: 'Respiratório', dig: 'Digestório', uri: 'Urinário', masc: 'Genital masculino', fem: 'Genital feminino', endo: 'Endócrino',
+  base: 'Fundamentos', inata: 'Imunidade inata', mhc: 'MHC e ativação', humoral: 'Humoral', microrg: 'Microrganismos', hiper: 'Hipersensibilidade e vacinas',
+  outros: 'Outros',
 };
 
-export const SOURCE_LABEL = { prova: '📄 Caiu na prova', quiz: '🧪 Quiz da professora', 'prova+quiz': '📄 Prova + 🧪 Quiz' };
+export const SOURCE_LABEL = {
+  prova: '📄 Caiu na prova', quiz: '🧪 Quiz da professora', 'prova+quiz': '📄 Prova + 🧪 Quiz', ed: '📘 Estudo dirigido',
+};
 export const LETTERS = 'ABCDEFG';

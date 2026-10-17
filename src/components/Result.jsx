@@ -10,7 +10,6 @@ export default function Result({ data, onReplay, onMenu, menuLabel = 'Início' }
   const stars = saved?.session.stars ?? (pct >= 90 ? 3 : pct >= 70 ? 2 : pct >= 50 ? 1 : 0);
   const msg = useMemo(() => pick(pct >= 90 ? PHRASES.win : pct >= 60 ? PHRASES.ok : PHRASES.low), [pct]);
   const mood = pct >= 70 ? 'party' : pct >= 50 ? 'happy' : 'sad';
-
   return (
     <div className="space-y-4">
       <Card className="text-center">
@@ -18,16 +17,9 @@ export default function Result({ data, onReplay, onMenu, menuLabel = 'Início' }
         <h2 className="mt-2 text-3xl font-black">{outOfLives ? 'Fim das vidas!' : 'Fase concluída!'}</h2>
         <Stars n={stars} size="text-4xl" />
         <div className="mx-auto my-4 grid max-w-lg grid-cols-2 gap-2 sm:grid-cols-4">
-          {[
-            ['🎯', 'Acertos', `${String(hits).replace('.', ',')}/${total}`],
-            ['📊', 'Aproveit.', `${pct}%`],
-            ['🏅', 'Pontos', points],
-            ['🔥', 'Sequência', maxCombo],
-          ].map(([i, l, v]) => (
+          {[['🎯', 'Acertos', `${String(hits).replace('.', ',')}/${total}`], ['📊', 'Aproveit.', `${pct}%`], ['🏅', 'Pontos', points], ['🔥', 'Sequência', maxCombo]].map(([i, l, v]) => (
             <div key={l} className="rounded-2xl bg-soft p-3">
-              <div className="text-xl">{i}</div>
-              <div className="text-lg font-black">{v}</div>
-              <div className="text-xs font-bold text-muted">{l}</div>
+              <div className="text-xl">{i}</div><div className="text-lg font-black">{v}</div><div className="text-xs font-bold text-muted">{l}</div>
             </div>
           ))}
         </div>
@@ -37,7 +29,6 @@ export default function Result({ data, onReplay, onMenu, menuLabel = 'Início' }
           <Button variant="secondary" onClick={onMenu}>{menuLabel}</Button>
         </div>
       </Card>
-
       <Card>
         <h3 className="mb-2 text-lg font-black">📋 Gabarito da partida</h3>
         <ul className="divide-y divide-line">
@@ -46,10 +37,7 @@ export default function Result({ data, onReplay, onMenu, menuLabel = 'Início' }
             return (
               <li key={i} className="flex gap-3 py-3">
                 <span className={`mt-0.5 font-black ${color}`}>{icon}</span>
-                <div>
-                  <p className="font-semibold">{l.text}</p>
-                  <p className="text-sm text-muted">Resposta: <b>{l.answer}</b></p>
-                </div>
+                <div><p className="font-semibold">{l.text}</p><p className="text-sm text-muted">Resposta: <b>{l.answer}</b></p></div>
               </li>
             );
           })}

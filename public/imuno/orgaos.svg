@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" font-family="Nunito,Segoe UI,sans-serif"><rect x="3" y="3" width="414" height="514" rx="22" fill="#f8fafc"/><g fill="#fde7d6" stroke="#d8a885" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<circle cx="210" cy="62" r="40"/>
+<path d="M190 98 L230 98 L232 118 L188 118Z"/>
+<path d="M120 130 Q210 105 300 130 L318 300 Q300 320 280 318 L268 360 L152 360 L140 318 Q120 320 102 300Z"/>
+<path d="M120 135 L70 270 L88 278 L132 170"/><path d="M300 135 L350 270 L332 278 L288 170"/>
+<path d="M155 355 L148 495 L190 495 L205 375 L215 375 L230 495 L272 495 L265 355Z"/></g>
+<path d="M175 380 L170 480" stroke="#e9c9ae" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+<g fill="none" stroke="#86c5a6" stroke-width="2.5" stroke-dasharray="4 4">
+<path d="M150 108 Q130 170 120 250 Q118 320 150 352"/><path d="M270 108 Q290 170 300 250 Q302 320 270 352"/>
+<path d="M210 130 L210 330"/><path d="M175 360 L172 470"/><path d="M245 360 L248 470"/></g>
+<g fill="#4ade80" stroke="#15803d" stroke-width="2">
+<ellipse cx="174" cy="104" rx="9" ry="7"/><ellipse cx="246" cy="104" rx="9" ry="7"/>
+<ellipse cx="128" cy="160" rx="9" ry="7"/><ellipse cx="292" cy="160" rx="9" ry="7"/>
+<ellipse cx="168" cy="340" rx="9" ry="7"/><ellipse cx="252" cy="340" rx="9" ry="7"/></g>
+<ellipse cx="190" cy="84" rx="6" ry="5" fill="#fb7185" stroke="#be123c" stroke-width="2"/><ellipse cx="230" cy="84" rx="6" ry="5" fill="#fb7185" stroke="#be123c" stroke-width="2"/>
+<path d="M195 135 Q210 128 225 135 Q232 160 222 175 Q210 180 198 175 Q188 160 195 135Z" fill="#c4b5fd" stroke="#6d28d9" stroke-width="2.5"/>
+<path d="M262 228 Q290 220 296 240 Q292 262 266 260 Q252 245 262 228Z" fill="#a855f7" stroke="#6b21a8" stroke-width="2.5"/>
+<path d="M165 290 Q210 275 255 290 Q258 305 250 312 Q210 300 170 312 Q160 305 165 290Z" fill="#fcd9b8" stroke="#d8a885" stroke-width="2"/>
+<g fill="#4ade80" stroke="#15803d" stroke-width="1.5"><circle cx="200" cy="300" r="4"/><circle cx="214" cy="297" r="4"/><circle cx="228" cy="301" r="4"/></g>
+<g fill="#fca5a5" stroke="#b91c1c" stroke-width="2"><rect x="163" y="405" width="16" height="45" rx="7"/></g>
+<g fill="#b91c1c"><circle cx="171" cy="415" r="2"/><circle cx="171" cy="428" r="2"/><circle cx="171" cy="441" r="2"/></g>
+<text x="210" y="30" font-size="12" font-weight="800" fill="#64748b" text-anchor="middle">PRIMÁRIOS × SECUNDÁRIOS</text></svg>

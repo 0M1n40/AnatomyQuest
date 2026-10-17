@@ -127,11 +127,11 @@ export default function Game({ player, mode, onFinish, onExit }) {
   const mood = isOpen
     ? !graded ? 'think' : graded === 'wrong' ? 'sad' : 'party'
     : !engine.answered ? 'think' : result?.correct ? 'party' : 'sad';
+  const tf = q.options?.length === 2;
 
   return (
     <div className="space-y-4">
       <GameHud engine={engine} idx={idx} total={questions.length} onExit={onExit} />
-
       <div className="grid gap-4 lg:grid-cols-[1fr_220px]">
         <Card className={engine.anim} key={q.id}>
           <div className="flex flex-wrap gap-2">
@@ -145,15 +145,11 @@ export default function Game({ player, mode, onFinish, onExit }) {
             <OpenQuestion q={q} text={text} setText={setText} review={review} graded={graded} timeout={timedOut} hint={hint} onSubmit={(v) => submitOpen(v)} onGrade={gradeOpen} />
           ) : (
             <>
-              <div className="space-y-2.5">
+              <div className={tf ? 'grid grid-cols-2 gap-2.5' : 'space-y-2.5'}>
                 {q.options.map((o, i) => (
-                  <button
-                    key={o.id}
-                    disabled={engine.answered}
-                    onClick={() => answer(o.id)}
-                    className={`flex w-full items-center gap-3 rounded-2xl border-2 px-4 py-3 text-left font-semibold transition ${optionClass(stateOf(o))}`}
-                  >
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-card font-black text-brand shadow-sm">{LETTERS[i]}</span>
+                  <button key={o.id} disabled={engine.answered} onClick={() => answer(o.id)}
+                    className={`flex w-full items-center gap-3 rounded-2xl border-2 px-4 py-3 text-left font-semibold transition ${optionClass(stateOf(o))}`}>
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-card font-black text-brand shadow-sm">{tf ? (i ? 'F' : 'V') : LETTERS[i]}</span>
                     {o.text}
                   </button>
                 ))}
@@ -165,13 +161,12 @@ export default function Game({ player, mode, onFinish, onExit }) {
 
           <div className="mt-5 flex flex-wrap items-center justify-between gap-2">
             <div className="flex gap-2">
-              {!isOpen && <Button variant="secondary" size="sm" disabled={!power.fifty || engine.answered} onClick={useFifty}>✂️ 50/50</Button>}
+              {!isOpen && !tf && <Button variant="secondary" size="sm" disabled={!power.fifty || engine.answered} onClick={useFifty}>✂️ 50/50</Button>}
               <Button variant="secondary" size="sm" disabled={!power.hint || done || !!review} onClick={useHint}>💡 Dica</Button>
             </div>
             {done && <Button onClick={next}>{isLast ? 'Ver resultado 🏁' : 'Próxima ➜'}</Button>}
           </div>
         </Card>
-
         <div className="order-first lg:order-none">
           <MascotTalk mood={mood} size={100} text={speech} className="lg:sticky lg:top-20 lg:flex-col-reverse lg:items-center" />
         </div>

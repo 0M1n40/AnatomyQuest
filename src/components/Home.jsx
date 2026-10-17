@@ -9,6 +9,7 @@ export default function Home({ player, subject, systems, onPlay, onNavigate, onR
   const counts = api.counts();
   const greet = useMemo(() => pick(PHRASES.greet(player.name.split(' ')[0], subject.name)), [player.name, subject.name]);
   const bestExam = player.best.exam ? (player.best.exam / 100).toFixed(1).replace('.', ',') : null;
+  const pastParts = [counts.prova && `${counts.prova} da prova`, counts.quiz && `${counts.quiz} do quiz`, counts.ed && `${counts.ed} dos estudos dirigidos`].filter(Boolean).join(', ');
 
   return (
     <div className="space-y-5">
@@ -27,7 +28,6 @@ export default function Home({ player, subject, systems, onPlay, onNavigate, onR
         </div>
       </Card>
 
-      {/* Destaques: simulado de prova e mapa mental */}
       <section className="grid gap-3 md:grid-cols-2">
         <Card className="flex flex-col gap-2 border-accent/40 bg-gradient-to-br from-accent/10 via-card to-card">
           <div className="flex items-center justify-between">
@@ -35,13 +35,13 @@ export default function Home({ player, subject, systems, onPlay, onNavigate, onR
             {bestExam && <Pill className="bg-accent/15 text-accent">Melhor nota: {bestExam}</Pill>}
           </div>
           <h2 className="text-xl font-black">Simulado de prova</h2>
-          <p className="flex-1 text-muted">Objetivas, discursivas e identificação por imagem, com tempo de prova e nota de 0 a 10. A correção só aparece no fim.</p>
+          <p className="flex-1 text-muted">Objetivas, discursivas e identificação por imagem, com tempo de prova e nota de 0 a 10. Pode priorizar as questões que já caíram.</p>
           <Button variant="accent" size="lg" onClick={() => onNavigate('exam')}>Fazer simulado ➜</Button>
         </Card>
         <Card className="flex flex-col gap-2 border-brand/40 bg-gradient-to-br from-brand/10 via-card to-card">
           <span className="text-4xl">🧠</span>
           <h2 className="text-xl font-black">Mapa mental de {subject.name}</h2>
-          <p className="flex-1 text-muted">Todo o conteúdo organizado em ramos. Abra, feche, pesquise e treine cada sistema direto do mapa.</p>
+          <p className="flex-1 text-muted">Todo o conteúdo em ramos, com imagens. Abra, feche, pesquise e treine cada tema direto do mapa.</p>
           <Button size="lg" onClick={() => onNavigate('mindmap')}>Abrir mapa mental ➜</Button>
         </Card>
       </section>
@@ -56,22 +56,17 @@ export default function Home({ player, subject, systems, onPlay, onNavigate, onR
       </Card>
 
       <section>
-        <h2 className="mb-3 text-lg font-black">🎯 Teoria por sistema <span className="text-sm font-semibold text-muted">· {total} questões</span></h2>
+        <h2 className="mb-3 text-lg font-black">🎯 Teoria por tema <span className="text-sm font-semibold text-muted">· {total} questões</span></h2>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {systems.map((s) => (
-            <button
-              key={s.id}
-              onClick={() => onPlay(s.id)}
-              className="group rounded-3xl border border-line bg-card p-4 text-left transition hover:-translate-y-1 hover:border-brand hover:shadow-lg"
-            >
+            <button key={s.id} onClick={() => onPlay(s.id)}
+              className="group rounded-3xl border border-line bg-card p-4 text-left transition hover:-translate-y-1 hover:border-brand hover:shadow-lg">
               <div className="flex items-start justify-between">
                 <span className="text-4xl transition group-hover:scale-110">{s.icon}</span>
                 <Stars n={player.stars[s.id] || 0} />
               </div>
               <h3 className="mt-2 font-black">{s.name}</h3>
-              <p className="text-sm text-muted">
-                {s.total} questões{s.open ? ` (${s.open} discursivas)` : ''} · recorde {player.best[s.id] || 0} pts
-              </p>
+              <p className="text-sm text-muted">{s.total} questões{s.open ? ` (${s.open} discursivas)` : ''} · recorde {player.best[s.id] || 0} pts</p>
             </button>
           ))}
         </div>
@@ -81,8 +76,8 @@ export default function Home({ player, subject, systems, onPlay, onNavigate, onR
         {counts.past > 0 && (
           <Card className="flex flex-col gap-2 border-accent/40">
             <span className="text-3xl">📄</span>
-            <h3 className="font-black">Questões da prova e do quiz</h3>
-            <p className="flex-1 text-sm text-muted">{counts.past} questões que já caíram ({counts.prova} da prova, {counts.quiz} do quiz).</p>
+            <h3 className="font-black">Questões que já caíram</h3>
+            <p className="flex-1 text-sm text-muted">{counts.past} questões ({pastParts}).</p>
             <Button variant="accent" onClick={() => onPlay('past')}>Treinar</Button>
           </Card>
         )}

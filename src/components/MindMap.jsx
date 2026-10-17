@@ -13,7 +13,8 @@ function index(node, path = '0', out = []) {
   (node.children || []).forEach((c, i) => index(c, `${path}.${i}`, out));
   return out;
 }
-// Imagens de um nó: "image" (caminho/URL) e/ou "figures" (ids do Atlas/Laminário)
+
+// Imagens de um nó: "image" (caminho/URL) e/ou "figures" (ids do Atlas/Laminário/Esquemas)
 function nodeImages(node, figMap) {
   const out = [];
   if (node.image) out.push({ key: node.image, image: node.image, title: node.label, pins: [] });
@@ -31,36 +32,30 @@ function Node({ node, path, depth, color, open, toggle, hits, onPlay, figMap, sh
   const isOpen = open.has(path);
   const hit = hits.has(path);
   const c = depth === 0 ? 'var(--c-brand)' : color;
-
+  const imgs = showImages ? nodeImages(node, figMap) : [];
   const box =
-    depth === 0
-      ? 'bg-brand text-brand-ink text-lg font-black px-5 py-3 shadow-lg'
-      : depth === 1
-        ? 'text-white font-black px-4 py-2.5 shadow-md'
+    depth === 0 ? 'bg-brand text-brand-ink text-lg font-black px-5 py-3 shadow-lg'
+      : depth === 1 ? 'text-white font-black px-4 py-2.5 shadow-md'
         : 'bg-card border-2 font-bold px-3 py-2';
 
   return (
     <div className={depth > 0 ? 'mm-item py-1.5' : ''} style={{ '--mm-color': c }}>
       <div className="flex flex-wrap items-center gap-2">
-        <button
-          onClick={() => kids.length && toggle(path)}
+        <button onClick={() => kids.length && toggle(path)}
           className={`max-w-[34rem] rounded-2xl text-left leading-snug transition ${box} ${kids.length ? 'cursor-pointer hover:brightness-105' : 'cursor-default'} ${hit ? 'ring-4 ring-gold' : ''}`}
-          style={depth === 1 ? { background: c } : depth > 1 ? { borderColor: c } : undefined}
-        >
+          style={depth === 1 ? { background: c } : depth > 1 ? { borderColor: c } : undefined}>
           {kids.length > 0 && <span className="mr-1.5 inline-block w-3 text-xs opacity-80">{isOpen ? '▾' : '▸'}</span>}
           {node.label}
           {kids.length > 0 && !isOpen && <span className="ml-2 rounded-full bg-black/10 px-1.5 text-xs">{kids.length}</span>}
         </button>
         {node.system && onPlay && (
-          <button onClick={() => onPlay(node.system)} className="no-print rounded-xl bg-soft px-2.5 py-1 text-xs font-black text-brand hover:bg-line">
-            🎯 Treinar
-          </button>
+          <button onClick={() => onPlay(node.system)} className="no-print rounded-xl bg-soft px-2.5 py-1 text-xs font-black text-brand hover:bg-line">🎯 Treinar</button>
         )}
       </div>
       {node.note && <p className="ml-1 mt-1 max-w-xl text-xs font-semibold text-muted">💡 {node.note}</p>}
-      {showImages && nodeImages(node, figMap).length > 0 && (
+      {imgs.length > 0 && (
         <div className="mt-2 flex flex-wrap gap-2">
-          {nodeImages(node, figMap).map((im) => (
+          {imgs.map((im) => (
             <button key={im.key} onClick={() => onZoom(im)} title={`Ampliar: ${im.title}`}
               className="group overflow-hidden rounded-xl border-2 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md" style={{ borderColor: c }}>
               <img src={im.image} alt={im.title} loading="lazy" className="h-20 w-28 object-cover transition group-hover:scale-105" />
@@ -72,20 +67,8 @@ function Node({ node, path, depth, color, open, toggle, hits, onPlay, figMap, sh
       {kids.length > 0 && isOpen && (
         <div className="mm-children mt-1">
           {kids.map((k, i) => (
-            <Node
-              key={i}
-              node={k}
-              path={`${path}.${i}`}
-              depth={depth + 1}
-              color={depth === 0 ? COLORS[i % COLORS.length] : color}
-              open={open}
-              toggle={toggle}
-              hits={hits}
-              onPlay={onPlay}
-              figMap={figMap}
-              showImages={showImages}
-              onZoom={onZoom}
-            />
+            <Node key={i} node={k} path={`${path}.${i}`} depth={depth + 1} color={depth === 0 ? COLORS[i % COLORS.length] : color}
+              open={open} toggle={toggle} hits={hits} onPlay={onPlay} figMap={figMap} showImages={showImages} onZoom={onZoom} />
           ))}
         </div>
       )}
@@ -105,7 +88,6 @@ export default function MindMap({ subject, onPlay }) {
   const [labels, setLabels] = useState(true);
 
   useEffect(() => {
-    // carrega figuras completas (com pontos) para as miniaturas e o zoom
     const ids = new Set(all.flatMap(({ node }) => node.figures || []));
     Promise.all([...ids].map((id) => api.atlas.figure(id).catch(() => null)))
       .then((list) => setFigMap(new Map(list.filter(Boolean).map((f) => [f.id, f]))));
@@ -146,7 +128,7 @@ export default function MindMap({ subject, onPlay }) {
               🖼️ {showImages ? 'Ocultar' : 'Mostrar'} imagens ({imageCount})
             </Button>
           )}
-          <Button size="sm" variant="secondary" onClick={level1}>Ver sistemas</Button>
+          <Button size="sm" variant="secondary" onClick={level1}>Ver temas</Button>
           <Button size="sm" variant="secondary" onClick={expandAll}>Expandir tudo</Button>
           <Button size="sm" variant="secondary" onClick={collapse}>Recolher</Button>
           <Button size="sm" variant="secondary" onClick={() => { expandAll(); setTimeout(() => window.print(), 300); }}>🖨️ Imprimir</Button>
@@ -154,12 +136,8 @@ export default function MindMap({ subject, onPlay }) {
       </div>
 
       <div className="no-print">
-        <input
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="🔎 Buscar no mapa (ex.: podócito, surfactante, Leydig)…"
-          className="w-full rounded-2xl border-2 border-line bg-card px-4 py-3 font-semibold outline-none focus:border-brand"
-        />
+        <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="🔎 Buscar no mapa (ex.: IgG, MHC, podócito, surfactante)…"
+          className="w-full rounded-2xl border-2 border-line bg-card px-4 py-3 font-semibold outline-none focus:border-brand" />
         {query.length >= 2 && <p className="mt-1 text-sm font-bold text-muted">{hits.size ? `${hits.size} resultado(s) destacado(s) em amarelo` : 'Nada encontrado'}</p>}
       </div>
 
@@ -176,16 +154,11 @@ export default function MindMap({ subject, onPlay }) {
           <div className="max-h-[92vh] w-full max-w-4xl overflow-auto rounded-3xl bg-card p-4 shadow-2xl" onClick={(e) => e.stopPropagation()}>
             <div className="mb-3 flex flex-wrap items-center gap-2">
               <h2 className="flex-1 text-lg font-black">🖼️ {zoom.title}</h2>
-              {zoom.pins.length > 0 && (
-                <Button size="sm" variant="secondary" onClick={() => setLabels(!labels)}>{labels ? '🙈 Esconder nomes' : '👁️ Mostrar nomes'}</Button>
-              )}
+              {zoom.pins.length > 0 && <Button size="sm" variant="secondary" onClick={() => setLabels(!labels)}>{labels ? '🙈 Esconder nomes' : '👁️ Mostrar nomes'}</Button>}
               <Button size="sm" variant="secondary" onClick={() => setZoom(null)}>✕ Fechar</Button>
             </div>
-            <AtlasViewer image={zoom.image} alt={zoom.title}
-              pins={zoom.pins.map((p, i) => ({ ...p, number: i + 1, state: 'study', showLabel: labels }))} />
-            {zoom.organ && (
-              <p className="mt-3 rounded-2xl bg-brand/10 p-3 text-sm font-semibold"><b className="text-brand">{zoom.organ}:</b> {zoom.justification}</p>
-            )}
+            <AtlasViewer image={zoom.image} alt={zoom.title} pins={zoom.pins.map((p, i) => ({ ...p, number: i + 1, state: 'study', showLabel: labels }))} />
+            {zoom.organ && <p className="mt-3 rounded-2xl bg-brand/10 p-3 text-sm font-semibold"><b className="text-brand">{zoom.organ}:</b> {zoom.justification}</p>}
           </div>
         </div>
       )}

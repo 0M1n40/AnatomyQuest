@@ -3,14 +3,9 @@ import { Button, Feedback } from './ui.jsx';
 export function OpenInput({ text, setText, keyCount, hint, autoFocus = true }) {
   return (
     <div className="space-y-2">
-      <textarea
-        autoFocus={autoFocus}
-        rows={6}
-        value={text}
-        onChange={(e) => setText(e.target.value)}
+      <textarea autoFocus={autoFocus} rows={6} value={text} onChange={(e) => setText(e.target.value)}
         placeholder="Escreva sua resposta aqui, com suas palavras…"
-        className="w-full rounded-2xl border-2 border-line bg-soft p-4 font-semibold leading-relaxed outline-none transition focus:border-brand"
-      />
+        className="w-full rounded-2xl border-2 border-line bg-soft p-4 font-semibold leading-relaxed outline-none transition focus:border-brand" />
       {hint && <div className="rounded-2xl border-l-4 border-gold bg-gold/10 p-3">💡 <b>Dica:</b> {hint}</div>}
       <p className="text-xs font-bold text-muted">{text.trim().split(/\s+/).filter(Boolean).length} palavras · {keyCount} pontos-chave esperados</p>
     </div>

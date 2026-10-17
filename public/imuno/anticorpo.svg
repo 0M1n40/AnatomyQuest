@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 380" font-family="Nunito,Segoe UI,sans-serif"><rect x="3" y="3" width="474" height="374" rx="22" fill="#f8fafc"/><path d="M240 190 L150 90" stroke="#2563eb" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"/><path d="M240 190 L330 90" stroke="#2563eb" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M150 90 L118 54" stroke="#93c5fd" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"/><path d="M330 90 L362 54" stroke="#93c5fd" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M196 180 L120 96" stroke="#16a34a" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/><path d="M284 180 L360 96" stroke="#16a34a" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M120 96 L92 64" stroke="#86efac" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/><path d="M360 96 L388 64" stroke="#86efac" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M228 190 L228 320 M252 190 L252 320" stroke="#2563eb" stroke-width="22" stroke-linejoin="round" stroke-linecap="round"/>
+<g stroke="#f59e0b" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><path d="M229 200 L251 200"/><path d="M229 212 L251 212"/><path d="M172 150 L156 135"/><path d="M308 150 L324 135"/></g>
+<path d="M60 30 L100 22 L110 52 L84 64 L58 54Z" fill="#fca5a5" stroke="#b91c1c" stroke-width="2.5"/>
+<path d="M98 40 L110 52" stroke="#b91c1c" stroke-width="3"/>
+<rect x="190" y="240" width="100" height="90" rx="14" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M95 40 Q160 10 230 30 Q330 10 390 45" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="6 5"/>
+
+</svg>

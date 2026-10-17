@@ -10,15 +10,17 @@ const KIND = { mcq: { icon: '📝', name: 'Objetiva' }, open: { icon: '✍️', 
 const SCORE = { correct: 1, partial: 0.5, wrong: 0 };
 const fmtGrade = (n) => n.toFixed(1).replace('.', ',');
 const fmtTime = (s) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
+const optLetter = (item, i) => (item.options?.length === 2 ? (i ? 'F' : 'V') : LETTERS[i]);
 
 // ---------------- 1. Configuração ----------------
 function Setup({ subject, onStart }) {
   const av = api.exam.availability();
   const clampN = (n, max) => Math.max(0, Math.min(max, n));
   const PRESETS = [
-    { id: 'short', name: 'Prova curta', icon: '⚡', mcq: 8, open: 2, image: 3, minutes: 25 },
-    { id: 'full', name: 'Prova completa', icon: '📚', mcq: 15, open: 5, image: 5, minutes: 60 },
-    { id: 'practice', name: 'Só prática + discursivas', icon: '🔬', mcq: 0, open: 5, image: 8, minutes: 40 },
+    { id: 'short', name: 'Prova curta', icon: '⚡', mcq: 8, open: 2, image: 3, minutes: 25, source: 'all' },
+    { id: 'full', name: 'Prova completa', icon: '📚', mcq: 15, open: 5, image: 5, minutes: 60, source: 'all' },
+    ...(av.past ? [{ id: 'past', name: 'Estilo da prova real', icon: '📄', mcq: 12, open: 3, image: 4, minutes: 50, source: 'past' }] : []),
+    { id: 'practice', name: 'Só prática + discursivas', icon: '🔬', mcq: 0, open: 5, image: 8, minutes: 40, source: 'all' },
   ];
   const fit = (p) => ({ ...p, mcq: clampN(p.mcq, av.mcq), open: clampN(p.open, av.open), image: clampN(p.image, av.image) });
   const [cfg, setCfg] = useState(fit(PRESETS[0]));
@@ -48,14 +50,14 @@ function Setup({ subject, onStart }) {
         <p className="mb-4 text-muted">Como na prova real: sem dicas, sem gabarito durante a prova e com tempo total. Ao entregar, você vê a correção e a nota de 0 a 10.</p>
 
         <h2 className="mb-2 font-black">Modelo</h2>
-        <div className="mb-4 grid gap-2 sm:grid-cols-3">
+        <div className="mb-4 grid gap-2 sm:grid-cols-2">
           {PRESETS.map((p) => {
             const f = fit(p);
             return (
               <button key={p.id} onClick={() => setCfg(f)}
                 className={`rounded-2xl border-2 p-3 text-left transition ${cfg.id === p.id ? 'border-brand bg-brand/10' : 'border-line hover:border-brand'}`}>
                 <b>{p.icon} {p.name}</b>
-                <p className="text-xs font-semibold text-muted">{f.mcq} obj · {f.open} disc · {f.image} img · {p.minutes} min</p>
+                <p className="text-xs font-semibold text-muted">{f.mcq} obj · {f.open} disc · {f.image} img · {p.minutes} min{p.source === 'past' ? ' · prioriza o que já caiu' : ''}</p>
               </button>
             );
           })}
@@ -63,24 +65,32 @@ function Setup({ subject, onStart }) {
 
         <h2 className="mb-2 font-black">Questões</h2>
         <div className="mb-4 grid gap-2 sm:grid-cols-3">
-          <Counter k="mcq" label="Objetivas" max={av.mcq} desc="Múltipla escolha." />
+          <Counter k="mcq" label="Objetivas" max={av.mcq} desc="Múltipla escolha e V/F." />
           <Counter k="open" label="Discursivas" max={av.open} desc="Você escreve; corrige com o modelo no fim." />
           <Counter k="image" label="Imagens" max={av.image} desc={av.organ ? 'Identifique o órgão e justifique.' : 'Identifique a estrutura apontada.'} />
         </div>
+
+        {av.past > 0 && (
+          <>
+            <h2 className="mb-2 font-black">Origem das questões</h2>
+            <div className="mb-4 flex flex-wrap gap-2">
+              {[['all', '🎲 Todo o conteúdo'], ['past', `📄 Priorizar prova/quiz/estudo dirigido (${av.past})`]].map(([v, l]) => (
+                <button key={v} onClick={() => setCfg({ ...cfg, source: v })}
+                  className={`rounded-full px-4 py-1.5 text-sm font-bold ${cfg.source === v ? 'bg-accent text-white' : 'bg-soft hover:bg-line'}`}>{l}</button>
+              ))}
+            </div>
+          </>
+        )}
 
         <h2 className="mb-2 font-black">Tempo total</h2>
         <div className="mb-5 flex flex-wrap gap-2">
           {[0, 20, 30, 45, 60, 90].map((m) => (
             <button key={m} onClick={() => setCfg({ ...cfg, minutes: m })}
-              className={`rounded-full px-4 py-1.5 text-sm font-bold ${cfg.minutes === m ? 'bg-brand text-brand-ink' : 'bg-soft hover:bg-line'}`}>
-              {m ? `${m} min` : 'Sem limite'}
-            </button>
+              className={`rounded-full px-4 py-1.5 text-sm font-bold ${cfg.minutes === m ? 'bg-brand text-brand-ink' : 'bg-soft hover:bg-line'}`}>{m ? `${m} min` : 'Sem limite'}</button>
           ))}
         </div>
 
-        <Button size="lg" variant="accent" className="w-full" disabled={!total} onClick={() => onStart(cfg)}>
-          Começar prova ({total} questões) ➜
-        </Button>
+        <Button size="lg" variant="accent" className="w-full" disabled={!total} onClick={() => onStart(cfg)}>Começar prova ({total} questões) ➜</Button>
       </Card>
     </div>
   );
@@ -89,27 +99,24 @@ function Setup({ subject, onStart }) {
 // ---------------- 2. Prova ----------------
 function QuestionView({ item, value, onChange }) {
   if (item.kind === 'mcq') {
+    const tf = item.options.length === 2;
     return (
-      <div className="space-y-2.5">
+      <div className={tf ? 'grid grid-cols-2 gap-2.5' : 'space-y-2.5'}>
         {item.options.map((o, i) => (
           <button key={o.id} onClick={() => onChange(o.id)}
             className={`flex w-full items-center gap-3 rounded-2xl border-2 px-4 py-3 text-left font-semibold transition ${optionClass(value === o.id ? 'selected' : 'idle')}`}>
-            <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-xl font-black shadow-sm ${value === o.id ? 'bg-brand text-brand-ink' : 'bg-card text-brand'}`}>{LETTERS[i]}</span>
+            <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-xl font-black shadow-sm ${value === o.id ? 'bg-brand text-brand-ink' : 'bg-card text-brand'}`}>{optLetter(item, i)}</span>
             {o.text}
           </button>
         ))}
       </div>
     );
   }
-  if (item.kind === 'open') {
-    return <OpenInput text={value || ''} setText={onChange} keyCount={item.keyCount} />;
-  }
-  // imagem
+  if (item.kind === 'open') return <OpenInput text={value || ''} setText={onChange} keyCount={item.keyCount} />;
   const v = value || {};
   return (
     <div className="grid gap-4 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
-      <AtlasViewer image={item.figure.image} alt="Imagem da questão" className="max-w-2xl"
-        target={item.type === 'name' ? { x: item.target.x, y: item.target.y } : undefined} />
+      <AtlasViewer image={item.figure.image} alt="Imagem da questão" className="max-w-2xl" target={item.type === 'name' ? { x: item.target.x, y: item.target.y } : undefined} />
       {item.type === 'organ' ? (
         <div className="space-y-4">
           <div>
@@ -171,11 +178,9 @@ function Run({ items, minutes, onSubmit, onExit }) {
     return () => clearInterval(t);
   }, [deadline]); // eslint-disable-line react-hooks/exhaustive-deps
 
-
   const item = items[cur];
   const done = items.filter((it) => isAnswered(it, answers[it.id])).length;
   const set = (v) => setAnswers((a) => ({ ...a, [item.id]: v }));
-
   const deliver = () => {
     const missing = items.length - done;
     if (missing && !confirm(`Você deixou ${missing} questão(ões) sem resposta. Entregar mesmo assim?`)) return;
@@ -201,7 +206,6 @@ function Run({ items, minutes, onSubmit, onExit }) {
           ))}
         </div>
       </Card>
-
       <Card key={item.id}>
         <div className="flex flex-wrap items-center gap-2">
           <span className="text-sm font-black text-muted">QUESTÃO {cur + 1}</span>
@@ -246,10 +250,9 @@ async function gradeAll(player, items, answers) {
 }
 
 function ReviewItem({ i, item, res, onGrade }) {
-  const [open, setOpen] = useState(res.status === 'pending' || res.status !== 'correct');
+  const [open, setOpen] = useState(res.status !== 'correct');
   const badge = { correct: ['✔ Certa', 'bg-emerald-500/15 text-emerald-600'], partial: ['◐ Parcial', 'bg-gold/20 text-gold'], wrong: ['✘ Errada', 'bg-accent/15 text-accent'], pending: ['✍️ Corrigir', 'bg-gold/20 text-gold animate-pulse'] }[res.status];
   const choice = (val, picked, right) => (val === right ? 'correct' : val === picked ? 'wrong' : 'dim');
-
   return (
     <Card className={res.status === 'pending' ? 'border-gold' : ''}>
       <button className="flex w-full flex-wrap items-center gap-2 text-left" onClick={() => setOpen(!open)}>
@@ -260,17 +263,15 @@ function ReviewItem({ i, item, res, onGrade }) {
         <span className="flex-1 truncate text-sm font-semibold text-muted">{item.kind === 'image' ? (res.r.organ || res.r.label) : item.text}</span>
         <span className="text-muted">{open ? '▾' : '▸'}</span>
       </button>
-
       {open && (
         <div className="mt-4 space-y-3">
           {item.kind !== 'image' && <p className="font-bold leading-relaxed">{item.text}</p>}
-
           {item.kind === 'mcq' && (
             <>
               <div className="space-y-2">
                 {item.options.map((o, k) => (
                   <div key={o.id} className={`flex items-center gap-3 rounded-2xl border-2 px-4 py-2.5 font-semibold ${optionClass(choice(o.id, res.v, res.r.answerId))}`}>
-                    <b className="text-brand">{LETTERS[k]}</b>{o.text}{o.id === res.v && <span className="ml-auto text-xs font-black">sua resposta</span>}
+                    <b className="text-brand">{optLetter(item, k)}</b>{o.text}{o.id === res.v && <span className="ml-auto text-xs font-black">sua resposta</span>}
                   </div>
                 ))}
               </div>
@@ -278,9 +279,7 @@ function ReviewItem({ i, item, res, onGrade }) {
               <Feedback result={res.status}>{res.r.explanation}</Feedback>
             </>
           )}
-
           {item.kind === 'open' && <OpenReview review={res.r} graded={res.status === 'pending' ? null : res.status} onGrade={onGrade} />}
-
           {item.kind === 'image' && (
             <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
               <AtlasViewer image={item.figure.image} alt="Imagem" className="max-w-xl"
@@ -359,7 +358,6 @@ function Review({ player, items, results, setResults, timeUp, onFinish, onRetry,
           <Button variant="secondary" onClick={onExit}>Início</Button>
         </div>
       </Card>
-
       <h2 className="text-lg font-black">📋 Correção {pending > 0 && <span className="text-gold">· corrija as discursivas marcadas</span>}</h2>
       {items.map((it, i) => <ReviewItem key={it.id} i={i} item={it} res={results[i]} onGrade={(s) => gradeOpen(i, s)} />)}
     </div>
@@ -384,14 +382,12 @@ export default function Exam({ player, subject, onSaved, onExit }) {
       window.scrollTo({ top: 0 });
     } catch (e) { setError(e.message); setPhase('setup'); }
   };
-
   const submit = async (answers, byTime) => {
     setPhase('loading'); setTimeUp(byTime);
     setResults(await gradeAll(player.name, items, answers));
     setPhase('review');
     window.scrollTo({ top: 0 });
   };
-
   const finish = async ({ grade, score, total }) => {
     const s = await api.finish(player.name, { mode: 'exam', points: Math.round(grade * 100), hits: score, total, grade: Math.round(grade * 10) / 10 });
     setSaved(s);

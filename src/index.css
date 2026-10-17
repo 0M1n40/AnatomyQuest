@@ -3,45 +3,20 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --c-bg: #f3f7fb;
-  --c-bg2: #dff5f1;
-  --c-card: #ffffff;
-  --c-soft: #eef3f8;
-  --c-ink: #1e293b;
-  --c-muted: #64748b;
-  --c-line: #e2e8f0;
-  --c-brand: #0d9488;
-  --c-brand-ink: #ffffff;
-  --c-accent: #f43f5e;
-  --c-gold: #f59e0b;
+  --c-bg: #f3f7fb; --c-bg2: #dff5f1; --c-card: #ffffff; --c-soft: #eef3f8; --c-ink: #1e293b; --c-muted: #64748b;
+  --c-line: #e2e8f0; --c-brand: #0d9488; --c-brand-ink: #ffffff; --c-accent: #f43f5e; --c-gold: #f59e0b;
   color-scheme: light;
 }
 .dark {
-  --c-bg: #0b1220;
-  --c-bg2: #0e2a2c;
-  --c-card: #131c2e;
-  --c-soft: #1c2840;
-  --c-ink: #e5edf7;
-  --c-muted: #94a3b8;
-  --c-line: #26344f;
-  --c-brand: #2dd4bf;
-  --c-brand-ink: #04211e;
-  --c-accent: #fb7185;
-  --c-gold: #facc15;
+  --c-bg: #0b1220; --c-bg2: #0e2a2c; --c-card: #131c2e; --c-soft: #1c2840; --c-ink: #e5edf7; --c-muted: #94a3b8;
+  --c-line: #26344f; --c-brand: #2dd4bf; --c-brand-ink: #04211e; --c-accent: #fb7185; --c-gold: #facc15;
   color-scheme: dark;
 }
 
 @theme inline {
-  --color-bg: var(--c-bg);
-  --color-card: var(--c-card);
-  --color-soft: var(--c-soft);
-  --color-ink: var(--c-ink);
-  --color-muted: var(--c-muted);
-  --color-line: var(--c-line);
-  --color-brand: var(--c-brand);
-  --color-brand-ink: var(--c-brand-ink);
-  --color-accent: var(--c-accent);
-  --color-gold: var(--c-gold);
+  --color-bg: var(--c-bg); --color-card: var(--c-card); --color-soft: var(--c-soft); --color-ink: var(--c-ink);
+  --color-muted: var(--c-muted); --color-line: var(--c-line); --color-brand: var(--c-brand); --color-brand-ink: var(--c-brand-ink);
+  --color-accent: var(--c-accent); --color-gold: var(--c-gold);
   --font-sans: "Nunito", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
 }
 

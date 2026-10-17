@@ -1,0 +1,696 @@
+[
+  {
+    "id": "imu-orgaos",
+    "title": "Órgãos linfoides – visão geral",
+    "system": "base",
+    "image": "imuno/orgaos.svg",
+    "builtin": true,
+    "pins": [
+      {
+        "id": "imu-orgaos-0",
+        "label": "Timo",
+        "x": 50.0,
+        "y": 29.81,
+        "explanation": "Órgão linfoide PRIMÁRIO: maturação e seleção dos linfócitos T."
+      },
+      {
+        "id": "imu-orgaos-1",
+        "label": "Medula óssea",
+        "x": 40.71,
+        "y": 82.31,
+        "explanation": "Órgão linfoide PRIMÁRIO: hematopoiese e maturação dos linfócitos B."
+      },
+      {
+        "id": "imu-orgaos-2",
+        "label": "Baço",
+        "x": 66.19,
+        "y": 46.73,
+        "explanation": "SECUNDÁRIO: filtra o sangue; responde a antígenos da circulação (e bactérias encapsuladas, zona marginal)."
+      },
+      {
+        "id": "imu-orgaos-3",
+        "label": "Linfonodo",
+        "x": 30.48,
+        "y": 30.77,
+        "explanation": "SECUNDÁRIO: filtra a linfa e promove o encontro de antígenos, APCs e linfócitos."
+      },
+      {
+        "id": "imu-orgaos-4",
+        "label": "Tonsilas e adenoides",
+        "x": 45.24,
+        "y": 16.15,
+        "explanation": "SECUNDÁRIO (MALT): vigiam o que entra pela boca e pelas vias respiratórias."
+      },
+      {
+        "id": "imu-orgaos-5",
+        "label": "Placas de Peyer (íleo)",
+        "x": 50.95,
+        "y": 57.12,
+        "explanation": "SECUNDÁRIO (MALT intestinal): monitoram antígenos do intestino; recebem antígenos pelas células M."
+      },
+      {
+        "id": "imu-orgaos-6",
+        "label": "Vaso linfático",
+        "x": 28.57,
+        "y": 48.08,
+        "explanation": "Leva a linfa dos tecidos até os linfonodos."
+      }
+    ]
+  },
+  {
+    "id": "imu-linfonodo",
+    "title": "Linfonodo – corte",
+    "system": "base",
+    "image": "imuno/linfonodo.svg",
+    "builtin": true,
+    "pins": [
+      {
+        "id": "imu-linfonodo-0",
+        "label": "Cápsula",
+        "x": 82.29,
+        "y": 27.78,
+        "explanation": "Cápsula fibrosa que envolve o linfonodo."
+      },
+      {
+        "id": "imu-linfonodo-1",
+        "label": "Vaso linfático aferente",
+        "x": 62.5,
+        "y": 9.44,
+        "explanation": "Traz a linfa (e as APCs com antígenos) dos tecidos para o linfonodo."
+      },
+      {
+        "id": "imu-linfonodo-2",
+        "label": "Folículo linfoide (zona B, córtex)",
+        "x": 50.0,
+        "y": 20.83,
+        "explanation": "Região cortical onde ficam os linfócitos B."
+      },
+      {
+        "id": "imu-linfonodo-3",
+        "label": "Centro germinativo",
+        "x": 79.24,
+        "y": 44.96,
+        "explanation": "Onde os linfócitos B ativados proliferam: troca de classe e maturação de afinidade."
+      },
+      {
+        "id": "imu-linfonodo-4",
+        "label": "Paracórtex (zona T)",
+        "x": 66.67,
+        "y": 59.72,
+        "explanation": "Região dos linfócitos T, onde as células dendríticas apresentam antígenos."
+      },
+      {
+        "id": "imu-linfonodo-5",
+        "label": "Medula / seios medulares",
+        "x": 41.67,
+        "y": 50.0,
+        "explanation": "Cordões e seios medulares; plasmócitos e macrófagos."
+      },
+      {
+        "id": "imu-linfonodo-6",
+        "label": "Vaso linfático eferente",
+        "x": 19.79,
+        "y": 49.44,
+        "explanation": "Leva a linfa para fora pelo hilo."
+      },
+      {
+        "id": "imu-linfonodo-7",
+        "label": "Artéria e veia (hilo)",
+        "x": 19.79,
+        "y": 55.56,
+        "explanation": "Vasos sanguíneos que entram e saem pelo hilo."
+      }
+    ]
+  },
+  {
+    "id": "imu-anticorpo",
+    "title": "Estrutura do anticorpo (IgG)",
+    "system": "humoral",
+    "image": "imuno/anticorpo.svg",
+    "builtin": true,
+    "pins": [
+      {
+        "id": "imu-anticorpo-0",
+        "label": "Sítio de ligação ao antígeno (paratopo)",
+        "x": 21.67,
+        "y": 15.26,
+        "explanation": "Extremidade das regiões variáveis de cadeia pesada e leve; liga-se ao EPÍTOPO."
+      },
+      {
+        "id": "imu-anticorpo-1",
+        "label": "Epítopo do antígeno",
+        "x": 16.67,
+        "y": 11.05,
+        "explanation": "Pequena parte do antígeno reconhecida pelo anticorpo (determinante antigênico)."
+      },
+      {
+        "id": "imu-anticorpo-2",
+        "label": "Cadeia pesada",
+        "x": 61.25,
+        "y": 34.21,
+        "explanation": "Duas cadeias pesadas idênticas; a região constante define a classe (IgG, IgM, IgA, IgE, IgD)."
+      },
+      {
+        "id": "imu-anticorpo-3",
+        "label": "Cadeia leve",
+        "x": 68.54,
+        "y": 34.21,
+        "explanation": "Duas cadeias leves (κ ou λ) ligadas às pesadas por pontes dissulfeto."
+      },
+      {
+        "id": "imu-anticorpo-4",
+        "label": "Região variável",
+        "x": 77.92,
+        "y": 16.84,
+        "explanation": "Varia entre anticorpos: confere a especificidade."
+      },
+      {
+        "id": "imu-anticorpo-5",
+        "label": "Região constante",
+        "x": 40.62,
+        "y": 36.84,
+        "explanation": "Igual dentro de uma classe; determina funções efetoras."
+      },
+      {
+        "id": "imu-anticorpo-6",
+        "label": "Região da dobradiça e pontes dissulfeto",
+        "x": 50.0,
+        "y": 54.21,
+        "explanation": "Dá flexibilidade aos braços Fab."
+      },
+      {
+        "id": "imu-anticorpo-7",
+        "label": "Fragmento Fab",
+        "x": 29.17,
+        "y": 31.05,
+        "explanation": "Fração de ligação ao antígeno: neutralização."
+      },
+      {
+        "id": "imu-anticorpo-8",
+        "label": "Fragmento Fc",
+        "x": 50.0,
+        "y": 76.32,
+        "explanation": "Liga-se a receptores Fc de fagócitos (opsonização), mastócitos (IgE) e ao C1q (complemento)."
+      }
+    ]
+  },
+  {
+    "id": "imu-classes",
+    "title": "Classes de imunoglobulinas",
+    "system": "humoral",
+    "image": "imuno/classes.svg",
+    "builtin": true,
+    "pins": [
+      {
+        "id": "imu-classes-0",
+        "label": "IgM (pentâmero)",
+        "x": 23.21,
+        "y": 20.0,
+        "explanation": "Primeira produzida na resposta primária; ótima ativadora do complemento; sem memória de longo prazo."
+      },
+      {
+        "id": "imu-classes-1",
+        "label": "Cadeia J",
+        "x": 23.21,
+        "y": 30.56,
+        "explanation": "Une as unidades da IgM e da IgA."
+      },
+      {
+        "id": "imu-classes-2",
+        "label": "IgA secretora (dímero)",
+        "x": 66.07,
+        "y": 26.39,
+        "explanation": "Predomina nas secreções (saliva, lágrima, leite, mucosas): neutralização nas mucosas."
+      },
+      {
+        "id": "imu-classes-3",
+        "label": "Componente secretor",
+        "x": 71.43,
+        "y": 38.89,
+        "explanation": "Ajuda a transportar a IgA pelo epitélio e protege contra enzimas."
+      },
+      {
+        "id": "imu-classes-4",
+        "label": "IgG (monômero)",
+        "x": 16.07,
+        "y": 72.78,
+        "explanation": "Mais abundante no plasma; atravessa a placenta; opsonização, complemento, ADCC."
+      },
+      {
+        "id": "imu-classes-5",
+        "label": "IgE ligada ao mastócito",
+        "x": 41.43,
+        "y": 72.78,
+        "explanation": "Liga-se pelo Fc ao mastócito/basófilo: alergias (hipersensibilidade I) e helmintos."
+      },
+      {
+        "id": "imu-classes-6",
+        "label": "Grânulos de histamina",
+        "x": 48.21,
+        "y": 90.28,
+        "explanation": "Liberados quando o alérgeno faz ligação cruzada das IgE."
+      },
+      {
+        "id": "imu-classes-7",
+        "label": "IgD (receptor do linfócito B)",
+        "x": 78.57,
+        "y": 72.78,
+        "explanation": "Presente na superfície do linfócito B virgem, como BCR."
+      }
+    ]
+  },
+  {
+    "id": "imu-mhc",
+    "title": "MHC classe I × classe II",
+    "system": "mhc",
+    "image": "imuno/mhc.svg",
+    "builtin": true,
+    "pins": [
+      {
+        "id": "imu-mhc-0",
+        "label": "MHC classe I (cadeia α)",
+        "x": 21.43,
+        "y": 63.16,
+        "explanation": "Presente em TODAS as células nucleadas; apresenta peptídeos ENDÓGENOS (vírus, tumor) ao CD8+. HLA-A, B, C."
+      },
+      {
+        "id": "imu-mhc-1",
+        "label": "β2-microglobulina",
+        "x": 28.57,
+        "y": 64.74,
+        "explanation": "Cadeia não polimórfica associada ao MHC I."
+      },
+      {
+        "id": "imu-mhc-2",
+        "label": "Peptídeo curto (8–11 aa) na fenda fechada",
+        "x": 28.93,
+        "y": 50.53,
+        "explanation": "A fenda do MHC I é fechada: acomoda peptídeos curtos."
+      },
+      {
+        "id": "imu-mhc-3",
+        "label": "Correceptor CD8",
+        "x": 18.57,
+        "y": 44.74,
+        "explanation": "Liga-se ao MHC I: restrição ao MHC classe I."
+      },
+      {
+        "id": "imu-mhc-4",
+        "label": "TCR",
+        "x": 29.29,
+        "y": 39.47,
+        "explanation": "Receptor do linfócito T: reconhece o peptídeo apresentado no MHC."
+      },
+      {
+        "id": "imu-mhc-5",
+        "label": "MHC classe II (cadeias α e β)",
+        "x": 74.82,
+        "y": 63.16,
+        "explanation": "Expresso nas APCs profissionais; apresenta peptídeos EXÓGENOS ao CD4+. HLA-DP, DQ, DR."
+      },
+      {
+        "id": "imu-mhc-6",
+        "label": "Peptídeo longo na fenda aberta",
+        "x": 74.82,
+        "y": 50.53,
+        "explanation": "Fenda aberta nas extremidades: peptídeos mais longos."
+      },
+      {
+        "id": "imu-mhc-7",
+        "label": "Correceptor CD4",
+        "x": 83.21,
+        "y": 44.74,
+        "explanation": "Liga-se ao MHC II."
+      }
+    ]
+  },
+  {
+    "id": "imu-ativacao",
+    "title": "Ativação do linfócito T – 3 sinais",
+    "system": "mhc",
+    "image": "imuno/ativacao.svg",
+    "builtin": true,
+    "pins": [
+      {
+        "id": "imu-ativacao-0",
+        "label": "Célula dendrítica (APC)",
+        "x": 26.79,
+        "y": 66.67,
+        "explanation": "APC mais eficiente; captura antígeno no tecido e migra ao linfonodo (CCR7). Ponte entre inata e adaptativa."
+      },
+      {
+        "id": "imu-ativacao-1",
+        "label": "MHC + peptídeo",
+        "x": 49.29,
+        "y": 33.33,
+        "explanation": "Apresenta o antígeno processado."
+      },
+      {
+        "id": "imu-ativacao-2",
+        "label": "TCR (1º sinal)",
+        "x": 58.93,
+        "y": 33.33,
+        "explanation": "Reconhecimento específico do peptídeo no MHC, com correceptor CD4 ou CD8."
+      },
+      {
+        "id": "imu-ativacao-3",
+        "label": "B7 – CD80/CD86 (2º sinal)",
+        "x": 49.29,
+        "y": 52.78,
+        "explanation": "Molécula coestimuladora da APC madura (aumenta com PAMPs via TLR)."
+      },
+      {
+        "id": "imu-ativacao-4",
+        "label": "CD28",
+        "x": 58.93,
+        "y": 52.78,
+        "explanation": "Recebe o sinal da B7. Sem 2º sinal → anergia/tolerância."
+      },
+      {
+        "id": "imu-ativacao-5",
+        "label": "Citocinas (3º sinal)",
+        "x": 55.36,
+        "y": 72.78,
+        "explanation": "Ex.: IL-12 (Th1), IL-4 (Th2), IL-6/IL-23/TGF-β (Th17): definem a diferenciação."
+      },
+      {
+        "id": "imu-ativacao-6",
+        "label": "Linfócito T virgem (naïve)",
+        "x": 80.36,
+        "y": 66.67,
+        "explanation": "Após os 3 sinais, prolifera e se diferencia em células efetoras e de memória."
+      }
+    ]
+  },
+  {
+    "id": "imu-fagocitose",
+    "title": "Fagocitose e morte microbiana",
+    "system": "inata",
+    "image": "imuno/fagocitose.svg",
+    "builtin": true,
+    "pins": [
+      {
+        "id": "imu-fagocitose-0",
+        "label": "Quimiotaxia",
+        "x": 19.64,
+        "y": 26.32,
+        "explanation": "O fagócito migra seguindo quimiocinas (IL-8) e C5a."
+      },
+      {
+        "id": "imu-fagocitose-1",
+        "label": "Opsoninas (IgG, C3b)",
+        "x": 28.57,
+        "y": 31.58,
+        "explanation": "Recobrem o micróbio e facilitam o reconhecimento por receptores Fc e de complemento."
+      },
+      {
+        "id": "imu-fagocitose-2",
+        "label": "Reconhecimento e englobamento (pseudópodes)",
+        "x": 29.46,
+        "y": 39.47,
+        "explanation": "Ligação direta por PRRs (manose, scavenger, TLR) ou via opsoninas; o fagócito emite pseudópodes."
+      },
+      {
+        "id": "imu-fagocitose-3",
+        "label": "Fagossomo",
+        "x": 44.64,
+        "y": 28.95,
+        "explanation": "Vesícula com a partícula ingerida."
+      },
+      {
+        "id": "imu-fagocitose-4",
+        "label": "Lisossomo",
+        "x": 62.5,
+        "y": 28.95,
+        "explanation": "Contém enzimas digestivas (proteases, nucleases, lipases)."
+      },
+      {
+        "id": "imu-fagocitose-5",
+        "label": "Fagolisossomo – explosão respiratória",
+        "x": 69.64,
+        "y": 48.68,
+        "explanation": "Fusão fagossomo + lisossomo; ROS (O₂⁻, H₂O₂, ClO⁻ pela mieloperoxidase), NO (iNOS) e enzimas matam o micróbio."
+      },
+      {
+        "id": "imu-fagocitose-6",
+        "label": "Núcleo do fagócito",
+        "x": 53.57,
+        "y": 60.53,
+        "explanation": "Macrófago (mononuclear) ou neutrófilo (núcleo multilobulado)."
+      },
+      {
+        "id": "imu-fagocitose-7",
+        "label": "Apresentação via MHC II",
+        "x": 80.36,
+        "y": 82.11,
+        "explanation": "Peptídeos do micróbio digerido são apresentados ao linfócito T CD4+."
+      }
+    ]
+  },
+  {
+    "id": "imu-diapedese",
+    "title": "Inflamação: recrutamento de leucócitos (diapedese)",
+    "system": "inata",
+    "image": "imuno/diapedese.svg",
+    "builtin": true,
+    "pins": [
+      {
+        "id": "imu-diapedese-0",
+        "label": "Rolamento (selectinas)",
+        "x": 15.52,
+        "y": 28.95,
+        "explanation": "Ligações fracas com selectinas do endotélio fazem o leucócito desacelerar e rolar."
+      },
+      {
+        "id": "imu-diapedese-1",
+        "label": "Adesão firme (integrinas – ICAM-1)",
+        "x": 37.93,
+        "y": 33.16,
+        "explanation": "Integrinas do leucócito ativadas pelas quimiocinas ligam-se à ICAM-1 do endotélio ativado."
+      },
+      {
+        "id": "imu-diapedese-2",
+        "label": "Diapedese (transmigração)",
+        "x": 57.93,
+        "y": 44.74,
+        "explanation": "O leucócito passa entre as células endoteliais para o tecido."
+      },
+      {
+        "id": "imu-diapedese-3",
+        "label": "Quimiotaxia (IL-8, C5a)",
+        "x": 84.48,
+        "y": 72.37,
+        "explanation": "Migração no tecido a favor do gradiente de quimiocinas até o foco."
+      },
+      {
+        "id": "imu-diapedese-4",
+        "label": "Bactérias no foco inflamatório",
+        "x": 91.38,
+        "y": 77.63,
+        "explanation": "PAMPs ativam células sentinelas → TNF, IL-1, IL-6 e quimiocinas."
+      },
+      {
+        "id": "imu-diapedese-5",
+        "label": "Endotélio ativado",
+        "x": 24.14,
+        "y": 42.37,
+        "explanation": "Vasodilatação e aumento da permeabilidade (calor, rubor, edema)."
+      },
+      {
+        "id": "imu-diapedese-6",
+        "label": "Neutrófilo no tecido",
+        "x": 77.59,
+        "y": 65.79,
+        "explanation": "Primeiro a chegar; fagocita, libera ROS e pode formar NETs."
+      }
+    ]
+  },
+  {
+    "id": "imu-complemento",
+    "title": "Sistema complemento: vias e funções",
+    "system": "inata",
+    "image": "imuno/complemento.svg",
+    "builtin": true,
+    "pins": [
+      {
+        "id": "imu-complemento-0",
+        "label": "Via clássica",
+        "x": 17.24,
+        "y": 15.5,
+        "explanation": "Ativada por imunocomplexos (anticorpo IgM/IgG ligado ao antígeno), via C1q."
+      },
+      {
+        "id": "imu-complemento-1",
+        "label": "Via alternativa",
+        "x": 50.0,
+        "y": 15.5,
+        "explanation": "Ativada diretamente pela superfície do micróbio."
+      },
+      {
+        "id": "imu-complemento-2",
+        "label": "Via das lectinas",
+        "x": 82.76,
+        "y": 15.5,
+        "explanation": "A lectina ligante de manose (MBL) se liga a carboidratos do patógeno."
+      },
+      {
+        "id": "imu-complemento-3",
+        "label": "C3 (ponto de convergência)",
+        "x": 50.0,
+        "y": 43.75,
+        "explanation": "As três vias convergem na clivagem de C3."
+      },
+      {
+        "id": "imu-complemento-4",
+        "label": "C3a e C5a – anafilatoxinas",
+        "x": 28.45,
+        "y": 71.25,
+        "explanation": "Inflamação: degranulação de mastócitos, recrutamento de leucócitos (C5a é quimiotático) e aumento da permeabilidade."
+      },
+      {
+        "id": "imu-complemento-5",
+        "label": "C3b – opsonização",
+        "x": 51.72,
+        "y": 72.5,
+        "explanation": "Recobre o micróbio e facilita a fagocitose pelos receptores de complemento."
+      },
+      {
+        "id": "imu-complemento-6",
+        "label": "MAC (C5b-C9) – lise osmótica",
+        "x": 81.03,
+        "y": 73.0,
+        "explanation": "Forma poros na membrana: entrada de água e sais e lise. Eficaz contra bactérias de parede fina (Neisseria)."
+      }
+    ]
+  },
+  {
+    "id": "imu-hipersensibilidade",
+    "title": "Reações de hipersensibilidade (tipos I a IV)",
+    "system": "hiper",
+    "image": "imuno/hipersensibilidade.svg",
+    "builtin": true,
+    "pins": [
+      {
+        "id": "imu-hipersensibilidade-0",
+        "label": "Tipo I: IgE ligada ao mastócito",
+        "x": 16.67,
+        "y": 17.14,
+        "explanation": "Alérgeno faz ligação cruzada de IgE no mastócito → degranulação. Ex.: rinite, asma alérgica, anafilaxia."
+      },
+      {
+        "id": "imu-hipersensibilidade-1",
+        "label": "Mediadores (histamina, leucotrienos)",
+        "x": 34.17,
+        "y": 29.76,
+        "explanation": "Vasodilatação, permeabilidade, broncoconstrição em minutos."
+      },
+      {
+        "id": "imu-hipersensibilidade-2",
+        "label": "Tipo II: anticorpo contra antígeno da célula",
+        "x": 63.33,
+        "y": 23.33,
+        "explanation": "IgG/IgM ligadas a antígenos de superfície → complemento, fagocitose, ADCC. Ex.: reação transfusional, eritroblastose fetal, anemia hemolítica autoimune."
+      },
+      {
+        "id": "imu-hipersensibilidade-3",
+        "label": "Fagócito / NK (opsonização e ADCC)",
+        "x": 88.67,
+        "y": 35.71,
+        "explanation": "Destroem a célula recoberta por anticorpos."
+      },
+      {
+        "id": "imu-hipersensibilidade-4",
+        "label": "Tipo III: imunocomplexos depositados no vaso",
+        "x": 26.67,
+        "y": 82.14,
+        "explanation": "Complexos antígeno-anticorpo se depositam em vasos/glomérulos e ativam complemento. Ex.: lúpus, glomerulonefrite pós-estreptocócica, doença do soro, reação de Arthus."
+      },
+      {
+        "id": "imu-hipersensibilidade-5",
+        "label": "Neutrófilos recrutados (vasculite)",
+        "x": 26.67,
+        "y": 93.81,
+        "explanation": "Lesão tecidual pela inflamação."
+      },
+      {
+        "id": "imu-hipersensibilidade-6",
+        "label": "Tipo IV: linfócito T sensibilizado",
+        "x": 65.0,
+        "y": 76.19,
+        "explanation": "Mediada por células (Th1/CD8), sem anticorpos; 24–72 h. Ex.: PPD (tuberculina), dermatite de contato, rejeição de enxerto."
+      },
+      {
+        "id": "imu-hipersensibilidade-7",
+        "label": "Macrófago ativado (IFN-γ)",
+        "x": 82.5,
+        "y": 79.76,
+        "explanation": "Ativado pelas citocinas do T: inflamação e granuloma."
+      }
+    ]
+  },
+  {
+    "id": "imu-celulas",
+    "title": "Células do sistema imune",
+    "system": "base",
+    "image": "imuno/celulas.svg",
+    "builtin": true,
+    "pins": [
+      {
+        "id": "imu-celulas-0",
+        "label": "Neutrófilo",
+        "x": 13.33,
+        "y": 23.81,
+        "explanation": "Núcleo multilobulado; leucócito mais abundante; primeiro a chegar na inflamação aguda; vida curta; NETose."
+      },
+      {
+        "id": "imu-celulas-1",
+        "label": "Eosinófilo",
+        "x": 36.67,
+        "y": 23.81,
+        "explanation": "Núcleo bilobado e grânulos vermelhos; ataca o tegumento de helmintos (ativado pela IL-5)."
+      },
+      {
+        "id": "imu-celulas-2",
+        "label": "Mastócito / basófilo",
+        "x": 60.0,
+        "y": 23.81,
+        "explanation": "Grânulos com histamina; IgE na superfície; alergias e defesa contra helmintos."
+      },
+      {
+        "id": "imu-celulas-3",
+        "label": "Macrófago",
+        "x": 85.0,
+        "y": 23.81,
+        "explanation": "Deriva do monócito; fagócito e sentinela tecidual; M1 (IFN-γ, LPS) ou M2 (IL-4/IL-13)."
+      },
+      {
+        "id": "imu-celulas-4",
+        "label": "Linfócito",
+        "x": 13.33,
+        "y": 71.43,
+        "explanation": "Núcleo grande e pouco citoplasma; B (anticorpos) e T (CD4 coordena, CD8 destrói)."
+      },
+      {
+        "id": "imu-celulas-5",
+        "label": "Célula NK",
+        "x": 33.33,
+        "y": 71.43,
+        "explanation": "Linfócito inato com grânulos (perforinas e granzimas); mata células infectadas por vírus e tumorais."
+      },
+      {
+        "id": "imu-celulas-6",
+        "label": "Célula dendrítica",
+        "x": 56.67,
+        "y": 71.43,
+        "explanation": "Prolongamentos; captura antígenos e ativa linfócitos T virgens no linfonodo."
+      },
+      {
+        "id": "imu-celulas-7",
+        "label": "Plasmócito",
+        "x": 83.33,
+        "y": 71.43,
+        "explanation": "Linfócito B diferenciado: núcleo excêntrico e RER abundante; produz anticorpos."
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" font-family="Nunito,Segoe UI,sans-serif"><rect x="3" y="3" width="554" height="354" rx="22" fill="#f8fafc"/><path d="M246.8 166.4 Q245.6 190.0 248.4 214.4 Q251.3 238.8 232.7 254.6 Q214.1 270.4 194.9 286.6 Q175.7 302.8 149.9 303.4 Q124.0 304.0 110.1 280.7 Q96.3 257.3 85.7 241.7 Q75.0 226.1 48.2 208.1 Q21.4 190.0 42.1 169.0 Q62.8 148.0 76.7 131.7 Q90.5 115.4 105.0 85.8 Q119.5 56.2 146.8 70.3 Q174.1 84.4 202.1 86.9 Q230.1 89.5 239.0 116.2 Q247.9 142.8 246.8 166.4Z" fill="#e0f2fe" stroke="#0284c7" stroke-width="4"/>
+<g stroke="#0284c7" stroke-width="10" stroke-linejoin="round" stroke-linecap="round" fill="none"><path d="M60 120 L20 90"/><path d="M50 260 L12 290"/><path d="M150 82 L140 36"/><path d="M150 300 L160 340"/></g>
+
+<circle cx="440" cy="190" r="95" fill="#fef3c7" stroke="#b45309" stroke-width="4"/>
+<path d="M255 120 L300 120" stroke="#2563eb" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/><path d="M300 120 L352 120" stroke="#7c3aed" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/><circle cx="300" cy="120" r="8" fill="#f59e0b"/>
+<path d="M258 190 L298 190" stroke="#0d9488" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/><path d="M298 190 L348 190" stroke="#16a34a" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+<g fill="#ec4899"><circle cx="280" cy="262" r="6"/><circle cx="300" cy="250" r="6"/><circle cx="318" cy="268" r="6"/><circle cx="338" cy="252" r="6"/><circle cx="296" cy="280" r="6"/></g>
+<path d="M262 250 Q300 300 350 260" stroke="#ec4899" stroke-width="3" fill="none" stroke-dasharray="5 5"/>
+</svg>

@@ -4,6 +4,9 @@
   {
    "label": "Sistema Respiratório",
    "system": "resp",
+   "figures": [
+    "respiratorio"
+   ],
    "children": [
     {
      "label": "Nariz e cavidade nasal",
@@ -72,6 +75,9 @@
     },
     {
      "label": "Pulmões e pleura",
+     "figures": [
+      "respiratorio"
+     ],
      "children": [
       {
        "label": "Direito: 3 lobos, 2 fissuras"
@@ -88,19 +94,16 @@
       {
        "label": "Pneumotórax × hemotórax"
       }
-     ],
-     "figures": [
-      "respiratorio"
      ]
     }
-   ],
-   "figures": [
-    "respiratorio"
    ]
   },
   {
    "label": "Sistema Digestório",
    "system": "dig",
+   "figures": [
+    "digestorio"
+   ],
    "children": [
     {
      "label": "Boca",
@@ -195,14 +198,15 @@
       }
      ]
     }
-   ],
-   "figures": [
-    "digestorio"
    ]
   },
   {
    "label": "Sistema Urinário",
    "system": "uri",
+   "figures": [
+    "urinario",
+    "rim_corte"
+   ],
    "children": [
     {
      "label": "Rins",
@@ -223,6 +227,9 @@
     },
     {
      "label": "Estrutura interna",
+     "figures": [
+      "rim_corte"
+     ],
      "children": [
       {
        "label": "Córtex, pirâmides, colunas"
@@ -236,9 +243,6 @@
       {
        "label": "Sistema porta renal"
       }
-     ],
-     "figures": [
-      "rim_corte"
      ]
     },
     {
@@ -266,15 +270,14 @@
       }
      ]
     }
-   ],
-   "figures": [
-    "urinario",
-    "rim_corte"
    ]
   },
   {
    "label": "Genital Masculino",
    "system": "masc",
+   "figures": [
+    "masculino"
+   ],
    "children": [
     {
      "label": "Testículos e escroto",
@@ -321,14 +324,14 @@
       }
      ]
     }
-   ],
-   "figures": [
-    "masculino"
    ]
   },
   {
    "label": "Genital Feminino",
    "system": "fem",
+   "figures": [
+    "utero"
+   ],
    "children": [
     {
      "label": "Genitália externa e períneo",
@@ -360,6 +363,9 @@
     },
     {
      "label": "Útero",
+     "figures": [
+      "utero"
+     ],
      "children": [
       {
        "label": "Fundo, corpo, istmo, colo"
@@ -376,9 +382,6 @@
       {
        "label": "Douglas: útero × reto"
       }
-     ],
-     "figures": [
-      "utero"
      ]
     },
     {
@@ -399,14 +402,8 @@
       {
        "label": "Artéria ovariana: aorta"
       }
-     ],
-     "figures": [
-      "utero"
      ]
     }
-   ],
-   "figures": [
-    "utero"
    ]
   }
  ]

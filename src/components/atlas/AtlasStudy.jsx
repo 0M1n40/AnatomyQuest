@@ -10,9 +10,7 @@ export default function AtlasStudy({ figureId, onBack, onPlay }) {
   const [revealed, setRevealed] = useState(new Set());
   const [showOrgan, setShowOrgan] = useState(false);
   const [error, setError] = useState('');
-
   useEffect(() => { api.atlas.figure(figureId).then(setFig).catch((e) => setError(e.message)); }, [figureId]);
-
   if (error) return <Card className="text-center text-accent">{error}</Card>;
   if (!fig) return <Spinner />;
 
@@ -31,11 +29,9 @@ export default function AtlasStudy({ figureId, onBack, onPlay }) {
         </label>
         <Button size="sm" onClick={() => onPlay(fig.id, 'mix')}>Me testar ➜</Button>
       </div>
-
       <div className="grid gap-4 md:grid-cols-[minmax(0,1fr)_340px]">
         <AtlasViewer image={fig.image} alt={fig.title} className="max-w-2xl" onPinClick={(p) => choose(p.id)}
           pins={fig.pins.map((p, i) => ({ ...p, number: i + 1, state: p.id === sel ? 'selected' : 'study', showLabel: p.id === sel && visible(p.id) }))} />
-
         <div className="space-y-3">
           {fig.organ && (
             <Card className="border-brand/40 p-4">
@@ -43,10 +39,7 @@ export default function AtlasStudy({ figureId, onBack, onPlay }) {
               {hide && !showOrgan ? (
                 <Button size="sm" variant="secondary" className="mt-2" onClick={() => setShowOrgan(true)}>👁️ Revelar órgão</Button>
               ) : (
-                <>
-                  <h2 className="text-lg font-black text-brand">{fig.organ}</h2>
-                  <p className="mt-1 text-sm font-semibold">{fig.justification}</p>
-                </>
+                <><h2 className="text-lg font-black text-brand">{fig.organ}</h2><p className="mt-1 text-sm font-semibold">{fig.justification}</p></>
               )}
             </Card>
           )}

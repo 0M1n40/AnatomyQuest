@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" font-family="Nunito,Segoe UI,sans-serif"><rect x="3" y="3" width="554" height="374" rx="22" fill="#f8fafc"/>
+<rect x="30" y="280" width="220" height="80" rx="40" fill="#fee2e2" stroke="#dc2626" stroke-width="4"/>
+<path d="M120 282 L120 220 Q118 196 140 192" stroke="#dc2626" stroke-width="16" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="160" cy="246" r="15" fill="#fecaca" stroke="#dc2626" stroke-width="3"/>
+<path d="M140 192 L184 192" stroke="#f59e0b" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="310" y="280" width="220" height="80" rx="40" fill="#dbeafe" stroke="#2563eb" stroke-width="4"/>
+<path d="M398 282 L398 196" stroke="#2563eb" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/><path d="M440 282 L440 196" stroke="#60a5fa" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M392 192 L446 192" stroke="#f59e0b" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="90" y="56" width="140" height="70" rx="30" fill="#fef3c7" stroke="#b45309" stroke-width="3"/><text x="160" y="96" font-size="12" font-weight="800" fill="#92400e" text-anchor="middle">Linfócito T</text>
+<path d="M150 126 L150 176 M178 126 L178 176" stroke="#7c3aed" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M110 126 L104 196" stroke="#16a34a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="350" y="56" width="140" height="70" rx="30" fill="#fef3c7" stroke="#b45309" stroke-width="3"/><text x="420" y="96" font-size="12" font-weight="800" fill="#92400e" text-anchor="middle">Linfócito T</text>
+<path d="M406 126 L406 176 M434 126 L434 176" stroke="#7c3aed" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M470 126 L462 210" stroke="#16a34a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/></svg>

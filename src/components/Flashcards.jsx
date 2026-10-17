@@ -22,13 +22,12 @@ export default function Flashcards({ systems, subject }) {
         <h1 className="text-2xl font-black">🃏 Flashcards · {subject.name}</h1>
         <div className="flex items-center gap-2">
           <select value={system} onChange={(e) => setSystem(e.target.value)} className="rounded-2xl border border-line bg-card px-3 py-2 font-semibold">
-            <option value="">Todos os sistemas</option>
+            <option value="">Todos os temas</option>
             {systems.map((s) => <option key={s.id} value={s.id}>{s.icon} {s.name}</option>)}
           </select>
           {cards && <Pill>{i + 1}/{cards.length}</Pill>}
         </div>
       </div>
-
       {!cards ? <Spinner /> : (
         <Card>
           <div className="flex flex-wrap gap-2">

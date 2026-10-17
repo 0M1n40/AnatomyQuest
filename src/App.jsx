@@ -72,61 +72,41 @@ export default function App() {
     if (saved) setPlayer(saved.player);
     go('result', { data: { ...data, saved }, back });
   };
-
   const reset = async () => {
     if (!confirm(`Zerar seu progresso em ${subject.name} (estrelas, recordes e erros)?`)) return;
     await api.resetPlayer(player.name);
     await refreshPlayer();
   };
-
   const logout = () => { safeStorage.del(PLAYER_KEY); setPlayer(null); go('login'); };
 
   const s = screen;
   const ready = player && subject;
   return (
     <>
-      <Header
-        player={player}
-        subject={s.name === 'subjects' ? null : subject}
-        current={NAV_OF[s.name]}
-        onNavigate={navigate}
-        onSubjects={() => go('subjects')}
-        theme={theme}
-        onToggleTheme={toggleTheme}
-        onLogout={logout}
-      />
+      <Header player={player} subject={s.name === 'subjects' ? null : subject} current={NAV_OF[s.name]} onNavigate={navigate}
+        onSubjects={() => go('subjects')} theme={theme} onToggleTheme={toggleTheme} onLogout={logout} />
       <main key={subject?.id} className="mx-auto max-w-6xl p-4 sm:p-6">
         {s.name === 'loading' && <Spinner />}
         {s.name === 'login' && <Login onLogin={login} error={error} />}
         {s.name === 'subjects' && player && <SubjectPicker player={player} current={subject?.id} onPick={(id) => enterSubject(id, player.name)} />}
-
         {ready && (
           <>
             {s.name === 'home' && <Home player={player} subject={subject} systems={systems} onPlay={play} onNavigate={navigate} onReset={reset} />}
             {s.name === 'game' && <Game key={s.key} player={player} mode={s.mode} onFinish={finish({ name: 'game', mode: s.mode })} onExit={() => navigate('home')} />}
             {s.name === 'result' && (
-              <Result
-                data={s.data}
-                menuLabel={s.back.name === 'atlasGame' ? `Voltar ao ${subject.practice.nav}` : 'Início'}
-                onReplay={() => go(s.back.name, { ...s.back })}
-                onMenu={() => navigate(s.back.name === 'atlasGame' ? 'atlas' : 'home')}
-              />
+              <Result data={s.data} menuLabel={s.back.name === 'atlasGame' ? `Voltar ao ${subject.practice.nav}` : 'Início'}
+                onReplay={() => go(s.back.name, { ...s.back })} onMenu={() => navigate(s.back.name === 'atlasGame' ? 'atlas' : 'home')} />
             )}
             {s.name === 'flash' && <Flashcards systems={systems} subject={subject} />}
             {s.name === 'ranking' && <Ranking systems={systems} me={player.name} subject={subject} />}
             {s.name === 'mindmap' && <MindMap subject={subject} onPlay={play} />}
             {s.name === 'exam' && <Exam key={s.key} player={player} subject={subject} onSaved={setPlayer} onExit={() => navigate('home')} />}
-
             {s.name === 'atlas' && (
-              <AtlasHub player={player} subject={subject}
-                onStudy={(figure) => go('atlasStudy', { figure })}
-                onPlay={(figure, type) => go('atlasGame', { figure, type })}
-                onEditor={() => go('atlasEditor')} />
+              <AtlasHub player={player} subject={subject} onStudy={(figure) => go('atlasStudy', { figure })}
+                onPlay={(figure, type) => go('atlasGame', { figure, type })} onEditor={() => go('atlasEditor')} />
             )}
             {s.name === 'atlasStudy' && <AtlasStudy figureId={s.figure} onBack={() => go('atlas')} onPlay={(figure, type) => go('atlasGame', { figure, type })} />}
-            {s.name === 'atlasGame' && (
-              <AtlasGame key={s.key} figure={s.figure} type={s.type} onFinish={finish({ name: 'atlasGame', figure: s.figure, type: s.type })} onExit={() => navigate('atlas')} />
-            )}
+            {s.name === 'atlasGame' && <AtlasGame key={s.key} figure={s.figure} type={s.type} onFinish={finish({ name: 'atlasGame', figure: s.figure, type: s.type })} onExit={() => navigate('atlas')} />}
             {s.name === 'atlasEditor' && <AtlasEditor subject={subject} onBack={() => navigate('atlas')} />}
           </>
         )}
