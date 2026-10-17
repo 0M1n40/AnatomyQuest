@@ -6,7 +6,7 @@ import AtlasViewer from './AtlasViewer.jsx';
 
 const input = 'w-full rounded-xl border-2 border-line bg-soft px-3 py-2 font-semibold outline-none focus:border-brand';
 
-// Lê a imagem e reduz para no máx. 1200px (fica leve para salvar no navegador e no GitHub)
+// Lê a imagem e reduz para no máx. 1200px (leve para o navegador e para o GitHub)
 function readImage(file, max = 1200) {
   return new Promise((resolve, reject) => {
     if (!file?.type.startsWith('image/')) return reject(new Error('Escolha um arquivo de imagem (PNG, JPG…).'));
@@ -63,7 +63,7 @@ function Gate({ onOk, onBack }) {
   );
 }
 
-export default function AtlasEditor({ onBack }) {
+export default function AtlasEditor({ subject, onBack }) {
   const [pin, setPin] = useState(null);
   const [figures, setFigures] = useState(null);
   const [fig, setFig] = useState(null);
@@ -72,9 +72,8 @@ export default function AtlasEditor({ onBack }) {
   const [msg, setMsg] = useState('');
   const [busy, setBusy] = useState(false);
   const [form, setForm] = useState({ title: '', system: 'resp', file: null });
-  const [, setTick] = useState(0);
 
-  const loadList = () => api.atlas.figures().then((f) => { setFigures(f); setTick((t) => t + 1); });
+  const loadList = () => api.atlas.figures().then(setFigures);
   useEffect(() => { if (pin) loadList(); }, [pin]);
 
   const flash = (t) => { setMsg(t); setTimeout(() => setMsg(''), 4000); };
@@ -89,7 +88,6 @@ export default function AtlasEditor({ onBack }) {
 
   const patch = (changes) => { setFig((f) => ({ ...f, ...changes })); setDirty(true); };
   const patchPin = (id, changes) => patch({ pins: fig.pins.map((p) => (p.id === id ? { ...p, ...changes } : p)) });
-
   const addPin = ({ x, y }) => {
     const id = `new-${Date.now()}`;
     patch({ pins: [...fig.pins, { id, label: '', explanation: '', x, y }] });
@@ -102,7 +100,9 @@ export default function AtlasEditor({ onBack }) {
     if (unnamed && !confirm(`${unnamed} ponto(s) sem nome serão descartados. Continuar?`)) return;
     setBusy(true);
     try {
-      const saved = await api.atlas.update(pin, fig.id, { title: fig.title, system: fig.system, pins: fig.pins });
+      const saved = await api.atlas.update(pin, fig.id, {
+        title: fig.title, system: fig.system, pins: fig.pins, organ: fig.organ || '', justification: fig.justification || '',
+      });
       setFig(saved); setSel(null); setDirty(false);
       await loadList();
       flash('✅ Salvo neste navegador. Exporte o atlas.json para publicar.');
@@ -146,11 +146,11 @@ export default function AtlasEditor({ onBack }) {
   };
 
   const restore = async () => {
-    if (!confirm('Descartar TODAS as alterações feitas neste navegador e voltar ao atlas publicado?')) return;
+    if (!confirm('Descartar TODAS as alterações feitas neste navegador e voltar ao conteúdo publicado?')) return;
     await api.atlas.restore();
     setFig(null); setDirty(false);
     await loadList();
-    flash('↩️ Atlas restaurado.');
+    flash('↩️ Restaurado.');
   };
 
   if (!pin) return <Gate onOk={setPin} onBack={onBack} />;
@@ -162,15 +162,15 @@ export default function AtlasEditor({ onBack }) {
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center gap-2">
-        <Button variant="secondary" size="sm" onClick={() => guard() && onBack()}>⟵ Atlas</Button>
-        <h1 className="flex-1 text-xl font-black">✏️ Editor do Atlas</h1>
+        <Button variant="secondary" size="sm" onClick={() => guard() && onBack()}>⟵ Voltar</Button>
+        <h1 className="flex-1 text-xl font-black">✏️ Editor · {subject.name}</h1>
         {msg && <span className="animate-bounce-in rounded-xl bg-soft px-3 py-1 text-sm font-bold">{msg}</span>}
       </div>
 
       <Card className="flex flex-col gap-3 border-gold/50 bg-gold/10 p-4 md:flex-row md:items-center">
         <p className="flex-1 text-sm font-semibold">
           📌 As alterações ficam salvas <b>só neste navegador</b>. Para os alunos verem, clique em <b>Exportar atlas.json</b>,
-          substitua o arquivo <code>src/data/atlas.json</code> do projeto e envie para o GitHub.
+          substitua o arquivo <code>src/data/{subject.id}/atlas.json</code> do projeto e envie para o GitHub.
         </p>
         <div className="flex gap-2">
           <Button size="sm" disabled={!changed || dirty} onClick={downloadAtlas}>⬇️ Exportar atlas.json</Button>
@@ -181,7 +181,7 @@ export default function AtlasEditor({ onBack }) {
       <div className="grid gap-4 lg:grid-cols-[280px_minmax(0,1fr)]">
         <div className="space-y-4">
           <Card className="p-4">
-            <h2 className="mb-2 font-black">➕ Nova figura</h2>
+            <h2 className="mb-2 font-black">➕ Nova figura / lâmina</h2>
             <form onSubmit={create} className="space-y-2">
               <input required placeholder="Título (ex.: Peça – estômago)" value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} className={input} />
               <select value={form.system} onChange={(e) => setForm({ ...form, system: e.target.value })} className={input}>
@@ -190,18 +190,15 @@ export default function AtlasEditor({ onBack }) {
               <input required type="file" accept="image/*" onChange={(e) => setForm({ ...form, file: e.target.files[0] })} className="w-full text-sm" />
               <Button className="w-full" disabled={busy}>{busy ? 'Processando…' : 'Adicionar imagem'}</Button>
             </form>
-            <p className="mt-2 text-xs text-muted">Dica: use fotos das peças do laboratório. O navegador guarda cerca de 10 a 15 fotos.</p>
+            <p className="mt-2 text-xs text-muted">O navegador guarda cerca de 10 a 15 fotos por vez.</p>
           </Card>
 
           <Card className="max-h-[55vh] overflow-auto p-3">
             <h2 className="mb-2 px-1 font-black">Figuras</h2>
             {figures.map((f) => (
-              <button
-                key={f.id}
-                onClick={() => open(f.id)}
-                className={`mb-1 flex w-full items-center gap-2 rounded-xl p-1.5 text-left text-sm font-semibold transition ${fig?.id === f.id ? 'bg-brand/15' : 'hover:bg-soft'}`}
-              >
-                <img src={f.image} alt="" className="h-10 w-10 rounded-lg bg-white object-contain" />
+              <button key={f.id} onClick={() => open(f.id)}
+                className={`mb-1 flex w-full items-center gap-2 rounded-xl p-1.5 text-left text-sm font-semibold transition ${fig?.id === f.id ? 'bg-brand/15' : 'hover:bg-soft'}`}>
+                <img src={f.image} alt="" className="h-10 w-10 rounded-lg bg-white object-cover" />
                 <span className="flex-1 leading-tight">{f.title}<br /><small className="text-muted">{f.pinCount} pontos{f.builtin ? ' · padrão' : ''}</small></span>
               </button>
             ))}
@@ -216,12 +213,10 @@ export default function AtlasEditor({ onBack }) {
           <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_300px]">
             <div className="space-y-2">
               <p className="rounded-2xl bg-soft px-3 py-2 text-sm font-semibold">
-                🖱️ <b>Clique na imagem</b> para criar um ponto · <b>arraste</b> um ponto para reposicionar · clique em um ponto para editar.
+                🖱️ <b>Clique na imagem</b> para criar um ponto · <b>arraste</b> para reposicionar · clique em um ponto para editar.
               </p>
               <AtlasViewer
-                image={fig.image}
-                alt={fig.title}
-                editable
+                image={fig.image} alt={fig.title} editable
                 onImageClick={addPin}
                 onPinClick={(p) => setSel(p.id)}
                 onPinMove={(id, xy) => patchPin(id, xy)}
@@ -237,6 +232,10 @@ export default function AtlasEditor({ onBack }) {
                 <select value={fig.system} onChange={(e) => patch({ system: e.target.value })} className={input}>
                   {Object.entries(SYSTEM_LABEL).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
                 </select>
+                <label className="text-xs font-black text-muted">ÓRGÃO (para "Que lâmina é essa?")</label>
+                <input value={fig.organ || ''} placeholder="Opcional. Ex.: Traqueia" onChange={(e) => patch({ organ: e.target.value })} className={input} />
+                <label className="text-xs font-black text-muted">JUSTIFICATIVA</label>
+                <textarea rows={3} value={fig.justification || ''} placeholder="Opcional. Ex.: Epitélio respiratório e anel de cartilagem em C." onChange={(e) => patch({ justification: e.target.value })} className={input} />
                 {!fig.builtin && (
                   <label className="block cursor-pointer text-sm font-bold text-brand">
                     🔄 Trocar imagem

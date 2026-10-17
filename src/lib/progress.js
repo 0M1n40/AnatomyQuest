@@ -1,4 +1,4 @@
-export const TITLES = ['Calouro', 'Monitor', 'Residente', 'Anatomista', 'Mestre Anatomista', 'Lenda do Laboratório'];
+export const TITLES = ['Calouro', 'Monitor', 'Residente', 'Especialista', 'Mestre', 'Lenda do Laboratório'];
 export const XP_PER_LEVEL = 500;
 export const level = (xp = 0) => Math.floor(xp / XP_PER_LEVEL) + 1;
 export const title = (xp = 0) => TITLES[Math.min(level(xp) - 1, TITLES.length - 1)];

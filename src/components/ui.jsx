@@ -14,6 +14,8 @@ export function Button({ variant = 'primary', size = 'md', className = '', ...pr
     secondary: 'bg-soft text-ink hover:bg-line',
     accent: 'bg-accent text-white hover:brightness-110 shadow-sm',
     ghost: 'text-muted hover:bg-soft hover:text-ink',
+    success: 'bg-emerald-500 text-white hover:brightness-110',
+    warn: 'bg-gold text-slate-900 hover:brightness-110',
   };
   const sizes = { sm: 'px-3 py-1.5 text-sm', md: 'px-4 py-2.5', lg: 'px-6 py-3 text-lg' };
   return (
@@ -58,7 +60,6 @@ export function Spinner({ label = 'Carregando…' }) {
   );
 }
 
-// Mascote com balão de fala
 export function MascotTalk({ mood = 'happy', text, size = 110, className = '' }) {
   return (
     <div className={`flex items-end gap-3 ${className}`}>
@@ -73,22 +74,27 @@ export function MascotTalk({ mood = 'happy', text, size = 110, className = '' })
   );
 }
 
-// Estilos das alternativas (claro e escuro)
 export const optionClass = (state) => ({
   idle: 'border-line bg-soft/60 hover:border-brand hover:bg-brand/5',
+  selected: 'border-brand bg-brand/10',
   hidden: 'pointer-events-none opacity-25 border-line bg-soft/60',
   correct: 'border-emerald-500 bg-emerald-50 text-emerald-900 dark:bg-emerald-900/40 dark:text-emerald-100',
   wrong: 'border-rose-500 bg-rose-50 text-rose-900 dark:bg-rose-900/40 dark:text-rose-100',
   dim: 'border-line bg-soft/40 opacity-60',
 }[state]);
 
+const FEEDBACK = {
+  correct: ['✅ Correto! ', 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/50'],
+  partial: ['🟡 Parcialmente correto. ', 'border-gold bg-gold/10'],
+  wrong: ['❌ Não foi dessa vez. ', 'border-rose-500 bg-rose-50 dark:bg-rose-950/50'],
+};
+
 export function Feedback({ result, timeout, children }) {
-  const tone = result.correct
-    ? 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/50'
-    : 'border-rose-500 bg-rose-50 dark:bg-rose-950/50';
+  const kind = typeof result === 'string' ? result : result.correct ? 'correct' : 'wrong';
+  const [label, tone] = FEEDBACK[kind];
   return (
     <div className={`mt-4 animate-bounce-in rounded-2xl border-l-4 p-4 leading-relaxed ${tone}`}>
-      <b>{result.correct ? '✅ Correto! ' : timeout ? '⏰ Tempo esgotado! ' : '❌ Não foi dessa vez. '}</b>
+      <b>{timeout && kind !== 'correct' ? '⏰ Tempo esgotado! ' : label}</b>
       {children}
     </div>
   );

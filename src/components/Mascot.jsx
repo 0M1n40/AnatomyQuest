@@ -1,4 +1,4 @@
-// "Doutor Ossinho" — mascote da disciplina de Anatomia (SVG puro, sem imagens externas)
+// "Doutor Ossinho" — mascote do NurseHub (SVG puro, sem imagens externas)
 const INK = '#2b2b3a';
 const BONE = '#fffaf0';
 
@@ -52,8 +52,7 @@ function Mouth({ mood }) {
 export default function Mascot({ mood = 'happy', size = 120, className = '' }) {
   const party = mood === 'party';
   return (
-    <svg viewBox="0 0 120 150" width={size} height={size * 1.25} className={className} role="img" aria-label="Doutor Ossinho, mascote de Anatomia">
-      {/* braços atrás do jaleco */}
+    <svg viewBox="0 0 120 150" width={size} height={size * 1.25} className={className} role="img" aria-label="Doutor Ossinho, mascote do NurseHub">
       {party ? (
         <>
           <Bone d="M28 104 L12 76" /><Joint cx={11} cy={73} />
@@ -65,8 +64,6 @@ export default function Mascot({ mood = 'happy', size = 120, className = '' }) {
           {mood !== 'think' && (<><Bone d="M92 104 L102 128" /><Joint cx={103} cy={131} /></>)}
         </>
       )}
-
-      {/* jaleco */}
       <path d="M30 96 Q60 86 90 96 L96 146 L24 146 Z" fill="#ffffff" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
       <path d="M50 94 L60 146 L70 94 Z" fill="#dff3f1" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
       <g stroke={INK} strokeWidth="2" strokeLinecap="round" fill="none">
@@ -74,32 +71,23 @@ export default function Mascot({ mood = 'happy', size = 120, className = '' }) {
         <path d="M55.5 118 Q60 121 64.5 118" />
         <path d="M57 128 Q60 130 63 128" />
       </g>
-      {/* braço no queixo (pensando) */}
       {mood === 'think' && (<><Bone d="M88 108 L74 96" /><Joint cx={72} cy={94} /></>)}
-      {/* gola, bolso e caneta */}
       <path d="M44 92 L52 104 L56 92 M76 92 L68 104 L64 92" fill="#14b8a6" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
       <rect x="74" y="118" width="13" height="10" rx="2" fill="#fff" stroke={INK} strokeWidth="2" />
       <path d="M78 116 L78 122" stroke="#f97366" strokeWidth="3" strokeLinecap="round" />
-      {/* estetoscópio */}
       <path d="M40 96 Q36 122 46 128 Q54 132 56 122" stroke="#14b8a6" strokeWidth="3.5" fill="none" strokeLinecap="round" />
       <circle cx="56" cy="120" r="4.5" fill="#14b8a6" stroke={INK} strokeWidth="2" />
-
-      {/* crânio */}
       <path d="M20 50 Q20 12 60 12 Q100 12 100 50 Q100 70 86 76 L34 76 Q20 70 20 50 Z" fill={BONE} stroke={INK} strokeWidth="3" strokeLinejoin="round" />
       <rect x="40" y="70" width="40" height="22" rx="10" fill={BONE} stroke={INK} strokeWidth="3" />
       <path d="M50 86 L50 91 M56 87 L56 92 M64 87 L64 92 M70 86 L70 91" stroke={INK} strokeWidth="1.6" opacity=".55" />
-      {/* espelho frontal */}
       <path d="M22 34 Q60 18 98 34" stroke="#14b8a6" strokeWidth="4" fill="none" strokeLinecap="round" />
       <circle cx="60" cy="24" r="8" fill="#e6fffb" stroke={INK} strokeWidth="2.5" />
       <circle cx="60" cy="24" r="3" fill="#14b8a6" />
-      {/* bochechas e nariz */}
       <ellipse cx="31" cy="64" rx="6" ry="4" fill="#ffb3c1" opacity=".85" />
       <ellipse cx="89" cy="64" rx="6" ry="4" fill="#ffb3c1" opacity=".85" />
       <path d="M56 62 L64 62 L60 68 Z" fill={INK} strokeLinejoin="round" />
-
       <Eyes mood={mood} />
       <Mouth mood={mood} />
-
       {mood === 'sad' && <path d="M98 40 Q103 50 98 54 Q93 50 98 40 Z" fill="#7cc4ff" stroke={INK} strokeWidth="1.5" />}
       {mood === 'think' && <text x="98" y="22" fontSize="20" fontWeight="800" fill="#14b8a6">?</text>}
       {party && (

@@ -2,6 +2,8 @@ import { useMemo } from 'react';
 import { Button, Card, MascotTalk, Stars } from './ui.jsx';
 import { PHRASES, pick } from '../lib/phrases.js';
 
+const ICON = { correct: ['✔', 'text-emerald-500'], partial: ['◐', 'text-gold'], wrong: ['✘', 'text-accent'] };
+
 export default function Result({ data, onReplay, onMenu, menuLabel = 'Início' }) {
   const { hits, total, points, maxCombo, log, outOfLives, saved } = data;
   const pct = total ? Math.round((hits / total) * 100) : 0;
@@ -17,7 +19,7 @@ export default function Result({ data, onReplay, onMenu, menuLabel = 'Início' }
         <Stars n={stars} size="text-4xl" />
         <div className="mx-auto my-4 grid max-w-lg grid-cols-2 gap-2 sm:grid-cols-4">
           {[
-            ['🎯', 'Acertos', `${hits}/${total}`],
+            ['🎯', 'Acertos', `${String(hits).replace('.', ',')}/${total}`],
             ['📊', 'Aproveit.', `${pct}%`],
             ['🏅', 'Pontos', points],
             ['🔥', 'Sequência', maxCombo],
@@ -39,15 +41,18 @@ export default function Result({ data, onReplay, onMenu, menuLabel = 'Início' }
       <Card>
         <h3 className="mb-2 text-lg font-black">📋 Gabarito da partida</h3>
         <ul className="divide-y divide-line">
-          {log.map((l, i) => (
-            <li key={i} className="flex gap-3 py-3">
-              <span className={`mt-0.5 font-black ${l.correct ? 'text-emerald-500' : 'text-accent'}`}>{l.correct ? '✔' : '✘'}</span>
-              <div>
-                <p className="font-semibold">{l.text}</p>
-                <p className="text-sm text-muted">Resposta: <b>{l.answer}</b></p>
-              </div>
-            </li>
-          ))}
+          {log.map((l, i) => {
+            const [icon, color] = ICON[l.result || (l.correct ? 'correct' : 'wrong')];
+            return (
+              <li key={i} className="flex gap-3 py-3">
+                <span className={`mt-0.5 font-black ${color}`}>{icon}</span>
+                <div>
+                  <p className="font-semibold">{l.text}</p>
+                  <p className="text-sm text-muted">Resposta: <b>{l.answer}</b></p>
+                </div>
+              </li>
+            );
+          })}
         </ul>
       </Card>
     </div>

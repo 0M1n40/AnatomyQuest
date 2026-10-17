@@ -1,59 +1,72 @@
-# 🦴 Anatomia Quest — versão GitHub Pages
+# 🩺 NurseHub
 
-Simulado gamificado de Anatomia (Módulo 3) que roda **só no navegador**, sem servidor.
-React 19 + Vite + Tailwind CSS v4.
+Plataforma de estudo gamificado para Enfermagem que roda **só no navegador** (GitHub Pages).
+React 19 + Vite + Tailwind CSS v4. Mascote: **Doutor Ossinho** 🦴.
 
-- 118 questões comentadas (5 sistemas), simulado geral, revisão de erros e flashcards
-- 🖼️ Atlas: identificação por imagem, com 6 figuras e 71 estruturas
-- 🌗 Modo claro e escuro · 🦴 mascote Doutor Ossinho
-- O progresso (XP, estrelas, erros e ranking) fica salvo **no navegador de cada aluno**
+## Matérias
+| Matéria | Teoria | Discursivas | Prática |
+|---|---|---|---|
+| 🦴 Anatomia | 118 questões (5 sistemas) | — | Atlas: 6 figuras, 71 estruturas |
+| 🔬 Histologia | 79 questões (4 sistemas) | 20 questões "explique / diferencie" | Laminário: 19 lâminas da aula, 44 estruturas |
+
+### Modos de estudo (em cada matéria)
+- **Teoria por sistema**, **Simulado geral**, **Revisar erros** e **Flashcards**
+- **✍️ Explique com suas palavras** (discursivas): o aluno escreve, o app mostra a **resposta modelo**
+  e marca os **pontos-chave** encontrados; depois o aluno se autoavalia (acertei / parcial / errei)
+- **Prática (Atlas / Laminário)**:
+  - 📖 Estudar · 👉 Qual é a estrutura? · 📍 Onde está?
+  - 🔬 **Que lâmina é essa?** — escolha o órgão e a justificativa (como na prova prática)
+  - 🎲 Prova prática — mistura todos os modos
+- XP geral, nível, estrelas e recordes **por matéria**, ranking, modo claro/escuro
 
 ## Rodar no PC (Windows)
 ```powershell
 npm.cmd install
 npm.cmd run dev
 ```
-Depois abra http://localhost:5173
+Abra http://localhost:5173
 
 ## Publicar no GitHub Pages
-1. Crie um repositório no GitHub e envie esta pasta (com a pasta oculta `.github`).
-2. No repositório, abra **Settings → Pages** e, em **Source**, escolha **GitHub Actions**.
-3. Pronto: a cada `push` na branch `main`, o site é gerado e publicado sozinho
-   (acompanhe na aba **Actions**).
-4. O endereço fica assim: `https://SEU-USUARIO.github.io/NOME-DO-REPO/`
+1. Envie esta pasta para o repositório (com a pasta oculta `.github`). O `package.json` deve ficar na raiz.
+2. **Settings → Pages → Source: GitHub Actions**.
+3. Cada `push` na `main` publica em `https://SEU-USUARIO.github.io/NOME-DO-REPO/` (acompanhe em **Actions**).
+4. Opcional: secret `PROF_PIN` (Settings → Secrets and variables → Actions) para a senha do editor. Padrão: `anatomia`.
 
-**Senha do editor (opcional):** em **Settings → Secrets and variables → Actions**, crie o secret
-`PROF_PIN`. Sem ele, a senha é `anatomia`.
+## Editor da professora
+Prática → **Editor da professora**: adicionar fotos, marcar estruturas, e (opcional) informar **órgão** e
+**justificativa** para o modo "Que lâmina é essa?". As alterações ficam no navegador até clicar em
+**Exportar atlas.json** e substituir `src/data/<matéria>/atlas.json` no repositório.
 
-> Num site estático a senha fica dentro do código do site, então ela **não é segurança de verdade**.
-> Mas isso não é problema: o que alguém editar fica salvo só no próprio navegador e não muda nada para a turma.
+## Adicionar conteúdo
+- **Questão objetiva** (`src/data/<matéria>/questions.json`):
+  ```json
+  { "id": "hist-uri-99", "type": "mcq", "text": "Pergunta?", "options": ["A","B","C","D"], "answer": 1, "explanation": "Por quê." }
+  ```
+- **Questão discursiva**:
+  ```json
+  { "id": "hist-uri-98", "type": "open", "text": "Explique…", "model": "Resposta modelo…",
+    "keyPoints": [ { "label": "Podócitos", "keywords": ["podocit", "pedicel"] } ] }
+  ```
+  As `keywords` são comparadas sem acentos e sem maiúsculas; use radicais (ex.: `podocit` pega podócito/podócitos).
+- **Nova matéria**: crie `src/data/NOVA/questions.json` e `src/data/NOVA/atlas.json` (pode ser `[]`),
+  coloque as imagens em `public/` e adicione a matéria em `src/data/subjects.js`.
 
-## Como a professora adiciona fotos ao Atlas
-1. No site, abra **Atlas → Editor da professora**.
-2. Adicione as fotos, clique para marcar as estruturas e clique em **Salvar**.
-   Tudo fica salvo só naquele navegador, que guarda cerca de 10 a 15 fotos.
-3. Clique em **Exportar atlas.json**.
-4. Substitua o arquivo `src/data/atlas.json` do repositório pelo arquivo exportado e faça o commit.
-   Dá para fazer pelo próprio site do GitHub: abra o arquivo, clique no lápis e cole o conteúdo, ou use **Add file → Upload files**.
-5. Depois que o deploy terminar, todos os alunos passam a ver as fotos.
-
-## Limitações desta versão
-| Item | Comportamento |
-|---|---|
-| XP, estrelas e erros | Salvos por navegador. Se o aluno limpar os dados do navegador ou trocar de aparelho, o progresso volta a zero |
-| Ranking | Mostra só os jogadores que usaram aquele navegador |
-| Gabarito | Fica dentro do código do site, então quem souber abrir as ferramentas do navegador consegue ver |
-| Fotos novas | Precisam ser publicadas pelo `atlas.json`, como explicado acima |
+## Limitações (versão estática)
+- O progresso fica salvo no navegador de cada aluno.
+- O ranking mostra só quem jogou no mesmo aparelho.
+- Gabarito e senha do editor ficam no código do site (não é segurança real, mas nada que alguém altere afeta os outros).
 
 ## Estrutura
 ```
-├── .github/workflows/deploy.yml   # publica no GitHub Pages
-├── public/atlas/                  # figuras SVG
-├── src/
-│   ├── data/questions.json        # ✏️ questões (answer = índice da correta, começando em 0)
-│   ├── data/atlas.json            # ✏️ figuras e pontos do Atlas
-│   ├── lib/api.js                 # toda a lógica do jogo (salva no localStorage)
-│   ├── hooks/ · components/ · components/atlas/
-│   └── App.jsx
-└── vite.config.js                 # base './' para funcionar em /NOME-DO-REPO/
+├── .github/workflows/deploy.yml
+├── public/atlas/        # figuras SVG de Anatomia
+├── public/laminas/      # lâminas de Histologia (material da aula prática)
+└── src/
+    ├── data/subjects.js               # lista de matérias
+    ├── data/anatomia/   questions.json · atlas.json
+    ├── data/histologia/ questions.json · atlas.json
+    ├── lib/api.js       # lógica do jogo (localStorage)
+    ├── lib/text.js      # correção por pontos-chave das discursivas
+    ├── hooks/ · components/ · components/atlas/
+    └── App.jsx
 ```

@@ -1,8 +1,8 @@
 {
-  "name": "anatomia-quest-pages",
+  "name": "nursehub",
   "private": true,
-  "version": "3.0.0",
-  "description": "Anatomia Quest - versão estática para GitHub Pages (React + Vite + Tailwind)",
+  "version": "4.0.0",
+  "description": "NurseHub - estudo gamificado de Enfermagem (React + Vite + Tailwind, GitHub Pages)",
   "type": "module",
   "scripts": {
     "dev": "vite",

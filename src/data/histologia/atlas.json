@@ -1,0 +1,519 @@
+[
+  {
+    "id": "lam-traqueia",
+    "title": "Traqueia",
+    "system": "resp",
+    "image": "laminas/traqueia.jpg",
+    "builtin": true,
+    "organ": "Traqueia",
+    "justification": "Epitélio respiratório (mucosa), glândulas seromucosas (submucosa) e anel de cartilagem hialina em forma de C (adventícia).",
+    "pins": [
+      {
+        "id": "lam-traqueia-0",
+        "label": "Epitélio respiratório",
+        "x": 67,
+        "y": 22,
+        "explanation": "Pseudoestratificado cilíndrico ciliado com células caliciformes."
+      },
+      {
+        "id": "lam-traqueia-1",
+        "label": "Glândulas seromucosas",
+        "x": 48,
+        "y": 44,
+        "explanation": "Ficam na submucosa da traqueia."
+      },
+      {
+        "id": "lam-traqueia-2",
+        "label": "Cartilagem hialina (anel em C)",
+        "x": 16,
+        "y": 68,
+        "explanation": "Fica na adventícia e mantém a via aberta."
+      }
+    ]
+  },
+  {
+    "id": "lam-bronquio",
+    "title": "Pulmão – brônquio (pequeno aumento)",
+    "system": "resp",
+    "image": "laminas/bronquio.jpg",
+    "builtin": true,
+    "organ": "Brônquio intrapulmonar",
+    "justification": "Epitélio respiratório, glândulas seromucosas, camada descontínua de músculo liso e peças de cartilagem hialina.",
+    "pins": [
+      {
+        "id": "lam-bronquio-0",
+        "label": "Brônquio intrapulmonar",
+        "x": 38,
+        "y": 30,
+        "explanation": "Parede com peças de cartilagem hialina."
+      }
+    ]
+  },
+  {
+    "id": "lam-bronquio_aumento",
+    "title": "Pulmão – brônquio (grande aumento)",
+    "system": "resp",
+    "image": "laminas/bronquio_aumento.jpg",
+    "builtin": true,
+    "organ": "Brônquio intrapulmonar",
+    "justification": "Epitélio respiratório, glândulas seromucosas, camada descontínua de músculo liso e peças de cartilagem hialina.",
+    "pins": [
+      {
+        "id": "lam-bronquio_aumento-0",
+        "label": "Epitélio respiratório",
+        "x": 50,
+        "y": 24,
+        "explanation": "Pseudoestratificado cilíndrico ciliado com células caliciformes."
+      },
+      {
+        "id": "lam-bronquio_aumento-1",
+        "label": "Músculo liso (camada descontínua)",
+        "x": 82,
+        "y": 27,
+        "explanation": "Presente em brônquios e bronquíolos."
+      },
+      {
+        "id": "lam-bronquio_aumento-2",
+        "label": "Glândulas seromucosas",
+        "x": 17,
+        "y": 45,
+        "explanation": "Somem nos bronquíolos."
+      },
+      {
+        "id": "lam-bronquio_aumento-3",
+        "label": "Peça de cartilagem hialina",
+        "x": 70,
+        "y": 80,
+        "explanation": "No brônquio são placas irregulares; no bronquíolo não existem."
+      }
+    ]
+  },
+  {
+    "id": "lam-bronquiolo",
+    "title": "Bronquíolo",
+    "system": "resp",
+    "image": "laminas/bronquiolo.jpg",
+    "builtin": true,
+    "organ": "Bronquíolo",
+    "justification": "Epitélio cilíndrico ou cúbico simples e camada descontínua de músculo liso, sem peças de cartilagem hialina.",
+    "pins": [
+      {
+        "id": "lam-bronquiolo-0",
+        "label": "Bronquíolo (luz)",
+        "x": 50,
+        "y": 42,
+        "explanation": "Sem cartilagem e sem glândulas na parede."
+      },
+      {
+        "id": "lam-bronquiolo-1",
+        "label": "Epitélio simples do bronquíolo",
+        "x": 73,
+        "y": 26,
+        "explanation": "Cilíndrico a cúbico simples, com músculo liso descontínuo."
+      }
+    ]
+  },
+  {
+    "id": "lam-pulmao",
+    "title": "Pulmão (porção respiratória)",
+    "system": "resp",
+    "image": "laminas/pulmao.jpg",
+    "builtin": true,
+    "organ": "Pulmão (porção respiratória)",
+    "justification": "Presença de alvéolos, sacos alveolares e/ou ductos alveolares.",
+    "pins": [
+      {
+        "id": "lam-pulmao-0",
+        "label": "Alvéolo pulmonar",
+        "x": 54,
+        "y": 41,
+        "explanation": "Local das trocas gasosas."
+      },
+      {
+        "id": "lam-pulmao-1",
+        "label": "Saco alveolar",
+        "x": 49,
+        "y": 77,
+        "explanation": "Conjunto de alvéolos que se abrem em um espaço comum."
+      }
+    ]
+  },
+  {
+    "id": "lam-rim",
+    "title": "Rim (córtex)",
+    "system": "uri",
+    "image": "laminas/rim.jpg",
+    "builtin": true,
+    "organ": "Rim (córtex)",
+    "justification": "Presença de corpúsculo renal no córtex.",
+    "pins": [
+      {
+        "id": "lam-rim-0",
+        "label": "Corpúsculo renal",
+        "x": 38,
+        "y": 33,
+        "explanation": "Glomérulo + cápsula de Bowman; identifica o córtex."
+      },
+      {
+        "id": "lam-rim-1",
+        "label": "Glomérulo renal",
+        "x": 63,
+        "y": 38,
+        "explanation": "Novelo de capilares fenestrados."
+      },
+      {
+        "id": "lam-rim-2",
+        "label": "Espaço de Bowman",
+        "x": 53,
+        "y": 60,
+        "explanation": "Recebe o filtrado glomerular."
+      },
+      {
+        "id": "lam-rim-3",
+        "label": "Camada parietal da cápsula de Bowman",
+        "x": 45,
+        "y": 61,
+        "explanation": "Epitélio pavimentoso simples."
+      },
+      {
+        "id": "lam-rim-4",
+        "label": "Túbulo contorcido proximal",
+        "x": 89,
+        "y": 43,
+        "explanation": "Cúbico simples com borda em escova."
+      }
+    ]
+  },
+  {
+    "id": "lam-ureter",
+    "title": "Ureter",
+    "system": "uri",
+    "image": "laminas/ureter.jpg",
+    "builtin": true,
+    "organ": "Ureter",
+    "justification": "Epitélio de transição na mucosa e camada muscular delgada.",
+    "pins": [
+      {
+        "id": "lam-ureter-0",
+        "label": "Epitélio de transição",
+        "x": 48,
+        "y": 24,
+        "explanation": "Reveste a mucosa do ureter."
+      },
+      {
+        "id": "lam-ureter-1",
+        "label": "Camada muscular (delgada)",
+        "x": 32,
+        "y": 76,
+        "explanation": "Duas camadas de músculo liso."
+      }
+    ]
+  },
+  {
+    "id": "lam-bexiga",
+    "title": "Bexiga",
+    "system": "uri",
+    "image": "laminas/bexiga.jpg",
+    "builtin": true,
+    "organ": "Bexiga",
+    "justification": "Epitélio de transição na mucosa e camada muscular espessa (três camadas).",
+    "pins": [
+      {
+        "id": "lam-bexiga-0",
+        "label": "Epitélio de transição",
+        "x": 82,
+        "y": 34,
+        "explanation": "Distende-se conforme o volume de urina."
+      },
+      {
+        "id": "lam-bexiga-1",
+        "label": "Camada muscular (espessa)",
+        "x": 25,
+        "y": 57,
+        "explanation": "Três camadas de músculo liso."
+      }
+    ]
+  },
+  {
+    "id": "lam-ovario_graaf",
+    "title": "Ovário – folículo maduro (de Graaf)",
+    "system": "fem",
+    "image": "laminas/ovario_graaf.jpg",
+    "builtin": true,
+    "organ": "Ovário – folículo maduro (de Graaf)",
+    "justification": "Córtex do ovário com folículo maduro: oócito, corona radiata, antro, camada granulosa, cumulus oophorus e teca interna.",
+    "pins": [
+      {
+        "id": "lam-ovario_graaf-0",
+        "label": "Oócito primário",
+        "x": 54,
+        "y": 42,
+        "explanation": "No centro do cumulus oophorus."
+      },
+      {
+        "id": "lam-ovario_graaf-1",
+        "label": "Corona radiata",
+        "x": 62,
+        "y": 44,
+        "explanation": "Células da granulosa em volta do oócito."
+      },
+      {
+        "id": "lam-ovario_graaf-2",
+        "label": "Antro folicular",
+        "x": 31,
+        "y": 60,
+        "explanation": "Cavidade cheia de líquido folicular."
+      },
+      {
+        "id": "lam-ovario_graaf-3",
+        "label": "Camada granulosa",
+        "x": 14,
+        "y": 66,
+        "explanation": "Reveste o folículo por dentro."
+      },
+      {
+        "id": "lam-ovario_graaf-4",
+        "label": "Cumulus oophorus",
+        "x": 46,
+        "y": 26,
+        "explanation": "Montículo de células que sustenta o oócito."
+      },
+      {
+        "id": "lam-ovario_graaf-5",
+        "label": "Teca interna",
+        "x": 16,
+        "y": 16,
+        "explanation": "Camada externa à granulosa."
+      }
+    ]
+  },
+  {
+    "id": "lam-ovario_primordial",
+    "title": "Ovário – folículos primordial e primários",
+    "system": "fem",
+    "image": "laminas/ovario_primordial.jpg",
+    "builtin": true,
+    "organ": "Ovário – folículos primordial e primários",
+    "justification": "Córtex do ovário com folículo primordial e folículos primários unilamelares.",
+    "pins": [
+      {
+        "id": "lam-ovario_primordial-0",
+        "label": "Folículo primordial",
+        "x": 36,
+        "y": 77,
+        "explanation": "Ovócito com uma camada de células foliculares achatadas."
+      },
+      {
+        "id": "lam-ovario_primordial-1",
+        "label": "Folículo primário unilamelar",
+        "x": 61,
+        "y": 45,
+        "explanation": "Uma camada de células foliculares cúbicas."
+      }
+    ]
+  },
+  {
+    "id": "lam-ovario_multilamelar",
+    "title": "Ovário – folículo primário multilamelar",
+    "system": "fem",
+    "image": "laminas/ovario_multilamelar.jpg",
+    "builtin": true,
+    "organ": "Ovário – folículo primário multilamelar",
+    "justification": "Córtex do ovário com folículo primário multilamelar.",
+    "pins": [
+      {
+        "id": "lam-ovario_multilamelar-0",
+        "label": "Folículo primário multilamelar",
+        "x": 63,
+        "y": 50,
+        "explanation": "Várias camadas de células da granulosa, ainda sem antro."
+      }
+    ]
+  },
+  {
+    "id": "lam-tuba",
+    "title": "Tuba uterina",
+    "system": "fem",
+    "image": "laminas/tuba.jpg",
+    "builtin": true,
+    "organ": "Tuba uterina",
+    "justification": "Mucosa altamente pregueada formando a luz labiríntica.",
+    "pins": [
+      {
+        "id": "lam-tuba-0",
+        "label": "Mucosa pregueada (luz labiríntica)",
+        "x": 42,
+        "y": 50,
+        "explanation": "Epitélio cilíndrico simples com células ciliadas e secretoras."
+      }
+    ]
+  },
+  {
+    "id": "lam-utero_proliferativa",
+    "title": "Útero – fase proliferativa",
+    "system": "fem",
+    "image": "laminas/utero_proliferativa.jpg",
+    "builtin": true,
+    "organ": "Útero – fase proliferativa",
+    "justification": "Endométrio com glândulas endometriais longas e retilíneas.",
+    "pins": [
+      {
+        "id": "lam-utero_proliferativa-0",
+        "label": "Glândula endometrial retilínea",
+        "x": 51,
+        "y": 59,
+        "explanation": "Típica da fase proliferativa (estrógeno)."
+      }
+    ]
+  },
+  {
+    "id": "lam-utero_secretora",
+    "title": "Útero – fase secretora",
+    "system": "fem",
+    "image": "laminas/utero_secretora.jpg",
+    "builtin": true,
+    "organ": "Útero – fase secretora",
+    "justification": "Endométrio com glândulas endometriais tortuosas e com a luz dilatada.",
+    "pins": [
+      {
+        "id": "lam-utero_secretora-0",
+        "label": "Glândula endometrial tortuosa",
+        "x": 66,
+        "y": 43,
+        "explanation": "Luz dilatada: fase secretora (progesterona)."
+      }
+    ]
+  },
+  {
+    "id": "lam-testiculo",
+    "title": "Testículo",
+    "system": "masc",
+    "image": "laminas/testiculo.jpg",
+    "builtin": true,
+    "organ": "Testículo",
+    "justification": "Túbulos seminíferos contendo epitélio germinativo, com tecido intersticial entre eles.",
+    "pins": [
+      {
+        "id": "lam-testiculo-0",
+        "label": "Túbulo seminífero",
+        "x": 58,
+        "y": 56,
+        "explanation": "Revestido pelo epitélio germinativo."
+      },
+      {
+        "id": "lam-testiculo-1",
+        "label": "Epitélio germinativo",
+        "x": 22,
+        "y": 30,
+        "explanation": "Células germinativas + células de Sertoli."
+      },
+      {
+        "id": "lam-testiculo-2",
+        "label": "Tecido intersticial (células de Leydig)",
+        "x": 87,
+        "y": 58,
+        "explanation": "Entre os túbulos; produz testosterona."
+      }
+    ]
+  },
+  {
+    "id": "lam-epididimo",
+    "title": "Epidídimo",
+    "system": "masc",
+    "image": "laminas/epididimo.jpg",
+    "builtin": true,
+    "organ": "Epidídimo",
+    "justification": "Epitélio pseudoestratificado estereociliado, camada delgada de músculo liso e espermatozoides na luz.",
+    "pins": [
+      {
+        "id": "lam-epididimo-0",
+        "label": "Epitélio pseudoestratificado estereociliado",
+        "x": 65,
+        "y": 26,
+        "explanation": "Reveste o epidídimo e o ducto deferente."
+      },
+      {
+        "id": "lam-epididimo-1",
+        "label": "Músculo liso (camada delgada)",
+        "x": 80,
+        "y": 76,
+        "explanation": "Fina no epidídimo, espessa no ducto deferente."
+      },
+      {
+        "id": "lam-epididimo-2",
+        "label": "Espermatozoides na luz",
+        "x": 30,
+        "y": 62,
+        "explanation": "O epidídimo armazena e matura os espermatozoides."
+      }
+    ]
+  },
+  {
+    "id": "lam-ducto_deferente",
+    "title": "Ducto deferente",
+    "system": "masc",
+    "image": "laminas/ducto_deferente.jpg",
+    "builtin": true,
+    "organ": "Ducto deferente",
+    "justification": "Epitélio pseudoestratificado estereociliado e camada espessa de músculo liso.",
+    "pins": [
+      {
+        "id": "lam-ducto_deferente-0",
+        "label": "Epitélio pseudoestratificado estereociliado",
+        "x": 82,
+        "y": 70,
+        "explanation": "Lúmen estreito."
+      },
+      {
+        "id": "lam-ducto_deferente-1",
+        "label": "Camada muscular lisa espessa",
+        "x": 31,
+        "y": 65,
+        "explanation": "Principal diferença em relação ao epidídimo."
+      }
+    ]
+  },
+  {
+    "id": "lam-prostata",
+    "title": "Próstata",
+    "system": "masc",
+    "image": "laminas/prostata.jpg",
+    "builtin": true,
+    "organ": "Próstata",
+    "justification": "Glândulas túbulo-alveolares e estroma fibromuscular.",
+    "pins": [
+      {
+        "id": "lam-prostata-0",
+        "label": "Glândula túbulo-alveolar",
+        "x": 64,
+        "y": 35,
+        "explanation": "30 a 50 glândulas ramificadas."
+      },
+      {
+        "id": "lam-prostata-1",
+        "label": "Estroma fibromuscular",
+        "x": 67,
+        "y": 52,
+        "explanation": "Tecido conjuntivo com músculo liso entre as glândulas."
+      }
+    ]
+  },
+  {
+    "id": "lam-prostata_concrecoes",
+    "title": "Próstata – concreções",
+    "system": "masc",
+    "image": "laminas/prostata_concrecoes.jpg",
+    "builtin": true,
+    "organ": "Próstata",
+    "justification": "Alvéolos glandulares contendo concreções prostáticas e estroma com músculo liso.",
+    "pins": [
+      {
+        "id": "lam-prostata_concrecoes-0",
+        "label": "Concreção prostática",
+        "x": 60,
+        "y": 36,
+        "explanation": "Corpo amiláceo que pode calcificar com a idade."
+      }
+    ]
+  }
+]

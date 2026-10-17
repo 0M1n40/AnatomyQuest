@@ -2,24 +2,24 @@ import { useEffect, useState } from 'react';
 import { api } from '../lib/api.js';
 import { Card, Spinner } from './ui.jsx';
 
-export default function Ranking({ systems, me }) {
+export default function Ranking({ systems, me, subject }) {
   const [mode, setMode] = useState('xp');
   const [rows, setRows] = useState(null);
 
-  useEffect(() => { setRows(null); api.ranking(mode).then(setRows).catch(() => setRows([])); }, [mode]);
+  useEffect(() => { setRows(null); api.ranking(mode).then(setRows).catch(() => setRows([])); }, [mode, subject.id]);
 
   const tabs = [
     { id: 'xp', name: 'XP geral', icon: '✨' },
     { id: 'all', name: 'Simulado', icon: '🔥' },
-    { id: 'atlas-all', name: 'Atlas', icon: '🖼️' },
+    { id: 'atlas-all', name: subject.practice.nav, icon: subject.practice.icon },
     ...systems,
   ];
 
   return (
     <div className="mx-auto max-w-2xl">
       <Card>
-        <h1 className="text-2xl font-black">🏅 Ranking</h1>
-        <p className="mb-3 text-sm text-muted">Jogadores que usaram este navegador/dispositivo.</p>
+        <h1 className="text-2xl font-black">🏅 Ranking · {subject.name}</h1>
+        <p className="mb-3 text-sm text-muted">Jogadores que usaram este navegador/dispositivo. O XP soma todas as matérias.</p>
         <div className="mb-4 flex flex-wrap gap-2">
           {tabs.map((t) => (
             <button

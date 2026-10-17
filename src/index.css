@@ -3,7 +3,6 @@
 /* Modo escuro controlado pela classe .dark no <html> */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Tokens de cor: mudam sozinhos entre claro e escuro */
 :root {
   --c-bg: #f3f7fb;
   --c-bg2: #dff5f1;
@@ -65,7 +64,6 @@ body {
   transition: background-color .3s, color .3s;
 }
 
-/* Flashcards 3D */
 .perspective { perspective: 1000px; }
 .preserve-3d { transform-style: preserve-3d; }
 .backface-hidden { backface-visibility: hidden; }

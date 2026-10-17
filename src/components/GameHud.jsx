@@ -1,8 +1,8 @@
 import { Button, Pill, ProgressBar } from './ui.jsx';
-import { TIME, multiplier } from '../hooks/useGameEngine.js';
+import { multiplier } from '../hooks/useGameEngine.js';
 
 export default function GameHud({ engine, idx, total, onExit }) {
-  const { lives, points, combo, time, unlimitedLives } = engine;
+  const { lives, points, combo, time, limit, unlimitedLives } = engine;
   return (
     <div className="space-y-2">
       <div className="flex flex-wrap items-center gap-2">
@@ -15,8 +15,8 @@ export default function GameHud({ engine, idx, total, onExit }) {
       </div>
       <ProgressBar value={(idx / total) * 100} />
       <div className="flex items-center gap-2">
-        <span className="w-10 text-right text-xs font-black text-muted">{Math.ceil(time)}s</span>
-        <ProgressBar className="flex-1" value={(time / TIME) * 100} tone={time < 8 ? 'danger' : 'gold'} />
+        <span className="w-12 text-right text-xs font-black text-muted">{Math.ceil(time)}s</span>
+        <ProgressBar className="flex-1" value={(time / limit) * 100} tone={time / limit < 0.3 ? 'danger' : 'gold'} />
       </div>
     </div>
   );

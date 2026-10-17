@@ -8,6 +8,7 @@ export default function AtlasStudy({ figureId, onBack, onPlay }) {
   const [sel, setSel] = useState(null);
   const [hide, setHide] = useState(false);
   const [revealed, setRevealed] = useState(new Set());
+  const [showOrgan, setShowOrgan] = useState(false);
   const [error, setError] = useState('');
 
   useEffect(() => { api.atlas.figure(figureId).then(setFig).catch((e) => setError(e.message)); }, [figureId]);
@@ -22,30 +23,38 @@ export default function AtlasStudy({ figureId, onBack, onPlay }) {
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center gap-2">
-        <Button variant="secondary" size="sm" onClick={onBack}>⟵ Atlas</Button>
-        <h1 className="flex-1 text-xl font-black">📖 {fig.title}</h1>
+        <Button variant="secondary" size="sm" onClick={onBack}>⟵ Voltar</Button>
+        <h1 className="flex-1 text-xl font-black">📖 {hide ? 'Autoteste' : fig.title}</h1>
         <label className="flex cursor-pointer items-center gap-2 rounded-2xl bg-soft px-3 py-1.5 text-sm font-bold">
-          <input type="checkbox" checked={hide} onChange={(e) => { setHide(e.target.checked); setRevealed(new Set()); setSel(null); }} />
+          <input type="checkbox" checked={hide} onChange={(e) => { setHide(e.target.checked); setRevealed(new Set()); setSel(null); setShowOrgan(false); }} />
           Esconder nomes (autoteste)
         </label>
         <Button size="sm" onClick={() => onPlay(fig.id, 'mix')}>Me testar ➜</Button>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-[minmax(0,1fr)_320px]">
+      <div className="grid gap-4 md:grid-cols-[minmax(0,1fr)_340px]">
         <AtlasViewer
           image={fig.image}
           alt={fig.title}
-          className="max-w-xl"
+          className="max-w-2xl"
           onPinClick={(p) => choose(p.id)}
-          pins={fig.pins.map((p, i) => ({
-            ...p,
-            number: i + 1,
-            state: p.id === sel ? 'selected' : 'study',
-            showLabel: p.id === sel && visible(p.id),
-          }))}
+          pins={fig.pins.map((p, i) => ({ ...p, number: i + 1, state: p.id === sel ? 'selected' : 'study', showLabel: p.id === sel && visible(p.id) }))}
         />
 
         <div className="space-y-3">
+          {fig.organ && (
+            <Card className="border-brand/40 p-4">
+              <p className="text-xs font-black text-muted">ÓRGÃO E JUSTIFICATIVA</p>
+              {hide && !showOrgan ? (
+                <Button size="sm" variant="secondary" className="mt-2" onClick={() => setShowOrgan(true)}>👁️ Revelar órgão</Button>
+              ) : (
+                <>
+                  <h2 className="text-lg font-black text-brand">{fig.organ}</h2>
+                  <p className="mt-1 text-sm font-semibold">{fig.justification}</p>
+                </>
+              )}
+            </Card>
+          )}
           <Card className="min-h-28">
             {current ? (
               <>
@@ -57,7 +66,7 @@ export default function AtlasStudy({ figureId, onBack, onPlay }) {
               <MascotTalk mood="happy" size={70} text={hide ? 'Tente lembrar o nome antes de tocar no ponto! 🧠' : 'Toque em um número para ver a estrutura.'} />
             )}
           </Card>
-          <Card className="max-h-[50vh] overflow-auto p-3">
+          <Card className="max-h-[45vh] overflow-auto p-3">
             <ol className="space-y-1">
               {fig.pins.map((p, i) => (
                 <li key={p.id}>

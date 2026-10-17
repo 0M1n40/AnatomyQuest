@@ -14,7 +14,7 @@ const PIN_STYLE = {
  * pins: [{ id, x, y, number?, label?, state?, showLabel? }]
  * target: { x, y, state?, label? } → ponteiro "a professora está apontando aqui"
  */
-export default function AtlasViewer({ image, alt = 'Figura anatômica', pins = [], target, onPinClick, onImageClick, onPinMove, editable = false, className = '' }) {
+export default function AtlasViewer({ image, alt = 'Figura', pins = [], target, onPinClick, onImageClick, onPinMove, editable = false, className = '' }) {
   const box = useRef(null);
   const drag = useRef(null);
 

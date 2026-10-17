@@ -5,41 +5,52 @@ import { Button, Card, MascotTalk, Spinner, Stars } from '../ui.jsx';
 
 const MODES = [
   { type: 'study', icon: '📖', title: 'Estudar', desc: 'Toque nos pontos e veja o nome de cada estrutura.' },
+  { type: 'organ', icon: '🔬', title: 'Que lâmina é essa?', desc: 'Identifique o órgão e escolha a justificativa.', needsOrgan: true },
   { type: 'name', icon: '👉', title: 'Qual é a estrutura?', desc: 'A professora aponta. Você diz o nome.' },
   { type: 'locate', icon: '📍', title: 'Onde está?', desc: 'Você recebe o nome e clica no ponto certo.' },
-  { type: 'mix', icon: '🎲', title: 'Prova prática', desc: 'Mistura os dois modos, valendo pontos.' },
+  { type: 'mix', icon: '🎲', title: 'Prova prática', desc: 'Mistura todos os modos, valendo pontos.' },
 ];
 
-export default function AtlasHub({ player, onStudy, onPlay, onEditor }) {
+export default function AtlasHub({ player, subject, onStudy, onPlay, onEditor }) {
   const [figures, setFigures] = useState(null);
   const [sel, setSel] = useState('all');
   const [error, setError] = useState('');
 
-  useEffect(() => { api.atlas.figures().then(setFigures).catch((e) => setError(e.message)); }, []);
+  useEffect(() => { setSel('all'); api.atlas.figures().then(setFigures).catch((e) => setError(e.message)); }, [subject.id]);
 
   if (error) return <Card className="text-center font-semibold text-accent">{error}</Card>;
-  if (!figures) return <Spinner label="Abrindo o atlas…" />;
+  if (!figures) return <Spinner label="Abrindo…" />;
 
   const current = figures.find((f) => f.id === sel);
+  const anyOrgan = api.atlas.hasOrgans();
+  const modes = MODES.filter((m) => !m.needsOrgan || anyOrgan);
   const go = (type) => (type === 'study' ? onStudy(sel) : onPlay(sel, type));
+
+  const disabledReason = (m) => {
+    if (m.type === 'study' && sel === 'all') return 'Escolha uma figura específica para estudar.';
+    if (m.type === 'organ' && current && !current.hasOrgan) return 'Esta figura não tem órgão cadastrado.';
+    if (m.type === 'organ' && current) return null;
+    if (current && current.pinCount < (m.type === 'locate' ? 3 : 1)) return m.type === 'locate' ? 'Precisa de pelo menos 3 pontos.' : 'Sem pontos marcados.';
+    return null;
+  };
 
   return (
     <div className="space-y-5">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <MascotTalk mood="think" size={90} text="Na prova prática a professora aponta e você identifica. Vamos treinar o olho! 👀" />
+        <MascotTalk mood="think" size={90} text={subject.practice.mascot} />
         <Button variant="secondary" onClick={onEditor}>✏️ Editor da professora</Button>
       </div>
 
       <section>
-        <h2 className="mb-3 text-lg font-black">1. Escolha a figura</h2>
+        <h2 className="mb-3 text-lg font-black">1. Escolha {anyOrgan ? 'a lâmina' : 'a figura'}</h2>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
           <button
             onClick={() => setSel('all')}
             className={`flex flex-col items-center justify-center rounded-3xl border-2 bg-card p-4 text-center transition hover:-translate-y-1 ${sel === 'all' ? 'border-brand shadow-lg' : 'border-line'}`}
           >
             <span className="text-5xl">🧩</span>
-            <b className="mt-2">Todas as figuras</b>
-            <small className="text-muted">{figures.reduce((s, f) => s + f.pinCount, 0)} estruturas</small>
+            <b className="mt-2">Todas</b>
+            <small className="text-muted">{figures.length} {anyOrgan ? 'lâminas' : 'figuras'} · {figures.reduce((s, f) => s + f.pinCount, 0)} estruturas</small>
             <Stars n={player.stars['atlas-all'] || 0} />
           </button>
           {figures.map((f) => (
@@ -48,7 +59,7 @@ export default function AtlasHub({ player, onStudy, onPlay, onEditor }) {
               onClick={() => setSel(f.id)}
               className={`overflow-hidden rounded-3xl border-2 bg-card text-left transition hover:-translate-y-1 ${sel === f.id ? 'border-brand shadow-lg' : 'border-line'}`}
             >
-              <div className="aspect-[4/5] bg-white"><img src={f.image} alt="" className="h-full w-full object-contain" /></div>
+              <div className="aspect-[4/3] bg-white"><img src={f.image} alt="" loading="lazy" className="h-full w-full object-cover" /></div>
               <div className="p-3">
                 <b className="line-clamp-2 text-sm leading-tight">{f.title}</b>
                 <div className="mt-1 flex items-center justify-between text-xs text-muted">
@@ -64,19 +75,19 @@ export default function AtlasHub({ player, onStudy, onPlay, onEditor }) {
 
       <section>
         <h2 className="mb-3 text-lg font-black">2. Escolha o modo {current && <span className="text-muted">· {current.title}</span>}</h2>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {MODES.map((m) => {
-            const disabled = (m.type === 'study' && sel === 'all') || (current && current.pinCount < (m.type === 'locate' ? 3 : 1));
+        <div className={`grid gap-3 sm:grid-cols-2 ${modes.length > 4 ? 'lg:grid-cols-5' : 'lg:grid-cols-4'}`}>
+          {modes.map((m) => {
+            const reason = disabledReason(m);
             return (
               <button
                 key={m.type}
-                disabled={disabled}
+                disabled={!!reason}
                 onClick={() => go(m.type)}
                 className="rounded-3xl border border-line bg-card p-4 text-left transition enabled:hover:-translate-y-1 enabled:hover:border-brand disabled:opacity-40"
               >
                 <span className="text-3xl">{m.icon}</span>
                 <h3 className="mt-1 font-black">{m.title}</h3>
-                <p className="text-sm text-muted">{m.type === 'study' && sel === 'all' ? 'Escolha uma figura específica para estudar.' : m.desc}</p>
+                <p className="text-sm text-muted">{reason || m.desc}</p>
               </button>
             );
           })}
