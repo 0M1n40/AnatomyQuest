@@ -25,7 +25,6 @@ export function useGameEngine({ unlimitedLives = false, onTimeout }) {
     return () => clearTimeout(t);
   }, [running, answered, time]);
 
-  // Inicia uma nova questão com o tempo adequado ao tipo
   const start = useCallback((seconds = TIME.mcq) => {
     setLimit(seconds); setTime(seconds); setAnswered(false); setAnim(''); setRunning(true);
   }, []);

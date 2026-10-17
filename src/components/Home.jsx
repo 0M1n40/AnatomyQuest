@@ -1,12 +1,14 @@
 import { useMemo } from 'react';
+import { api } from '../lib/api.js';
 import { Button, Card, MascotTalk, Pill, ProgressBar, Stars } from './ui.jsx';
 import { level, levelProgress, title } from '../lib/progress.js';
 import { PHRASES, pick } from '../lib/phrases.js';
 
 export default function Home({ player, subject, systems, onPlay, onNavigate, onReset }) {
   const total = systems.reduce((s, x) => s + x.total, 0);
-  const openTotal = systems.reduce((s, x) => s + x.open, 0);
+  const counts = api.counts();
   const greet = useMemo(() => pick(PHRASES.greet(player.name.split(' ')[0], subject.name)), [player.name, subject.name]);
+  const bestExam = player.best.exam ? (player.best.exam / 100).toFixed(1).replace('.', ',') : null;
 
   return (
     <div className="space-y-5">
@@ -25,13 +27,32 @@ export default function Home({ player, subject, systems, onPlay, onNavigate, onR
         </div>
       </Card>
 
-      <Card className="flex flex-col items-start gap-3 border-brand/40 sm:flex-row sm:items-center">
+      {/* Destaques: simulado de prova e mapa mental */}
+      <section className="grid gap-3 md:grid-cols-2">
+        <Card className="flex flex-col gap-2 border-accent/40 bg-gradient-to-br from-accent/10 via-card to-card">
+          <div className="flex items-center justify-between">
+            <span className="text-4xl">📝</span>
+            {bestExam && <Pill className="bg-accent/15 text-accent">Melhor nota: {bestExam}</Pill>}
+          </div>
+          <h2 className="text-xl font-black">Simulado de prova</h2>
+          <p className="flex-1 text-muted">Objetivas, discursivas e identificação por imagem, com tempo de prova e nota de 0 a 10. A correção só aparece no fim.</p>
+          <Button variant="accent" size="lg" onClick={() => onNavigate('exam')}>Fazer simulado ➜</Button>
+        </Card>
+        <Card className="flex flex-col gap-2 border-brand/40 bg-gradient-to-br from-brand/10 via-card to-card">
+          <span className="text-4xl">🧠</span>
+          <h2 className="text-xl font-black">Mapa mental de {subject.name}</h2>
+          <p className="flex-1 text-muted">Todo o conteúdo organizado em ramos. Abra, feche, pesquise e treine cada sistema direto do mapa.</p>
+          <Button size="lg" onClick={() => onNavigate('mindmap')}>Abrir mapa mental ➜</Button>
+        </Card>
+      </section>
+
+      <Card className="flex flex-col items-start gap-3 sm:flex-row sm:items-center">
         <div className="text-5xl">{subject.practice.icon}</div>
         <div className="flex-1">
           <h2 className="text-xl font-black">{subject.practice.title}</h2>
           <p className="text-muted">{subject.practice.text}</p>
         </div>
-        <Button size="lg" onClick={() => onNavigate('atlas')}>Abrir {subject.practice.nav} ➜</Button>
+        <Button size="lg" variant="secondary" onClick={() => onNavigate('atlas')}>Abrir {subject.practice.nav} ➜</Button>
       </Card>
 
       <section>
@@ -56,21 +77,29 @@ export default function Home({ player, subject, systems, onPlay, onNavigate, onR
         </div>
       </section>
 
-      <section className={`grid gap-3 ${openTotal ? 'sm:grid-cols-2 lg:grid-cols-4' : 'sm:grid-cols-3'}`}>
-        <Card className="flex flex-col gap-2">
-          <span className="text-3xl">🔥</span>
-          <h3 className="font-black">Simulado geral</h3>
-          <p className="flex-1 text-sm text-muted">40 questões objetivas sorteadas de todos os sistemas.</p>
-          <Button onClick={() => onPlay('all')}>Jogar</Button>
-        </Card>
-        {openTotal > 0 && (
+      <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {counts.past > 0 && (
+          <Card className="flex flex-col gap-2 border-accent/40">
+            <span className="text-3xl">📄</span>
+            <h3 className="font-black">Questões da prova e do quiz</h3>
+            <p className="flex-1 text-sm text-muted">{counts.past} questões que já caíram ({counts.prova} da prova, {counts.quiz} do quiz).</p>
+            <Button variant="accent" onClick={() => onPlay('past')}>Treinar</Button>
+          </Card>
+        )}
+        {counts.open > 0 && (
           <Card className="flex flex-col gap-2 border-gold/50">
             <span className="text-3xl">✍️</span>
             <h3 className="font-black">Explique com suas palavras</h3>
-            <p className="flex-1 text-sm text-muted">{openTotal} questões discursivas para descrever e diferenciar conceitos.</p>
+            <p className="flex-1 text-sm text-muted">{counts.open} questões discursivas para descrever e diferenciar conceitos.</p>
             <Button variant="warn" onClick={() => onPlay('open')}>Treinar</Button>
           </Card>
         )}
+        <Card className="flex flex-col gap-2">
+          <span className="text-3xl">🔥</span>
+          <h3 className="font-black">Simulado relâmpago</h3>
+          <p className="flex-1 text-sm text-muted">40 objetivas com tempo, vidas e combo.</p>
+          <Button onClick={() => onPlay('all')}>Jogar</Button>
+        </Card>
         <Card className="flex flex-col gap-2">
           <span className="text-3xl">🔁</span>
           <h3 className="font-black">Revisar erros</h3>

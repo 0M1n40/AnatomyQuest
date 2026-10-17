@@ -28,8 +28,7 @@ export default function AtlasHub({ player, subject, onStudy, onPlay, onEditor })
 
   const disabledReason = (m) => {
     if (m.type === 'study' && sel === 'all') return 'Escolha uma figura específica para estudar.';
-    if (m.type === 'organ' && current && !current.hasOrgan) return 'Esta figura não tem órgão cadastrado.';
-    if (m.type === 'organ' && current) return null;
+    if (m.type === 'organ') return current && !current.hasOrgan ? 'Esta figura não tem órgão cadastrado.' : null;
     if (current && current.pinCount < (m.type === 'locate' ? 3 : 1)) return m.type === 'locate' ? 'Precisa de pelo menos 3 pontos.' : 'Sem pontos marcados.';
     return null;
   };
@@ -44,21 +43,16 @@ export default function AtlasHub({ player, subject, onStudy, onPlay, onEditor })
       <section>
         <h2 className="mb-3 text-lg font-black">1. Escolha {anyOrgan ? 'a lâmina' : 'a figura'}</h2>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-          <button
-            onClick={() => setSel('all')}
-            className={`flex flex-col items-center justify-center rounded-3xl border-2 bg-card p-4 text-center transition hover:-translate-y-1 ${sel === 'all' ? 'border-brand shadow-lg' : 'border-line'}`}
-          >
+          <button onClick={() => setSel('all')}
+            className={`flex flex-col items-center justify-center rounded-3xl border-2 bg-card p-4 text-center transition hover:-translate-y-1 ${sel === 'all' ? 'border-brand shadow-lg' : 'border-line'}`}>
             <span className="text-5xl">🧩</span>
             <b className="mt-2">Todas</b>
             <small className="text-muted">{figures.length} {anyOrgan ? 'lâminas' : 'figuras'} · {figures.reduce((s, f) => s + f.pinCount, 0)} estruturas</small>
             <Stars n={player.stars['atlas-all'] || 0} />
           </button>
           {figures.map((f) => (
-            <button
-              key={f.id}
-              onClick={() => setSel(f.id)}
-              className={`overflow-hidden rounded-3xl border-2 bg-card text-left transition hover:-translate-y-1 ${sel === f.id ? 'border-brand shadow-lg' : 'border-line'}`}
-            >
+            <button key={f.id} onClick={() => setSel(f.id)}
+              className={`overflow-hidden rounded-3xl border-2 bg-card text-left transition hover:-translate-y-1 ${sel === f.id ? 'border-brand shadow-lg' : 'border-line'}`}>
               <div className="aspect-[4/3] bg-white"><img src={f.image} alt="" loading="lazy" className="h-full w-full object-cover" /></div>
               <div className="p-3">
                 <b className="line-clamp-2 text-sm leading-tight">{f.title}</b>
@@ -66,6 +60,7 @@ export default function AtlasHub({ player, subject, onStudy, onPlay, onEditor })
                   <span>{SYSTEM_LABEL[f.system] || f.system} · {f.pinCount} pts</span>
                   <Stars n={player.stars[`atlas-${f.id}`] || 0} size="text-xs" />
                 </div>
+                {f.source === 'prova' && <span className="mt-1 inline-block rounded bg-accent/15 px-1.5 text-[10px] font-black text-accent">CAIU NA PROVA</span>}
                 {!f.builtin && <span className="mt-1 inline-block rounded bg-gold/20 px-1.5 text-[10px] font-black text-gold">DA PROFESSORA</span>}
               </div>
             </button>
@@ -79,12 +74,8 @@ export default function AtlasHub({ player, subject, onStudy, onPlay, onEditor })
           {modes.map((m) => {
             const reason = disabledReason(m);
             return (
-              <button
-                key={m.type}
-                disabled={!!reason}
-                onClick={() => go(m.type)}
-                className="rounded-3xl border border-line bg-card p-4 text-left transition enabled:hover:-translate-y-1 enabled:hover:border-brand disabled:opacity-40"
-              >
+              <button key={m.type} disabled={!!reason} onClick={() => go(m.type)}
+                className="rounded-3xl border border-line bg-card p-4 text-left transition enabled:hover:-translate-y-1 enabled:hover:border-brand disabled:opacity-40">
                 <span className="text-3xl">{m.icon}</span>
                 <h3 className="mt-1 font-black">{m.title}</h3>
                 <p className="text-sm text-muted">{reason || m.desc}</p>

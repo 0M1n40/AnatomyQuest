@@ -1,0 +1,738 @@
+{
+ "label": "Histologia – Módulo 3",
+ "children": [
+  {
+   "label": "Sistema Urinário",
+   "system": "uri",
+   "children": [
+    {
+     "label": "Funções",
+     "children": [
+      {
+       "label": "Excreção de resíduos"
+      },
+      {
+       "label": "Regula íons e osmolaridade"
+      },
+      {
+       "label": "Regula pressão arterial"
+      },
+      {
+       "label": "Renina e eritropoetina"
+      },
+      {
+       "label": "Ativa vitamina D3"
+      }
+     ]
+    },
+    {
+     "label": "Túbulo urinífero",
+     "note": "Unidade morfofuncional = néfron + túbulo coletor",
+     "children": [
+      {
+       "label": "Corpúsculo renal",
+       "children": [
+        {
+         "label": "Glomérulo: capilares fenestrados sem diafragma"
+        },
+        {
+         "label": "Cápsula de Bowman: parietal (pavimentoso simples) e visceral (podócitos)"
+        },
+        {
+         "label": "Espaço de Bowman recebe o filtrado"
+        },
+        {
+         "label": "Polo vascular: arteríolas aferente/eferente"
+        },
+        {
+         "label": "Polo urinário → TCP"
+        },
+        {
+         "label": "Células mesangiais"
+        }
+       ],
+       "figures": [
+        "lam-rim"
+       ]
+      },
+      {
+       "label": "Barreira de filtração",
+       "children": [
+        {
+         "label": "Endotélio fenestrado → retém células"
+        },
+        {
+         "label": "Lâmina basal → retém carga +"
+        },
+        {
+         "label": "Podócitos/fendas → retêm alto peso molecular"
+        },
+        {
+         "label": "Passam: água, íons, glicose, ureia"
+        }
+       ]
+      },
+      {
+       "label": "TCP",
+       "children": [
+        {
+         "label": "Cúbico simples + borda em escova"
+        },
+        {
+         "label": "Invaginações basais + mitocôndrias"
+        },
+        {
+         "label": "Reabsorve glicose, aminoácidos, Na⁺, Cl⁻, água"
+        },
+        {
+         "label": "Secreta creatinina e ácido úrico"
+        }
+       ]
+      },
+      {
+       "label": "Alça de Henle",
+       "children": [
+        {
+         "label": "Delgado: pavimentoso simples"
+        },
+        {
+         "label": "Espesso: cúbico simples"
+        },
+        {
+         "label": "Retém água (contracorrente)"
+        }
+       ]
+      },
+      {
+       "label": "TCD",
+       "children": [
+        {
+         "label": "Cúbico simples SEM borda em escova"
+        },
+        {
+         "label": "Na⁺, K⁺ e água (aldosterona)"
+        },
+        {
+         "label": "Secreta H⁺ e amônia"
+        }
+       ]
+      },
+      {
+       "label": "Túbulo coletor",
+       "children": [
+        {
+         "label": "Cúbico simples"
+        },
+        {
+         "label": "Reabsorção final de água"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Aparelho justaglomerular",
+     "children": [
+      {
+       "label": "Mácula densa (túbulo distal)"
+      },
+      {
+       "label": "Células justaglomerulares → renina"
+      },
+      {
+       "label": "Mesangiais extraglomerulares"
+      },
+      {
+       "label": "Regula a pressão"
+      }
+     ]
+    },
+    {
+     "label": "Vias urinárias",
+     "children": [
+      {
+       "label": "Ureter: transição + muscular delgada",
+       "figures": [
+        "lam-ureter"
+       ]
+      },
+      {
+       "label": "Bexiga: transição + muscular espessa (3 camadas)",
+       "figures": [
+        "lam-bexiga"
+       ]
+      },
+      {
+       "label": "Uretra feminina: transição → pseudoestrat. → estrat. pavimentoso"
+      },
+      {
+       "label": "Uretra masculina: prostática, membranácea, esponjosa"
+      }
+     ],
+     "figures": [
+      "lam-ureter",
+      "lam-bexiga",
+      "lam-prova_q2"
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Sistema Respiratório",
+   "system": "resp",
+   "children": [
+    {
+     "label": "Porção condutora",
+     "note": "Filtrar, umedecer e aquecer o ar",
+     "children": [
+      {
+       "label": "Cavidade nasal"
+      },
+      {
+       "label": "Faringe"
+      },
+      {
+       "label": "Laringe"
+      },
+      {
+       "label": "Traqueia",
+       "figures": [
+        "lam-traqueia",
+        "lam-prova_q3"
+       ]
+      },
+      {
+       "label": "Brônquios"
+      },
+      {
+       "label": "Bronquíolos"
+      }
+     ]
+    },
+    {
+     "label": "Epitélio respiratório",
+     "note": "Pseudoestratificado cilíndrico ciliado com caliciformes",
+     "children": [
+      {
+       "label": "Ciliada: move o muco"
+      },
+      {
+       "label": "Caliciforme: produz muco"
+      },
+      {
+       "label": "Em escova: receptor sensorial"
+      },
+      {
+       "label": "Granular: neuroendócrina"
+      },
+      {
+       "label": "Basal: célula-tronco"
+      }
+     ]
+    },
+    {
+     "label": "Cavidade nasal",
+     "children": [
+      {
+       "label": "Vestíbulo: estrat. pavimentoso + vibrissas"
+      },
+      {
+       "label": "Área respiratória"
+      },
+      {
+       "label": "Área olfatória: neuroepitélio, neurônios bipolares, glândulas de Bowman (serosas)"
+      }
+     ]
+    },
+    {
+     "label": "Laringe",
+     "children": [
+      {
+       "label": "Corda vocal falsa: epitélio respiratório"
+      },
+      {
+       "label": "Corda vocal verdadeira: estrat. pavimentoso não queratinizado (atrito)"
+      }
+     ]
+    },
+    {
+     "label": "Traqueia",
+     "children": [
+      {
+       "label": "Mucosa: epitélio respiratório"
+      },
+      {
+       "label": "Submucosa: glândulas seromucosas"
+      },
+      {
+       "label": "Adventícia: anéis de cartilagem hialina em C"
+      }
+     ],
+     "figures": [
+      "lam-traqueia",
+      "lam-prova_q3"
+     ]
+    },
+    {
+     "label": "Árvore brônquica",
+     "children": [
+      {
+       "label": "Brônquio: peças de cartilagem + músculo liso + glândulas",
+       "figures": [
+        "lam-bronquio_aumento"
+       ]
+      },
+      {
+       "label": "Bronquíolo: sem cartilagem nem glândulas, epitélio simples",
+       "figures": [
+        "lam-bronquiolo"
+       ]
+      },
+      {
+       "label": "Células de Clara: protegem o bronquíolo"
+      }
+     ],
+     "figures": [
+      "lam-bronquio_aumento",
+      "lam-bronquiolo"
+     ]
+    },
+    {
+     "label": "Porção respiratória",
+     "children": [
+      {
+       "label": "Bronquíolo respiratório → ductos → sacos → alvéolos"
+      },
+      {
+       "label": "Pneumócito I: pavimentoso, troca gasosa"
+      },
+      {
+       "label": "Pneumócito II: cúbico, corpos lamelares, surfactante"
+      },
+      {
+       "label": "Macrófago alveolar: célula de poeira"
+      },
+      {
+       "label": "Barreira hematoaérea: pneumócito I + lâmina basal + endotélio contínuo"
+      }
+     ],
+     "figures": [
+      "lam-pulmao",
+      "lam-prova_q4"
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Genital Masculino",
+   "system": "masc",
+   "children": [
+    {
+     "label": "Testículo",
+     "children": [
+      {
+       "label": "Túnica albugínea (conjuntivo denso)"
+      },
+      {
+       "label": "Túbulos seminíferos com epitélio germinativo"
+      },
+      {
+       "label": "Células germinativas"
+      },
+      {
+       "label": "Células de Sertoli: nutrição, ABP, barreira"
+      },
+      {
+       "label": "Células de Leydig: testosterona (LH)"
+      }
+     ],
+     "figures": [
+      "lam-testiculo"
+     ]
+    },
+    {
+     "label": "Espermatogênese",
+     "children": [
+      {
+       "label": "Espermatogônia 2n (mitose)"
+      },
+      {
+       "label": "Espermatócito I 2n → meiose I"
+      },
+      {
+       "label": "Espermatócito II n → meiose II"
+      },
+      {
+       "label": "Espermátide → espermatozoide"
+      }
+     ]
+    },
+    {
+     "label": "Espermiogênese",
+     "note": "Diferenciação sem divisão",
+     "children": [
+      {
+       "label": "Acrossomo (Golgi)"
+      },
+      {
+       "label": "Flagelo (centríolos)"
+      },
+      {
+       "label": "Mitocôndrias na base do flagelo"
+      },
+      {
+       "label": "Núcleo condensado"
+      },
+      {
+       "label": "Perda de citoplasma"
+      }
+     ]
+    },
+    {
+     "label": "Barreira hematotesticular",
+     "children": [
+      {
+       "label": "Junções de oclusão entre Sertoli"
+      },
+      {
+       "label": "Compartimento basal × adluminal"
+      },
+      {
+       "label": "Evita reação autoimune"
+      }
+     ]
+    },
+    {
+     "label": "Controle hormonal",
+     "children": [
+      {
+       "label": "GnRH → LH e FSH"
+      },
+      {
+       "label": "LH → Leydig → testosterona"
+      },
+      {
+       "label": "FSH → Sertoli → ABP"
+      },
+      {
+       "label": "Testosterona alta → inibina → feedback negativo"
+      }
+     ]
+    },
+    {
+     "label": "Vias espermáticas",
+     "children": [
+      {
+       "label": "Túbulos retos → rede testicular → dúctulos eferentes"
+      },
+      {
+       "label": "Epidídimo: estereocílios + músculo delgado",
+       "figures": [
+        "lam-epididimo"
+       ]
+      },
+      {
+       "label": "Ducto deferente: estereocílios + músculo espesso"
+      },
+      {
+       "label": "Ducto ejaculatório → uretra"
+      }
+     ],
+     "figures": [
+      "lam-epididimo",
+      "lam-ducto_deferente"
+     ]
+    },
+    {
+     "label": "Glândulas acessórias",
+     "children": [
+      {
+       "label": "Vesícula seminal: criptas, frutose, alcalino"
+      },
+      {
+       "label": "Próstata: túbulo-alveolar, concreções, ácido cítrico",
+       "figures": [
+        "lam-prostata_concrecoes"
+       ]
+      },
+      {
+       "label": "Bulbouretral: muco lubrificante"
+      }
+     ],
+     "figures": [
+      "lam-prostata",
+      "lam-prostata_concrecoes"
+     ]
+    },
+    {
+     "label": "Pênis",
+     "children": [
+      {
+       "label": "2 corpos cavernosos"
+      },
+      {
+       "label": "1 corpo esponjoso (uretra)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Genital Feminino",
+   "system": "fem",
+   "children": [
+    {
+     "label": "Ovário",
+     "children": [
+      {
+       "label": "Epitélio germinativo cúbico + túnica albugínea"
+      },
+      {
+       "label": "Córtex: folículos"
+      },
+      {
+       "label": "Medula: conjuntivo frouxo e vasos"
+      }
+     ]
+    },
+    {
+     "label": "Folículos",
+     "children": [
+      {
+       "label": "Primordial: células achatadas"
+      },
+      {
+       "label": "Primário: cúbicas, zona pelúcida, granulosa"
+      },
+      {
+       "label": "Secundário: antro, tecas"
+      },
+      {
+       "label": "De Graaf: cumulus, corona radiata"
+      },
+      {
+       "label": "Atrésico: degenera, macrófagos"
+      }
+     ],
+     "figures": [
+      "lam-ovario_primordial",
+      "lam-ovario_multilamelar",
+      "lam-ovario_graaf"
+     ]
+    },
+    {
+     "label": "Ovulação e corpo lúteo",
+     "children": [
+      {
+       "label": "Pico de LH → ovulação"
+      },
+      {
+       "label": "Corpo lúteo: granulosa + teca interna"
+      },
+      {
+       "label": "Progesterona e estrógenos"
+      },
+      {
+       "label": "Corpo albicans: cicatriz"
+      }
+     ]
+    },
+    {
+     "label": "Oogênese",
+     "children": [
+      {
+       "label": "Vida fetal: para na prófase I"
+      },
+      {
+       "label": "Puberdade (FSH): completa meiose I"
+      },
+      {
+       "label": "Ovulação: para na metáfase II"
+      },
+      {
+       "label": "Termina só com fecundação"
+      }
+     ]
+    },
+    {
+     "label": "Tuba uterina",
+     "children": [
+      {
+       "label": "Intramural, istmo, ampola, infundíbulo, fímbrias"
+      },
+      {
+       "label": "Mucosa pregueada: luz labiríntica"
+      },
+      {
+       "label": "Cilíndrico simples ciliado + secretor"
+      },
+      {
+       "label": "Fecundação na ampola"
+      }
+     ],
+     "figures": [
+      "lam-tuba"
+     ]
+    },
+    {
+     "label": "Útero",
+     "children": [
+      {
+       "label": "Endométrio: basal + funcional"
+      },
+      {
+       "label": "Miométrio: músculo liso"
+      },
+      {
+       "label": "Fase proliferativa: estrógeno, glândulas retas"
+      },
+      {
+       "label": "Fase secretora: progesterona, glândulas tortuosas, glicogênio"
+      },
+      {
+       "label": "Fase menstrual: descamação"
+      }
+     ],
+     "figures": [
+      "lam-utero_proliferativa",
+      "lam-utero_secretora"
+     ]
+    },
+    {
+     "label": "Cérvix, vagina e mama",
+     "children": [
+      {
+       "label": "Cérvix: muco; Papanicolau"
+      },
+      {
+       "label": "Vagina: estrat. pavimentoso com glicogênio"
+      },
+      {
+       "label": "Mama: túbulo-alveolar, células mioepiteliais"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Glândulas Endócrinas",
+   "note": "Caiu na prova (fora do resumo do módulo)",
+   "system": "endo",
+   "children": [
+    {
+     "label": "Adeno-hipófise: controlada pelo sistema porta-hipofisário"
+    },
+    {
+     "label": "Neuro-hipófise: pituícitos + axônios amielínicos"
+    },
+    {
+     "label": "Corpos de Herring: ocitocina e ADH"
+    },
+    {
+     "label": "Tireoide: foliculares (T3/T4), parafoliculares (calcitonina)"
+    },
+    {
+     "label": "Adrenal – córtex: glomerulosa, fasciculada (glicocorticoides), reticulada"
+    },
+    {
+     "label": "Adrenal – medula: adrenalina e noradrenalina"
+    }
+   ]
+  },
+  {
+   "label": "Prova prática – como justificar",
+   "children": [
+    {
+     "label": "Traqueia: epitélio respiratório + glândulas + anel em C",
+     "figures": [
+      "lam-traqueia"
+     ]
+    },
+    {
+     "label": "Brônquio: peças de cartilagem + músculo liso",
+     "figures": [
+      "lam-bronquio_aumento"
+     ]
+    },
+    {
+     "label": "Bronquíolo: sem cartilagem",
+     "figures": [
+      "lam-bronquiolo"
+     ]
+    },
+    {
+     "label": "Pulmão: alvéolos",
+     "figures": [
+      "lam-pulmao"
+     ]
+    },
+    {
+     "label": "Rim: corpúsculo renal",
+     "figures": [
+      "lam-rim"
+     ]
+    },
+    {
+     "label": "Ureter: transição + muscular delgada",
+     "figures": [
+      "lam-ureter"
+     ]
+    },
+    {
+     "label": "Bexiga: transição + muscular espessa",
+     "figures": [
+      "lam-bexiga"
+     ]
+    },
+    {
+     "label": "Testículo: túbulos seminíferos",
+     "figures": [
+      "lam-testiculo"
+     ]
+    },
+    {
+     "label": "Epidídimo: estereocílios + músculo delgado",
+     "figures": [
+      "lam-epididimo"
+     ]
+    },
+    {
+     "label": "Deferente: estereocílios + músculo espesso",
+     "figures": [
+      "lam-ducto_deferente"
+     ]
+    },
+    {
+     "label": "Próstata: concreções + estroma fibromuscular",
+     "figures": [
+      "lam-prostata_concrecoes"
+     ]
+    },
+    {
+     "label": "Ovário: identificar o folículo",
+     "figures": [
+      "lam-ovario_graaf"
+     ]
+    },
+    {
+     "label": "Tuba: luz labiríntica",
+     "figures": [
+      "lam-tuba"
+     ]
+    },
+    {
+     "label": "Útero proliferativo: glândulas retas",
+     "figures": [
+      "lam-utero_proliferativa"
+     ]
+    },
+    {
+     "label": "Útero secretor: glândulas tortuosas",
+     "figures": [
+      "lam-utero_secretora"
+     ]
+    }
+   ]
+  }
+ ]
+}

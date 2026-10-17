@@ -19,4 +19,6 @@ export const PHRASES = {
   win: ['Que show! Você está craque! 🏆', 'Arrasou! Tô até tremendo os ossos de alegria! 🎉'],
   ok: ['Bom trabalho! Mais um pouco e chega nas 3 estrelas ⭐', 'Mandou bem! Revisa os erros e volta mais forte.'],
   low: ['Calma, todo mundo começou assim. Bora revisar? 📚', 'Não desanima! Use o modo Revisar erros que eu te ajudo.'],
+  exam: ['Prova de verdade: sem dicas e sem correção até entregar. Boa sorte! 🍀', 'Respira, lê com calma e confia no estudo! 📝'],
+  mindmap: ['Toque nos ramos para abrir e fechar. Ótimo para revisar antes da prova! 🧠', 'Use a busca para achar um conceito rapidinho 🔎'],
 };

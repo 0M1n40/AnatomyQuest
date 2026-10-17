@@ -205,7 +205,7 @@
         "label": "Camada muscular (delgada)",
         "x": 32,
         "y": 76,
-        "explanation": "Duas camadas de músculo liso."
+        "explanation": "Camadas de músculo liso."
       }
     ]
   },
@@ -515,5 +515,83 @@
         "explanation": "Corpo amiláceo que pode calcificar com a idade."
       }
     ]
+  },
+  {
+    "id": "lam-prova_q2",
+    "title": "Prova 3 – imagem 2",
+    "system": "uri",
+    "image": "laminas/prova_q2.jpg",
+    "builtin": true,
+    "organ": "Ureter",
+    "justification": "Epitélio de transição na mucosa e camada muscular delgada.",
+    "pins": [
+      {
+        "id": "lam-prova_q2-0",
+        "label": "Epitélio de transição",
+        "x": 50,
+        "y": 70,
+        "explanation": "Mucosa do ureter, com luz pregueada (estrelada)."
+      },
+      {
+        "id": "lam-prova_q2-1",
+        "label": "Camada muscular (delgada)",
+        "x": 42,
+        "y": 24,
+        "explanation": "Músculo liso; mais fina que a da bexiga."
+      }
+    ],
+    "source": "prova"
+  },
+  {
+    "id": "lam-prova_q3",
+    "title": "Prova 3 – imagem 3",
+    "system": "resp",
+    "image": "laminas/prova_q3.jpg",
+    "builtin": true,
+    "organ": "Traqueia",
+    "justification": "Epitélio respiratório (mucosa), glândulas seromucosas (submucosa) e anel de cartilagem hialina em forma de C (adventícia).",
+    "pins": [
+      {
+        "id": "lam-prova_q3-0",
+        "label": "Epitélio respiratório",
+        "x": 4,
+        "y": 45,
+        "explanation": "Pseudoestratificado cilíndrico ciliado com caliciformes."
+      },
+      {
+        "id": "lam-prova_q3-1",
+        "label": "Glândulas seromucosas",
+        "x": 60,
+        "y": 25,
+        "explanation": "Na submucosa."
+      },
+      {
+        "id": "lam-prova_q3-2",
+        "label": "Cartilagem hialina (anel em C)",
+        "x": 88,
+        "y": 55,
+        "explanation": "Na adventícia."
+      }
+    ],
+    "source": "prova"
+  },
+  {
+    "id": "lam-prova_q4",
+    "title": "Prova 3 – imagem 4",
+    "system": "resp",
+    "image": "laminas/prova_q4.jpg",
+    "builtin": true,
+    "organ": "Pulmão (porção respiratória)",
+    "justification": "Presença de alvéolos, sacos alveolares e/ou ductos alveolares.",
+    "pins": [
+      {
+        "id": "lam-prova_q4-0",
+        "label": "Alvéolo pulmonar",
+        "x": 52,
+        "y": 48,
+        "explanation": "Local das trocas gasosas."
+      }
+    ],
+    "source": "prova"
   }
 ]

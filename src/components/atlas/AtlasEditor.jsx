@@ -6,7 +6,6 @@ import AtlasViewer from './AtlasViewer.jsx';
 
 const input = 'w-full rounded-xl border-2 border-line bg-soft px-3 py-2 font-semibold outline-none focus:border-brand';
 
-// Lê a imagem e reduz para no máx. 1200px (leve para o navegador e para o GitHub)
 function readImage(file, max = 1200) {
   return new Promise((resolve, reject) => {
     if (!file?.type.startsWith('image/')) return reject(new Error('Escolha um arquivo de imagem (PNG, JPG…).'));
@@ -85,7 +84,6 @@ export default function AtlasEditor({ subject, onBack }) {
     setSel(null);
     setDirty(false);
   };
-
   const patch = (changes) => { setFig((f) => ({ ...f, ...changes })); setDirty(true); };
   const patchPin = (id, changes) => patch({ pins: fig.pins.map((p) => (p.id === id ? { ...p, ...changes } : p)) });
   const addPin = ({ x, y }) => {
@@ -100,9 +98,7 @@ export default function AtlasEditor({ subject, onBack }) {
     if (unnamed && !confirm(`${unnamed} ponto(s) sem nome serão descartados. Continuar?`)) return;
     setBusy(true);
     try {
-      const saved = await api.atlas.update(pin, fig.id, {
-        title: fig.title, system: fig.system, pins: fig.pins, organ: fig.organ || '', justification: fig.justification || '',
-      });
+      const saved = await api.atlas.update(pin, fig.id, { title: fig.title, system: fig.system, pins: fig.pins, organ: fig.organ || '', justification: fig.justification || '' });
       setFig(saved); setSel(null); setDirty(false);
       await loadList();
       flash('✅ Salvo neste navegador. Exporte o atlas.json para publicar.');
@@ -192,12 +188,10 @@ export default function AtlasEditor({ subject, onBack }) {
             </form>
             <p className="mt-2 text-xs text-muted">O navegador guarda cerca de 10 a 15 fotos por vez.</p>
           </Card>
-
           <Card className="max-h-[55vh] overflow-auto p-3">
             <h2 className="mb-2 px-1 font-black">Figuras</h2>
             {figures.map((f) => (
-              <button key={f.id} onClick={() => open(f.id)}
-                className={`mb-1 flex w-full items-center gap-2 rounded-xl p-1.5 text-left text-sm font-semibold transition ${fig?.id === f.id ? 'bg-brand/15' : 'hover:bg-soft'}`}>
+              <button key={f.id} onClick={() => open(f.id)} className={`mb-1 flex w-full items-center gap-2 rounded-xl p-1.5 text-left text-sm font-semibold transition ${fig?.id === f.id ? 'bg-brand/15' : 'hover:bg-soft'}`}>
                 <img src={f.image} alt="" className="h-10 w-10 rounded-lg bg-white object-cover" />
                 <span className="flex-1 leading-tight">{f.title}<br /><small className="text-muted">{f.pinCount} pontos{f.builtin ? ' · padrão' : ''}</small></span>
               </button>
@@ -212,18 +206,10 @@ export default function AtlasEditor({ subject, onBack }) {
         ) : (
           <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_300px]">
             <div className="space-y-2">
-              <p className="rounded-2xl bg-soft px-3 py-2 text-sm font-semibold">
-                🖱️ <b>Clique na imagem</b> para criar um ponto · <b>arraste</b> para reposicionar · clique em um ponto para editar.
-              </p>
-              <AtlasViewer
-                image={fig.image} alt={fig.title} editable
-                onImageClick={addPin}
-                onPinClick={(p) => setSel(p.id)}
-                onPinMove={(id, xy) => patchPin(id, xy)}
-                pins={fig.pins.map((p, i) => ({ ...p, number: i + 1, state: p.id === sel ? 'selected' : p.label.trim() ? 'idle' : 'wrong', showLabel: true }))}
-              />
+              <p className="rounded-2xl bg-soft px-3 py-2 text-sm font-semibold">🖱️ <b>Clique na imagem</b> para criar um ponto · <b>arraste</b> para reposicionar · clique em um ponto para editar.</p>
+              <AtlasViewer image={fig.image} alt={fig.title} editable onImageClick={addPin} onPinClick={(p) => setSel(p.id)} onPinMove={(id, xy) => patchPin(id, xy)}
+                pins={fig.pins.map((p, i) => ({ ...p, number: i + 1, state: p.id === sel ? 'selected' : p.label.trim() ? 'idle' : 'wrong', showLabel: true }))} />
             </div>
-
             <div className="space-y-3">
               <Card className="space-y-2 p-4">
                 <label className="text-xs font-black text-muted">TÍTULO</label>
@@ -243,7 +229,6 @@ export default function AtlasEditor({ subject, onBack }) {
                   </label>
                 )}
               </Card>
-
               <Card className="space-y-2 p-4">
                 {current ? (
                   <>
@@ -259,7 +244,6 @@ export default function AtlasEditor({ subject, onBack }) {
                   <p className="text-sm font-semibold text-muted">{fig.pins.length} ponto(s). Clique em um ponto para editar ou na imagem para criar.</p>
                 )}
               </Card>
-
               <div className="flex gap-2">
                 <Button className="flex-1" disabled={!dirty || busy} onClick={save}>{busy ? 'Salvando…' : '💾 Salvar'}</Button>
                 {!fig.builtin && <Button variant="secondary" onClick={removeFigure}>Excluir</Button>}

@@ -1,4 +1,5 @@
 import Mascot from './Mascot.jsx';
+import { SOURCE_LABEL } from '../lib/progress.js';
 
 export function Card({ className = '', children, ...props }) {
   return (
@@ -32,6 +33,15 @@ export function Pill({ children, className = '' }) {
 
 export function Tag({ children }) {
   return <span className="inline-block rounded-lg bg-brand/15 px-2.5 py-0.5 text-xs font-extrabold text-brand">{children}</span>;
+}
+
+export function SourceTag({ source }) {
+  if (!source) return null;
+  return <span className="inline-block rounded-lg bg-accent/15 px-2.5 py-0.5 text-xs font-extrabold text-accent">{SOURCE_LABEL[source] || source}</span>;
+}
+
+export function OpenTag() {
+  return <span className="inline-block rounded-lg bg-gold/20 px-2.5 py-0.5 text-xs font-extrabold text-gold">✍️ DISCURSIVA</span>;
 }
 
 export function ProgressBar({ value, tone = 'brand', className = '' }) {

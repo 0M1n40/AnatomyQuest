@@ -1,31 +1,24 @@
 import { Button, Feedback } from './ui.jsx';
 
-/**
- * Questão discursiva em 3 etapas:
- * 1) aluno escreve  2) vê a resposta modelo + pontos-chave encontrados  3) autoavalia
- */
-export default function OpenQuestion({ q, text, setText, review, onSubmit, onGrade, graded, timeout, hint }) {
+export function OpenInput({ text, setText, keyCount, hint, autoFocus = true }) {
+  return (
+    <div className="space-y-2">
+      <textarea
+        autoFocus={autoFocus}
+        rows={6}
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+        placeholder="Escreva sua resposta aqui, com suas palavras…"
+        className="w-full rounded-2xl border-2 border-line bg-soft p-4 font-semibold leading-relaxed outline-none transition focus:border-brand"
+      />
+      {hint && <div className="rounded-2xl border-l-4 border-gold bg-gold/10 p-3">💡 <b>Dica:</b> {hint}</div>}
+      <p className="text-xs font-bold text-muted">{text.trim().split(/\s+/).filter(Boolean).length} palavras · {keyCount} pontos-chave esperados</p>
+    </div>
+  );
+}
 
-  if (!review) {
-    return (
-      <div className="space-y-3">
-        <textarea
-          autoFocus
-          rows={6}
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-          placeholder="Escreva sua resposta aqui, com suas palavras…"
-          className="w-full rounded-2xl border-2 border-line bg-soft p-4 font-semibold leading-relaxed outline-none transition focus:border-brand"
-        />
-        {hint && <div className="rounded-2xl border-l-4 border-gold bg-gold/10 p-3">💡 <b>Dica:</b> {hint}</div>}
-        <div className="flex items-center justify-between gap-2">
-          <span className="text-xs font-bold text-muted">{text.trim().split(/\s+/).filter(Boolean).length} palavras · {q.keyCount} pontos-chave esperados</span>
-          <Button onClick={() => onSubmit(text)} disabled={text.trim().length < 3}>Conferir resposta ➜</Button>
-        </div>
-      </div>
-    );
-  }
-
+// Resposta do aluno × modelo + pontos-chave + autoavaliação
+export function OpenReview({ review, graded, onGrade, timeout }) {
   const { keyPoints, found, total, model, suggested, answer } = review;
   return (
     <div className="space-y-3">
@@ -40,7 +33,6 @@ export default function OpenQuestion({ q, text, setText, review, onSubmit, onGra
           <p className="font-semibold leading-relaxed">{model}</p>
         </div>
       </div>
-
       <div className="rounded-2xl border border-line p-4">
         <p className="mb-2 text-sm font-black">🔑 Pontos-chave ({found}/{total} identificados automaticamente)</p>
         <ul className="grid gap-1.5 sm:grid-cols-2">
@@ -52,7 +44,6 @@ export default function OpenQuestion({ q, text, setText, review, onSubmit, onGra
         </ul>
         <p className="mt-2 text-xs text-muted">A conferência automática procura palavras-chave e pode errar. Use a resposta modelo para se autoavaliar com honestidade.</p>
       </div>
-
       {!graded ? (
         <div className="rounded-2xl bg-soft p-4">
           <p className="mb-2 font-black">Como foi sua resposta? <span className="text-sm font-semibold text-muted">(sugestão: {suggested === 'correct' ? 'acertei' : suggested === 'partial' ? 'parcial' : 'errei'})</span></p>
@@ -67,4 +58,18 @@ export default function OpenQuestion({ q, text, setText, review, onSubmit, onGra
       )}
     </div>
   );
+}
+
+export default function OpenQuestion({ q, text, setText, review, onSubmit, onGrade, graded, timeout, hint }) {
+  if (!review) {
+    return (
+      <div className="space-y-3">
+        <OpenInput text={text} setText={setText} keyCount={q.keyCount} hint={hint} />
+        <div className="flex justify-end">
+          <Button onClick={() => onSubmit(text)} disabled={text.trim().length < 3}>Conferir resposta ➜</Button>
+        </div>
+      </div>
+    );
+  }
+  return <OpenReview review={review} graded={graded} onGrade={onGrade} timeout={timeout} />;
 }

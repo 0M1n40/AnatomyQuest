@@ -11,6 +11,8 @@ import Game from './components/Game.jsx';
 import Result from './components/Result.jsx';
 import Flashcards from './components/Flashcards.jsx';
 import Ranking from './components/Ranking.jsx';
+import MindMap from './components/MindMap.jsx';
+import Exam from './components/exam/Exam.jsx';
 import AtlasHub from './components/atlas/AtlasHub.jsx';
 import AtlasStudy from './components/atlas/AtlasStudy.jsx';
 import AtlasGame from './components/atlas/AtlasGame.jsx';
@@ -19,7 +21,10 @@ import { Spinner } from './components/ui.jsx';
 
 const PLAYER_KEY = 'nursehub:player';
 const SUBJECT_KEY = 'nursehub:subject';
-const NAV_OF = { home: 'home', game: 'home', result: 'home', flash: 'flash', ranking: 'ranking', atlas: 'atlas', atlasStudy: 'atlas', atlasGame: 'atlas', atlasEditor: 'atlas' };
+const NAV_OF = {
+  home: 'home', game: 'home', result: 'home', flash: 'flash', ranking: 'ranking', mindmap: 'mindmap', exam: 'exam',
+  atlas: 'atlas', atlasStudy: 'atlas', atlasGame: 'atlas', atlasEditor: 'atlas',
+};
 
 export default function App() {
   const [theme, toggleTheme] = useTheme();
@@ -29,9 +34,8 @@ export default function App() {
   const [screen, setScreen] = useState({ name: 'loading' });
   const [error, setError] = useState('');
 
-  const go = (name, extra = {}) => { setScreen({ name, ...extra }); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+  const go = (name, extra = {}) => { setScreen({ name, key: Date.now(), ...extra }); window.scrollTo({ top: 0, behavior: 'smooth' }); };
 
-  // Ativa uma matéria e carrega o progresso do jogador nela
   const enterSubject = useCallback(async (id, name) => {
     api.setSubject(id);
     safeStorage.set(SUBJECT_KEY, id);
@@ -61,6 +65,7 @@ export default function App() {
 
   const refreshPlayer = async () => { try { setPlayer(await api.player(player.name)); } catch { /* ignora */ } };
   const navigate = async (name) => { await refreshPlayer(); go(name); };
+  const play = (mode) => go('game', { mode });
 
   const finish = (back) => async (data) => {
     const saved = await api.finish(player.name, data).catch(() => null);
@@ -90,42 +95,35 @@ export default function App() {
         onToggleTheme={toggleTheme}
         onLogout={logout}
       />
-      <main key={subject?.id} className="mx-auto max-w-5xl p-4 sm:p-6">
+      <main key={subject?.id} className="mx-auto max-w-6xl p-4 sm:p-6">
         {s.name === 'loading' && <Spinner />}
         {s.name === 'login' && <Login onLogin={login} error={error} />}
         {s.name === 'subjects' && player && <SubjectPicker player={player} current={subject?.id} onPick={(id) => enterSubject(id, player.name)} />}
 
         {ready && (
           <>
-            {s.name === 'home' && (
-              <Home player={player} subject={subject} systems={systems} onPlay={(mode) => go('game', { mode, key: Date.now() })} onNavigate={navigate} onReset={reset} />
-            )}
-            {s.name === 'game' && (
-              <Game key={s.key} player={player} mode={s.mode} onFinish={finish({ name: 'game', mode: s.mode })} onExit={() => navigate('home')} />
-            )}
+            {s.name === 'home' && <Home player={player} subject={subject} systems={systems} onPlay={play} onNavigate={navigate} onReset={reset} />}
+            {s.name === 'game' && <Game key={s.key} player={player} mode={s.mode} onFinish={finish({ name: 'game', mode: s.mode })} onExit={() => navigate('home')} />}
             {s.name === 'result' && (
               <Result
                 data={s.data}
                 menuLabel={s.back.name === 'atlasGame' ? `Voltar ao ${subject.practice.nav}` : 'Início'}
-                onReplay={() => go(s.back.name, { ...s.back, key: Date.now() })}
+                onReplay={() => go(s.back.name, { ...s.back })}
                 onMenu={() => navigate(s.back.name === 'atlasGame' ? 'atlas' : 'home')}
               />
             )}
             {s.name === 'flash' && <Flashcards systems={systems} subject={subject} />}
             {s.name === 'ranking' && <Ranking systems={systems} me={player.name} subject={subject} />}
+            {s.name === 'mindmap' && <MindMap subject={subject} onPlay={play} />}
+            {s.name === 'exam' && <Exam key={s.key} player={player} subject={subject} onSaved={setPlayer} onExit={() => navigate('home')} />}
 
             {s.name === 'atlas' && (
-              <AtlasHub
-                player={player}
-                subject={subject}
+              <AtlasHub player={player} subject={subject}
                 onStudy={(figure) => go('atlasStudy', { figure })}
-                onPlay={(figure, type) => go('atlasGame', { figure, type, key: Date.now() })}
-                onEditor={() => go('atlasEditor')}
-              />
+                onPlay={(figure, type) => go('atlasGame', { figure, type })}
+                onEditor={() => go('atlasEditor')} />
             )}
-            {s.name === 'atlasStudy' && (
-              <AtlasStudy figureId={s.figure} onBack={() => go('atlas')} onPlay={(figure, type) => go('atlasGame', { figure, type, key: Date.now() })} />
-            )}
+            {s.name === 'atlasStudy' && <AtlasStudy figureId={s.figure} onBack={() => go('atlas')} onPlay={(figure, type) => go('atlasGame', { figure, type })} />}
             {s.name === 'atlasGame' && (
               <AtlasGame key={s.key} figure={s.figure} type={s.type} onFinish={finish({ name: 'atlasGame', figure: s.figure, type: s.type })} onExit={() => navigate('atlas')} />
             )}

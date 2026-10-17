@@ -1,33 +1,29 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { api } from '../lib/api.js';
+import { LETTERS } from '../lib/progress.js';
 import { TIME, useGameEngine } from '../hooks/useGameEngine.js';
 import { PHRASES, pick } from '../lib/phrases.js';
-import { Button, Card, Feedback, MascotTalk, Spinner, Tag, optionClass } from './ui.jsx';
+import { Button, Card, Feedback, MascotTalk, OpenTag, SourceTag, Spinner, Tag, optionClass } from './ui.jsx';
 import GameHud from './GameHud.jsx';
 import OpenQuestion from './OpenQuestion.jsx';
-
-const LETTERS = 'ABCD';
 
 export default function Game({ player, mode, onFinish, onExit }) {
   const [questions, setQuestions] = useState(null);
   const [error, setError] = useState('');
   const [idx, setIdx] = useState(0);
-  // objetivas
   const [result, setResult] = useState(null);
   const [chosen, setChosen] = useState(null);
   const [hidden, setHidden] = useState([]);
-  // discursivas
   const [text, setText] = useState('');
   const [review, setReview] = useState(null);
   const [graded, setGraded] = useState(null);
   const [timedOut, setTimedOut] = useState(false);
-  // ajudas
   const [hint, setHint] = useState('');
   const [power, setPower] = useState({ fifty: true, hint: true });
   const busy = useRef(false);
   const timeoutRef = useRef(null);
 
-  const engine = useGameEngine({ unlimitedLives: mode === 'review' || mode === 'open', onTimeout: () => timeoutRef.current?.() });
+  const engine = useGameEngine({ unlimitedLives: ['review', 'open', 'past'].includes(mode), onTimeout: () => timeoutRef.current?.() });
   const { register, start, pause, lives, combo } = engine;
 
   useEffect(() => {
@@ -40,7 +36,6 @@ export default function Game({ player, mode, onFinish, onExit }) {
   const isOpen = q?.type === 'open';
   const done = isOpen ? !!graded : engine.answered;
 
-  // Cada questão começa com o tempo do seu tipo
   useEffect(() => { if (q) start(TIME[q.type] || TIME.mcq); }, [q, start]);
 
   const answer = useCallback(async (optionId) => {
@@ -69,7 +64,7 @@ export default function Game({ player, mode, onFinish, onExit }) {
   const gradeOpen = async (res) => {
     await api.gradeOpen(player.name, q.id, res);
     setGraded(res);
-    register(res, { text: q.text, answer: 'Ver resposta modelo nos flashcards' });
+    register(res, { text: q.text, answer: 'Veja a resposta modelo nos flashcards' });
   };
 
   timeoutRef.current = () => (isOpen ? submitOpen(text, true) : answer(-1));
@@ -90,7 +85,7 @@ export default function Game({ player, mode, onFinish, onExit }) {
   useEffect(() => {
     const onKey = (e) => {
       if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
-      const k = 'abcd'.indexOf(e.key.toLowerCase());
+      const k = 'abcde'.indexOf(e.key.toLowerCase());
       if (!isOpen && k >= 0 && q?.options?.[k] && !engine.answered && !hidden.includes(q.options[k].id)) answer(q.options[k].id);
       if (e.key === 'Enter') next();
     };
@@ -121,7 +116,7 @@ export default function Game({ player, mode, onFinish, onExit }) {
   };
 
   if (error) return <Card className="text-center"><p className="mb-4 font-semibold text-accent">{error}</p><Button onClick={onExit}>Voltar</Button></Card>;
-  if (!questions || !q) return <Spinner label="Montando seu simulado…" />;
+  if (!questions || !q) return <Spinner label="Montando suas questões…" />;
 
   const stateOf = (o) => {
     if (!engine.answered) return hidden.includes(o.id) ? 'hidden' : 'idle';
@@ -141,22 +136,13 @@ export default function Game({ player, mode, onFinish, onExit }) {
         <Card className={engine.anim} key={q.id}>
           <div className="flex flex-wrap gap-2">
             <Tag>{q.system.icon} {q.system.name}</Tag>
-            {isOpen && <span className="rounded-lg bg-gold/20 px-2.5 py-0.5 text-xs font-extrabold text-gold">✍️ DISCURSIVA</span>}
+            {isOpen && <OpenTag />}
+            <SourceTag source={q.source} />
           </div>
           <h2 className="mb-5 mt-3 text-xl font-bold leading-relaxed">{q.text}</h2>
 
           {isOpen ? (
-            <OpenQuestion
-              q={q}
-              text={text}
-              setText={setText}
-              review={review}
-              graded={graded}
-              timeout={timedOut}
-              hint={hint}
-              onSubmit={(v) => submitOpen(v)}
-              onGrade={gradeOpen}
-            />
+            <OpenQuestion q={q} text={text} setText={setText} review={review} graded={graded} timeout={timedOut} hint={hint} onSubmit={(v) => submitOpen(v)} onGrade={gradeOpen} />
           ) : (
             <>
               <div className="space-y-2.5">
@@ -172,9 +158,7 @@ export default function Game({ player, mode, onFinish, onExit }) {
                   </button>
                 ))}
               </div>
-              {hint && !engine.answered && (
-                <div className="mt-4 rounded-2xl border-l-4 border-gold bg-gold/10 p-3">💡 <b>Dica:</b> {hint}</div>
-              )}
+              {hint && !engine.answered && <div className="mt-4 rounded-2xl border-l-4 border-gold bg-gold/10 p-3">💡 <b>Dica:</b> {hint}</div>}
               {engine.answered && result && <Feedback result={result} timeout={chosen === -1}>{result.explanation}</Feedback>}
             </>
           )}

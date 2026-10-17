@@ -354,6 +354,142 @@
         ],
         "answer": 1,
         "explanation": "A verificação por raio-X evita a infusão de alimento no pulmão."
+      },
+      {
+        "id": "anat-resp-27",
+        "type": "open",
+        "text": "Compare o pulmão direito e o esquerdo quanto ao número de lobos e fissuras.",
+        "model": "O pulmão direito tem 3 lobos (superior, médio e inferior) e 2 fissuras (horizontal e oblíqua). O esquerdo tem 2 lobos (superior e inferior), apenas a fissura oblíqua e a incisura cardíaca, onde se acomoda o coração.",
+        "keyPoints": [
+          {
+            "label": "Direito: 3 lobos",
+            "keywords": [
+              "3 lobos",
+              "tres lobos"
+            ]
+          },
+          {
+            "label": "Direito: fissura horizontal e oblíqua",
+            "keywords": [
+              "horizontal"
+            ]
+          },
+          {
+            "label": "Esquerdo: 2 lobos",
+            "keywords": [
+              "2 lobos",
+              "dois lobos"
+            ]
+          },
+          {
+            "label": "Esquerdo: só fissura oblíqua",
+            "keywords": [
+              "obliqu"
+            ]
+          },
+          {
+            "label": "Incisura cardíaca",
+            "keywords": [
+              "incisura",
+              "coracao"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "anat-resp-28",
+        "type": "open",
+        "text": "Por que corpos estranhos aspirados vão mais para o brônquio principal direito?",
+        "model": "Porque o brônquio principal direito é mais vertical (verticalizado), mais curto e de maior calibre que o esquerdo, que é mais horizontal e longo.",
+        "keyPoints": [
+          {
+            "label": "Mais vertical",
+            "keywords": [
+              "vertical"
+            ]
+          },
+          {
+            "label": "Mais curto",
+            "keywords": [
+              "curto"
+            ]
+          },
+          {
+            "label": "Maior calibre / mais largo",
+            "keywords": [
+              "calibr",
+              "largo",
+              "maior diametro"
+            ]
+          },
+          {
+            "label": "Esquerdo mais horizontal/longo",
+            "keywords": [
+              "horizontal",
+              "longo"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "anat-resp-29",
+        "type": "open",
+        "text": "Descreva a posição das estruturas no hilo pulmonar.",
+        "model": "No hilo pulmonar, o brônquio principal ocupa a posição posterior, a artéria pulmonar fica superior e as veias pulmonares ficam inferiores.",
+        "keyPoints": [
+          {
+            "label": "Brônquio posterior",
+            "keywords": [
+              "bronquio"
+            ]
+          },
+          {
+            "label": "Artéria superior",
+            "keywords": [
+              "arteria"
+            ]
+          },
+          {
+            "label": "Veias inferiores",
+            "keywords": [
+              "veia"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "anat-resp-30",
+        "type": "open",
+        "text": "Onde e como deve ser feita uma traqueostomia de emergência? Justifique.",
+        "model": "Deve ser feita no ligamento cricotraqueal ou entre o 1º e o 2º anel da traqueia, abaixo da cartilagem cricóidea, porque aberturas acima da cricóidea podem lesar as pregas vocais.",
+        "keyPoints": [
+          {
+            "label": "Ligamento cricotraqueal",
+            "keywords": [
+              "cricotraqueal"
+            ]
+          },
+          {
+            "label": "Entre 1º e 2º anel",
+            "keywords": [
+              "anel",
+              "aneis"
+            ]
+          },
+          {
+            "label": "Abaixo da cricóidea",
+            "keywords": [
+              "cricoid"
+            ]
+          },
+          {
+            "label": "Risco às pregas vocais",
+            "keywords": [
+              "prega",
+              "vocal"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -777,6 +913,147 @@
         ],
         "answer": 1,
         "explanation": "A cabeça fica no 'C' do duodeno e a cauda toca o baço."
+      },
+      {
+        "id": "anat-dig-32",
+        "type": "open",
+        "text": "Diferencie o jejuno do íleo.",
+        "model": "O jejuno é mais vascularizado, tem vasos retos longos, poucas arcadas grandes, parede mais espessa e muitas pregas. O íleo tem muitas arcadas pequenas, vasos retos curtos, parede mais fina e placas de Peyer marcantes. Os dois são irrigados pela artéria mesentérica superior e são onde ocorre a maior parte da absorção.",
+        "keyPoints": [
+          {
+            "label": "Jejuno: vasos retos longos",
+            "keywords": [
+              "vasos retos longos",
+              "retos longos"
+            ]
+          },
+          {
+            "label": "Jejuno: parede espessa / mais vascularizado",
+            "keywords": [
+              "espess",
+              "vasculariz"
+            ]
+          },
+          {
+            "label": "Íleo: muitas arcadas",
+            "keywords": [
+              "arcada"
+            ]
+          },
+          {
+            "label": "Íleo: placas de Peyer",
+            "keywords": [
+              "peyer"
+            ]
+          },
+          {
+            "label": "Mesentérica superior",
+            "keywords": [
+              "mesenterica superior"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "anat-dig-33",
+        "type": "open",
+        "text": "Explique como se forma o ducto colédoco e onde ele desemboca.",
+        "model": "O ducto hepático comum se une ao ducto cístico (da vesícula biliar) formando o colédoco. Ele se junta ao ducto pancreático principal na ampola hepatopancreática, que desemboca na papila duodenal maior, no duodeno.",
+        "keyPoints": [
+          {
+            "label": "Hepático comum",
+            "keywords": [
+              "hepatico comum"
+            ]
+          },
+          {
+            "label": "Ducto cístico",
+            "keywords": [
+              "cistico"
+            ]
+          },
+          {
+            "label": "Ampola hepatopancreática",
+            "keywords": [
+              "ampola",
+              "hepatopancrea"
+            ]
+          },
+          {
+            "label": "Papila duodenal maior / duodeno",
+            "keywords": [
+              "papila",
+              "duodeno"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "anat-dig-34",
+        "type": "open",
+        "text": "Quais órgãos do sistema digestório são retroperitoneais e o que isso significa?",
+        "model": "São retroperitoneais o duodeno, o cólon ascendente e o cólon descendente (além do pâncreas): ficam atrás do peritônio, fixos à parede posterior do abdome, sem mesentério próprio.",
+        "keyPoints": [
+          {
+            "label": "Duodeno",
+            "keywords": [
+              "duodeno"
+            ]
+          },
+          {
+            "label": "Cólon ascendente",
+            "keywords": [
+              "ascendente"
+            ]
+          },
+          {
+            "label": "Cólon descendente",
+            "keywords": [
+              "descendente"
+            ]
+          },
+          {
+            "label": "Atrás do peritônio / fixos",
+            "keywords": [
+              "atras",
+              "posterior",
+              "fixo"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "anat-dig-35",
+        "type": "open",
+        "text": "Descreva as regiões do estômago e a função do piloro.",
+        "model": "O estômago tem cárdia, fundo, corpo e piloro (antro e canal pilórico). O piloro contém o esfíncter pilórico, que regula o esvaziamento do conteúdo gástrico para o duodeno.",
+        "keyPoints": [
+          {
+            "label": "Cárdia",
+            "keywords": [
+              "cardia"
+            ]
+          },
+          {
+            "label": "Fundo",
+            "keywords": [
+              "fundo"
+            ]
+          },
+          {
+            "label": "Corpo",
+            "keywords": [
+              "corpo"
+            ]
+          },
+          {
+            "label": "Esfíncter pilórico regula esvaziamento",
+            "keywords": [
+              "esfincter",
+              "esvazia"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -1031,6 +1308,107 @@
         ],
         "answer": 1,
         "explanation": "Rim em ferradura = fusão dos polos inferiores."
+      },
+      {
+        "id": "anat-uri-19",
+        "type": "open",
+        "text": "Descreva o caminho da urina, da papila renal até a bexiga.",
+        "model": "A urina sai pela papila renal (ápice da pirâmide), passa para o cálice menor, depois para o cálice maior, chega à pelve renal e segue pelo ureter até a bexiga urinária.",
+        "keyPoints": [
+          {
+            "label": "Papila renal",
+            "keywords": [
+              "papila"
+            ]
+          },
+          {
+            "label": "Cálice menor",
+            "keywords": [
+              "calice menor",
+              "calices menores"
+            ]
+          },
+          {
+            "label": "Cálice maior",
+            "keywords": [
+              "calice maior",
+              "calices maiores"
+            ]
+          },
+          {
+            "label": "Pelve renal",
+            "keywords": [
+              "pelve"
+            ]
+          },
+          {
+            "label": "Ureter → bexiga",
+            "keywords": [
+              "ureter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "anat-uri-20",
+        "type": "open",
+        "text": "Por que o rim é suscetível a infartos? Explique a circulação terminal.",
+        "model": "Porque as artérias renais têm circulação terminal: os ramos não possuem anastomoses funcionais significativas. Se um ramo for obstruído, não há outro vaso para compensar e a área irrigada sofre infarto.",
+        "keyPoints": [
+          {
+            "label": "Circulação terminal",
+            "keywords": [
+              "terminal"
+            ]
+          },
+          {
+            "label": "Sem anastomoses",
+            "keywords": [
+              "anastomose"
+            ]
+          },
+          {
+            "label": "Obstrução sem compensação",
+            "keywords": [
+              "obstru",
+              "compens"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "anat-uri-21",
+        "type": "open",
+        "text": "Cite os três pontos de estreitamento do ureter e sua importância clínica.",
+        "model": "Junção ureteropélvica, cruzamento com os vasos ilíacos (borda da pelve) e junção ureterovesical (entrada na bexiga). São os locais onde cálculos renais costumam ficar impactados.",
+        "keyPoints": [
+          {
+            "label": "Junção ureteropélvica",
+            "keywords": [
+              "ureteropelv"
+            ]
+          },
+          {
+            "label": "Vasos ilíacos",
+            "keywords": [
+              "iliac"
+            ]
+          },
+          {
+            "label": "Junção ureterovesical",
+            "keywords": [
+              "ureterovesic",
+              "bexiga"
+            ]
+          },
+          {
+            "label": "Impactação de cálculos",
+            "keywords": [
+              "calculo",
+              "pedra"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -1246,6 +1624,83 @@
         ],
         "answer": 1,
         "explanation": "'Saco escrotal' é pleonástico."
+      },
+      {
+        "id": "anat-masc-16",
+        "type": "open",
+        "text": "Descreva o trajeto dos espermatozoides desde os túbulos seminíferos até a uretra.",
+        "model": "Túbulos seminíferos → túbulos retos → rede testicular → dúctulos eferentes → epidídimo → ducto deferente → ducto ejaculatório (união do deferente com o ducto da vesícula seminal) → uretra prostática.",
+        "keyPoints": [
+          {
+            "label": "Túbulos seminíferos e retos",
+            "keywords": [
+              "seminifer",
+              "retos"
+            ]
+          },
+          {
+            "label": "Rede testicular / dúctulos eferentes",
+            "keywords": [
+              "rede",
+              "eferente"
+            ]
+          },
+          {
+            "label": "Epidídimo",
+            "keywords": [
+              "epididim"
+            ]
+          },
+          {
+            "label": "Ducto deferente",
+            "keywords": [
+              "deferente"
+            ]
+          },
+          {
+            "label": "Ducto ejaculatório → uretra",
+            "keywords": [
+              "ejaculat",
+              "uretra"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "anat-masc-17",
+        "type": "open",
+        "text": "Explique por que a criptorquidia é um problema e qual é o principal risco.",
+        "model": "Na criptorquidia o testículo não desce para o escroto. Ele fica em temperatura abdominal, acima dos 1,5–2 °C a menos necessários para a espermatogênese, o que prejudica a produção de espermatozoides e pode gerar mutações nas células germinativas, aumentando o risco de câncer. É unilateral em cerca de 95% dos casos.",
+        "keyPoints": [
+          {
+            "label": "Testículo não desce",
+            "keywords": [
+              "nao desce",
+              "escroto"
+            ]
+          },
+          {
+            "label": "Temperatura",
+            "keywords": [
+              "temperatura"
+            ]
+          },
+          {
+            "label": "Espermatogênese prejudicada / infertilidade",
+            "keywords": [
+              "espermatogen",
+              "infertil"
+            ]
+          },
+          {
+            "label": "Risco de câncer",
+            "keywords": [
+              "cancer",
+              "neoplas",
+              "maligno"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -1565,6 +2020,91 @@
         ],
         "answer": 1,
         "explanation": "A inervação autonômica vem do plexo uterovaginal."
+      },
+      {
+        "id": "anat-fem-24",
+        "type": "open",
+        "text": "Descreva as partes da tuba uterina e onde ocorre a fecundação.",
+        "model": "A tuba tem porção intramural (dentro da parede do útero), istmo (porção estreita), ampola (porção mais dilatada, local habitual da fecundação) e infundíbulo, em forma de funil, com as fímbrias que captam o oócito.",
+        "keyPoints": [
+          {
+            "label": "Porção intramural",
+            "keywords": [
+              "intramural"
+            ]
+          },
+          {
+            "label": "Istmo",
+            "keywords": [
+              "istmo"
+            ]
+          },
+          {
+            "label": "Ampola = fecundação",
+            "keywords": [
+              "ampola"
+            ]
+          },
+          {
+            "label": "Infundíbulo com fímbrias",
+            "keywords": [
+              "infundibulo",
+              "fimbria"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "anat-fem-25",
+        "type": "open",
+        "text": "Explique por que a artéria uterina deve ser ligada rente ao útero na histerectomia.",
+        "model": "Porque a artéria uterina passa por cima do ureter. Ligar longe do útero pode prender ou seccionar o ureter acidentalmente.",
+        "keyPoints": [
+          {
+            "label": "Artéria passa sobre o ureter",
+            "keywords": [
+              "ureter"
+            ]
+          },
+          {
+            "label": "Risco de lesar/ligar o ureter",
+            "keywords": [
+              "lesa",
+              "secciona",
+              "ligar",
+              "prender"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "anat-fem-26",
+        "type": "open",
+        "text": "Por que a gravidez ectópica na tuba é perigosa?",
+        "model": "A tuba uterina não consegue se expandir como o útero. Com o crescimento do embrião ela pode romper, causando hemorragia grave.",
+        "keyPoints": [
+          {
+            "label": "Tuba não se expande",
+            "keywords": [
+              "expand",
+              "distend"
+            ]
+          },
+          {
+            "label": "Ruptura",
+            "keywords": [
+              "romp",
+              "ruptur"
+            ]
+          },
+          {
+            "label": "Hemorragia",
+            "keywords": [
+              "hemorrag",
+              "sangra"
+            ]
+          }
+        ]
       }
     ]
   }

@@ -1,0 +1,413 @@
+{
+ "label": "Anatomia – Módulo 3",
+ "children": [
+  {
+   "label": "Sistema Respiratório",
+   "system": "resp",
+   "children": [
+    {
+     "label": "Nariz e cavidade nasal",
+     "children": [
+      {
+       "label": "Septo: etmoide + vômer + cartilagem"
+      },
+      {
+       "label": "Conchas e meatos"
+      },
+      {
+       "label": "Coanas → nasofaringe"
+      },
+      {
+       "label": "Vibrissas no vestíbulo"
+      },
+      {
+       "label": "Lâmina cribriforme: olfato"
+      }
+     ]
+    },
+    {
+     "label": "Faringe",
+     "children": [
+      {
+       "label": "Nasofaringe: tuba auditiva, adenoide"
+      },
+      {
+       "label": "Orofaringe"
+      },
+      {
+       "label": "Laringofaringe"
+      }
+     ]
+    },
+    {
+     "label": "Laringe",
+     "children": [
+      {
+       "label": "Tireóidea: pomo de Adão"
+      },
+      {
+       "label": "Cricóidea: limite inferior"
+      },
+      {
+       "label": "Pregas vocais e glote"
+      },
+      {
+       "label": "Traqueostomia abaixo da cricóidea"
+      }
+     ]
+    },
+    {
+     "label": "Traqueia e brônquios",
+     "children": [
+      {
+       "label": "Anéis em C"
+      },
+      {
+       "label": "Carina: reflexo da tosse"
+      },
+      {
+       "label": "Brônquio direito: vertical, curto, largo"
+      }
+     ]
+    },
+    {
+     "label": "Pulmões e pleura",
+     "children": [
+      {
+       "label": "Direito: 3 lobos, 2 fissuras"
+      },
+      {
+       "label": "Esquerdo: 2 lobos, incisura cardíaca"
+      },
+      {
+       "label": "Hilo: brônquio posterior, artéria superior, veias inferiores"
+      },
+      {
+       "label": "Pleura visceral × parietal"
+      },
+      {
+       "label": "Pneumotórax × hemotórax"
+      }
+     ],
+     "figures": [
+      "respiratorio"
+     ]
+    }
+   ],
+   "figures": [
+    "respiratorio"
+   ]
+  },
+  {
+   "label": "Sistema Digestório",
+   "system": "dig",
+   "children": [
+    {
+     "label": "Boca",
+     "children": [
+      {
+       "label": "Dentes: 20 decíduos, 32 permanentes"
+      },
+      {
+       "label": "Papilas: valadas (amargo), filiformes (tato)"
+      },
+      {
+       "label": "Glândulas salivares; parótida (caxumba)"
+      },
+      {
+       "label": "Amilase salivar"
+      }
+     ]
+    },
+    {
+     "label": "Faringe e esôfago",
+     "children": [
+      {
+       "label": "Deglutição: palato mole sobe"
+      },
+      {
+       "label": "Nervo vago: peristaltismo"
+      },
+      {
+       "label": "Hérnia de hiato e refluxo"
+      }
+     ]
+    },
+    {
+     "label": "Estômago",
+     "children": [
+      {
+       "label": "Cárdia, fundo, corpo, piloro"
+      },
+      {
+       "label": "Pepsina + HCl: proteínas"
+      },
+      {
+       "label": "Omento menor e maior"
+      }
+     ]
+    },
+    {
+     "label": "Intestino delgado",
+     "children": [
+      {
+       "label": "Duodeno retroperitoneal; papila maior"
+      },
+      {
+       "label": "Jejuno: vasos retos longos"
+      },
+      {
+       "label": "Íleo: arcadas, placas de Peyer"
+      },
+      {
+       "label": "Mesentérica superior"
+      }
+     ]
+    },
+    {
+     "label": "Intestino grosso",
+     "children": [
+      {
+       "label": "Ceco e apêndice"
+      },
+      {
+       "label": "Cólons ascendente, transverso, descendente, sigmoide"
+      },
+      {
+       "label": "Tênias e haustros"
+      },
+      {
+       "label": "Flexuras hepática e esplênica"
+      }
+     ]
+    },
+    {
+     "label": "Glândulas anexas",
+     "children": [
+      {
+       "label": "Fígado: tríade portal, ligamento redondo"
+      },
+      {
+       "label": "Vias biliares: hepático comum + cístico = colédoco"
+      },
+      {
+       "label": "Pâncreas: exócrino e endócrino"
+      }
+     ]
+    }
+   ],
+   "figures": [
+    "digestorio"
+   ]
+  },
+  {
+   "label": "Sistema Urinário",
+   "system": "uri",
+   "children": [
+    {
+     "label": "Rins",
+     "children": [
+      {
+       "label": "T12–L3, retroperitoneais"
+      },
+      {
+       "label": "Gordura perirrenal; ptose"
+      },
+      {
+       "label": "Hilo: veia anterior à artéria"
+      },
+      {
+       "label": "Renina e eritropoetina"
+      }
+     ]
+    },
+    {
+     "label": "Estrutura interna",
+     "children": [
+      {
+       "label": "Córtex, pirâmides, colunas"
+      },
+      {
+       "label": "Papila → cálice menor → maior → pelve"
+      },
+      {
+       "label": "Circulação terminal: risco de infarto"
+      },
+      {
+       "label": "Sistema porta renal"
+      }
+     ],
+     "figures": [
+      "rim_corte"
+     ]
+    },
+    {
+     "label": "Ureter",
+     "children": [
+      {
+       "label": "3 estreitamentos: cálculos"
+      }
+     ]
+    },
+    {
+     "label": "Bexiga e uretra",
+     "children": [
+      {
+       "label": "500–700 mL"
+      },
+      {
+       "label": "Trígono vesical"
+      },
+      {
+       "label": "HPB comprime a uretra"
+      },
+      {
+       "label": "Sonda: desinflar o balão"
+      }
+     ]
+    }
+   ],
+   "figures": [
+    "urinario",
+    "rim_corte"
+   ]
+  },
+  {
+   "label": "Genital Masculino",
+   "system": "masc",
+   "children": [
+    {
+     "label": "Testículos e escroto",
+     "children": [
+      {
+       "label": "Descida no 7º mês"
+      },
+      {
+       "label": "Temperatura 1,5–2 °C menor"
+      },
+      {
+       "label": "Cremáster × dartos"
+      },
+      {
+       "label": "Criptorquidia, hidrocele"
+      }
+     ]
+    },
+    {
+     "label": "Vias",
+     "children": [
+      {
+       "label": "Seminíferos → retos → rede → eferentes → epidídimo"
+      },
+      {
+       "label": "Ducto deferente + vesícula = ejaculatório"
+      },
+      {
+       "label": "Funículo espermático"
+      }
+     ]
+    },
+    {
+     "label": "Glândulas",
+     "children": [
+      {
+       "label": "Vesículas seminais: frutose"
+      },
+      {
+       "label": "Próstata"
+      },
+      {
+       "label": "Bulbouretrais: pré-ejaculatório"
+      }
+     ]
+    }
+   ],
+   "figures": [
+    "masculino"
+   ]
+  },
+  {
+   "label": "Genital Feminino",
+   "system": "fem",
+   "children": [
+    {
+     "label": "Genitália externa e períneo",
+     "children": [
+      {
+       "label": "Grandes lábios ≈ escroto"
+      },
+      {
+       "label": "Bartholin"
+      },
+      {
+       "label": "Nervo pudendo"
+      },
+      {
+       "label": "Cistocele, retocele"
+      }
+     ]
+    },
+    {
+     "label": "Vagina",
+     "children": [
+      {
+       "label": "Fórnix posterior"
+      },
+      {
+       "label": "pH ácido (ácido lático)"
+      }
+     ]
+    },
+    {
+     "label": "Útero",
+     "children": [
+      {
+       "label": "Fundo, corpo, istmo, colo"
+      },
+      {
+       "label": "Endométrio, miométrio, perimétrio"
+      },
+      {
+       "label": "Anteversoflexão"
+      },
+      {
+       "label": "Artéria uterina sobre o ureter"
+      },
+      {
+       "label": "Douglas: útero × reto"
+      }
+     ],
+     "figures": [
+      "utero"
+     ]
+    },
+    {
+     "label": "Tubas e ovários",
+     "children": [
+      {
+       "label": "Intramural, istmo, ampola, infundíbulo"
+      },
+      {
+       "label": "Fecundação na ampola"
+      },
+      {
+       "label": "Gravidez ectópica"
+      },
+      {
+       "label": "Lig. suspensor × lig. próprio"
+      },
+      {
+       "label": "Artéria ovariana: aorta"
+      }
+     ],
+     "figures": [
+      "utero"
+     ]
+    }
+   ],
+   "figures": [
+    "utero"
+   ]
+  }
+ ]
+}

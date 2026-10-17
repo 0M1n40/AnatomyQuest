@@ -1,7 +1,7 @@
 {
   "name": "nursehub",
   "private": true,
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "NurseHub - estudo gamificado de Enfermagem (React + Vite + Tailwind, GitHub Pages)",
   "type": "module",
   "scripts": {

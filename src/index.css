@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* Modo escuro controlado pela classe .dark no <html> */
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
@@ -68,3 +67,14 @@ body {
 .preserve-3d { transform-style: preserve-3d; }
 .backface-hidden { backface-visibility: hidden; }
 .rotate-y-180 { transform: rotateY(180deg); }
+
+/* Mapa mental: linhas de ligação entre os nós */
+.mm-children { position: relative; margin-left: 1.25rem; padding-left: 1.25rem; border-left: 2px solid var(--mm-color, var(--c-line)); }
+.mm-item { position: relative; }
+.mm-item::before { content: ""; position: absolute; left: -1.25rem; top: 1.15rem; width: 1.1rem; border-top: 2px solid var(--mm-color, var(--c-line)); }
+.mm-children > .mm-item:last-child::after { content: ""; position: absolute; left: calc(-1.25rem - 2px); top: 1.2rem; bottom: 0; width: 4px; background: var(--c-card); }
+
+@media print {
+  header, .no-print { display: none !important; }
+  body { background: #fff !important; }
+}

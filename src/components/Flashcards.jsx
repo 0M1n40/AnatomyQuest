@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { api } from '../lib/api.js';
-import { Button, Card, Pill, Spinner, Tag } from './ui.jsx';
+import { Button, Card, OpenTag, Pill, SourceTag, Spinner, Tag } from './ui.jsx';
 
 export default function Flashcards({ systems, subject }) {
   const [system, setSystem] = useState('');
@@ -31,9 +31,10 @@ export default function Flashcards({ systems, subject }) {
 
       {!cards ? <Spinner /> : (
         <Card>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             <Tag>{c.icon} {c.system}</Tag>
-            {c.type === 'open' && <span className="rounded-lg bg-gold/20 px-2.5 py-0.5 text-xs font-extrabold text-gold">✍️ EXPLIQUE</span>}
+            {c.type === 'open' && <OpenTag />}
+            <SourceTag source={c.source} />
           </div>
           <div className="perspective mt-3 h-80 cursor-pointer" onClick={() => setFlip((f) => !f)}>
             <div className={`preserve-3d relative h-full w-full transition-transform duration-500 ${flip ? 'rotate-y-180' : ''}`}>

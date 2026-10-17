@@ -9,8 +9,10 @@ export function checkKeyPoints(answer, keyPoints = []) {
     label: kp.label,
     found: kp.keywords.some((k) => {
       const n = normalize(k);
-      // palavras curtas (ex.: "lh", "o2") precisam aparecer como palavra inteira
       return n.length <= 3 ? new RegExp(`(^|[^a-z0-9])${n}([^a-z0-9]|$)`).test(text) : text.includes(n);
     }),
   }));
 }
+
+export const suggestGrade = (found, total) =>
+  found >= Math.ceil(total * 0.75) ? 'correct' : found >= Math.ceil(total * 0.4) ? 'partial' : 'wrong';

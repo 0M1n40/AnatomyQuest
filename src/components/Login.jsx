@@ -12,7 +12,7 @@ export default function Login({ onLogin, error }) {
       <MascotTalk size={140} text="Olá! Eu sou o Doutor Ossinho, seu parceiro de estudos na Enfermagem. Como posso te chamar?" className="mb-2" />
       <Card>
         <h1 className="text-3xl font-black">Nurse<span className="text-brand">Hub</span></h1>
-        <p className="mb-4 text-muted">Estudo gamificado para Enfermagem: simulados, questões discursivas e prova prática.</p>
+        <p className="mb-4 text-muted">Estudo gamificado para Enfermagem: simulados, mapas mentais, questões discursivas e prova prática.</p>
         <form onSubmit={submit} className="space-y-3">
           <input
             autoFocus

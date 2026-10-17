@@ -33,13 +33,8 @@ export default function AtlasStudy({ figureId, onBack, onPlay }) {
       </div>
 
       <div className="grid gap-4 md:grid-cols-[minmax(0,1fr)_340px]">
-        <AtlasViewer
-          image={fig.image}
-          alt={fig.title}
-          className="max-w-2xl"
-          onPinClick={(p) => choose(p.id)}
-          pins={fig.pins.map((p, i) => ({ ...p, number: i + 1, state: p.id === sel ? 'selected' : 'study', showLabel: p.id === sel && visible(p.id) }))}
-        />
+        <AtlasViewer image={fig.image} alt={fig.title} className="max-w-2xl" onPinClick={(p) => choose(p.id)}
+          pins={fig.pins.map((p, i) => ({ ...p, number: i + 1, state: p.id === sel ? 'selected' : 'study', showLabel: p.id === sel && visible(p.id) }))} />
 
         <div className="space-y-3">
           {fig.organ && (
@@ -70,10 +65,7 @@ export default function AtlasStudy({ figureId, onBack, onPlay }) {
             <ol className="space-y-1">
               {fig.pins.map((p, i) => (
                 <li key={p.id}>
-                  <button
-                    onClick={() => choose(p.id)}
-                    className={`flex w-full items-center gap-2 rounded-xl px-2 py-1.5 text-left text-sm font-semibold transition ${p.id === sel ? 'bg-gold/20' : 'hover:bg-soft'}`}
-                  >
+                  <button onClick={() => choose(p.id)} className={`flex w-full items-center gap-2 rounded-xl px-2 py-1.5 text-left text-sm font-semibold transition ${p.id === sel ? 'bg-gold/20' : 'hover:bg-soft'}`}>
                     <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky-500 text-xs font-black text-white">{i + 1}</span>
                     {visible(p.id) ? p.label : <span className="text-muted">? ? ?</span>}
                   </button>

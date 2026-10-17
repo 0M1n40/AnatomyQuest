@@ -33,6 +33,21 @@
       {
         "id": "hist-uri-2",
         "type": "mcq",
+        "text": "Sobre as funções do sistema urinário, qual das opções está INCORRETA?",
+        "options": [
+          "É responsável pela excreção de resíduos e substâncias estranhas",
+          "É responsável pela ativação da vitamina D3",
+          "Regula a pressão arterial",
+          "Regula o pH e o volume de sangue",
+          "Todas estão corretas"
+        ],
+        "answer": 4,
+        "explanation": "Todas as funções listadas pertencem ao sistema urinário.",
+        "source": "quiz"
+      },
+      {
+        "id": "hist-uri-3",
+        "type": "mcq",
         "text": "O glomérulo renal é formado por capilares:",
         "options": [
           "Contínuos",
@@ -44,7 +59,7 @@
         "explanation": "São capilares fenestrados modificados, com parede descontínua e sem diafragma nas fenestras."
       },
       {
-        "id": "hist-uri-3",
+        "id": "hist-uri-4",
         "type": "mcq",
         "text": "A camada VISCERAL da cápsula de Bowman é formada por:",
         "options": [
@@ -57,7 +72,7 @@
         "explanation": "Camada visceral = podócitos; camada parietal = epitélio pavimentoso simples."
       },
       {
-        "id": "hist-uri-4",
+        "id": "hist-uri-5",
         "type": "mcq",
         "text": "No polo VASCULAR do corpúsculo renal:",
         "options": [
@@ -70,7 +85,7 @@
         "explanation": "No polo urinário o filtrado passa para o túbulo contorcido proximal."
       },
       {
-        "id": "hist-uri-5",
+        "id": "hist-uri-6",
         "type": "mcq",
         "text": "As ramificações dos podócitos que envolvem os capilares glomerulares são os:",
         "options": [
@@ -83,7 +98,7 @@
         "explanation": "Os espaços entre os pedicelos formam as fendas de filtração, com diafragma de fenda."
       },
       {
-        "id": "hist-uri-6",
+        "id": "hist-uri-7",
         "type": "mcq",
         "text": "A barreira de filtração glomerular é composta por:",
         "options": [
@@ -96,7 +111,7 @@
         "explanation": "Endotélio fenestrado + lâmina basal (lâminas raras e densa) + podócitos."
       },
       {
-        "id": "hist-uri-7",
+        "id": "hist-uri-8",
         "type": "mcq",
         "text": "Qual destes NÃO atravessa a barreira de filtração em condições normais?",
         "options": [
@@ -109,7 +124,7 @@
         "explanation": "Elementos figurados e macromoléculas de alto peso molecular ficam retidos."
       },
       {
-        "id": "hist-uri-8",
+        "id": "hist-uri-9",
         "type": "mcq",
         "text": "O epitélio cúbico simples com BORDA EM ESCOVA é característico do:",
         "options": [
@@ -122,7 +137,7 @@
         "explanation": "As microvilosidades do TCP aumentam a superfície de absorção."
       },
       {
-        "id": "hist-uri-9",
+        "id": "hist-uri-10",
         "type": "mcq",
         "text": "O ramo DELGADO da alça de Henle é revestido por epitélio:",
         "options": [
@@ -135,7 +150,7 @@
         "explanation": "O ramo espesso é cúbico simples."
       },
       {
-        "id": "hist-uri-10",
+        "id": "hist-uri-11",
         "type": "mcq",
         "text": "A reabsorção de glicose e aminoácidos ocorre principalmente no:",
         "options": [
@@ -148,7 +163,7 @@
         "explanation": "O TCP também secreta creatinina e ácido úrico."
       },
       {
-        "id": "hist-uri-11",
+        "id": "hist-uri-12",
         "type": "mcq",
         "text": "O TCD absorve sódio, potássio e água sob estímulo de qual hormônio?",
         "options": [
@@ -161,7 +176,7 @@
         "explanation": "O TCD também secreta íons hidrogênio e amônia."
       },
       {
-        "id": "hist-uri-12",
+        "id": "hist-uri-13",
         "type": "mcq",
         "text": "No aparelho justaglomerular, as células que produzem RENINA ficam:",
         "options": [
@@ -174,7 +189,7 @@
         "explanation": "A mácula densa são células do túbulo distal sensíveis ao conteúdo iônico do filtrado."
       },
       {
-        "id": "hist-uri-13",
+        "id": "hist-uri-14",
         "type": "mcq",
         "text": "A mácula densa é formada por células:",
         "options": [
@@ -187,7 +202,7 @@
         "explanation": "Ela 'percebe' a composição do filtrado e participa da regulação da pressão."
       },
       {
-        "id": "hist-uri-14",
+        "id": "hist-uri-15",
         "type": "mcq",
         "text": "O ureter e a bexiga são revestidos por epitélio:",
         "options": [
@@ -200,7 +215,7 @@
         "explanation": "O epitélio de transição se distende ou relaxa conforme o volume de urina."
       },
       {
-        "id": "hist-uri-15",
+        "id": "hist-uri-16",
         "type": "mcq",
         "text": "Na prática, o que diferencia a BEXIGA do URETER?",
         "options": [
@@ -213,7 +228,7 @@
         "explanation": "Ambos têm epitélio de transição; a espessura da muscular é o diferencial."
       },
       {
-        "id": "hist-uri-16",
+        "id": "hist-uri-17",
         "type": "mcq",
         "text": "A uretra feminina possui esfíncter externo formado por:",
         "options": [
@@ -226,7 +241,7 @@
         "explanation": "Esfíncter interno = músculo liso; externo = músculo esquelético."
       },
       {
-        "id": "hist-uri-17",
+        "id": "hist-uri-18",
         "type": "mcq",
         "text": "As três partes da uretra masculina são:",
         "options": [
@@ -239,7 +254,7 @@
         "explanation": "Na glande, o revestimento é pavimentoso estratificado."
       },
       {
-        "id": "hist-uri-18",
+        "id": "hist-uri-19",
         "type": "mcq",
         "text": "A função principal do túbulo coletor é:",
         "options": [
@@ -252,7 +267,7 @@
         "explanation": "Ele recolhe o filtrado de vários néfrons e concentra a urina."
       },
       {
-        "id": "hist-uri-19",
+        "id": "hist-uri-20",
         "type": "mcq",
         "text": "O espaço de Bowman (espaço capsular) recebe:",
         "options": [
@@ -265,16 +280,17 @@
         "explanation": "O filtrado depois é drenado pelo túbulo contorcido proximal."
       },
       {
-        "id": "hist-uri-20",
+        "id": "hist-uri-21",
         "type": "open",
-        "text": "Explique como funciona a barreira de filtração glomerular: quais são seus componentes e o que ela deixa ou não passar.",
-        "model": "É formada pelo endotélio fenestrado dos capilares glomerulares, pela lâmina basal (lâminas raras e densa) e pelos podócitos, cujos pedicelos formam fendas de filtração com diafragma. Impede a passagem de elementos figurados (como hemácias) e de macromoléculas de alto peso molecular; água, íons, glicose, aminoácidos e ureia passam livremente para o espaço de Bowman.",
+        "text": "Cite os componentes histológicos da barreira de filtração e a participação de cada um na filtração do sangue.",
+        "model": "A barreira é formada pelo endotélio fenestrado dos capilares glomerulares, pela lâmina basal (lâminas raras e densa) e pelos podócitos, cujos pedicelos formam fendas de filtração com diafragma. O capilar fenestrado retém os elementos figurados do sangue e macromoléculas; a lâmina basal retém moléculas com carga positiva; os podócitos/fendas retêm moléculas de alto peso molecular. Água, íons, glicose, aminoácidos e ureia passam para o espaço de Bowman.",
         "keyPoints": [
           {
             "label": "Capilares fenestrados",
             "keywords": [
               "fenestr",
-              "endotel"
+              "endotel",
+              "capilar"
             ]
           },
           {
@@ -299,7 +315,8 @@
               "celula",
               "macromolec",
               "proteina",
-              "elementos figurados"
+              "elementos figurados",
+              "alto peso"
             ]
           },
           {
@@ -312,10 +329,11 @@
               "aminoac"
             ]
           }
-        ]
+        ],
+        "source": "prova+quiz"
       },
       {
-        "id": "hist-uri-21",
+        "id": "hist-uri-22",
         "type": "open",
         "text": "Diferencie o túbulo contorcido PROXIMAL do DISTAL quanto ao epitélio e à função.",
         "model": "Ambos têm epitélio cúbico simples, mas o TCP possui borda em escova (microvilosidades) e muitas mitocôndrias na base; reabsorve glicose, aminoácidos, Na+, Cl- e água e secreta creatinina e ácido úrico. O TCD não tem borda em escova; absorve sódio, potássio e água sob ação da aldosterona e secreta H+ e amônia.",
@@ -358,7 +376,87 @@
         ]
       },
       {
-        "id": "hist-uri-22",
+        "id": "hist-uri-23",
+        "type": "open",
+        "text": "Cite duas características ultraestruturais que permitem o túbulo contorcido proximal transportar íons e absorver glicose e aminoácidos.",
+        "model": "Microvilos formando a borda em escova (aumentam a superfície de absorção) e invaginações da membrana basolateral com muitas mitocôndrias (fornecem energia para o transporte de íons). Também há vesículas de pinocitose.",
+        "keyPoints": [
+          {
+            "label": "Microvilos / borda em escova",
+            "keywords": [
+              "microvil",
+              "borda em escova"
+            ]
+          },
+          {
+            "label": "Invaginações basolaterais",
+            "keywords": [
+              "invagina",
+              "basolateral",
+              "basal"
+            ]
+          },
+          {
+            "label": "Mitocôndrias",
+            "keywords": [
+              "mitocondri"
+            ]
+          },
+          {
+            "label": "Vesículas de pinocitose (bônus)",
+            "keywords": [
+              "pinocit",
+              "vesicula"
+            ]
+          }
+        ],
+        "source": "prova"
+      },
+      {
+        "id": "hist-uri-24",
+        "type": "open",
+        "text": "Descreva o epitélio do túbulo contorcido proximal, suas funções e as estruturas que permitem essas funções.",
+        "model": "Epitélio cúbico simples com borda em escova. Transporta íons (sódio e cloreto) e água, absorve glicose e aminoácidos e secreta substâncias estranhas (creatinina, ácido úrico). Os microvilos, as invaginações basolaterais e as vesículas de pinocitose permitem a absorção e a excreção.",
+        "keyPoints": [
+          {
+            "label": "Cúbico simples",
+            "keywords": [
+              "cubic"
+            ]
+          },
+          {
+            "label": "Borda em escova / microvilos",
+            "keywords": [
+              "borda em escova",
+              "microvil"
+            ]
+          },
+          {
+            "label": "Absorve glicose e aminoácidos",
+            "keywords": [
+              "glicose",
+              "aminoac"
+            ]
+          },
+          {
+            "label": "Secreta creatinina / ácido úrico",
+            "keywords": [
+              "creatinin",
+              "acido urico"
+            ]
+          },
+          {
+            "label": "Invaginações basolaterais / pinocitose",
+            "keywords": [
+              "invagina",
+              "pinocit"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-uri-25",
         "type": "open",
         "text": "Descreva o aparelho justaglomerular: quais estruturas o formam e qual a sua função.",
         "model": "É uma estrutura reguladora da pressão sanguínea formada pela mácula densa (células do túbulo distal sensíveis ao conteúdo iônico do filtrado), pelas células justaglomerulares da arteríola aferente (que produzem renina) e pelas células mesangiais extraglomerulares.",
@@ -395,13 +493,14 @@
               "pressao"
             ]
           }
-        ]
+        ],
+        "source": "quiz"
       },
       {
-        "id": "hist-uri-23",
+        "id": "hist-uri-26",
         "type": "open",
         "text": "Na lâmina, como você diferencia o URETER da BEXIGA? Justifique.",
-        "model": "Os dois apresentam mucosa com epitélio de transição. O diferencial está na camada muscular: no ureter ela é delgada (longitudinal interna e circular), enquanto na bexiga é espessa, com três camadas de músculo liso (longitudinal interna, circular média e longitudinal externa).",
+        "model": "Os dois apresentam mucosa com epitélio de transição. O diferencial está na camada muscular: no ureter ela é delgada, enquanto na bexiga é espessa, com três camadas de músculo liso (longitudinal interna, circular média e longitudinal externa).",
         "keyPoints": [
           {
             "label": "Ambos têm epitélio de transição",
@@ -432,10 +531,10 @@
         ]
       },
       {
-        "id": "hist-uri-24",
+        "id": "hist-uri-27",
         "type": "open",
-        "text": "Descreva o caminho do sangue e do filtrado no corpúsculo renal, do polo vascular ao polo urinário.",
-        "model": "O sangue entra pela arteríola aferente no polo vascular, forma os capilares glomerulares e sai pela arteríola eferente. O plasma é filtrado pela barreira de filtração para o espaço de Bowman e o filtrado sai pelo polo urinário para o túbulo contorcido proximal.",
+        "text": "Descreva o leito vascular do corpúsculo renal: do polo vascular ao polo urinário.",
+        "model": "O sangue penetra no corpúsculo renal pela arteríola aferente no polo vascular, circula nos capilares glomerulares e sai pela arteríola eferente. O plasma filtrado passa para o espaço de Bowman e sai pelo polo urinário para o túbulo contorcido proximal.",
         "keyPoints": [
           {
             "label": "Arteríola aferente entra",
@@ -444,17 +543,16 @@
             ]
           },
           {
-            "label": "Arteríola eferente sai",
+            "label": "Capilares glomerulares",
             "keywords": [
-              "eferente"
+              "capilar",
+              "glomerul"
             ]
           },
           {
-            "label": "Filtrado vai para o espaço de Bowman",
+            "label": "Arteríola eferente sai",
             "keywords": [
-              "espaco de bowman",
-              "espaco capsular",
-              "bowman"
+              "eferente"
             ]
           },
           {
@@ -465,7 +563,295 @@
               "tcp"
             ]
           }
-        ]
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-uri-28",
+        "type": "open",
+        "text": "Como denominamos a unidade morfofuncional dos rins? Cite seus componentes, sua localização e sua função.",
+        "model": "É o túbulo urinífero, composto pelo néfron e pelo túbulo coletor. Fica no córtex e na medula do rim e tem a função de filtrar o sangue e formar a urina.",
+        "keyPoints": [
+          {
+            "label": "Túbulo urinífero",
+            "keywords": [
+              "urinifero"
+            ]
+          },
+          {
+            "label": "Néfron",
+            "keywords": [
+              "nefron"
+            ]
+          },
+          {
+            "label": "Túbulo coletor",
+            "keywords": [
+              "coletor"
+            ]
+          },
+          {
+            "label": "Córtex e medula",
+            "keywords": [
+              "cortex",
+              "medula"
+            ]
+          },
+          {
+            "label": "Filtrar o sangue / formar urina",
+            "keywords": [
+              "filtr",
+              "urina"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-uri-29",
+        "type": "open",
+        "text": "Cite os componentes histológicos do néfron.",
+        "model": "Corpúsculo renal, túbulo contorcido proximal, alça de Henle e túbulo contorcido distal.",
+        "keyPoints": [
+          {
+            "label": "Corpúsculo renal",
+            "keywords": [
+              "corpusculo"
+            ]
+          },
+          {
+            "label": "TCP",
+            "keywords": [
+              "proximal",
+              "tcp"
+            ]
+          },
+          {
+            "label": "Alça de Henle",
+            "keywords": [
+              "henle"
+            ]
+          },
+          {
+            "label": "TCD",
+            "keywords": [
+              "distal",
+              "tcd"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-uri-30",
+        "type": "open",
+        "text": "Cite os componentes histológicos do corpúsculo renal e as estruturas que formam os polos vascular e urinário.",
+        "model": "O corpúsculo renal é formado pelo glomérulo renal, pela cápsula de Bowman e pelo espaço de Bowman (capsular). O polo vascular é formado pelas arteríolas aferente e eferente; o polo urinário corresponde ao início do túbulo contorcido proximal.",
+        "keyPoints": [
+          {
+            "label": "Glomérulo",
+            "keywords": [
+              "glomerul"
+            ]
+          },
+          {
+            "label": "Cápsula de Bowman",
+            "keywords": [
+              "capsula"
+            ]
+          },
+          {
+            "label": "Espaço de Bowman",
+            "keywords": [
+              "espaco"
+            ]
+          },
+          {
+            "label": "Polo vascular: arteríolas aferente/eferente",
+            "keywords": [
+              "aferente",
+              "eferente"
+            ]
+          },
+          {
+            "label": "Polo urinário: TCP",
+            "keywords": [
+              "proximal",
+              "tcp"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-uri-31",
+        "type": "open",
+        "text": "Descreva histologicamente o folheto visceral da cápsula de Bowman.",
+        "model": "É formado por células epiteliais modificadas, os podócitos, que emitem prolongamentos (pedicelos) que se enrolam ao redor dos capilares glomerulares. Entre os prolongamentos há fendas de filtração, com membranas delgadas que retêm moléculas de alto peso molecular.",
+        "keyPoints": [
+          {
+            "label": "Podócitos",
+            "keywords": [
+              "podocit"
+            ]
+          },
+          {
+            "label": "Prolongamentos / pedicelos",
+            "keywords": [
+              "prolongament",
+              "pedicel"
+            ]
+          },
+          {
+            "label": "Envolvem os capilares",
+            "keywords": [
+              "capilar"
+            ]
+          },
+          {
+            "label": "Fendas de filtração",
+            "keywords": [
+              "fenda"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-uri-32",
+        "type": "open",
+        "text": "Cite a função da alça de Henle e o epitélio dos seus ramos.",
+        "model": "A alça de Henle é responsável pela retenção de água, formando urina hipertônica por um sistema de contracorrente. O ramo delgado tem epitélio pavimentoso simples e o ramo espesso, epitélio cúbico simples.",
+        "keyPoints": [
+          {
+            "label": "Retenção de água",
+            "keywords": [
+              "agua",
+              "reten"
+            ]
+          },
+          {
+            "label": "Contracorrente / urina hipertônica",
+            "keywords": [
+              "contracorrente",
+              "hiperton"
+            ]
+          },
+          {
+            "label": "Delgado: pavimentoso simples",
+            "keywords": [
+              "pavimentos"
+            ]
+          },
+          {
+            "label": "Espesso: cúbico simples",
+            "keywords": [
+              "cubic"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-uri-33",
+        "type": "open",
+        "text": "Descreva o epitélio e a função do túbulo coletor.",
+        "model": "Epitélio cúbico simples, sem borda em escova marcante. Recolhe o filtrado de vários néfrons e faz a reabsorção final de água, sob estímulo da aldosterona, concentrando a urina.",
+        "keyPoints": [
+          {
+            "label": "Cúbico simples",
+            "keywords": [
+              "cubic"
+            ]
+          },
+          {
+            "label": "Reabsorção de água",
+            "keywords": [
+              "agua"
+            ]
+          },
+          {
+            "label": "Aldosterona",
+            "keywords": [
+              "aldosteron"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-uri-34",
+        "type": "open",
+        "text": "Descreva histologicamente o ureter e a bexiga e cite a função de cada um.",
+        "model": "Ureter: mucosa com epitélio de transição e lâmina própria, camada muscular lisa e adventícia; transporta a urina até a bexiga. Bexiga: mucosa com epitélio de transição e lâmina própria, muscular com três camadas (longitudinal interna, circular média e longitudinal externa) e adventícia; armazena a urina.",
+        "keyPoints": [
+          {
+            "label": "Epitélio de transição",
+            "keywords": [
+              "transicao"
+            ]
+          },
+          {
+            "label": "Camada muscular lisa",
+            "keywords": [
+              "muscul"
+            ]
+          },
+          {
+            "label": "Adventícia",
+            "keywords": [
+              "adventic"
+            ]
+          },
+          {
+            "label": "Ureter transporta",
+            "keywords": [
+              "transport",
+              "conduz"
+            ]
+          },
+          {
+            "label": "Bexiga armazena",
+            "keywords": [
+              "armazen"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-uri-35",
+        "type": "open",
+        "text": "Descreva os epitélios que revestem a uretra feminina e a masculina.",
+        "model": "Uretra feminina: epitélio de transição (perto da bexiga), pseudoestratificado cilíndrico e estratificado pavimentoso não queratinizado (porção externa). Uretra masculina: epitélio de transição na parte prostática, pseudoestratificado cilíndrico (membranácea/esponjosa) e pavimentoso estratificado na glande.",
+        "keyPoints": [
+          {
+            "label": "Transição",
+            "keywords": [
+              "transicao"
+            ]
+          },
+          {
+            "label": "Pseudoestratificado cilíndrico",
+            "keywords": [
+              "pseudo"
+            ]
+          },
+          {
+            "label": "Estratificado pavimentoso",
+            "keywords": [
+              "pavimentoso",
+              "estratificado"
+            ]
+          },
+          {
+            "label": "Glande (masculina)",
+            "keywords": [
+              "glande"
+            ]
+          }
+        ],
+        "source": "quiz"
       }
     ]
   },
@@ -524,7 +910,8 @@
           "Em escova"
         ],
         "answer": 1,
-        "explanation": "A ciliada movimenta o muco; a caliciforme o produz."
+        "explanation": "A ciliada movimenta o muco; a caliciforme o produz.",
+        "source": "quiz"
       },
       {
         "id": "hist-resp-4",
@@ -537,7 +924,8 @@
           "Fagócitos"
         ],
         "answer": 1,
-        "explanation": "Possuem microvilosidades rombas."
+        "explanation": "Possuem microvilosidades rombas.",
+        "source": "quiz"
       },
       {
         "id": "hist-resp-5",
@@ -602,7 +990,8 @@
           "Epitélio cúbico"
         ],
         "answer": 1,
-        "explanation": "Sofrem forte atrito na fonação; as falsas têm epitélio respiratório."
+        "explanation": "Sofrem forte atrito na fonação; as falsas têm epitélio respiratório.",
+        "source": "quiz"
       },
       {
         "id": "hist-resp-10",
@@ -654,7 +1043,8 @@
           "Cavidade nasal"
         ],
         "answer": 1,
-        "explanation": "Secretam proteínas protetoras que revestem o epitélio bronquiolar."
+        "explanation": "Secretam proteínas protetoras que revestem o epitélio bronquiolar.",
+        "source": "quiz"
       },
       {
         "id": "hist-resp-14",
@@ -693,7 +1083,8 @@
           "Produz muco"
         ],
         "answer": 1,
-        "explanation": "É composto por fosfolipídeos e proteínas."
+        "explanation": "É composto por fosfolipídeos e proteínas.",
+        "source": "quiz"
       },
       {
         "id": "hist-resp-17",
@@ -706,7 +1097,8 @@
           "Célula de Clara"
         ],
         "answer": 1,
-        "explanation": "Fagocita partículas no septo e na superfície dos alvéolos."
+        "explanation": "Fagocita partículas e limpa a superfície do epitélio alveolar.",
+        "source": "quiz"
       },
       {
         "id": "hist-resp-18",
@@ -736,9 +1128,23 @@
       },
       {
         "id": "hist-resp-20",
+        "type": "mcq",
+        "text": "Uma mulher de 49 anos com asma usa um inalador com salbutamol (agonista beta2-adrenérgico). O salbutamol tem efeito direto em qual componente da porção condutora?",
+        "options": [
+          "Músculo liso",
+          "Cartilagem hialina",
+          "Células caliciformes",
+          "Pneumócito tipo II"
+        ],
+        "answer": 0,
+        "explanation": "O salbutamol relaxa o músculo liso dos brônquios e bronquíolos, abrindo a via aérea.",
+        "source": "quiz"
+      },
+      {
+        "id": "hist-resp-21",
         "type": "open",
         "text": "Diferencie pneumócito tipo I, pneumócito tipo II e macrófago alveolar quanto à forma e à função.",
-        "model": "Pneumócito tipo I: célula pavimentosa de citoplasma muito delgado, unida por zônulas de oclusão; possibilita a troca gasosa. Pneumócito tipo II: célula cúbica de citoplasma vacuolizado com corpos lamelares; produz o surfactante, que reduz a tensão superficial e impede o colabamento dos alvéolos. Macrófago alveolar (célula de poeira): fica no septo e na superfície dos alvéolos e fagocita partículas estranhas.",
+        "model": "Pneumócito tipo I: célula pavimentosa de citoplasma muito delgado, unida por zônulas de oclusão e desmossomos; possibilita a troca gasosa. Pneumócito tipo II: célula cúbica de citoplasma vacuolizado com corpos lamelares; produz o surfactante, que reduz a tensão superficial e impede o colabamento dos alvéolos. Macrófago alveolar (célula de poeira): fica no septo e na superfície dos alvéolos e fagocita partículas, limpando o epitélio alveolar.",
         "keyPoints": [
           {
             "label": "Tipo I: pavimentoso",
@@ -759,7 +1165,8 @@
             "label": "Tipo II: cúbico com corpos lamelares",
             "keywords": [
               "cubic",
-              "lamelar"
+              "lamelar",
+              "vacuoliz"
             ]
           },
           {
@@ -769,19 +1176,21 @@
             ]
           },
           {
-            "label": "Macrófago: fagocitose",
+            "label": "Macrófago: fagocitose / limpeza",
             "keywords": [
               "fagocit",
-              "poeira"
+              "poeira",
+              "limp"
             ]
           }
-        ]
+        ],
+        "source": "quiz"
       },
       {
-        "id": "hist-resp-21",
+        "id": "hist-resp-22",
         "type": "open",
-        "text": "Explique o que é a barreira hematoaérea e como ela permite a troca gasosa.",
-        "model": "É a superfície ultrafina formada pelo pneumócito tipo I, pela lâmina basal fundida e pela célula endotelial do capilar contínuo. Por ser muito delgada, permite a rápida passagem do O2 do alvéolo para o sangue e do CO2 do sangue para o alvéolo.",
+        "text": "Quais são os componentes da barreira hematoaérea? Qual é a sua função?",
+        "model": "É formada pelo pneumócito tipo I, pela lâmina basal fundida e pela célula endotelial do capilar contínuo. Por ser muito delgada, permite as trocas gasosas: o O2 passa do alvéolo para o sangue e o CO2 do sangue para o alvéolo.",
         "keyPoints": [
           {
             "label": "Pneumócito tipo I",
@@ -807,19 +1216,19 @@
             ]
           },
           {
-            "label": "Passagem de O2 e CO2",
+            "label": "Troca de O2 e CO2",
             "keywords": [
               "o2",
               "co2",
               "oxigenio",
-              "gas carbonico",
-              "carbonico"
+              "troca"
             ]
           }
-        ]
+        ],
+        "source": "quiz"
       },
       {
-        "id": "hist-resp-22",
+        "id": "hist-resp-23",
         "type": "open",
         "text": "Na lâmina, como você diferencia TRAQUEIA, BRÔNQUIO e BRONQUÍOLO? Cite as justificativas.",
         "model": "Traqueia: epitélio respiratório, glândulas seromucosas na submucosa e anel de cartilagem hialina em C na adventícia. Brônquio: epitélio respiratório, glândulas seromucosas, camada descontínua de músculo liso e PEÇAS (placas) de cartilagem hialina. Bronquíolo: epitélio cúbico ou cilíndrico simples, camada descontínua de músculo liso e AUSÊNCIA de cartilagem e glândulas.",
@@ -840,7 +1249,7 @@
             ]
           },
           {
-            "label": "Brônquio e traqueia: glândulas seromucosas",
+            "label": "Glândulas seromucosas",
             "keywords": [
               "glandula",
               "seromucos"
@@ -866,11 +1275,55 @@
         ]
       },
       {
-        "id": "hist-resp-23",
+        "id": "hist-resp-24",
         "type": "open",
-        "text": "Por que as cordas vocais verdadeiras têm epitélio diferente das falsas? Explique.",
-        "model": "As cordas vocais falsas são revestidas por epitélio respiratório, enquanto as verdadeiras têm epitélio estratificado pavimentoso não queratinizado, porque sofrem forte atrito com a passagem do ar durante a fonação e precisam de um epitélio mais resistente.",
+        "text": "Cite as estruturas histológicas que permitem a passagem de ar pela traqueia, brônquio e bronquíolos.",
+        "model": "Traqueia: anéis incompletos de cartilagem hialina (em forma de C). Brônquio: peças de cartilagem hialina e camada descontínua de músculo liso. Bronquíolo: camada descontínua de músculo liso.",
         "keyPoints": [
+          {
+            "label": "Traqueia: anéis em C",
+            "keywords": [
+              "anel",
+              "aneis",
+              "em c",
+              "letra c"
+            ]
+          },
+          {
+            "label": "Brônquio: peças de cartilagem",
+            "keywords": [
+              "peca",
+              "placa"
+            ]
+          },
+          {
+            "label": "Músculo liso descontínuo",
+            "keywords": [
+              "musculo liso",
+              "descontinu"
+            ]
+          },
+          {
+            "label": "Bronquíolo: só músculo liso",
+            "keywords": [
+              "bronquiolo"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-resp-25",
+        "type": "open",
+        "text": "Por que as cordas vocais verdadeiras têm epitélio diferente das falsas? Onde ficam as cordas vocais?",
+        "model": "As cordas vocais ficam na laringe. As falsas são revestidas por epitélio respiratório, enquanto as verdadeiras têm epitélio estratificado pavimentoso não queratinizado, porque sofrem atrito constante com a passagem do ar durante a fonação e precisam de um epitélio mais resistente.",
+        "keyPoints": [
+          {
+            "label": "Ficam na laringe",
+            "keywords": [
+              "laringe"
+            ]
+          },
           {
             "label": "Falsas: epitélio respiratório",
             "keywords": [
@@ -885,21 +1338,20 @@
             ]
           },
           {
-            "label": "Motivo: atrito / proteção",
+            "label": "Motivo: atrito",
             "keywords": [
               "atrito",
-              "resist",
-              "protec",
-              "fonacao"
+              "resist"
             ]
           }
-        ]
+        ],
+        "source": "quiz"
       },
       {
-        "id": "hist-resp-24",
+        "id": "hist-resp-26",
         "type": "open",
-        "text": "Descreva os cinco tipos celulares do epitélio respiratório e a função de cada um.",
-        "model": "Célula cilíndrica ciliada (move o muco com seus cílios), célula caliciforme (produz muco), célula em escova (microvilosidades rombas, receptor sensorial), célula granular (sistema neuroendócrino difuso) e célula basal (célula-tronco que regenera o epitélio).",
+        "text": "Cite os tipos celulares do epitélio respiratório. Qual produz muco e qual é receptor sensorial?",
+        "model": "Célula cilíndrica ciliada (move o muco), célula caliciforme (produz o muco), célula em escova (receptor sensorial), célula granular (sistema neuroendócrino difuso) e célula basal (célula-tronco que regenera o epitélio).",
         "keyPoints": [
           {
             "label": "Ciliada",
@@ -908,23 +1360,22 @@
             ]
           },
           {
-            "label": "Caliciforme / muco",
+            "label": "Caliciforme = muco",
             "keywords": [
               "calicifor"
             ]
           },
           {
-            "label": "Em escova / sensorial",
+            "label": "Em escova = sensorial",
             "keywords": [
               "escova",
               "brush"
             ]
           },
           {
-            "label": "Granular / neuroendócrina",
+            "label": "Granular",
             "keywords": [
-              "granular",
-              "neuroendocrin"
+              "granular"
             ]
           },
           {
@@ -935,7 +1386,215 @@
               "stem"
             ]
           }
-        ]
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-resp-27",
+        "type": "open",
+        "text": "Cite as funções gerais da porção condutora e da porção respiratória do aparelho respiratório.",
+        "model": "A porção condutora filtra, umedece e aquece o ar. A porção respiratória promove a troca gasosa (hematose) entre o ar alveolar e o sangue capilar.",
+        "keyPoints": [
+          {
+            "label": "Filtrar",
+            "keywords": [
+              "filtr"
+            ]
+          },
+          {
+            "label": "Umedecer",
+            "keywords": [
+              "umed",
+              "umidif"
+            ]
+          },
+          {
+            "label": "Aquecer",
+            "keywords": [
+              "aquec"
+            ]
+          },
+          {
+            "label": "Troca gasosa / hematose",
+            "keywords": [
+              "troca",
+              "hematose"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-resp-28",
+        "type": "open",
+        "text": "Como classificamos o epitélio de revestimento da traqueia? Descreva-o.",
+        "model": "Epitélio pseudoestratificado cilíndrico ciliado com células caliciformes (epitélio respiratório).",
+        "keyPoints": [
+          {
+            "label": "Pseudoestratificado",
+            "keywords": [
+              "pseudo"
+            ]
+          },
+          {
+            "label": "Cilíndrico",
+            "keywords": [
+              "cilindric",
+              "colunar"
+            ]
+          },
+          {
+            "label": "Ciliado",
+            "keywords": [
+              "ciliad"
+            ]
+          },
+          {
+            "label": "Células caliciformes",
+            "keywords": [
+              "calicifor"
+            ]
+          }
+        ],
+        "source": "prova+quiz"
+      },
+      {
+        "id": "hist-resp-29",
+        "type": "open",
+        "text": "Cite duas características histológicas de um bronquíolo.",
+        "model": "Epitélio cúbico a cilíndrico simples (com células de Clara), camada descontínua de músculo liso e ausência de peças de cartilagem hialina e de glândulas.",
+        "keyPoints": [
+          {
+            "label": "Epitélio cúbico/cilíndrico simples",
+            "keywords": [
+              "simples",
+              "cubic"
+            ]
+          },
+          {
+            "label": "Músculo liso",
+            "keywords": [
+              "musculo liso",
+              "descontinu"
+            ]
+          },
+          {
+            "label": "Sem cartilagem",
+            "keywords": [
+              "sem cartilagem",
+              "ausencia",
+              "nao tem",
+              "nao possui"
+            ]
+          },
+          {
+            "label": "Células de Clara (bônus)",
+            "keywords": [
+              "clara"
+            ]
+          }
+        ],
+        "source": "prova"
+      },
+      {
+        "id": "hist-resp-30",
+        "type": "open",
+        "text": "Quais são as porções da cavidade nasal e quais são as suas funções?",
+        "model": "Área vestibular (vestíbulo), área respiratória e área olfatória. Funções: filtrar, umedecer e aquecer o ar, detectar estímulos olfatórios e modificar as vibrações da fala.",
+        "keyPoints": [
+          {
+            "label": "Vestíbulo",
+            "keywords": [
+              "vestib"
+            ]
+          },
+          {
+            "label": "Área respiratória",
+            "keywords": [
+              "respiratori"
+            ]
+          },
+          {
+            "label": "Área olfatória",
+            "keywords": [
+              "olfat"
+            ]
+          },
+          {
+            "label": "Filtrar / umedecer / aquecer",
+            "keywords": [
+              "filtr",
+              "umed",
+              "aquec"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-resp-31",
+        "type": "open",
+        "text": "Descreva histologicamente o epitélio olfatório.",
+        "model": "É um neuroepitélio colunar pseudoestratificado formado por células de sustentação, células basais (stem cells) e células olfatórias (neurônios bipolares com cílios imóveis). No conjuntivo ficam as glândulas de Bowman, serosas.",
+        "keyPoints": [
+          {
+            "label": "Neuroepitélio pseudoestratificado",
+            "keywords": [
+              "neuroepitel",
+              "pseudo"
+            ]
+          },
+          {
+            "label": "Células de sustentação",
+            "keywords": [
+              "sustenta"
+            ]
+          },
+          {
+            "label": "Células basais",
+            "keywords": [
+              "basal",
+              "basais"
+            ]
+          },
+          {
+            "label": "Neurônios bipolares",
+            "keywords": [
+              "bipolar",
+              "neuronio"
+            ]
+          },
+          {
+            "label": "Glândulas de Bowman",
+            "keywords": [
+              "bowman"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-resp-32",
+        "type": "open",
+        "text": "Onde encontramos as células de Clara e qual é a sua função?",
+        "model": "Nos bronquíolos (terminais e respiratórios). Secretam proteínas que protegem e revestem o epitélio bronquiolar.",
+        "keyPoints": [
+          {
+            "label": "Bronquíolos",
+            "keywords": [
+              "bronquiolo"
+            ]
+          },
+          {
+            "label": "Proteção do epitélio",
+            "keywords": [
+              "protege",
+              "protec",
+              "reveste"
+            ]
+          }
+        ],
+        "source": "quiz"
       }
     ]
   },
@@ -955,7 +1614,8 @@
           "Dartos"
         ],
         "answer": 1,
-        "explanation": "Ela emite septos que dividem o testículo em lóbulos."
+        "explanation": "Ela emite septos que dividem o testículo em lóbulos.",
+        "source": "quiz"
       },
       {
         "id": "hist-masc-1",
@@ -968,7 +1628,8 @@
           "Células mioepiteliais"
         ],
         "answer": 1,
-        "explanation": "As células de Leydig ficam fora, no tecido intersticial."
+        "explanation": "As células de Leydig ficam fora, no tecido intersticial.",
+        "source": "quiz"
       },
       {
         "id": "hist-masc-2",
@@ -1038,6 +1699,21 @@
       {
         "id": "hist-masc-7",
         "type": "mcq",
+        "text": "Sobre a espermatogênese, qual opção está INCORRETA?",
+        "options": [
+          "Na puberdade, as espermatogônias sofrem sucessivas divisões mitóticas sob ação da testosterona",
+          "Algumas espermatogônias se diferenciam em espermatócitos primários, que são diploides",
+          "Os espermatócitos primários sofrem a primeira divisão meiótica e formam espermatócitos secundários haploides",
+          "Os espermatócitos secundários sofrem a segunda divisão MITÓTICA produzindo as espermátides",
+          "As espermátides sofrem diferenciação morfológica produzindo os espermatozoides"
+        ],
+        "answer": 3,
+        "explanation": "Os espermatócitos secundários sofrem a segunda divisão MEIÓTICA (e não mitótica) para formar as espermátides.",
+        "source": "quiz"
+      },
+      {
+        "id": "hist-masc-8",
+        "type": "mcq",
         "text": "A espermiogênese é:",
         "options": [
           "A divisão meiótica dos espermatócitos",
@@ -1049,7 +1725,7 @@
         "explanation": "Inclui formação do acrossomo, alongamento do núcleo e formação do flagelo."
       },
       {
-        "id": "hist-masc-8",
+        "id": "hist-masc-9",
         "type": "mcq",
         "text": "O acrossomo é:",
         "options": [
@@ -1059,10 +1735,10 @@
           "O núcleo"
         ],
         "answer": 1,
-        "explanation": "É essencial para a fecundação."
+        "explanation": "É formado a partir do complexo de Golgi e é essencial para a fecundação."
       },
       {
-        "id": "hist-masc-9",
+        "id": "hist-masc-10",
         "type": "mcq",
         "text": "O espermatócito PRIMÁRIO é:",
         "options": [
@@ -1075,7 +1751,7 @@
         "explanation": "Espermatócito secundário (n) realiza a meiose II e origina as espermátides."
       },
       {
-        "id": "hist-masc-10",
+        "id": "hist-masc-11",
         "type": "mcq",
         "text": "O epidídimo é revestido por epitélio:",
         "options": [
@@ -1088,7 +1764,7 @@
         "explanation": "É circundado por uma camada DELGADA de músculo liso."
       },
       {
-        "id": "hist-masc-11",
+        "id": "hist-masc-12",
         "type": "mcq",
         "text": "Na lâmina, o que diferencia o DUCTO DEFERENTE do EPIDÍDIMO?",
         "options": [
@@ -1101,7 +1777,7 @@
         "explanation": "Os dois têm epitélio pseudoestratificado estereociliado."
       },
       {
-        "id": "hist-masc-12",
+        "id": "hist-masc-13",
         "type": "mcq",
         "text": "A próstata secreta um líquido:",
         "options": [
@@ -1114,7 +1790,7 @@
         "explanation": "O líquido rico em frutose vem das vesículas seminais."
       },
       {
-        "id": "hist-masc-13",
+        "id": "hist-masc-14",
         "type": "mcq",
         "text": "As concreções prostáticas são:",
         "options": [
@@ -1127,7 +1803,7 @@
         "explanation": "São uma marca clássica da próstata na lâmina."
       },
       {
-        "id": "hist-masc-14",
+        "id": "hist-masc-15",
         "type": "mcq",
         "text": "As vesículas seminais secretam líquido:",
         "options": [
@@ -1140,7 +1816,7 @@
         "explanation": "Nutre e ativa os espermatozoides."
       },
       {
-        "id": "hist-masc-15",
+        "id": "hist-masc-16",
         "type": "mcq",
         "text": "As glândulas bulbouretrais (de Cowper) secretam:",
         "options": [
@@ -1150,10 +1826,25 @@
           "Testosterona"
         ],
         "answer": 0,
-        "explanation": "Ficam lateralmente à parte membranácea da uretra."
+        "explanation": "Ficam lateralmente à parte membranácea da uretra.",
+        "source": "quiz"
       },
       {
-        "id": "hist-masc-16",
+        "id": "hist-masc-17",
+        "type": "mcq",
+        "text": "Sobre as glândulas acessórias, qual afirmativa é VERDADEIRA?",
+        "options": [
+          "A próstata é formada por glândulas túbulo-alveolares e secreta um líquido contendo ácido cítrico",
+          "A glândula bulbouretral possui pregas na mucosa que formam criptas e secreta líquido alcalino rico em frutose",
+          "As duas afirmativas são verdadeiras",
+          "As duas afirmativas são falsas"
+        ],
+        "answer": 0,
+        "explanation": "A 2ª afirmativa descreve a VESÍCULA SEMINAL (pregas com criptas, frutose). A bulbouretral secreta muco lubrificante.",
+        "source": "prova"
+      },
+      {
+        "id": "hist-masc-18",
         "type": "mcq",
         "text": "O pênis é formado por:",
         "options": [
@@ -1163,10 +1854,11 @@
           "Apenas um corpo cavernoso"
         ],
         "answer": 1,
-        "explanation": "O tecido erétil tem espaços venosos que se enchem de sangue na ereção."
+        "explanation": "O tecido erétil tem espaços venosos que se enchem de sangue na ereção.",
+        "source": "quiz"
       },
       {
-        "id": "hist-masc-17",
+        "id": "hist-masc-19",
         "type": "mcq",
         "text": "O feedback negativo da testosterona atua sobre:",
         "options": [
@@ -1176,13 +1868,27 @@
           "Próstata"
         ],
         "answer": 1,
-        "explanation": "Níveis altos de testosterona inibem a liberação dos hormônios."
+        "explanation": "Níveis altos de testosterona inibem a liberação dos hormônios (via inibina, segundo o quiz)."
       },
       {
-        "id": "hist-masc-18",
+        "id": "hist-masc-20",
+        "type": "mcq",
+        "text": "Homem de 55 anos com PSA elevado (9,5 ng/mL; normal 0–4). Comparada à próstata normal, a biópsia mostra glândulas proliferadas. Qual mudança histopatológica é essa?",
+        "options": [
+          "Proliferação de células epiteliais das glândulas túbulo-alveolares",
+          "Acúmulo de células inflamatórias",
+          "Atrofia do epitélio glandular",
+          "Expansão do estroma fibromuscular"
+        ],
+        "answer": 0,
+        "explanation": "A biópsia mostra proliferação descontrolada do epitélio glandular (adenocarcinoma).",
+        "source": "quiz"
+      },
+      {
+        "id": "hist-masc-21",
         "type": "open",
         "text": "Diferencie células de Sertoli e células de Leydig quanto à localização, ao hormônio que as estimula e à função.",
-        "model": "Células de Sertoli: ficam no epitélio germinativo dos túbulos seminíferos, são estimuladas pelo FSH, sustentam e nutrem as células germinativas, fagocitam corpos residuais, secretam ABP e formam a barreira hematotesticular. Células de Leydig: ficam no tecido intersticial entre os túbulos, são estimuladas pelo LH e produzem testosterona.",
+        "model": "Células de Sertoli: ficam no epitélio germinativo dos túbulos seminíferos, são estimuladas pelo FSH, sustentam e nutrem as células germinativas, fagocitam corpos residuais, secretam ABP e formam a barreira hematotesticular. Células de Leydig: ficam no interstício entre os túbulos, são estimuladas pelo LH e produzem testosterona.",
         "keyPoints": [
           {
             "label": "Sertoli no túbulo seminífero",
@@ -1224,7 +1930,7 @@
         ]
       },
       {
-        "id": "hist-masc-19",
+        "id": "hist-masc-22",
         "type": "open",
         "text": "Diferencie espermatogênese de espermiogênese.",
         "model": "Espermatogênese é todo o processo de formação dos espermatozoides: espermatogônias (2n) se dividem por mitose e, a partir da puberdade, originam espermatócitos primários (2n, meiose I), secundários (n, meiose II), espermátides e espermatozoides. Espermiogênese é a etapa final, sem divisão celular, em que a espermátide se diferencia em espermatozoide: forma o acrossomo, alonga o núcleo, reorganiza as mitocôndrias e desenvolve o flagelo.",
@@ -1267,10 +1973,10 @@
         ]
       },
       {
-        "id": "hist-masc-20",
+        "id": "hist-masc-23",
         "type": "open",
-        "text": "Explique o que é a barreira hematotesticular e por que ela é importante.",
-        "model": "É formada pelas junções de oclusão entre as células de Sertoli e divide o epitélio em compartimento basal (espermatogônias) e adluminal (demais células germinativas). Protege as células germinativas diferenciadas, que possuem antígenos estranhos ao sistema imune, contra reações autoimunes.",
+        "text": "Como as células de Sertoli protegem as células da linhagem germinativa diferenciadas? (barreira hematotesticular)",
+        "model": "As células de Sertoli adjacentes formam junções de oclusão que constituem a barreira hematotesticular e dividem o epitélio germinativo em compartimento basal (espermatogônias) e adluminal (demais células germinativas). Assim protegem as células germinativas diferenciadas, que têm antígenos estranhos ao sistema imune, contra reações autoimunes.",
         "keyPoints": [
           {
             "label": "Junções de oclusão",
@@ -1292,32 +1998,156 @@
             ]
           },
           {
-            "label": "Evita reação autoimune",
+            "label": "Protege do sistema imune",
             "keywords": [
               "autoimun",
-              "imune",
+              "imun",
               "antigen"
             ]
           }
-        ]
+        ],
+        "source": "prova+quiz"
       },
       {
-        "id": "hist-masc-21",
+        "id": "hist-masc-24",
         "type": "open",
-        "text": "Na lâmina, como diferenciar EPIDÍDIMO, DUCTO DEFERENTE e PRÓSTATA?",
-        "model": "Epidídimo: epitélio pseudoestratificado estereociliado com camada delgada de músculo liso e massa de espermatozoides na luz. Ducto deferente: o mesmo epitélio estereociliado, mas com camada muscular lisa espessa e lúmen estreito. Próstata: glândulas túbulo-alveolares com concreções prostáticas na luz e estroma fibromuscular entre elas.",
+        "text": "Cite as principais alterações morfológicas que a espermátide sofre durante a espermiogênese.",
+        "model": "O complexo de Golgi produz a vesícula acrossômica que origina o acrossomo; os centríolos formam o flagelo; as mitocôndrias se deslocam para a base do flagelo; a cromatina se condensa e o núcleo fica em forma de seta; a maior parte do citoplasma e das organelas é perdida.",
         "keyPoints": [
+          {
+            "label": "Golgi → acrossomo",
+            "keywords": [
+              "acrossom",
+              "golgi"
+            ]
+          },
+          {
+            "label": "Centríolos → flagelo",
+            "keywords": [
+              "flagel",
+              "centriol"
+            ]
+          },
+          {
+            "label": "Mitocôndrias na base do flagelo",
+            "keywords": [
+              "mitocondri"
+            ]
+          },
+          {
+            "label": "Núcleo condensado / alongado",
+            "keywords": [
+              "nucleo",
+              "cromatina",
+              "condens"
+            ]
+          },
+          {
+            "label": "Perda de citoplasma",
+            "keywords": [
+              "citoplasma",
+              "perd"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-masc-25",
+        "type": "open",
+        "text": "Cite duas características ultraestruturais das células de Leydig, sua localização e sua função.",
+        "model": "Possuem retículo endoplasmático agranular (liso) bem desenvolvido e mitocôndrias com cristas tubulares. Ficam no interstício do testículo, entre os túbulos seminíferos, e produzem testosterona e outros andrógenos.",
+        "keyPoints": [
+          {
+            "label": "REL / retículo agranular",
+            "keywords": [
+              "agranular",
+              "reticulo",
+              "rel",
+              "liso"
+            ]
+          },
+          {
+            "label": "Mitocôndrias com cristas tubulares",
+            "keywords": [
+              "crista",
+              "mitocondri"
+            ]
+          },
+          {
+            "label": "Interstício",
+            "keywords": [
+              "intersticio",
+              "intersticial",
+              "entre os tubulos"
+            ]
+          },
+          {
+            "label": "Produzem testosterona",
+            "keywords": [
+              "testosteron",
+              "androgen"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-masc-26",
+        "type": "open",
+        "text": "Como o FSH e o LH participam da espermatogênese? E como concentrações elevadas de testosterona a inibem?",
+        "model": "O LH estimula as células de Leydig a produzirem testosterona. O FSH estimula as células de Sertoli a produzirem a ABP, que mantém a testosterona dentro dos túbulos seminíferos. Altas concentrações de testosterona estimulam a Sertoli a produzir inibina, que reduz o GnRH do hipotálamo e, com isso, LH e FSH, diminuindo a produção de testosterona e de espermatozoides.",
+        "keyPoints": [
+          {
+            "label": "LH → Leydig → testosterona",
+            "keywords": [
+              "leydig",
+              "lh"
+            ]
+          },
+          {
+            "label": "FSH → Sertoli → ABP",
+            "keywords": [
+              "abp",
+              "fsh"
+            ]
+          },
+          {
+            "label": "Inibina",
+            "keywords": [
+              "inibina"
+            ]
+          },
+          {
+            "label": "Reduz GnRH / feedback negativo",
+            "keywords": [
+              "gnrh",
+              "feedback",
+              "reduz",
+              "inib"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-masc-27",
+        "type": "open",
+        "text": "Cite duas características histológicas do epidídimo e do ducto deferente.",
+        "model": "Epidídimo: epitélio pseudoestratificado cilíndrico estereociliado e camada delgada de músculo liso (armazena e matura os espermatozoides). Ducto deferente: o mesmo epitélio estereociliado, lúmen estreito e camada espessa de músculo liso, em três camadas.",
+        "keyPoints": [
+          {
+            "label": "Pseudoestratificado estereociliado",
+            "keywords": [
+              "estereocil",
+              "pseudo"
+            ]
+          },
           {
             "label": "Epidídimo: muscular delgada",
             "keywords": [
               "delgad",
               "fina"
-            ]
-          },
-          {
-            "label": "Epidídimo: espermatozoides na luz",
-            "keywords": [
-              "espermatozoide"
             ]
           },
           {
@@ -1327,62 +2157,92 @@
             ]
           },
           {
-            "label": "Ambos estereociliados",
+            "label": "Deferente: três camadas",
             "keywords": [
-              "estereocil"
+              "tres camadas",
+              "3 camadas"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-masc-28",
+        "type": "open",
+        "text": "Cite duas características histológicas da vesícula seminal e da próstata, e a função de cada uma.",
+        "model": "Vesícula seminal: mucosa com pregas que formam criptas, epitélio cúbico ou pseudoestratificado cilíndrico e capa de músculo liso; secreta líquido viscoso alcalino rico em frutose, prostaglandinas e proteínas de coagulação. Próstata: glândulas túbulo-alveolares, estroma fibromuscular e concreções prostáticas na luz; secreta líquido acidífero com ácido cítrico, enzimas proteolíticas e fosfatase alcalina.",
+        "keyPoints": [
+          {
+            "label": "Vesícula: pregas com criptas",
+            "keywords": [
+              "cripta",
+              "prega"
             ]
           },
           {
-            "label": "Próstata: concreções e estroma fibromuscular",
+            "label": "Vesícula: frutose",
+            "keywords": [
+              "frutose"
+            ]
+          },
+          {
+            "label": "Próstata: túbulo-alveolares",
+            "keywords": [
+              "tubulo",
+              "alveolar"
+            ]
+          },
+          {
+            "label": "Próstata: concreções / estroma fibromuscular",
             "keywords": [
               "concrec",
               "fibromuscular",
               "estroma"
             ]
+          },
+          {
+            "label": "Próstata: ácido cítrico",
+            "keywords": [
+              "acido citrico",
+              "citrico"
+            ]
           }
-        ]
+        ],
+        "source": "quiz"
       },
       {
-        "id": "hist-masc-22",
+        "id": "hist-masc-29",
         "type": "open",
-        "text": "Descreva o controle hormonal da reprodução masculina.",
-        "model": "O hipotálamo libera GnRH, que estimula a hipófise anterior a secretar LH e FSH. O LH estimula as células de Leydig a produzir testosterona e o FSH estimula as células de Sertoli a produzir ABP. Quando a testosterona está alta, ocorre feedback negativo sobre hipotálamo e hipófise, reduzindo GnRH, LH e FSH.",
+        "text": "Qual é a função das glândulas bulbouretrais? E quais são os tecidos eréteis do pênis?",
+        "model": "As glândulas bulbouretrais produzem secreção que lubrifica a extremidade do pênis e neutraliza os ácidos residuais da urina antes da ejaculação. O pênis possui dois corpos cavernosos e um corpo esponjoso.",
         "keyPoints": [
           {
-            "label": "Hipotálamo → GnRH",
+            "label": "Lubrificar",
             "keywords": [
-              "gnrh",
-              "hipotalamo"
+              "lubrific"
             ]
           },
           {
-            "label": "Hipófise → LH e FSH",
+            "label": "Neutralizar ácidos da urina",
             "keywords": [
-              "hipofise"
+              "neutraliz",
+              "acid"
             ]
           },
           {
-            "label": "LH → Leydig → testosterona",
+            "label": "Dois corpos cavernosos",
             "keywords": [
-              "leydig"
+              "cavernos"
             ]
           },
           {
-            "label": "FSH → Sertoli → ABP",
+            "label": "Um corpo esponjoso",
             "keywords": [
-              "sertoli",
-              "abp"
-            ]
-          },
-          {
-            "label": "Feedback negativo",
-            "keywords": [
-              "feedback",
-              "retroaliment",
-              "inib"
+              "esponjos"
             ]
           }
-        ]
+        ],
+        "source": "quiz"
       }
     ]
   },
@@ -1402,7 +2262,8 @@
           "Serosa apenas"
         ],
         "answer": 1,
-        "explanation": "Os folículos ficam na região cortical."
+        "explanation": "Os folículos ficam na região cortical.",
+        "source": "quiz"
       },
       {
         "id": "hist-fem-1",
@@ -1446,6 +2307,21 @@
       {
         "id": "hist-fem-4",
         "type": "mcq",
+        "text": "Sobre os folículos ovarianos, qual afirmativa está INCORRETA?",
+        "options": [
+          "Folículos primordiais têm oócito primário envolvido por células foliculares achatadas",
+          "Folículos primários têm zona pelúcida, camada granulosa com várias camadas e teca interna",
+          "Folículos secundários apresentam bolsas de líquido dentro da camada granulosa",
+          "Folículos maduros (de Graaf) têm antro folicular e corona radiata ao redor do oócito",
+          "Todas estão corretas"
+        ],
+        "answer": 4,
+        "explanation": "Todas as afirmativas descrevem corretamente os folículos.",
+        "source": "quiz"
+      },
+      {
+        "id": "hist-fem-5",
+        "type": "mcq",
         "text": "O folículo SECUNDÁRIO (antral) caracteriza-se por:",
         "options": [
           "Uma camada de células achatadas",
@@ -1457,7 +2333,7 @@
         "explanation": "O folículo de Graaf tem grande antro, cumulus oophorus e corona radiata."
       },
       {
-        "id": "hist-fem-5",
+        "id": "hist-fem-6",
         "type": "mcq",
         "text": "Qual estrutura NÃO aparece no folículo maduro (de Graaf)?",
         "options": [
@@ -1470,7 +2346,7 @@
         "explanation": "Corpo albicans é a cicatriz do corpo lúteo degenerado."
       },
       {
-        "id": "hist-fem-6",
+        "id": "hist-fem-7",
         "type": "mcq",
         "text": "A ovulação é desencadeada por:",
         "options": [
@@ -1483,7 +2359,7 @@
         "explanation": "O pico de LH é induzido pelo alto nível de estrógenos."
       },
       {
-        "id": "hist-fem-7",
+        "id": "hist-fem-8",
         "type": "mcq",
         "text": "O corpo lúteo produz principalmente:",
         "options": [
@@ -1493,10 +2369,11 @@
           "Ocitocina"
         ],
         "answer": 1,
-        "explanation": "Ele inibe nova liberação de FSH e LH."
+        "explanation": "Ele inibe a ovulação e o crescimento de novos folículos.",
+        "source": "quiz"
       },
       {
-        "id": "hist-fem-8",
+        "id": "hist-fem-9",
         "type": "mcq",
         "text": "O corpo lúteo é formado a partir de:",
         "options": [
@@ -1506,10 +2383,11 @@
           "Estroma medular"
         ],
         "answer": 0,
-        "explanation": "É estimulado pelo LH após a ovulação."
+        "explanation": "É estimulado pelo LH após a ovulação.",
+        "source": "quiz"
       },
       {
-        "id": "hist-fem-9",
+        "id": "hist-fem-10",
         "type": "mcq",
         "text": "Na vida fetal, o oócito primário para (estaciona) na:",
         "options": [
@@ -1522,7 +2400,7 @@
         "explanation": "Só completa a meiose I na puberdade."
       },
       {
-        "id": "hist-fem-10",
+        "id": "hist-fem-11",
         "type": "mcq",
         "text": "O oócito secundário estaciona na metáfase II e só completa a meiose se:",
         "options": [
@@ -1535,7 +2413,7 @@
         "explanation": "Isso ocorre após a ovulação."
       },
       {
-        "id": "hist-fem-11",
+        "id": "hist-fem-12",
         "type": "mcq",
         "text": "A mucosa da tuba uterina é revestida por:",
         "options": [
@@ -1548,7 +2426,7 @@
         "explanation": "A mucosa é muito pregueada: luz labiríntica."
       },
       {
-        "id": "hist-fem-12",
+        "id": "hist-fem-13",
         "type": "mcq",
         "text": "Na lâmina, a 'luz labiríntica' identifica a:",
         "options": [
@@ -1561,7 +2439,7 @@
         "explanation": "Pela mucosa altamente pregueada."
       },
       {
-        "id": "hist-fem-13",
+        "id": "hist-fem-14",
         "type": "mcq",
         "text": "A camada do endométrio que NUNCA é perdida e regenera a outra é a:",
         "options": [
@@ -1574,7 +2452,7 @@
         "explanation": "A camada funcional é eliminada na menstruação."
       },
       {
-        "id": "hist-fem-14",
+        "id": "hist-fem-15",
         "type": "mcq",
         "text": "A fase PROLIFERATIVA do útero é estimulada por:",
         "options": [
@@ -1587,7 +2465,7 @@
         "explanation": "Cresce a camada funcional e as glândulas se alongam."
       },
       {
-        "id": "hist-fem-15",
+        "id": "hist-fem-16",
         "type": "mcq",
         "text": "Na lâmina, glândulas endometriais TORTUOSAS e com luz dilatada indicam:",
         "options": [
@@ -1600,7 +2478,7 @@
         "explanation": "Na proliferativa, as glândulas são longas e retilíneas."
       },
       {
-        "id": "hist-fem-16",
+        "id": "hist-fem-17",
         "type": "mcq",
         "text": "Na fase secretora, as glândulas acumulam:",
         "options": [
@@ -1613,7 +2491,7 @@
         "explanation": "Para nutrir um possível embrião."
       },
       {
-        "id": "hist-fem-17",
+        "id": "hist-fem-18",
         "type": "mcq",
         "text": "A vagina é revestida por epitélio:",
         "options": [
@@ -1626,7 +2504,7 @@
         "explanation": "O glicogênio alimenta bactérias que produzem ácido láctico (pH ácido)."
       },
       {
-        "id": "hist-fem-18",
+        "id": "hist-fem-19",
         "type": "mcq",
         "text": "O exame de Papanicolau avalia células da:",
         "options": [
@@ -1639,7 +2517,7 @@
         "explanation": "Serve para prevenção de neoplasias."
       },
       {
-        "id": "hist-fem-19",
+        "id": "hist-fem-20",
         "type": "mcq",
         "text": "As células que auxiliam na ejeção do leite são as:",
         "options": [
@@ -1652,7 +2530,7 @@
         "explanation": "A glândula mamária é túbulo-alveolar composta."
       },
       {
-        "id": "hist-fem-20",
+        "id": "hist-fem-21",
         "type": "mcq",
         "text": "A atresia folicular é:",
         "options": [
@@ -1662,10 +2540,25 @@
           "A formação do corpo lúteo"
         ],
         "answer": 1,
-        "explanation": "As células da granulosa se separam e são fagocitadas por macrófagos."
+        "explanation": "As células sofrem morte celular e são fagocitadas por macrófagos.",
+        "source": "quiz"
       },
       {
-        "id": "hist-fem-21",
+        "id": "hist-fem-22",
+        "type": "mcq",
+        "text": "Mulher de 19 anos, com dor abdominal intensa e sem menstruar há dois ciclos, tem gravidez ectópica. Qual é o local mais provável de implantação?",
+        "options": [
+          "Ampola da tuba uterina",
+          "Istmo da tuba uterina",
+          "Infundíbulo",
+          "Cavidade uterina"
+        ],
+        "answer": 0,
+        "explanation": "A maioria das gravidezes ectópicas ocorre na ampola, que é o local da fertilização do oócito.",
+        "source": "quiz"
+      },
+      {
+        "id": "hist-fem-23",
         "type": "open",
         "text": "Diferencie os tipos de folículos ovarianos (primordial, primário, secundário e maduro/de Graaf).",
         "model": "Primordial: ovócito primário rodeado por uma camada de células foliculares achatadas. Primário (uni ou multilamelar): células foliculares cúbicas/estratificadas, formação da zona pelúcida e da camada granulosa. Secundário (antral): acúmulo de líquido formando o antro e diferenciação das tecas interna e externa. Maduro (de Graaf): grande antro, cumulus oophorus e corona radiata.",
@@ -1706,7 +2599,7 @@
         ]
       },
       {
-        "id": "hist-fem-22",
+        "id": "hist-fem-24",
         "type": "open",
         "text": "Diferencie a fase proliferativa da fase secretora do endométrio: hormônio responsável e aspecto das glândulas.",
         "model": "Fase proliferativa: estimulada pelos estrógenos; a camada funcional cresce e as glândulas endometriais ficam longas e retilíneas. Fase secretora: estimulada principalmente pela progesterona (e estrógenos) do corpo lúteo; as glândulas ficam tortuosas, com luz dilatada, e acumulam glicogênio para nutrir um possível embrião.",
@@ -1745,10 +2638,113 @@
               "glicogen"
             ]
           }
-        ]
+        ],
+        "source": "quiz"
       },
       {
-        "id": "hist-fem-23",
+        "id": "hist-fem-25",
+        "type": "open",
+        "text": "Cite duas características histológicas do endométrio uterino na fase secretora.",
+        "model": "Glândulas endometriais tortuosas e com a luz dilatada, com acúmulo de glicogênio (sob ação da progesterona do corpo lúteo).",
+        "keyPoints": [
+          {
+            "label": "Glândulas tortuosas",
+            "keywords": [
+              "tortuos"
+            ]
+          },
+          {
+            "label": "Luz dilatada",
+            "keywords": [
+              "dilatad"
+            ]
+          },
+          {
+            "label": "Glicogênio",
+            "keywords": [
+              "glicogen"
+            ]
+          },
+          {
+            "label": "Progesterona (bônus)",
+            "keywords": [
+              "progesteron"
+            ]
+          }
+        ],
+        "source": "prova"
+      },
+      {
+        "id": "hist-fem-26",
+        "type": "open",
+        "text": "Como o hormônio luteinizante (LH) participa do ciclo reprodutor feminino?",
+        "model": "O pico de LH (induzido pelo alto nível de estrógenos) estimula a ovulação, o término da meiose I pelo oócito primário e a formação do corpo lúteo a partir das células da granulosa e da teca interna.",
+        "keyPoints": [
+          {
+            "label": "Pico de LH",
+            "keywords": [
+              "pico"
+            ]
+          },
+          {
+            "label": "Estimula a ovulação",
+            "keywords": [
+              "ovula"
+            ]
+          },
+          {
+            "label": "Término da meiose I",
+            "keywords": [
+              "meiose"
+            ]
+          },
+          {
+            "label": "Formação do corpo lúteo",
+            "keywords": [
+              "corpo luteo"
+            ]
+          }
+        ],
+        "source": "prova"
+      },
+      {
+        "id": "hist-fem-27",
+        "type": "open",
+        "text": "Explique como o FSH e o LH participam do ciclo ovariano.",
+        "model": "O FSH estimula o crescimento de um grupo de folículos ovarianos. O pico de LH estimula a ovulação, o término da meiose I pelo oócito primário e a formação do corpo lúteo.",
+        "keyPoints": [
+          {
+            "label": "FSH: crescimento dos folículos",
+            "keywords": [
+              "fsh",
+              "crescimento",
+              "folicul"
+            ]
+          },
+          {
+            "label": "Pico de LH",
+            "keywords": [
+              "lh",
+              "pico"
+            ]
+          },
+          {
+            "label": "Ovulação",
+            "keywords": [
+              "ovula"
+            ]
+          },
+          {
+            "label": "Corpo lúteo",
+            "keywords": [
+              "corpo luteo"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-fem-28",
         "type": "open",
         "text": "Explique como ocorre a ovulação e o que acontece com o folículo depois dela.",
         "model": "O alto nível de estrógenos induz um pico súbito de LH, que fragiliza a parede do folículo maduro; com o aumento da pressão do líquido folicular, ele se rompe e libera o oócito secundário com a zona pelúcida e a corona radiata, captado pelas fímbrias da tuba. As células remanescentes da granulosa e da teca interna formam o corpo lúteo, que produz progesterona e estrógenos; se ele degenerar, vira o corpo albicans.",
@@ -1788,7 +2784,86 @@
         ]
       },
       {
-        "id": "hist-fem-24",
+        "id": "hist-fem-29",
+        "type": "open",
+        "text": "Quais componentes histológicos formam o corpo lúteo, que hormônios ele produz e qual o efeito deles no ciclo?",
+        "model": "É formado pelas células da granulosa e da teca interna do folículo ovulado, que, sob ação do LH, adquirem características de células produtoras de hormônios esteroides. Produz progesterona e estrógenos, que inibem a ovulação e o crescimento de novos folículos na segunda metade do ciclo.",
+        "keyPoints": [
+          {
+            "label": "Granulosa",
+            "keywords": [
+              "granulosa"
+            ]
+          },
+          {
+            "label": "Teca interna",
+            "keywords": [
+              "teca"
+            ]
+          },
+          {
+            "label": "Progesterona e estrógenos",
+            "keywords": [
+              "progesteron",
+              "estrogen"
+            ]
+          },
+          {
+            "label": "Inibem ovulação / novos folículos",
+            "keywords": [
+              "inib"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-fem-30",
+        "type": "open",
+        "text": "O que é e quando se forma o corpo albicans? E o que é um folículo atrésico?",
+        "model": "O corpo albicans é uma cicatriz rica em colágeno derivada da degeneração do corpo lúteo; forma-se quando não ocorre gravidez. O folículo atrésico é um folículo que não ovulou: suas células sofrem morte celular e são fagocitadas por macrófagos.",
+        "keyPoints": [
+          {
+            "label": "Albicans = cicatriz",
+            "keywords": [
+              "cicatriz",
+              "colagen"
+            ]
+          },
+          {
+            "label": "Degeneração do corpo lúteo",
+            "keywords": [
+              "degenera",
+              "corpo luteo"
+            ]
+          },
+          {
+            "label": "Sem gravidez",
+            "keywords": [
+              "gravidez",
+              "gestacao"
+            ]
+          },
+          {
+            "label": "Atrésico: não ovulou / morte celular",
+            "keywords": [
+              "nao ovul",
+              "morte",
+              "degenera"
+            ]
+          },
+          {
+            "label": "Fagocitado por macrófagos",
+            "keywords": [
+              "macrofag",
+              "fagocit"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-fem-31",
         "type": "open",
         "text": "Descreva a oogênese, da vida fetal até a fecundação.",
         "model": "Na vida fetal, as oogônias (2n) se multiplicam por mitose e originam oócitos primários, que iniciam a meiose I e estacionam na prófase I até a puberdade. Na puberdade, sob estímulo do FSH, o oócito primário completa a meiose I, formando o primeiro corpúsculo polar e o oócito secundário (n). Na ovulação (pico de LH), o oócito secundário inicia a meiose II e estaciona na metáfase II, só concluindo a divisão se houver fecundação.",
@@ -1816,7 +2891,6 @@
           {
             "label": "Corpúsculo polar",
             "keywords": [
-              "corpusculo polar",
               "polar"
             ]
           },
@@ -1827,45 +2901,234 @@
               "fecunda"
             ]
           }
-        ]
+        ],
+        "source": "quiz"
       },
       {
-        "id": "hist-fem-25",
+        "id": "hist-fem-32",
         "type": "open",
-        "text": "Diferencie a camada funcional da camada basal do endométrio.",
-        "model": "A camada funcional é espessa, sofre alterações profundas durante o ciclo menstrual e é eliminada na menstruação. A camada basal é profunda, nunca é perdida e serve para regenerar a camada funcional a cada ciclo.",
+        "text": "Cite as funções do ovário, descreva sua cápsula e as regiões do estroma.",
+        "model": "Produz gametas (oócitos) e hormônios femininos (estrógenos e progesterona). É revestido pelo epitélio germinativo (cúbico simples) e, abaixo dele, pela túnica albugínea (conjuntivo denso). O estroma tem córtex (com os folículos ovarianos) e medula (conjuntivo frouxo rico em vasos).",
         "keyPoints": [
           {
-            "label": "Funcional: espessa e muda no ciclo",
+            "label": "Gametas e hormônios",
             "keywords": [
-              "espess",
-              "ciclo"
+              "gameta",
+              "oocito",
+              "hormon"
             ]
           },
           {
-            "label": "Funcional: eliminada na menstruação",
+            "label": "Epitélio germinativo cúbico simples",
             "keywords": [
-              "menstrua",
-              "elimin",
-              "descam"
+              "germinativo",
+              "cubic"
             ]
           },
           {
-            "label": "Basal: profunda e permanente",
+            "label": "Túnica albugínea",
             "keywords": [
-              "nunca",
-              "nao e perdida",
-              "permanec",
-              "profund"
+              "albugin"
             ]
           },
           {
-            "label": "Basal: regenera",
+            "label": "Córtex com folículos",
             "keywords": [
-              "regener"
+              "cortex",
+              "cortical",
+              "folicul"
+            ]
+          },
+          {
+            "label": "Medula com vasos",
+            "keywords": [
+              "medula",
+              "vaso"
             ]
           }
-        ]
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-fem-33",
+        "type": "open",
+        "text": "Cite as funções e descreva as camadas histológicas da tuba uterina.",
+        "model": "Conduz o oócito ou o zigoto ao útero e é o local da fecundação. Camadas: mucosa muito pregueada com epitélio cilíndrico simples (células ciliadas e secretoras), muscular lisa (circular interna e longitudinal externa) e serosa (mesotélio e conjuntivo).",
+        "keyPoints": [
+          {
+            "label": "Conduz oócito/zigoto",
+            "keywords": [
+              "conduz",
+              "transport"
+            ]
+          },
+          {
+            "label": "Local da fecundação",
+            "keywords": [
+              "fecunda"
+            ]
+          },
+          {
+            "label": "Mucosa: cilíndrico simples ciliado",
+            "keywords": [
+              "cilindric",
+              "ciliad"
+            ]
+          },
+          {
+            "label": "Músculo liso",
+            "keywords": [
+              "muscul"
+            ]
+          },
+          {
+            "label": "Serosa",
+            "keywords": [
+              "serosa"
+            ]
+          }
+        ],
+        "source": "quiz"
+      },
+      {
+        "id": "hist-fem-34",
+        "type": "open",
+        "text": "Cite as funções do útero, suas camadas e os componentes do endométrio.",
+        "model": "Via de transporte dos espermatozoides e local de implantação e desenvolvimento do embrião. Camadas: endométrio, miométrio e serosa (ou adventícia). O endométrio tem camada basal e funcional, epitélio cilíndrico simples (ciliado), glândulas endometriais e artérias espiraladas.",
+        "keyPoints": [
+          {
+            "label": "Transporte de espermatozoides / implantação",
+            "keywords": [
+              "espermatozoide",
+              "implanta",
+              "embriao",
+              "feto"
+            ]
+          },
+          {
+            "label": "Endométrio",
+            "keywords": [
+              "endometrio"
+            ]
+          },
+          {
+            "label": "Miométrio",
+            "keywords": [
+              "miometrio"
+            ]
+          },
+          {
+            "label": "Camadas basal e funcional",
+            "keywords": [
+              "basal",
+              "funcional"
+            ]
+          },
+          {
+            "label": "Glândulas endometriais",
+            "keywords": [
+              "glandula"
+            ]
+          }
+        ],
+        "source": "quiz"
+      }
+    ]
+  },
+  {
+    "id": "endo",
+    "name": "Glândulas Endócrinas",
+    "icon": "🧪",
+    "questions": [
+      {
+        "id": "hist-endo-0",
+        "type": "mcq",
+        "text": "Sobre as glândulas endócrinas, assinale a resposta CORRETA:",
+        "options": [
+          "O sistema porta-hipofisário permite o controle da secreção da neuro-hipófise pelo hipotálamo",
+          "Os pituícitos e axônios mielínicos formam a neuro-hipófise",
+          "As células foliculares dos folículos tireoidianos produzem calcitonina",
+          "A medula da adrenal é composta por neurônios pós-ganglionares simpáticos modificados que produzem adrenalina e noradrenalina"
+        ],
+        "answer": 3,
+        "explanation": "⚠️ Gabarito montado pelo NurseHub (conteúdo fora do resumo do módulo 3). Erros das outras: o sistema porta-hipofisário controla a ADENO-hipófise; a neuro-hipófise tem pituícitos e axônios AMIELÍNICOS; a calcitonina vem das células PARAFOLICULARES.",
+        "source": "prova"
+      },
+      {
+        "id": "hist-endo-1",
+        "type": "mcq",
+        "text": "Qual porção da adrenal produz glicocorticoides (como o cortisol)?",
+        "options": [
+          "Zona glomerulosa do córtex",
+          "Zona fasciculada do córtex",
+          "Zona reticulada do córtex",
+          "Medula"
+        ],
+        "answer": 1,
+        "explanation": "⚠️ Gabarito montado pelo NurseHub. Zona glomerulosa → mineralocorticoides (aldosterona); fasciculada → glicocorticoides; reticulada → andrógenos; medula → adrenalina e noradrenalina.",
+        "source": "prova"
+      },
+      {
+        "id": "hist-endo-2",
+        "type": "mcq",
+        "text": "Como denominamos os locais de armazenamento temporário de ocitocina e ADH na neuro-hipófise?",
+        "options": [
+          "Corpos de Herring",
+          "Corpos de Nissl",
+          "Corpos lamelares",
+          "Corpos albicans"
+        ],
+        "answer": 0,
+        "explanation": "⚠️ Gabarito montado pelo NurseHub. São dilatações dos axônios na neuro-hipófise onde esses hormônios ficam armazenados.",
+        "source": "prova"
+      },
+      {
+        "id": "hist-endo-3",
+        "type": "mcq",
+        "text": "A calcitonina da tireoide é produzida pelas:",
+        "options": [
+          "Células foliculares",
+          "Células parafoliculares (células C)",
+          "Pituícitos",
+          "Células cromafins"
+        ],
+        "answer": 1,
+        "explanation": "⚠️ Gabarito montado pelo NurseHub. As células foliculares produzem os hormônios tireoidianos (T3 e T4)."
+      },
+      {
+        "id": "hist-endo-4",
+        "type": "open",
+        "text": "Corrija as afirmativas falsas da questão 1 da prova: porta-hipofisário, neuro-hipófise e calcitonina.",
+        "model": "O sistema porta-hipofisário permite ao hipotálamo controlar a secreção da ADENO-hipófise (não da neuro-hipófise). A neuro-hipófise é formada por pituícitos e axônios AMIELÍNICOS. A calcitonina é produzida pelas células PARAFOLICULARES; as foliculares produzem T3 e T4.",
+        "keyPoints": [
+          {
+            "label": "Porta-hipofisário → adeno-hipófise",
+            "keywords": [
+              "adeno"
+            ]
+          },
+          {
+            "label": "Axônios amielínicos",
+            "keywords": [
+              "amielin"
+            ]
+          },
+          {
+            "label": "Calcitonina: parafoliculares",
+            "keywords": [
+              "parafolic"
+            ]
+          },
+          {
+            "label": "Foliculares: T3/T4",
+            "keywords": [
+              "t3",
+              "t4",
+              "tireoidian"
+            ]
+          }
+        ],
+        "source": "prova"
       }
     ]
   }

@@ -1,10 +1,13 @@
 // Matérias do NurseHub. Para incluir uma nova matéria:
-// 1) crie src/data/NOVA/questions.json e src/data/NOVA/atlas.json (pode ser [])
+// 1) crie src/data/NOVA/questions.json, atlas.json (pode ser []) e mindmap.json (opcional)
 // 2) importe aqui e adicione um item em SUBJECTS.
+// Sem mindmap.json, o mapa mental é gerado automaticamente a partir das questões e figuras.
 import anatomiaQuestions from './anatomia/questions.json';
 import anatomiaAtlas from './anatomia/atlas.json';
+import anatomiaMindmap from './anatomia/mindmap.json';
 import histologiaQuestions from './histologia/questions.json';
 import histologiaAtlas from './histologia/atlas.json';
+import histologiaMindmap from './histologia/mindmap.json';
 
 export const SUBJECTS = [
   {
@@ -21,6 +24,7 @@ export const SUBJECTS = [
     },
     questions: anatomiaQuestions,
     atlas: anatomiaAtlas,
+    mindmap: anatomiaMindmap,
   },
   {
     id: 'histologia',
@@ -31,11 +35,12 @@ export const SUBJECTS = [
       nav: 'Laminário',
       icon: '🔬',
       title: 'Prova prática: reconheça a lâmina',
-      text: 'Diga qual é o órgão, justifique e identifique as estruturas apontadas nas lâminas da aula.',
+      text: 'Diga qual é o órgão, justifique e identifique as estruturas apontadas nas lâminas.',
       mascot: 'Olho no microscópio! Primeiro o órgão, depois a justificativa. 🔬',
     },
     questions: histologiaQuestions,
     atlas: histologiaAtlas,
+    mindmap: histologiaMindmap,
   },
 ];
 

@@ -20,7 +20,9 @@ export default function SubjectPicker({ player, current, onPick }) {
               <div className="mt-4 flex flex-wrap gap-2">
                 <Pill>📝 {s.total} questões</Pill>
                 {s.open > 0 && <Pill>✍️ {s.open} discursivas</Pill>}
-                <Pill>🖼️ {s.figures} figuras/lâminas</Pill>
+                {s.past > 0 && <Pill>📄 {s.past} da prova/quiz</Pill>}
+                <Pill>🖼️ {s.figures} imagens</Pill>
+                <Pill>🧠 Mapa mental</Pill>
               </div>
             </Card>
           </button>
@@ -28,7 +30,7 @@ export default function SubjectPicker({ player, current, onPick }) {
         <Card className="flex flex-col items-center justify-center border-dashed text-center text-muted">
           <span className="text-4xl">➕</span>
           <p className="mt-2 font-bold">Mais matérias em breve</p>
-          <p className="text-sm">Veja no README como adicionar uma nova matéria.</p>
+          <p className="text-sm">Cada nova matéria já vem com mapa mental e simulado de prova.</p>
         </Card>
       </div>
     </div>
